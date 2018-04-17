@@ -1,0 +1,74 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU1}{Registrar usuario}{
+		Permite al usuario darse de alta dentro del sistema. El usuario puede tomar el papel de Alumno, Empleado o Externo.\\El Alumno puede identificarse por medio de su número de boleta, el Empleado por su número de empleado y el Externo a través de su CURP.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
+		\UCitem{Propósito}{Agregar un usuario al sistema.}
+		\UCitem{Entradas}{Datos del usuario: 
+		\begin{itemize}
+		    \item Nombre(s)
+		    \item Primer Apellido
+		    \item Segundo Apellido
+		    \item CURP
+		    \item Número de boleta
+		    \item Número de empleado
+		    \item Correo electrónico
+		\end{itemize}}
+		\UCitem{Salidas}{MSG1 Registro exitoso.}
+		\UCitem{Precondiciones}{Todos los campos del formulario deben de ser completados.}
+		\UCitem{Postcondiciones}{Ninguna.}
+		\UCitem{Reglas de Negocio}{\BRref {RN01} {Unicidad del usuario}, RN02 Perfilamiento del usuario}
+		\UCitem{Errores}{\MSGref{MSG50} {Campo obligatorio}, MSG51 Campo no válido, MSG52 Longitud no válida, MSG53 Formato no válido, MSG54 Usuario duplicado.}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El usuario ingresa a la pantalla \IUref{IU9}{Perfil de usuario}.  \IUref{UI23}{Pantalla principal del sistema}\label{CU17Login}.
+		\UCpaso[\UCactor] El usuario ingresa los datos necesarios para tener acceso al sistema, en este caso debe de ingresar e-mail y password.\Trayref{B}\label{CU1login} %\BRref{BR129}{Determinar si un Estudiante puede inscribir Seminario.} \Trayref{A}.
+		\UCpaso[\UCactor] Ya escritos los datos necesarios y correctos presiona el boton de ingresar al sistema.% Despliega la \IUref{UI32}{Pantalla de Selección de Seminario} con la lista de Seminarios Disponibles.
+		\UCpaso El sistema realiza la validación del e-mail y del password insertados.\Trayref{A}\Trayref{B}%%Selecciona el Seminario en el que desea inscribirse \Trayref{B}\label{CU17SeleccionarSeminario}.
+		\UCpaso Muestra el {\bf MSG1-} "Bienvenido"%% \BRref{BR130}{Determinar si un Estudiante puede inscribirse en un Seminario} \Trayref{C}.
+		\UCpaso Direcciona al usuario a la pantalla principal %% \BRref{BR143}{Validar el horario del estudiante} \Trayref{D}.
+
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario no ingreso todos los datos del formulario}
+			\UCpaso Muestra el Mensaje {\bf MSG2-}``El password del usuario [{\em nombre de usuario}] es incorrecta.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Regresa a la pantalla de inicio. 
+			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU1}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{El usuario no existe}
+			\UCpaso  Muestra el Mensaje {\bf MSG3-}``El usuario [{\em nombre de usuario}] es invalido.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Salir}.
+			\UCpaso Regresa a la pantalla de inicio. 
+			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU1}.
+		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}
+%			\UCpaso Muestra el Mensaje {\bf MSG2-}``El Estudiante [{\em Número de Boleta}] no cumple con los requisitos para inscribirse al Seminario [{\em Nombre del Seminario seleccionado}].''.
+%			\UCpaso Muestra los requisitos que el Seminario seleccionado solicita.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{D}{El horario es incompatible.}
+%			\UCpaso Muestra el Mensaje {\bf MSG3-}``El horario del [{\em Nombre del Seminario seleccionado}] no es compatible con el horario del curso [{\em Nombre de la materia y grupo del curso con el que choca el horario}].''.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

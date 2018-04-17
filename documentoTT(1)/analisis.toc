@@ -1,0 +1,95 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Prop\IeC {\'o}sito}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Alcance}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Definiciones, acr\IeC {\'o}nimos y abreviaturas}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Referencias}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Contenido y organizaci\IeC {\'o}n}{3}{section.1.5}
+\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis del problema}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Contexto del sistema}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Procesos actuales}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Participantes}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Procesos}{6}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Problemas identificados}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Problema general}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Descomposici\IeC {\'o}n del problema}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}An\IeC {\'a}lisis de causas}{7}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Propuesta de soluci\IeC {\'o}n}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Alternativas de soluci\IeC {\'o}n}{7}{subsection.2.4.1}
+\contentsline {chapter}{\numberline {3}Propuesta de soluci\IeC {\'o}n}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Objetivos}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Objetivo general}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Objetivos espec\IeC {\'\i }ficos}{9}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Modelo de despliegue}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Requerimientos no funcionales}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Modelo de despliegue del sistema}{9}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Especificaci\IeC {\'o}n de Plataforma}{9}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Modelo de Negocios}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Glosario de t\IeC {\'e}rminos}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Proceso ajustado}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Procesos actuales}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Participantes}{12}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Proceso A}{12}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Proceso B}{12}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Modelo de entidades del negocio}{12}{section.4.4}
+\contentsline {section}{\numberline {4.5}Descripci\IeC {\'o}n de atributos}{12}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Atributos de ``Alumno''}{12}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Reglas de Negocio}{13}{section.4.6}
+\contentsline {chapter}{\numberline {5}Modelo del despliegue del sistema}{15}{chapter.5}
+\contentsline {chapter}{\numberline {6}Modelo de comportamiento}{16}{chapter.6}
+\contentsline {section}{\numberline {6.1}CU1 Registrar usuario}{17}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{17}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{17}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{17}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}CU5 Login}{19}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{19}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{19}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{19}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}CU9 Visualizar servicios dentales}{21}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Descripci\IeC {\'o}n completa}{21}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Atributos importantes}{21}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Trayectorias del Caso de Uso}{21}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}CU12 Visualizar servicios CELEX}{22}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Descripci\IeC {\'o}n completa}{22}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Atributos importantes}{22}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Trayectorias del Caso de Uso}{22}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}CU15 Enviar comprobante de pago}{23}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Descripci\IeC {\'o}n completa}{23}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Atributos importantes}{23}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Trayectorias del Caso de Uso}{23}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}CU17 Ver pago}{24}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Descripci\IeC {\'o}n completa}{24}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Atributos importantes}{24}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Trayectorias del Caso de Uso}{24}{subsection.6.6.3}
+\contentsline {section}{\numberline {6.7}CU38 Visualizar pagos por fecha dentista}{25}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Descripci\IeC {\'o}n completa}{25}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Atributos importantes}{25}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Trayectorias del Caso de Uso}{25}{subsection.6.7.3}
+\contentsline {section}{\numberline {6.8}CU43 Visualizar pagos por fecha CELEX}{26}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Descripci\IeC {\'o}n completa}{26}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Atributos importantes}{26}{subsection.6.8.2}
+\contentsline {subsection}{\numberline {6.8.3}Trayectorias del Caso de Uso}{26}{subsection.6.8.3}
+\contentsline {section}{\numberline {6.9}CU44 Gestionar pagos contadur\IeC {\'\i }a}{27}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Descripci\IeC {\'o}n completa}{27}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Atributos importantes}{27}{subsection.6.9.2}
+\contentsline {subsection}{\numberline {6.9.3}Trayectorias del Caso de Uso}{27}{subsection.6.9.3}
+\contentsline {section}{\numberline {6.10}CU50 Cargar pagos}{28}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Descripci\IeC {\'o}n completa}{28}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}Atributos importantes}{28}{subsection.6.10.2}
+\contentsline {subsection}{\numberline {6.10.3}Trayectorias del Caso de Uso}{28}{subsection.6.10.3}
+\contentsline {section}{\numberline {6.11}CU53 Guardar comprobante sigaa}{29}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{29}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{29}{subsection.6.11.2}
+\contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{29}{subsection.6.11.3}
+\contentsline {section}{\numberline {6.12}CU55 Aceptar voucher de pago}{30}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{30}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{30}{subsection.6.12.2}
+\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{30}{subsection.6.12.3}
+\contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{31}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}IU9 Perfil de usuario}{32}{subsection.7.0.1}
+\contentsline {subsubsection}{Objetivo}{32}{section*.2}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{32}{section*.3}
+\contentsline {subsubsection}{Salidas}{32}{section*.4}
+\contentsline {subsubsection}{Entradas}{32}{section*.5}
+\contentsline {subsubsection}{Comandos}{33}{section*.6}
+\contentsline {subsubsection}{Mensajes}{33}{section*.7}

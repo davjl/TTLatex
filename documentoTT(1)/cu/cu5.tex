@@ -1,0 +1,66 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU5}{Login}{
+		Permite al usuario ingresar al sistema mediante un nombre de usuario y contraseña.\\Dependiendo el perfil de identificación se redireccionará a la pantalla \IUref {IU03}{Bienvenida} con sus permisos correspondientes.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{De Jesús López David.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Contador, Dentista, Coordinador CELEX, Cajero, Usuario: Alumno, Empleado, Externo.}
+		\UCitem{Propósito}{Dar permiso de acceso al sistema mediante un identificador de actor.}
+		\UCitem{Entradas}{Datos del usuario: 
+		\begin{itemize}
+		    \item Correo
+		    \item Contraseña
+		\end{itemize}}
+		\UCitem{Salidas}{Ninguna.}
+		\UCitem{Precondiciones}{Tener un registro previo en el sistema}
+		\UCitem{Postcondiciones}{Ninguna.}
+		\UCitem{Reglas de Negocio}{\BRref {RN02} {Limite de intentos}}
+		\UCitem{Errores}{\MSGref{MSG61-} {El e-mail no existe en el sistema}, \MSGref{MSG61-}{El password es incorrecto}, \MSGref{MSG62-}{Se supero el limite de intentos permitidos}}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.%\label{CU17Login}.
+		\UCpaso[\UCactor] Ingresa sus datos de usuario y presiona \IUbutton {Login}\label{CU1login}
+		\UCpaso El sistema realiza la validación del e-mail y del password insertados.\Trayref{A}\Trayref{B} \Trayref{C}.
+		\UCpaso Muestra la pantalla \IUref{IU6}{Bienvenida}
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario no ingreso un e-mail valido}
+			\UCpaso Muestra el Mensaje {\bf MSG60-} ''El e-mail no existe en el sistema'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU5}.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{El password es incorrecto}
+			\UCpaso  Muestra el Mensaje {\bf MSG61-} ``El password es incorrecto.'' en la pantalla  \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU5}.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{C}{Se supera el numero de intentos al ingresar contraseña}
+			\UCpaso  Muestra el Mensaje {\bf MSG62-} ``Se supero el numero de intentos permitidos.'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso[] Fin del caso de uso
+		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}
+%			\UCpaso Muestra el Mensaje {\bf MSG2-}``El Estudiante [{\em Número de Boleta}] no cumple con los requisitos para inscribirse al Seminario [{\em Nombre del Seminario seleccionado}].''.
+%			\UCpaso Muestra los requisitos que el Seminario seleccionado solicita.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{D}{El horario es incompatible.}
+%			\UCpaso Muestra el Mensaje {\bf MSG3-}``El horario del [{\em Nombre del Seminario seleccionado}] no es compatible con el horario del curso [{\em Nombre de la materia y grupo del curso con el que choca el horario}].''.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
