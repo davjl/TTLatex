@@ -9,26 +9,30 @@
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
 \begin{UseCase}{CU12}{Visualizar servicios CELEX}{
-		Permite visualizar los servicios y precios disponibles en el departamento CELEX \IUref {IU012}{Visualizar servicios CELEX}.
+		Permite visualizar el catálogo de servicios y precios disponibles en el departamento del CELEX mediante la pantalla \IUref {IU12}{Visualizar servicios CELEX}.
 	}
 		\UCitem{Versión}{0.1}
-		\UCitem{Autor}{De Jesús López David.}
+		\UCitem{Autor}{ David De Jesús López.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
 		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
-		\UCitem{Propósito}{Tener un medio de visualización de los servicios disponibles en área CELEX.}
+		\UCitem{Propósito}{Tener un medio de visualización del catálogo de servicios disponibles en el área del CELEX, así como otorgar opciones de gestión de pagos.}
 		\UCitem{Entradas}{Ninguna.}
 		\UCitem{Salidas}{Ninguna.}
 		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{Ninguna.}
-		\UCitem{Reglas de Negocio}{\BRref {RN10} {Servicios disponibles conforme a catalogo IPN}}
+		\UCitem{Reglas de Negocio}{Ninguna.}
 		\UCitem{Errores}{Ninguno}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Selecciona en la pantalla \IUref{IU8}{Visualizar servicios} la opcion CELEX y da clic en \IUbutton{Mostrar}.%\label{CU17Login}.
 		\UCpaso Muestra la pantalla \IUref{IU12}{Visualiar servicios CELEX}.
+		\UCpaso[\UCactor] Selecciona el icono...\Trayref{A}
 	\end{UCtrayectoria}
-		
+
+	{\bf Puntos de extensión}\\\\
+	{\bf Causa de la extensión:}El actor requiere subir un archivo de pago.\\
+	{\bf Región de la trayectoria:}Paso 2 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU14}.\\
 %-------------------------------------- TERMINA descripción del caso de uso.

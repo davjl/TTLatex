@@ -7,10 +7,10 @@
 
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
-
 \begin{UseCase}{CU1}{Registrar usuario}{
-		Permite al usuario darse de alta dentro del sistema. El usuario puede tomar el papel de Alumno, Empleado o Externo.\\El Alumno puede identificarse por medio de su número de boleta, el Empleado por su número de empleado y el Externo a través de su CURP.
-	}
+		Permite al usuario darse de alta dentro del sistema. El usuario puede tomar el papel de Alumno, Empleado o Externo.\\
+		\newline El Alumno puede identificarse por medio de su número de boleta, el Empleado por su número de empleado y el Externo a través de su CURP.
+}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{Roberto Mendoza Saavedra.}
 		\UCitem{Estatus}{Edición.}
@@ -19,6 +19,7 @@
 		\UCitem{Propósito}{Agregar un usuario al sistema.}
 		\UCitem{Entradas}{Datos del usuario: 
 		\begin{itemize}
+			\item Perfil del usuario
 		    \item Nombre(s)
 		    \item Primer Apellido
 		    \item Segundo Apellido
@@ -26,49 +27,61 @@
 		    \item Número de boleta
 		    \item Número de empleado
 		    \item Correo electrónico
+		    \item Teléfono celular
 		\end{itemize}}
-		\UCitem{Salidas}{MSG1 Registro exitoso.}
-		\UCitem{Precondiciones}{Todos los campos del formulario deben de ser completados.}
-		\UCitem{Postcondiciones}{Ninguna.}
-		\UCitem{Reglas de Negocio}{\BRref {RN01} {Unicidad del usuario}, RN02 Perfilamiento del usuario}
-		\UCitem{Errores}{\MSGref{MSG50} {Campo obligatorio}, MSG51 Campo no válido, MSG52 Longitud no válida, MSG53 Formato no válido, MSG54 Usuario duplicado.}
-		\UCitem{Tipo}{Primario.}
+		\UCitem{Salidas}{\MSGref{MSG1}{Registro exitoso}.}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item Todos los campos obligatorios del formulario deben de ser completados.
+				\item No debe existir un registro previo del usuario.
+			\end{itemize}}
+		\UCitem{Postcondiciones}{Se agrega un nuevo registro a la base de datos.}
+		\UCitem{Reglas de Negocio}{\BRref{RN01}{Unicidad del usuario}, \BRref{RN02}{Perfilamiento del usuario}}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG52}{Longitud no válida}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG54}{Usuario duplicado}.}
+		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU5}{Login}}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] El usuario ingresa a la pantalla \IUref{IU9}{Perfil de usuario}.  \IUref{UI23}{Pantalla principal del sistema}\label{CU17Login}.
-		\UCpaso[\UCactor] El usuario ingresa los datos necesarios para tener acceso al sistema, en este caso debe de ingresar e-mail y password.\Trayref{B}\label{CU1login} %\BRref{BR129}{Determinar si un Estudiante puede inscribir Seminario.} \Trayref{A}.
-		\UCpaso[\UCactor] Ya escritos los datos necesarios y correctos presiona el boton de ingresar al sistema.% Despliega la \IUref{UI32}{Pantalla de Selección de Seminario} con la lista de Seminarios Disponibles.
-		\UCpaso El sistema realiza la validación del e-mail y del password insertados.\Trayref{A}\Trayref{B}%%Selecciona el Seminario en el que desea inscribirse \Trayref{B}\label{CU17SeleccionarSeminario}.
-		\UCpaso Muestra el {\bf MSG1-} "Bienvenido"%% \BRref{BR130}{Determinar si un Estudiante puede inscribirse en un Seminario} \Trayref{C}.
-		\UCpaso Direcciona al usuario a la pantalla principal %% \BRref{BR143}{Validar el horario del estudiante} \Trayref{D}.
-
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU05}{Login}.
+		\UCpaso[\UCactor] Presiona la opción {\bf Registrar Usuario} 
+		\UCpaso Dirige a la pantalla \IUref{IU01}{Registrar Usuario}.
+		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU01}{Registrar Usuario} el tipo de usuario que desea registrar.
+		\UCpaso Con base en la regla de negocio \BRref{RN02}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
+		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Registrar}.\Trayref{A}
+		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
+		\UCpaso Verifica que los campos ingresados sean válidos. \Trayref{C}
+		\UCpaso Verifica que la longitud del CURP, número de boleta o número de empleado tengan la longitud correcta. \Trayref{D}
+		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
+		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro previo.
+		\UCpaso Registra un nuevo usuario.
+		\UCpaso Direcciona al usuario a la pantalla \IUref{IU05}{Login} y muestra el mensaje \MSGref{MSG1}{Registro exitoso}.
 	\end{UCtrayectoria}
 		
-		\begin{UCtrayectoriaA}{A}{El usuario no ingreso todos los datos del formulario}
-			\UCpaso Muestra el Mensaje {\bf MSG2-}``El password del usuario [{\em nombre de usuario}] es incorrecta.''.
-			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Regresa a la pantalla de inicio. 
-			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU1}.
-			\UCpaso[] Termina el caso de uso.
-		\end{UCtrayectoriaA}
+		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU1}{Registrar Usuario}
+			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
+			\end{UCtrayectoriaA}
 		
-		\begin{UCtrayectoriaA}{B}{El usuario no existe}
-			\UCpaso  Muestra el Mensaje {\bf MSG3-}``El usuario [{\em nombre de usuario}] es invalido.''.
-			\UCpaso[\UCactor] Oprime el botón \IUbutton{Salir}.
-			\UCpaso Regresa a la pantalla de inicio. 
-			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU1}.
+		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU01}{Registrar usuario}.
+			\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU01}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{D}{El usuario ingresó el CURP, Número de boleta o Número de empleado	 con longitud incorrecta.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU01}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU01}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
 
-%		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}
-%			\UCpaso Muestra el Mensaje {\bf MSG2-}``El Estudiante [{\em Número de Boleta}] no cumple con los requisitos para inscribirse al Seminario [{\em Nombre del Seminario seleccionado}].''.
-%			\UCpaso Muestra los requisitos que el Seminario seleccionado solicita.
-%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
-%		\end{UCtrayectoriaA}
-
-%		\begin{UCtrayectoriaA}{D}{El horario es incompatible.}
-%			\UCpaso Muestra el Mensaje {\bf MSG3-}``El horario del [{\em Nombre del Seminario seleccionado}] no es compatible con el horario del curso [{\em Nombre de la materia y grupo del curso con el que choca el horario}].''.
-%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
-%		\end{UCtrayectoriaA}
 		
 %-------------------------------------- TERMINA descripción del caso de uso.
