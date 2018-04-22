@@ -34,25 +34,30 @@
 		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.%\label{CU17Login}.
 		\UCpaso[\UCactor] Ingresa correo electrónico, contraseña y presiona el botón de \IUbutton {Ingresar}
 		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios. \Trayref{A}
-		\UCpaso Verifica que los campos ingresados sean válidos.\Trayref{B}
+		\UCpaso ----Verifica que los campos ingresados sean válidos.\Trayref{B}
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{C}
 		\UCpaso Verifica que el correo electrónico y la contraseña correspondan.\Trayref{D}
 		\UCpaso Obtiene el perfil correspondiente a la cuenta y muestra la pantalla \IUref{IU5.1}{Bienvenida}
 	\end{UCtrayectoria}
 		
-		\begin{UCtrayectoriaA}{A}{El usuario no ingreso un e-mail valido}
-			\UCpaso Muestra el Mensaje {\bf MSG60-} ''El e-mail no existe en el sistema'' en la pantalla \IUref{IU5}{Login} 
-			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU5}.
+		\begin{UCtrayectoriaA}{A}{Faltan datos obligatorios}
+			\UCpaso Muestra el Mensaje {\bf MSG50-} ''Campo obligatorio'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso 2 del \UCref{CU5}.
 		\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{B}{El password es incorrecto}
-			\UCpaso  Muestra el Mensaje {\bf MSG61-} ``El password es incorrecto.'' en la pantalla  \IUref{IU5}{Login} 
+			\UCpaso  Muestra el Mensaje {\bf MSG51-} ``Campo no válido.'' en la pantalla  \IUref{IU5}{Login} 
 			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU5}.
 		\end{UCtrayectoriaA}
 		
-		\begin{UCtrayectoriaA}{C}{Se supera el numero de intentos al ingresar contraseña}
-			\UCpaso  Muestra el Mensaje {\bf MSG62-} ``Se supero el numero de intentos permitidos.'' en la pantalla \IUref{IU5}{Login} 
-			\UCpaso[] Fin del caso de uso
+		\begin{UCtrayectoriaA}{C}{El correo electronico es incorrecto}
+			\UCpaso  Muestra el Mensaje {\bf MSG53-} ``Formato no válido.'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso 2 del \UCref{CU5}
+		\end{UCtrayectoriaA}
+
+		\begin{UCtrayectoriaA}{D}{Usuario y/o contraseña incorrectos}
+			\UCpaso  Muestra el Mensaje {\bf MSG55-} ``Usuario y/o contraseña incorrectos.'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso 2 del \UCref{CU5}
 		\end{UCtrayectoriaA}
 
 %		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}

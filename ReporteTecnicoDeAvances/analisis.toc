@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Prop\IeC {\'o}sito}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Alcance}{2}{section.1.2}
@@ -57,38 +57,34 @@
 \contentsline {subsection}{\numberline {6.5.1}Descripci\IeC {\'o}n completa}{24}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Atributos importantes}{24}{subsection.6.5.2}
 \contentsline {subsection}{\numberline {6.5.3}Trayectorias del Caso de Uso}{24}{subsection.6.5.3}
-\contentsline {section}{\numberline {6.6}CU17 Ver pago}{26}{section.6.6}
+\contentsline {section}{\numberline {6.6}CU15 Gestionar pagos}{26}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Descripci\IeC {\'o}n completa}{26}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}Atributos importantes}{26}{subsection.6.6.2}
 \contentsline {subsection}{\numberline {6.6.3}Trayectorias del Caso de Uso}{26}{subsection.6.6.3}
-\contentsline {section}{\numberline {6.7}CU37 Archivo de pagos}{27}{section.6.7}
+\contentsline {section}{\numberline {6.7}CU16 Visualizar comprobante de pago}{27}{section.6.7}
 \contentsline {subsection}{\numberline {6.7.1}Descripci\IeC {\'o}n completa}{27}{subsection.6.7.1}
 \contentsline {subsection}{\numberline {6.7.2}Atributos importantes}{27}{subsection.6.7.2}
 \contentsline {subsection}{\numberline {6.7.3}Trayectorias del Caso de Uso}{27}{subsection.6.7.3}
-\contentsline {section}{\numberline {6.8}CU38 Visualizar pagos por fecha dentista}{28}{section.6.8}
+\contentsline {section}{\numberline {6.8}CU36 Visualizar archivo de pagos por a\IeC {\~n}o}{28}{section.6.8}
 \contentsline {subsection}{\numberline {6.8.1}Descripci\IeC {\'o}n completa}{28}{subsection.6.8.1}
 \contentsline {subsection}{\numberline {6.8.2}Atributos importantes}{28}{subsection.6.8.2}
 \contentsline {subsection}{\numberline {6.8.3}Trayectorias del Caso de Uso}{28}{subsection.6.8.3}
-\contentsline {section}{\numberline {6.9}CU43 Visualizar pagos por fecha CELEX}{29}{section.6.9}
+\contentsline {section}{\numberline {6.9}CU37 Visualizar pagos por mes}{29}{section.6.9}
 \contentsline {subsection}{\numberline {6.9.1}Descripci\IeC {\'o}n completa}{29}{subsection.6.9.1}
 \contentsline {subsection}{\numberline {6.9.2}Atributos importantes}{29}{subsection.6.9.2}
 \contentsline {subsection}{\numberline {6.9.3}Trayectorias del Caso de Uso}{29}{subsection.6.9.3}
-\contentsline {section}{\numberline {6.10}CU44 Gestionar pagos contadur\IeC {\'\i }a}{30}{section.6.10}
+\contentsline {section}{\numberline {6.10}CU40 Cargar pagos}{30}{section.6.10}
 \contentsline {subsection}{\numberline {6.10.1}Descripci\IeC {\'o}n completa}{30}{subsection.6.10.1}
 \contentsline {subsection}{\numberline {6.10.2}Atributos importantes}{30}{subsection.6.10.2}
 \contentsline {subsection}{\numberline {6.10.3}Trayectorias del Caso de Uso}{30}{subsection.6.10.3}
-\contentsline {section}{\numberline {6.11}CU50 Cargar pagos}{31}{section.6.11}
+\contentsline {section}{\numberline {6.11}CU42 Guardar comprobante sigaa}{31}{section.6.11}
 \contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{31}{subsection.6.11.1}
 \contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{31}{subsection.6.11.2}
 \contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{31}{subsection.6.11.3}
-\contentsline {section}{\numberline {6.12}CU53 Guardar comprobante sigaa}{32}{section.6.12}
-\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{32}{subsection.6.12.1}
-\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{32}{subsection.6.12.2}
-\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{32}{subsection.6.12.3}
-\contentsline {section}{\numberline {6.13}CU55 Aceptar voucher de pago}{33}{section.6.13}
-\contentsline {subsection}{\numberline {6.13.1}Descripci\IeC {\'o}n completa}{33}{subsection.6.13.1}
-\contentsline {subsection}{\numberline {6.13.2}Atributos importantes}{33}{subsection.6.13.2}
-\contentsline {subsection}{\numberline {6.13.3}Trayectorias del Caso de Uso}{33}{subsection.6.13.3}
+\contentsline {section}{\numberline {6.12}CU43 Aceptar voucher de pago}{33}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{33}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{33}{subsection.6.12.2}
+\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{33}{subsection.6.12.3}
 \contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{34}{chapter.7}
 \contentsline {subsection}{\numberline {7.0.1}IU9 Perfil de usuario}{35}{subsection.7.0.1}
 \contentsline {subsubsection}{Objetivo}{35}{section*.2}
