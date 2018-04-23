@@ -7,19 +7,17 @@
 
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
-\begin{UseCase}{CU1}{Registrar usuario}{
-		Permite al usuario darse de alta dentro del sistema. El usuario puede tomar el papel de Alumno, Empleado o Externo.\\
-		\newline El Alumno puede identificarse por medio de su número de boleta, el Empleado por su número de empleado y el Externo a través de su CURP.
-}
+\begin{UseCase}{CU2}{Modificar información personal}{
+		Permite al Usuario modificar su información personal que registró al momento de darse de alta en el sistema. Podrá editar su nombre, primer apellido, segundo apellido, CURP, número de boleta o número de empleado según sea el caso, correo electrónico y teléfono celular. La modificación de sus datos la podrá realizar en el momento que lo requiera el Usuario.
+	}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{Roberto Mendoza Saavedra.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
 		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
-		\UCitem{Propósito}{Agregar un usuario al sistema.}
+		\UCitem{Propósito}{Otorgar al Usuario un medio para que modifique sus datos personales.}
 		\UCitem{Entradas}{Datos del usuario: 
 		\begin{itemize}
-			\item Perfil del usuario
 		    \item Nombre(s)
 		    \item Primer Apellido
 		    \item Segundo Apellido
@@ -33,55 +31,51 @@
 		\UCitem{Precondiciones}{
 			\begin{itemize}
 				\item Todos los campos obligatorios del formulario deben de ser completados.
-				\item No debe existir un registro previo del usuario.
+				\item Debe existir un registro previo del usuario.
 			\end{itemize}}
-		\UCitem{Postcondiciones}{Se agrega un nuevo registro a la base de datos.}
-		\UCitem{Reglas de Negocio}{\BRref{RN01}{Unicidad del usuario}, \BRref{RN02}{Perfilamiento del usuario}}
+		\UCitem{Postcondiciones}{Se realiza una actualización a los datos del usuario.}
+		\UCitem{Reglas de Negocio}{\BRref{RN01}{Unicidad del usuario}.}
 		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG52}{Longitud no válida}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG54}{Usuario duplicado}.}
-		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU5}{Login}}
+		\UCitem{Tipo}{Secundario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU05}{Login}.
-		\UCpaso[\UCactor] Presiona la opción {\bf Registrar Usuario} 
-		\UCpaso Dirige a la pantalla \IUref{IU01}{Registrar Usuario}.
-		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU01}{Registrar Usuario} el tipo de usuario que desea registrar.
-		\UCpaso Con base en la regla de negocio \BRref{RN02}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
-		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Registrar}.\Trayref{A}
+		\UCpaso[\UCactor] Selecciona la opción {\bf Modificar datos} del menú \IUref{IU5.1.2}{Menú de sesión}.
+		\UCpaso Muestra la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso Obtiene la información del usuario y la muestra en cada campo del formulario de la pantalla \IUref{IU2}{Modificar Información Personal}.
+		\UCpaso[\UCactor] Edita los campos del formulario de la pantalla \IUref{IU2}{Modificar Información Personal} que desea actualizar y presiona el botón \IUbutton{Modificar}.\Trayref{A}
 		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
 		\UCpaso Verifica que los campos ingresados sean válidos. \Trayref{C}
 		\UCpaso Verifica que la longitud del CURP, número de boleta o número de empleado tengan la longitud correcta. \Trayref{D}
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
-		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro previo.
-		\UCpaso Registra un nuevo usuario.
+		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro duplicado.
+		\UCpaso Actualiza la información personal del Usuario.
 		\UCpaso Direcciona al usuario a la pantalla \IUref{IU05}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
-			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU1}{Registrar Usuario}
-			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU2}{Modificar Información Personal}.
+			\UCpaso Muestra la pantalla \IUref{IU5.1}{Bienvenida}
 			\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
-			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU01}{Registrar usuario}.
-			\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+			\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 		\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU01}{Registrar usuario}.
-		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 	\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{D}{El usuario ingresó el CURP, Número de boleta o Número de empleado	 con longitud incorrecta.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU01}{Registrar usuario}.
-		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 	\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU01}{Registrar usuario}.
-		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 	\end{UCtrayectoriaA}
 	
-
-		
 %-------------------------------------- TERMINA descripción del caso de uso.

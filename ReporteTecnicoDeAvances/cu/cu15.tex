@@ -8,17 +8,25 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-\begin{UseCase}{CU15}{Gestionar pagos}{
-		Visualiza los pagos realizados durante el día.
+\begin{UseCase}{CU15}{Gestionar pagos por área}{
+		Permite al Dentista, Coordinador CELEX, Administrador Fotocopiado y Administrador Biblioteca visualizar los pagos del día confirmados por el Cajero. Todos los actores podrán visualizar los pagos en el momento que lo requieran.
 	}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{David De Jesús López.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
-		\UCitem{Actor}{Admin. caja.}
-		\UCitem{Propósito}{Visualizar todos los registros de pago generados en el día.}
-		\UCitem{Entradas}{Comprobantes de pago.}
-		\UCitem{Salidas}{Ninguna.}
+		\UCitem{Actor}{Dentista, Coordinador CELEX, Administrador Fotocopiado, Administrador Biblioteca.}
+		\UCitem{Propósito}{Otorgar un medio para la visualización de todos los pagos del día confirmados por el Cajero.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Tabla que muestra las columnas de:
+			\begin{itemize}
+				\item Nombre
+				\item CURP
+				\item Número de boleta o Número de empleado
+				\item Fecha de confirmación
+				\item Cantidad
+				\item Acciones
+			\end{itemize}.}
 		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{Ninguna.}	
 		\UCitem{Reglas de Negocio}{Ninguna.}
@@ -27,9 +35,14 @@
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Da clic en ek botón \IUbutton{Gestionar pagos} del menu \IUref{IU5.1.1}{Menú principal}.
-		\UCpaso Muestra la pantalla \IUref{IU15}{Gestionar pagos} 
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Gestionar pagos} del menu \IUref{IU5.1.1}{Menú principal}.
+		\UCpaso Muestra la pantalla \IUref{IU15}{Gestionar pagos por área} 
 	\end{UCtrayectoria}
+
+	{\bf Puntos de extensión}\\\\
+	{\bf Causa de la extensión:}El actor da clic en el icono...\\
+	{\bf Región de la trayectoria:}Paso 2 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU33}.\\\\
 	
 		
 %-------------------------------------- TERMINA descripción del caso de uso.
