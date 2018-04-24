@@ -97,7 +97,7 @@
 \contentsline {subsection}{\numberline {6.15.1}Descripci\IeC {\'o}n completa}{42}{subsection.6.15.1}
 \contentsline {subsection}{\numberline {6.15.2}Atributos importantes}{42}{subsection.6.15.2}
 \contentsline {subsection}{\numberline {6.15.3}Trayectorias del Caso de Uso}{42}{subsection.6.15.3}
-\contentsline {section}{\numberline {6.16}CU42 Guardar comprobante sigaa}{43}{section.6.16}
+\contentsline {section}{\numberline {6.16}CU42 Cargar comprobante sigaa}{43}{section.6.16}
 \contentsline {subsection}{\numberline {6.16.1}Descripci\IeC {\'o}n completa}{43}{subsection.6.16.1}
 \contentsline {subsection}{\numberline {6.16.2}Atributos importantes}{43}{subsection.6.16.2}
 \contentsline {subsection}{\numberline {6.16.3}Trayectorias del Caso de Uso}{43}{subsection.6.16.3}

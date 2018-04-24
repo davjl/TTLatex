@@ -8,16 +8,16 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-\begin{UseCase}{CU42}{Guardar comprobante sigaa}{
-		Agrega en al sistema el archivo comprobante sigaa, validando los pagos recibidos.
+\begin{UseCase}{CU42}{Cargar comprobante sigaa}{
+		Agrega en el sistema el archivo comprobante sigaa, validando los pagos recibidos.
 	}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{David De Jesús López.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
-		\UCitem{Actor}{Admin. caja.}
+		\UCitem{Actor}{Administrador Caja.}
 		\UCitem{Propósito}{Tener el registro en el sistema el comprobante sigaa.}
-		\UCitem{Entradas}{Comprobante sigaa.}
+		\UCitem{Entradas}{Ninguna.}
 		\UCitem{Salidas}{\MSGref{MSG6-}{Archivo guardado correctamente}.}
 		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{Ninguna.}
@@ -27,7 +27,8 @@
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Adjuntar pago sigaa} en la pantalla \IUref{IU15}{Gestionar pagos}.
+		\UCpaso[\UCactor] Da clic en el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{"Nombre"}}}
+		en la pantalla \IUref{IU15}{Gestionar pagos}.
 		\UCpaso Redirecciona a la pagina \IUref{IU42}{Guardar comprobante sigaa}
 		\UCpaso[\UCactor] Da clic en la imagen ...
 		\UCpaso Despliega un selector de archivos.

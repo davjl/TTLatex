@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.16)  18 APR 2018 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.23)  23 APR 2018 22:29
 entering extended mode
 **./cu1.tex
 (cu1.tex
@@ -144,38 +144,6 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 10--12
-[]
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 		\newline
-                El Alumno puede identificarse por medio de su número de bol...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 		\newline E
-                 l Alumno puede identificarse por medio de su número de bol...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 Missing character: There is no E in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no A in font nullfont!
@@ -289,17 +257,8 @@ Missing character: There is no U in font nullfont!
 Missing character: There is no R in font nullfont!
 Missing character: There is no P in font nullfont!
 Missing character: There is no . in font nullfont!
-! Extra }, or forgotten \endgroup.
-l.14 }}
-       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 ! Undefined control sequence.
-l.15 		\UCitem
+l.14 		\UCitem
               {Versión}{0.1}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -319,8 +278,8 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 1 in font nullfont!
 ! Undefined control sequence.
-l.16 		\UCitem
-              {Autor}{Roberto Mendoza Saavedra.}
+l.15 		\UCitem
+              {Autor}{Roberto Mendoza Saavedra.\raisebox{-\mydepth}{\fbox{\i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -356,7 +315,75 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.17 		\UCitem
+<argument> \includegraphics 
+                            [height=\myheight ]{tiger}
+l.15 ...includegraphics[height=\myheight]{tiger}}}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+<argument> \includegraphics [height=\myheight 
+                                              ]{tiger}
+l.15 ...includegraphics[height=\myheight]{tiger}}}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<argument> -\mydepth 
+                     
+l.15 ...includegraphics[height=\myheight]{tiger}}}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.15 ...includegraphics[height=\myheight]{tiger}}}
+                                                  }
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.15 ...includegraphics[height=\myheight]{tiger}}}
+                                                  }
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.16 		\UCitem
               {Estatus}{Edición.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -381,7 +408,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.18 		\UCitem
+l.17 		\UCitem
               {Fecha de último estatus}{9 de abril de 2018.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -426,7 +453,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.19 		\UCitem
+l.18 		\UCitem
               {Actor}{Usuario: Alumno, Empleado, Externo.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -472,7 +499,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.20 		\UCitem
+l.19 		\UCitem
               {Propósito}{Agregar un usuario al sistema.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -517,7 +544,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.21 		\UCitem
+l.20 		\UCitem
               {Entradas}{Datos del usuario:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -550,7 +577,12 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 13--22
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--21
+[]
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--21
 []
  []
 
@@ -679,8 +711,8 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
-l.33 		\UCitem
-              {Salidas}{\MSGref{MSG1}{Registro exitoso}.}
+l.32 		\UCitem
+              {Salidas}{\MSGref{MSG1}{Operación exitosa}.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -694,8 +726,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 		\UCitem{S
-                alidas}{\MSGref{MSG1}{Registro exitoso}.}
+l.32 		\UCitem{S
+                alidas}{\MSGref{MSG1}{Operación exitosa}.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -707,8 +739,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.33 		\UCitem{Salidas}{\MSGref
-                               {MSG1}{Registro exitoso}.}
+l.32 		\UCitem{Salidas}{\MSGref
+                               {MSG1}{Operación exitosa}.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -719,24 +751,26 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no 1 in font nullfont!
-Missing character: There is no R in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.34 		\UCitem
+l.33 		\UCitem
               {Precondiciones}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -759,7 +793,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--35
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--34
 []
  []
 
@@ -865,7 +899,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.39 		\UCitem
+l.38 		\UCitem
               {Postcondiciones}{Se agrega un nuevo registro a la base de dat...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -880,7 +914,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 		\UCitem{P
+l.38 		\UCitem{P
                 ostcondiciones}{Se agrega un nuevo registro a la base de dat...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -940,7 +974,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.40 		\UCitem
+l.39 		\UCitem
               {Reglas de Negocio}{\BRref{RN01}{Unicidad del usuario}, \BRref...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -964,7 +998,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.40 		\UCitem{Reglas de Negocio}{\BRref
+l.39 		\UCitem{Reglas de Negocio}{\BRref
                                         {RN01}{Unicidad del usuario}, \BRref...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -996,7 +1030,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.40 ...\BRref{RN01}{Unicidad del usuario}, \BRref
+l.39 ...\BRref{RN01}{Unicidad del usuario}, \BRref
                                                   {RN02}{Perfilamiento del u...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1032,7 +1066,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.41 		\UCitem
+l.40 		\UCitem
               {Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Cam...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1048,7 +1082,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.41 		\UCitem{Errores}{\MSGref
+l.40 		\UCitem{Errores}{\MSGref
                                {MSG50}{Campo obligatorio},\MSGref{MSG51}{Cam...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1079,7 +1113,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.41 ...{\MSGref{MSG50}{Campo obligatorio},\MSGref
+l.40 ...{\MSGref{MSG50}{Campo obligatorio},\MSGref
                                                   {MSG51}{Campo no válido},...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1108,7 +1142,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.41 ...,\MSGref{MSG51}{Campo no válido}, \MSGref
+l.40 ...,\MSGref{MSG51}{Campo no válido}, \MSGref
                                                   {MSG52}{Longitud no válid...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1140,7 +1174,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.41 ...SGref{MSG52}{Longitud no válida}, \MSGref
+l.40 ...SGref{MSG52}{Longitud no válida}, \MSGref
                                                   {MSG53}{Formato no válido...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1171,7 +1205,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.41 ...MSGref{MSG53}{Formato no válido}, \MSGref
+l.40 ...MSGref{MSG53}{Formato no válido}, \MSGref
                                                   {MSG54}{Usuario duplicado}.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1202,7 +1236,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.42 		\UCitem
+l.41 		\UCitem
               {Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1244,7 +1278,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.42 ...extiende del caso de uso \UCExtensionPoint
+l.41 ...extiende del caso de uso \UCExtensionPoint
                                                   {CU5}{Login}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1267,14 +1301,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.43 	\end{UseCase}
+l.42 	\end{UseCase}
                    		
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 39--44
+Overfull \hbox (20.0pt too wide) in paragraph at lines 38--43
 []
  []
 
@@ -1285,7 +1319,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 	\begin{UCtrayectoria}
+l.44 	\begin{UCtrayectoria}
                            {Principal}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1298,7 +1332,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 	\begin{UCtrayectoria}{P
+l.44 	\begin{UCtrayectoria}{P
                              rincipal}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1313,7 +1347,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 ! Undefined control sequence.
-l.46 		\UCpaso
+l.45 		\UCpaso
               [\UCactor] Ingresa a la pantalla \IUref{IU05}{Login}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1323,7 +1357,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
-l.46 		\UCpaso[\UCactor
+l.45 		\UCpaso[\UCactor
                        ] Ingresa a la pantalla \IUref{IU05}{Login}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1351,7 +1385,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.46 ...aso[\UCactor] Ingresa a la pantalla \IUref
+l.45 ...aso[\UCactor] Ingresa a la pantalla \IUref
                                                   {IU05}{Login}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1370,7 +1404,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.47 		\UCpaso
+l.46 		\UCpaso
               [\UCactor] Presiona la opción {\bf Registrar Usuario}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1380,7 +1414,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
-l.47 		\UCpaso[\UCactor
+l.46 		\UCpaso[\UCactor
                        ] Presiona la opción {\bf Registrar Usuario}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1407,7 +1441,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.47 		\UCpaso[\UCactor] Presiona la opción {\bf
+l.46 		\UCpaso[\UCactor] Presiona la opción {\bf
                                                   Registrar Usuario}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1432,7 +1466,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.48 		\UCpaso
+l.47 		\UCpaso
                Dirige a la pantalla \IUref{IU01}{Registrar Usuario}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1458,7 +1492,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.48 		\UCpaso Dirige a la pantalla \IUref
+l.47 		\UCpaso Dirige a la pantalla \IUref
                                           {IU01}{Registrar Usuario}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1488,7 +1522,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.49 		\UCpaso
+l.48 		\UCpaso
               [\UCactor]Selecciona en la pantalla \IUref{IU01}{Registrar Usu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1498,7 +1532,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
-l.49 		\UCpaso[\UCactor
+l.48 		\UCpaso[\UCactor
                        ]Selecciona en la pantalla \IUref{IU01}{Registrar Usu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1530,7 +1564,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.49 ...[\UCactor]Selecciona en la pantalla \IUref
+l.48 ...[\UCactor]Selecciona en la pantalla \IUref
                                                   {IU01}{Registrar Usuario} ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1592,7 +1626,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.50 		\UCpaso
+l.49 		\UCpaso
                Con base en la regla de negocio \BRref{RN02}{Perfilamiento de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1626,7 +1660,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.50 ...aso Con base en la regla de negocio \BRref
+l.49 ...aso Con base en la regla de negocio \BRref
                                                   {RN02}{Perfilamiento del u...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1679,7 +1713,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.50 ...nto del usuario} habilita el campo de {\bf
+l.49 ...nto del usuario} habilita el campo de {\bf
                                                    Número de boleta} o {\bf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1704,7 +1738,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.50 ...el campo de {\bf Número de boleta} o {\bf
+l.49 ...el campo de {\bf Número de boleta} o {\bf
                                                    Número de empleado}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1731,7 +1765,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.51 		\UCpaso
+l.50 		\UCpaso
               [\UCactor]Ingresa los datos requeridos en el formulario y pres...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1741,7 +1775,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
-l.51 		\UCpaso[\UCactor
+l.50 		\UCpaso[\UCactor
                        ]Ingresa los datos requeridos en el formulario y pres...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1807,7 +1841,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.51 ... formulario y presiona el botón \IUbutton
+l.50 ... formulario y presiona el botón \IUbutton
                                                   {Registrar}.\Trayref{A}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1826,7 +1860,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.51 ...na el botón \IUbutton{Registrar}.\Trayref
+l.50 ...na el botón \IUbutton{Registrar}.\Trayref
                                                   {A}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1836,7 +1870,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no A in font nullfont!
 ! Undefined control sequence.
-l.52 		\UCpaso
+l.51 		\UCpaso
                Verifica que el usuario haya ingresado todos los campos oblig...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1905,7 +1939,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.52 ...ado todos los campos obligatorios.\Trayref
+l.51 ...ado todos los campos obligatorios.\Trayref
                                                   {B}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1915,7 +1949,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no B in font nullfont!
 ! Undefined control sequence.
-l.53 		\UCpaso
+l.52 		\UCpaso
                Verifica que los campos ingresados sean válidos. \Trayref{C}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1967,7 +2001,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.53 ... campos ingresados sean válidos. \Trayref
+l.52 ... campos ingresados sean válidos. \Trayref
                                                   {C}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1977,7 +2011,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no C in font nullfont!
 ! Undefined control sequence.
-l.54 		\UCpaso
+l.53 		\UCpaso
                Verifica que la longitud del CURP, número de boleta o númer...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2073,7 +2107,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.54 ...eado tengan la longitud correcta. \Trayref
+l.53 ...eado tengan la longitud correcta. \Trayref
                                                   {D}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2083,7 +2117,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no D in font nullfont!
 ! Undefined control sequence.
-l.55 		\UCpaso
+l.54 		\UCpaso
                Verifica que el formato del correo electrónico sea el correc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2147,7 +2181,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.55 ...reo electrónico sea el correcto. \Trayref
+l.54 ...reo electrónico sea el correcto. \Trayref
                                                   {E}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2157,7 +2191,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no E in font nullfont!
 ! Undefined control sequence.
-l.56 		\UCpaso
+l.55 		\UCpaso
                Basado en la regla de negocio \BRref{RN01}{Unicidad del usuar...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2190,7 +2224,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.56 ...Cpaso Basado en la regla de negocio \BRref
+l.55 ...Cpaso Basado en la regla de negocio \BRref
                                                   {RN01}{Unicidad del usuari...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2257,7 +2291,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.57 		\UCpaso
+l.56 		\UCpaso
                Registra un nuevo usuario.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2289,7 +2323,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.58 		\UCpaso
+l.57 		\UCpaso
                Direcciona al usuario a la pantalla \IUref{IU05}{Login} y mue...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2328,7 +2362,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.58 ...Direcciona al usuario a la pantalla \IUref
+l.57 ...Direcciona al usuario a la pantalla \IUref
                                                   {IU05}{Login} y muestra el...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2363,8 +2397,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no j in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.58 ...{IU05}{Login} y muestra el mensaje \MSGref
-                                                  {MSG1}{Registro exitoso}.
+l.57 ...{IU05}{Login} y muestra el mensaje \MSGref
+                                                  {MSG1}{Operación exitosa}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2375,21 +2409,23 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no 1 in font nullfont!
-Missing character: There is no R in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{UCtrayectoria}.
@@ -2398,14 +2434,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 	\end{UCtrayectoria}
+l.58 	\end{UCtrayectoria}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 45--60
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--59
 []
  []
 
@@ -2416,7 +2452,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 		\begin{UCtrayectoriaA}
+l.60 		\begin{UCtrayectoriaA}
                              {A}{El usuario solicita cancelar la operación.}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2429,7 +2465,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 		\begin{UCtrayectoriaA}{A
+l.60 		\begin{UCtrayectoriaA}{A
                                }{El usuario solicita cancelar la operación.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2474,7 +2510,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.62 			\UCpaso
+l.61 			\UCpaso
                [\UCactor] Presiona el botón \IUbutton{Cancelar} de la panta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2484,7 +2520,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
-l.62 			\UCpaso[\UCactor
+l.61 			\UCpaso[\UCactor
                         ] Presiona el botón \IUbutton{Cancelar} de la panta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2510,7 +2546,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.62 ...aso[\UCactor] Presiona el botón \IUbutton
+l.61 ...aso[\UCactor] Presiona el botón \IUbutton
                                                   {Cancelar} de la pantalla ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2539,7 +2575,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.62 ... \IUbutton{Cancelar} de la pantalla \IUref
+l.61 ... \IUbutton{Cancelar} de la pantalla \IUref
                                                   {IU1}{Registrar Usuario}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2567,7 +2603,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.63 			\UCpaso
+l.62 			\UCpaso
                 Muestra la pantalla \IUref{IU5}{Login}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2593,7 +2629,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.63 			\UCpaso Muestra la pantalla \IUref
+l.62 			\UCpaso Muestra la pantalla \IUref
                                           {IU5}{Login}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2610,7 +2646,20 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 61--64
+! LaTeX Error: \begin{document} ended by \end{UCtrayectoriaA}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 			\end{UCtrayectoriaA}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--64
 []
  []
 
@@ -3608,11 +3657,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 80--84
 
  
 Here is how much of TeX's memory you used:
- 15 strings out of 493305
- 248 string characters out of 3129367
+ 18 strings out of 493305
+ 290 string characters out of 3129802
  55825 words of memory out of 3000000
- 3666 multiletter control sequences out of 15000+200000
+ 3669 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 6i,1n,6p,208b,66s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 6i,6n,6p,208b,66s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
