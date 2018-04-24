@@ -73,38 +73,38 @@
 \contentsline {subsection}{\numberline {6.9.1}Descripci\IeC {\'o}n completa}{34}{subsection.6.9.1}
 \contentsline {subsection}{\numberline {6.9.2}Atributos importantes}{34}{subsection.6.9.2}
 \contentsline {subsection}{\numberline {6.9.3}Trayectorias del Caso de Uso}{34}{subsection.6.9.3}
-\contentsline {section}{\numberline {6.10}CU15 Gestionar pagos por \IeC {\'a}rea}{36}{section.6.10}
+\contentsline {section}{\numberline {6.10}CU16 Visualizar comprobante de pago}{36}{section.6.10}
 \contentsline {subsection}{\numberline {6.10.1}Descripci\IeC {\'o}n completa}{36}{subsection.6.10.1}
 \contentsline {subsection}{\numberline {6.10.2}Atributos importantes}{36}{subsection.6.10.2}
 \contentsline {subsection}{\numberline {6.10.3}Trayectorias del Caso de Uso}{36}{subsection.6.10.3}
-\contentsline {section}{\numberline {6.11}CU16 Visualizar comprobante de pago}{38}{section.6.11}
-\contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{38}{subsection.6.11.1}
-\contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{38}{subsection.6.11.2}
-\contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{38}{subsection.6.11.3}
-\contentsline {section}{\numberline {6.12}CU35 Generar Excel}{39}{section.6.12}
-\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{39}{subsection.6.12.1}
-\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{39}{subsection.6.12.2}
-\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{39}{subsection.6.12.3}
-\contentsline {section}{\numberline {6.13}CU36 Visualizar archivo de pagos por a\IeC {\~n}o}{40}{section.6.13}
-\contentsline {subsection}{\numberline {6.13.1}Descripci\IeC {\'o}n completa}{40}{subsection.6.13.1}
-\contentsline {subsection}{\numberline {6.13.2}Atributos importantes}{40}{subsection.6.13.2}
-\contentsline {subsection}{\numberline {6.13.3}Trayectorias del Caso de Uso}{40}{subsection.6.13.3}
-\contentsline {section}{\numberline {6.14}CU37 Visualizar pagos por mes}{41}{section.6.14}
-\contentsline {subsection}{\numberline {6.14.1}Descripci\IeC {\'o}n completa}{41}{subsection.6.14.1}
-\contentsline {subsection}{\numberline {6.14.2}Atributos importantes}{41}{subsection.6.14.2}
-\contentsline {subsection}{\numberline {6.14.3}Trayectorias del Caso de Uso}{41}{subsection.6.14.3}
-\contentsline {section}{\numberline {6.15}CU40 Cargar pagos}{42}{section.6.15}
-\contentsline {subsection}{\numberline {6.15.1}Descripci\IeC {\'o}n completa}{42}{subsection.6.15.1}
-\contentsline {subsection}{\numberline {6.15.2}Atributos importantes}{42}{subsection.6.15.2}
-\contentsline {subsection}{\numberline {6.15.3}Trayectorias del Caso de Uso}{42}{subsection.6.15.3}
-\contentsline {section}{\numberline {6.16}CU42 Cargar comprobante sigaa}{43}{section.6.16}
+\contentsline {section}{\numberline {6.11}CU34 Visualizar archivo de pagos por a\IeC {\~n}o}{37}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{37}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{37}{subsection.6.11.2}
+\contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{37}{subsection.6.11.3}
+\contentsline {section}{\numberline {6.12}CU35 Generar Excel}{38}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{38}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{38}{subsection.6.12.2}
+\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{38}{subsection.6.12.3}
+\contentsline {section}{\numberline {6.13}CU37 Visualizar pagos por mes}{39}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Descripci\IeC {\'o}n completa}{39}{subsection.6.13.1}
+\contentsline {subsection}{\numberline {6.13.2}Atributos importantes}{39}{subsection.6.13.2}
+\contentsline {subsection}{\numberline {6.13.3}Trayectorias del Caso de Uso}{39}{subsection.6.13.3}
+\contentsline {section}{\numberline {6.14}CU40 Cargar pagos}{40}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}Descripci\IeC {\'o}n completa}{40}{subsection.6.14.1}
+\contentsline {subsection}{\numberline {6.14.2}Atributos importantes}{40}{subsection.6.14.2}
+\contentsline {subsection}{\numberline {6.14.3}Trayectorias del Caso de Uso}{40}{subsection.6.14.3}
+\contentsline {section}{\numberline {6.15}CU42 Cargar comprobante sigaa}{41}{section.6.15}
+\contentsline {subsection}{\numberline {6.15.1}Descripci\IeC {\'o}n completa}{41}{subsection.6.15.1}
+\contentsline {subsection}{\numberline {6.15.2}Atributos importantes}{41}{subsection.6.15.2}
+\contentsline {subsection}{\numberline {6.15.3}Trayectorias del Caso de Uso}{41}{subsection.6.15.3}
+\contentsline {section}{\numberline {6.16}CU43 Aceptar voucher de pago}{43}{section.6.16}
 \contentsline {subsection}{\numberline {6.16.1}Descripci\IeC {\'o}n completa}{43}{subsection.6.16.1}
 \contentsline {subsection}{\numberline {6.16.2}Atributos importantes}{43}{subsection.6.16.2}
 \contentsline {subsection}{\numberline {6.16.3}Trayectorias del Caso de Uso}{43}{subsection.6.16.3}
-\contentsline {section}{\numberline {6.17}CU43 Aceptar voucher de pago}{45}{section.6.17}
-\contentsline {subsection}{\numberline {6.17.1}Descripci\IeC {\'o}n completa}{45}{subsection.6.17.1}
-\contentsline {subsection}{\numberline {6.17.2}Atributos importantes}{45}{subsection.6.17.2}
-\contentsline {subsection}{\numberline {6.17.3}Trayectorias del Caso de Uso}{45}{subsection.6.17.3}
+\contentsline {section}{\numberline {6.17}CU44 Gestionar pagos por \IeC {\'a}rea}{44}{section.6.17}
+\contentsline {subsection}{\numberline {6.17.1}Descripci\IeC {\'o}n completa}{44}{subsection.6.17.1}
+\contentsline {subsection}{\numberline {6.17.2}Atributos importantes}{44}{subsection.6.17.2}
+\contentsline {subsection}{\numberline {6.17.3}Trayectorias del Caso de Uso}{44}{subsection.6.17.3}
 \contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{46}{chapter.7}
 \contentsline {subsection}{\numberline {7.0.1}IU9 Perfil de usuario}{47}{subsection.7.0.1}
 \contentsline {subsubsection}{Objetivo}{47}{section*.2}
