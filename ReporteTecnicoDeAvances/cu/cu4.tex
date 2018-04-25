@@ -1,0 +1,60 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+\begin{UseCase}{CU4}{Recuperar Contraseña}{
+		Otorga al usuario un mecanismo para que en caso de olvidar su contraseña pueda recuerla por medio de un correo electrónico.\\
+		
+}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{César Erick Hernández López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{10 de abril de 2018.}
+		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
+		\UCitem{Propósito}{El usuario puede obtener su contraseña en caso de olvidarla o extraviarla.}
+		\UCitem{Entradas}{
+		\begin{itemize}
+			\item Correo electrónico
+		\end{itemize}}
+		\UCitem{Salidas}{\MSGref{MSG5}{Correo  Enviado}.}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item Tener una cuenta activa registrada en el sistema.
+			\end{itemize}}
+		\UCitem{Postcondiciones}{Se proporciona una copia de la contraseña del usuario por medio de correo electrónico.}
+		\UCitem{Reglas de Negocio}{Ninguna}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG53}{Formato no válido}}
+		\UCitem{Tipo}{Primario}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU04}{Recuperar Contraseña}.
+		\UCpaso[\UCactor] Proporciona su correo electrónico registrado. 
+		\UCpaso[\UCactor] Presiona el botón \IUbutton{Enviar} \Trayref{A} \Trayref{B} \Trayref{C}
+		\UCpaso[\UCactor] Evía al correo proporcionado la información solicitada.
+		\UCpaso Muestra el mensaje  \MSGref{MSG5}{Correo Enviado} en la pantalla \IUref{IU05}{Login}
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU05}{Login}
+			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
+			\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla  \IUref{IU04}{Recuperar Contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU5}.
+		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla  \IUref{IU04}{Recuperar Contraseña}.
+		\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU5}.
+		\end{UCtrayectoriaA}
+
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

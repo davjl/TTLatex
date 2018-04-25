@@ -34,81 +34,97 @@
 \BOOKMARK [2][-]{subsection.6.2.1}{Descripci\363n completa}{section.6.2}% 34
 \BOOKMARK [2][-]{subsection.6.2.2}{Atributos importantes}{section.6.2}% 35
 \BOOKMARK [2][-]{subsection.6.2.3}{Trayectorias del Caso de Uso}{section.6.2}% 36
-\BOOKMARK [1][-]{section.6.3}{CU5 Login}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.3}{CU3 Verificar Cuenta}{chapter.6}% 37
 \BOOKMARK [2][-]{subsection.6.3.1}{Descripci\363n completa}{section.6.3}% 38
 \BOOKMARK [2][-]{subsection.6.3.2}{Atributos importantes}{section.6.3}% 39
 \BOOKMARK [2][-]{subsection.6.3.3}{Trayectorias del Caso de Uso}{section.6.3}% 40
-\BOOKMARK [1][-]{section.6.4}{CU8 Visualizar servicios}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.4}{CU4 Recuperar Contrase\361a}{chapter.6}% 41
 \BOOKMARK [2][-]{subsection.6.4.1}{Descripci\363n completa}{section.6.4}% 42
 \BOOKMARK [2][-]{subsection.6.4.2}{Atributos importantes}{section.6.4}% 43
 \BOOKMARK [2][-]{subsection.6.4.3}{Trayectorias del Caso de Uso}{section.6.4}% 44
-\BOOKMARK [1][-]{section.6.5}{CU9 Visualizar servicios dentales}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.5}{CU5 Login}{chapter.6}% 45
 \BOOKMARK [2][-]{subsection.6.5.1}{Descripci\363n completa}{section.6.5}% 46
 \BOOKMARK [2][-]{subsection.6.5.2}{Atributos importantes}{section.6.5}% 47
 \BOOKMARK [2][-]{subsection.6.5.3}{Trayectorias del Caso de Uso}{section.6.5}% 48
-\BOOKMARK [1][-]{section.6.6}{CU10 Visualizar servicios CELEX}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.6}{CU7 Visualizar Notificaciones}{chapter.6}% 49
 \BOOKMARK [2][-]{subsection.6.6.1}{Descripci\363n completa}{section.6.6}% 50
 \BOOKMARK [2][-]{subsection.6.6.2}{Atributos importantes}{section.6.6}% 51
 \BOOKMARK [2][-]{subsection.6.6.3}{Trayectorias del Caso de Uso}{section.6.6}% 52
-\BOOKMARK [1][-]{section.6.7}{CU11 Visualizar servicios de fotocopiado}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.7}{CU8 Visualizar servicios}{chapter.6}% 53
 \BOOKMARK [2][-]{subsection.6.7.1}{Descripci\363n completa}{section.6.7}% 54
 \BOOKMARK [2][-]{subsection.6.7.2}{Atributos importantes}{section.6.7}% 55
 \BOOKMARK [2][-]{subsection.6.7.3}{Trayectorias del Caso de Uso}{section.6.7}% 56
-\BOOKMARK [1][-]{section.6.8}{CU12 Visualizar servicios de biblioteca}{chapter.6}% 57
+\BOOKMARK [1][-]{section.6.8}{CU9 Visualizar servicios dentales}{chapter.6}% 57
 \BOOKMARK [2][-]{subsection.6.8.1}{Descripci\363n completa}{section.6.8}% 58
 \BOOKMARK [2][-]{subsection.6.8.2}{Atributos importantes}{section.6.8}% 59
 \BOOKMARK [2][-]{subsection.6.8.3}{Trayectorias del Caso de Uso}{section.6.8}% 60
-\BOOKMARK [1][-]{section.6.9}{CU14 Cargar comprobante de pago}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.9}{CU10 Visualizar servicios CELEX}{chapter.6}% 61
 \BOOKMARK [2][-]{subsection.6.9.1}{Descripci\363n completa}{section.6.9}% 62
 \BOOKMARK [2][-]{subsection.6.9.2}{Atributos importantes}{section.6.9}% 63
 \BOOKMARK [2][-]{subsection.6.9.3}{Trayectorias del Caso de Uso}{section.6.9}% 64
-\BOOKMARK [1][-]{section.6.10}{CU15 Gestionar pagos usuario}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.10}{CU11 Visualizar servicios de fotocopiado}{chapter.6}% 65
 \BOOKMARK [2][-]{subsection.6.10.1}{Descripci\363n completa}{section.6.10}% 66
 \BOOKMARK [2][-]{subsection.6.10.2}{Atributos importantes}{section.6.10}% 67
 \BOOKMARK [2][-]{subsection.6.10.3}{Trayectorias del Caso de Uso}{section.6.10}% 68
-\BOOKMARK [1][-]{section.6.11}{CU16 Visualizar comprobante de pago}{chapter.6}% 69
+\BOOKMARK [1][-]{section.6.11}{CU12 Visualizar servicios de biblioteca}{chapter.6}% 69
 \BOOKMARK [2][-]{subsection.6.11.1}{Descripci\363n completa}{section.6.11}% 70
 \BOOKMARK [2][-]{subsection.6.11.2}{Atributos importantes}{section.6.11}% 71
 \BOOKMARK [2][-]{subsection.6.11.3}{Trayectorias del Caso de Uso}{section.6.11}% 72
-\BOOKMARK [1][-]{section.6.12}{CU18 Visualizar pagos por fecha}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.12}{CU14 Cargar comprobante de pago}{chapter.6}% 73
 \BOOKMARK [2][-]{subsection.6.12.1}{Descripci\363n completa}{section.6.12}% 74
 \BOOKMARK [2][-]{subsection.6.12.2}{Atributos importantes}{section.6.12}% 75
 \BOOKMARK [2][-]{subsection.6.12.3}{Trayectorias del Caso de Uso}{section.6.12}% 76
-\BOOKMARK [1][-]{section.6.13}{CU32 Visualizar comprobante sigaa}{chapter.6}% 77
+\BOOKMARK [1][-]{section.6.13}{CU15 Gestionar pagos usuario}{chapter.6}% 77
 \BOOKMARK [2][-]{subsection.6.13.1}{Descripci\363n completa}{section.6.13}% 78
 \BOOKMARK [2][-]{subsection.6.13.2}{Atributos importantes}{section.6.13}% 79
 \BOOKMARK [2][-]{subsection.6.13.3}{Trayectorias del Caso de Uso}{section.6.13}% 80
-\BOOKMARK [1][-]{section.6.14}{CU35 Visualizar pagos por mes}{chapter.6}% 81
+\BOOKMARK [1][-]{section.6.14}{CU16 Visualizar comprobante de pago}{chapter.6}% 81
 \BOOKMARK [2][-]{subsection.6.14.1}{Descripci\363n completa}{section.6.14}% 82
 \BOOKMARK [2][-]{subsection.6.14.2}{Atributos importantes}{section.6.14}% 83
 \BOOKMARK [2][-]{subsection.6.14.3}{Trayectorias del Caso de Uso}{section.6.14}% 84
-\BOOKMARK [1][-]{section.6.15}{CU36 Visualizar pagos por fecha}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.15}{CU18 Visualizar historial de pagos}{chapter.6}% 85
 \BOOKMARK [2][-]{subsection.6.15.1}{Descripci\363n completa}{section.6.15}% 86
 \BOOKMARK [2][-]{subsection.6.15.2}{Atributos importantes}{section.6.15}% 87
 \BOOKMARK [2][-]{subsection.6.15.3}{Trayectorias del Caso de Uso}{section.6.15}% 88
-\BOOKMARK [1][-]{section.6.16}{CU38 Gestionar pagos contadur\355a}{chapter.6}% 89
+\BOOKMARK [1][-]{section.6.16}{CU32 Visualizar comprobante sigaa}{chapter.6}% 89
 \BOOKMARK [2][-]{subsection.6.16.1}{Descripci\363n completa}{section.6.16}% 90
 \BOOKMARK [2][-]{subsection.6.16.2}{Atributos importantes}{section.6.16}% 91
 \BOOKMARK [2][-]{subsection.6.16.3}{Trayectorias del Caso de Uso}{section.6.16}% 92
-\BOOKMARK [1][-]{section.6.17}{CU40 Cargar pagos}{chapter.6}% 93
+\BOOKMARK [1][-]{section.6.17}{CU34 Visualizar archivo de pagos por a\361o}{chapter.6}% 93
 \BOOKMARK [2][-]{subsection.6.17.1}{Descripci\363n completa}{section.6.17}% 94
 \BOOKMARK [2][-]{subsection.6.17.2}{Atributos importantes}{section.6.17}% 95
 \BOOKMARK [2][-]{subsection.6.17.3}{Trayectorias del Caso de Uso}{section.6.17}% 96
-\BOOKMARK [1][-]{section.6.18}{CU41 Cargar comprobante sigaa}{chapter.6}% 97
+\BOOKMARK [1][-]{section.6.18}{CU35 Visualizar pagos por mes}{chapter.6}% 97
 \BOOKMARK [2][-]{subsection.6.18.1}{Descripci\363n completa}{section.6.18}% 98
 \BOOKMARK [2][-]{subsection.6.18.2}{Atributos importantes}{section.6.18}% 99
 \BOOKMARK [2][-]{subsection.6.18.3}{Trayectorias del Caso de Uso}{section.6.18}% 100
-\BOOKMARK [1][-]{section.6.19}{CU42 Aceptar comprobante de pago}{chapter.6}% 101
+\BOOKMARK [1][-]{section.6.19}{CU36 Visualizar pagos por fecha}{chapter.6}% 101
 \BOOKMARK [2][-]{subsection.6.19.1}{Descripci\363n completa}{section.6.19}% 102
 \BOOKMARK [2][-]{subsection.6.19.2}{Atributos importantes}{section.6.19}% 103
 \BOOKMARK [2][-]{subsection.6.19.3}{Trayectorias del Caso de Uso}{section.6.19}% 104
-\BOOKMARK [1][-]{section.6.20}{CU44 Gestionar pagos por \341rea}{chapter.6}% 105
+\BOOKMARK [1][-]{section.6.20}{CU38 Gestionar pagos contadur\355a}{chapter.6}% 105
 \BOOKMARK [2][-]{subsection.6.20.1}{Descripci\363n completa}{section.6.20}% 106
 \BOOKMARK [2][-]{subsection.6.20.2}{Atributos importantes}{section.6.20}% 107
 \BOOKMARK [2][-]{subsection.6.20.3}{Trayectorias del Caso de Uso}{section.6.20}% 108
-\BOOKMARK [1][-]{section.6.21}{CU45 Generar Excel}{chapter.6}% 109
+\BOOKMARK [1][-]{section.6.21}{CU40 Cargar pagos}{chapter.6}% 109
 \BOOKMARK [2][-]{subsection.6.21.1}{Descripci\363n completa}{section.6.21}% 110
 \BOOKMARK [2][-]{subsection.6.21.2}{Atributos importantes}{section.6.21}% 111
 \BOOKMARK [2][-]{subsection.6.21.3}{Trayectorias del Caso de Uso}{section.6.21}% 112
-\BOOKMARK [0][-]{chapter.7}{Modelo de la Interacci\363n}{}% 113
-\BOOKMARK [1][-]{subsection.7.0.1}{IU9 Perfil de usuario}{chapter.7}% 114
+\BOOKMARK [1][-]{section.6.22}{CU41 Cargar comprobante sigaa}{chapter.6}% 113
+\BOOKMARK [2][-]{subsection.6.22.1}{Descripci\363n completa}{section.6.22}% 114
+\BOOKMARK [2][-]{subsection.6.22.2}{Atributos importantes}{section.6.22}% 115
+\BOOKMARK [2][-]{subsection.6.22.3}{Trayectorias del Caso de Uso}{section.6.22}% 116
+\BOOKMARK [1][-]{section.6.23}{CU42 Aceptar comprobante de pago}{chapter.6}% 117
+\BOOKMARK [2][-]{subsection.6.23.1}{Descripci\363n completa}{section.6.23}% 118
+\BOOKMARK [2][-]{subsection.6.23.2}{Atributos importantes}{section.6.23}% 119
+\BOOKMARK [2][-]{subsection.6.23.3}{Trayectorias del Caso de Uso}{section.6.23}% 120
+\BOOKMARK [1][-]{section.6.24}{CU44 Gestionar pagos por \341rea}{chapter.6}% 121
+\BOOKMARK [2][-]{subsection.6.24.1}{Descripci\363n completa}{section.6.24}% 122
+\BOOKMARK [2][-]{subsection.6.24.2}{Atributos importantes}{section.6.24}% 123
+\BOOKMARK [2][-]{subsection.6.24.3}{Trayectorias del Caso de Uso}{section.6.24}% 124
+\BOOKMARK [1][-]{section.6.25}{CU45 Generar Excel}{chapter.6}% 125
+\BOOKMARK [2][-]{subsection.6.25.1}{Descripci\363n completa}{section.6.25}% 126
+\BOOKMARK [2][-]{subsection.6.25.2}{Atributos importantes}{section.6.25}% 127
+\BOOKMARK [2][-]{subsection.6.25.3}{Trayectorias del Caso de Uso}{section.6.25}% 128
+\BOOKMARK [0][-]{chapter.7}{Modelo de la Interacci\363n}{}% 129
+\BOOKMARK [1][-]{subsection.7.0.1}{IU9 Perfil de usuario}{chapter.7}% 130

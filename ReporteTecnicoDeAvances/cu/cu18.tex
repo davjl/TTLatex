@@ -8,7 +8,7 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-\begin{UseCase}{CU18}{Visualizar pagos por fecha}{
+\begin{UseCase}{CU18}{Visualizar historial de pagos}{
 		Permite a los Alumno, Empleado y Externo visualizar su historial de pagos realizados.
 	}
 		\UCitem{Versión}{0.1}
@@ -39,7 +39,8 @@
 	\end{UCtrayectoria}
 	
 	{\bf Puntos de extensión}\\\\
-	{\bf Causa de la extensión:}El actor requiere visualizar el comprobante sigaa.\\
+	{\bf Causa de la extensión:}El actor da clic en el icono 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}} para visualizar el comprobante sigaa.\\
 	{\bf Región de la trayectoria:}Paso 3 de la Trayectoria Principal.\\
 	{\bf Extiende a:}\UCref{CU32}.\\		
 %-------------------------------------- TERMINA descripción del caso de uso.

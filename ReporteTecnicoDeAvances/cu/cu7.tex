@@ -1,0 +1,41 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+\begin{UseCase}{CU7}{Visualizar Notificaciones}{
+		Proporciona al cajero, subdirector, usuario un medio de información capaz de informarle sobre los cambios de estado en la gestión de pagos dentro del sistema.\\
+}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{César Erick Hernández López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{10 de abril de 2018.}
+		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo. Cajero, subdirector}
+		\UCitem{Propósito}{Informar cambios de estado (aprobado, rechazado, en revisión) de los pagos en caja así como informar a el cajero que han llegado nuevos pagos por revisar.}
+		\UCitem{Entradas}{Ninguna}
+		\UCitem{Salidas}{ \MSGref{MSG7}{Nuevo Pago en Espera.}}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item Un usuario debe subir un archivo de pago para que se cree una notificación.
+			\end{itemize}
+}
+		\UCitem{Postcondiciones}{Se informa al cajero la aparición de un nuevo pago.}
+		\UCitem{Reglas de Negocio}{Ninguna}
+		\UCitem{Errores}{Ninguna}
+		\UCitem{Tipo}{Primario}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU05.1}{Bienvenida}.
+		\UCpaso Muestra el mensaje \MSGref{MSG7}{Nuevo Pago en Espera}
+		\UCpaso[\UCactor] Presiona el botón \IUbutton{Notificación}
+		\UCpaso Dirige a la pantalla \IUref{IU01}{Gestionar Pagos}.
+	\end{UCtrayectoria}
+	
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
