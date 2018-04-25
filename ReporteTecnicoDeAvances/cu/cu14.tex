@@ -31,15 +31,19 @@
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el icono
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
+		de cualquier pantalla \IUref{IU9}{Visualizar servicios dentales},\IUref{IU10}{Visualizar servicios dentales},\IUref{IU11}{Visualizar servicios de fotocopiado} y \IUref{IU12}{Visualizar servicios biblioteca}
 		\UCpaso Muestra la pantalla \IUref{IU14}{Cargar Comprobante de Pago}.
-		\UCpaso[\UCactor] Presiona el icono...
+		\UCpaso[\UCactor] Presiona el icono 
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
 		\UCpaso Muestra un selector de archivos.
 		\UCpaso[\UCactor] Selecciona un archivo y da clic en el botón \IUbutton{Aceptar} del selector de archivos. 
 		\UCpaso Muestra el nombre del archivo en un campo de la pantalla \IUref{IU14}{Cargar Comprobante de Pago}.
 		\UCpaso[\UCactor] Presiona el botón \IUbutton{Enviar} de la pantalla \IUref{IU14}{Cargar Comprobante de Pago}.
 		\UCpaso Valida si el formato del archivo es el correcto. \Trayref{A}
 		\UCpaso Cambia el estado del archivo a PENDIENTE.\Trayref{B}
-		\UCpaso Redirige a la pantalla \IUref{IU16}{Gestionar Pagos Usuario}.
+		\UCpaso Redirige a la pantalla \IUref{IU15}{Gestionar Pagos Usuario}.
 	\end{UCtrayectoria}
 
 		\begin{UCtrayectoriaA}{A}{El usuario adjuntó un archivo con formato no válido.}
@@ -49,7 +53,7 @@
 
 		\begin{UCtrayectoriaA}{B}{El sistema no puede procesar el envío.}
 		\UCpaso Muestra el mensaje \MSGref{MSG57}{Operación no completada}.
-		\UCpaso[\UCactor] Continua en el paso 4 del caso de uso \UCref{CU14}.
+		\UCpaso[\UCactor] Continua en el paso 7 del caso de uso \UCref{CU14}.
 	\end{UCtrayectoriaA}
 
 

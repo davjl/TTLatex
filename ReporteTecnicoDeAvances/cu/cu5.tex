@@ -26,17 +26,15 @@
 		\UCitem{Precondiciones}{Tener un registro previo en el sistema}
 		\UCitem{Postcondiciones}{Ninguna.}
 		\UCitem{Reglas de Negocio}{Ninguna.}
-		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG55-} {Usuario y/o contraseña incorrectos.}}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG55-} {Usuario y/o contraseña incorrectos.}}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.%\label{CU17Login}.
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login} con opciones solo para el actor Usuario de recuperar contraseña y registar usuario.%\label{CU17Login} .
 		\UCpaso[\UCactor] Ingresa correo electrónico, contraseña y presiona el botón de \IUbutton {Ingresar}
 		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios. \Trayref{A}
-		\UCpaso ----Verifica que los campos ingresados sean válidos.\Trayref{B}
-		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{C}
-		\UCpaso Verifica que el correo electrónico y la contraseña correspondan.\Trayref{D}
+		\UCpaso Verifica que el correo electrónico y la contraseña correspondan.\Trayref{B}
 		\UCpaso Obtiene el perfil correspondiente a la cuenta y muestra la pantalla \IUref{IU5.1}{Bienvenida}
 	\end{UCtrayectoria}
 		
@@ -44,21 +42,20 @@
 			\UCpaso Muestra el Mensaje {\bf MSG50-} ''Campo obligatorio'' en la pantalla \IUref{IU5}{Login} 
 			\UCpaso Continua en el paso 2 del \UCref{CU5}.
 		\end{UCtrayectoriaA}
-		
-		\begin{UCtrayectoriaA}{B}{El password es incorrecto}
-			\UCpaso  Muestra el Mensaje {\bf MSG51-} ``Campo no válido.'' en la pantalla  \IUref{IU5}{Login} 
-			\UCpaso Continua en el paso \ref{CU1login} del \UCref{CU5}.
-		\end{UCtrayectoriaA}
-		
-		\begin{UCtrayectoriaA}{C}{El correo electronico es incorrecto}
-			\UCpaso  Muestra el Mensaje {\bf MSG53-} ``Formato no válido.'' en la pantalla \IUref{IU5}{Login} 
-			\UCpaso Continua en el paso 2 del \UCref{CU5}
-		\end{UCtrayectoriaA}
 
-		\begin{UCtrayectoriaA}{D}{Usuario y/o contraseña incorrectos}
+		\begin{UCtrayectoriaA}{B}{Usuario y/o contraseña incorrectos}
 			\UCpaso  Muestra el Mensaje {\bf MSG55-} ``Usuario y/o contraseña incorrectos.'' en la pantalla \IUref{IU5}{Login} 
 			\UCpaso Continua en el paso 2 del \UCref{CU5}
 		\end{UCtrayectoriaA}
+	
+	{\bf Puntos de extensión}\\\\
+	{\bf Causa de la extensión:}El Usuario selecciona la opción de recuperar contraseña.\\
+	{\bf Región de la trayectoria:}Paso 1 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU4}.\\\\
+	
+	{\bf Causa de la extensión:}El Usuario selecciona la opción de registrar usuario.\\
+	{\bf Región de la trayectoria:}Paso 1 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU1}.
 
 %		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}
 %			\UCpaso Muestra el Mensaje {\bf MSG2-}``El Estudiante [{\em Número de Boleta}] no cumple con los requisitos para inscribirse al Seminario [{\em Nombre del Seminario seleccionado}].''.

@@ -8,40 +8,34 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-\begin{UseCase}{CU42}{Cargar comprobante sigaa}{
-		Agrega en el sistema el archivo comprobante sigaa, validando los pagos recibidos.
+\begin{UseCase}{CU42}{Aceptar comprobante de pago}{
+		Permite al Cajero registra en el sistema el comprobante de pago aprobado.
 	}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{David De Jesús López.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
 		\UCitem{Actor}{Administrador Caja.}
-		\UCitem{Propósito}{Tener el registro en el sistema el comprobante sigaa.}
+		\UCitem{Propósito}{Cambiar el estado del comprobante de pendiente a aceptado.}
 		\UCitem{Entradas}{Ninguna.}
-		\UCitem{Salidas}{\MSGref{MSG6-}{Archivo guardado correctamente}.}
+		\UCitem{Salidas}{\MSGref{MSG5-}{Comprobante aceptado}.}
 		\UCitem{Precondiciones}{Ninguna.}
-		\UCitem{Postcondiciones}{Ninguna.}
-		\UCitem{Reglas de Negocio}{Ninguna.}
-		\UCitem{Errores}{\MSGref{MSG60-}{Error al guardar comprobannte sigaa}}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{\BRref{RN20}{Validaciones de comprobante de pago}.}
+		\UCitem{Errores}{\MSGref{MSG59-}{No se pudo cambiar el estado del comprobante}}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Da clic en el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subir_archivo}}}
-		en la pantalla \IUref{IU15}{Gestionar pagos}.
-		\UCpaso Redirecciona a la pagina \IUref{IU42}{Guardar comprobante sigaa}
-		\UCpaso[\UCactor] Da clic en la imagen ...
-		\UCpaso Despliega un selector de archivos.
-		\UCpaso[\UCactor] Selecciona el archivo sigaa.
-		\UCpaso Cierra el selector de archivos
-		\UCpaso[\UCactor] Da clic en la imagen ...
-		\UCpaso Sube el archivo en el sistema. \Trayref{A} 
-		\UCpaso Muestra en la pantalla \IUref{IU42}{Guardar comprobante sigaa} el mensaje {\bf MSG6-} ''Archivo guardado correctamente''.
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Aceptar} en la pantalla \IUref{IU16}{Visualizar comprobante pago}.
+		\UCpaso Sube el archivo en el sistema. \Trayref{A}
+		\UCpaso Muestra El mensaje {\bf MSG5-} ''Comprobante aceptado''.
+		\UCpaso Redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}. 
 	\end{UCtrayectoria}
 	
 	\begin{UCtrayectoriaA}{A}{El sistema no se encuentra disponible}
-		\UCpaso Muestra el Mensaje {\bf MSG60-} ''Error al guardar comprobante sigaa'' en la pantalla \IUref{IU41}{Adjuntar pago sigaa} 
-		\UCpaso[\UCactor] Continua en 7 del \UCref{CU42}.
+		\UCpaso Muestra el Mensaje {\bf MSG59-} ''No pudo cambiarse el estado del comprobante'' en la pantalla \IUref{IU16}{Visualizar comprobante pago} 
+		\UCpaso[\UCactor] Continua en 1 del \UCref{CU42}.
 	\end{UCtrayectoriaA}
 		
 %-------------------------------------- TERMINA descripción del caso de uso.

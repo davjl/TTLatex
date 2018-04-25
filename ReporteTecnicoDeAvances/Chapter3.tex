@@ -1,0 +1,76 @@
+% Chapter 3
+
+\chapter{Analisis}
+\label{Capitulo 3} 
+
+\section{Situaci\'on actual}
+
+Para una idea clara del problema que se ataca, es necesario dar una explicación del actual funcionamiento de trabajo y comunicaci\'on entre las \'areas de servicios y recursos financieros.\\
+Comencemos con el \'area de servicios dentales, el cual al recibir un servicio dental, es necesario llevar una nota de pago otorgada por el/la dentista en turno y realizar el pago de la misma en \'area de caja otorgando informaci\'on de boleta para casos de personal institucional y curp en caso de personal externo, seguido a esto se nos otorgar\'a un comprobante de pago realizado, el cual tendr\'a que ser llevado al \'area de dentales y ser almacenado por el dentista.\\
+Junto a esto, el archivo de expediente cl\'inico para el alumno sera almacenado por reglamento por un periodo de 5 años.
+Siguiendo con otro departamento, CELEX maneja un proceso de diferente en comparaci\'on con dentales al tener la necesidad de tener que realizar un pago en una sucursal BANCOMER y llevar el vaucher de pago  a caja, anotando en el vaucher informaci\'on que se requiere para la inscripci\'on (nombre,boleta,curp, idioma y nivel) , generando un nuevo comprobante que sera llevado al departamento de CELEX donde se terminara el proceso de inscripci\'on.
+
+\section{Planteamiento del problema}
+
+A pesar de que dentro de los departamentos de servicios ya se cuenta con un equipo de computo y conexión a Internet, en ninguna \'area se tiene un sistema que ayude a la administraci\'on de ingresos o gesti\'on de servicios, obligando al personal a tener que realizar todos sus procesos de gesti\'on manualmente o con programas de su mayor entendimiento.
+Aunado a que existen distintos programas de administraci\'on, en los departamentos de CELEX, Biblioteca, Dentales e Impresiones, no se tiene un sistema que comunique directamente con el servicio de caja para confirmar un pago, y solo mantienen una comunicaci\'on por medio de comprobantes impresos. 
+Adem\'as de esta falta de comunicaci\'on entre \'areas de servicios y caja, tambi\'en se obliga al usuario (cliente) a tener que realizar un acto presencial al tener que realizar su pago, limitando el posible uso de recibir pagos electr\'onicos o validar los pagos de forma digital sin estar obligado a presentarse en ese momento.
+
+\subsection{Estimación de consecuencias}
+
+\begin{itemize}
+	\item Consecuencia 1. Gasto de recursos
+	\begin{itemize}
+		\item Gasto de hojas en comprobantes para alumno y gesti\'on de caja de aproximadamente 100 a 200 hojas al d\'ia.
+		\item Gasto de tinta para impresiones.
+		\item Por reglamento se tiene establecido que los comprobantes generados deben ser almacenados hasta por 5 años, ocupando 					  espacio f\'isico.
+	\end{itemize}
+	
+	\item Consecuencia 2. Evasión de pago dental
+	\begin{itemize}
+		\item El alumno no esta supervisado a realizar el pago luego de haber recibido el servicio, evitando la realización del 				pago.
+	\end{itemize}
+\end{itemize}
+
+\section{Objetivo general}
+Desarrollar una aplicaci\'on m\'ovil sobre el sistema operativo Android en conjunto con una aplicaci\'on web para permitir el seguimiento de los pagos realizados en el departamento de recursos financieros de la ESCOM, limitándose al pago de multas de biblioteca, reposici\'on de credencial de biblioteca, servicio de impresiones, dentales y CELEX, con la finalidad de optimizar en tiempo, recursos materiales y espacios f\'isicos en el proceso entre los departamentos involucrados y alumnos.
+
+\section{Objetivos particulares}
+\begin{itemize}
+	\item Optimizar recurso material, espec\'ificamente papel durante el proceso de pago de alg\'un servicio, mediante la 						  digitalizaci\'on de documentos.
+	\item Optimizar el espacio f\'isico de los departamentos involucrados por medio de la reducci\'on de comprobantes de pago, notas 		  de pago e historiales.
+	\item Agilizar el proceso de seguimiento a pagos tanto para el alumno, como para las \'areas involucradas.
+	\item Desarrollar una herramienta de reporteo derivada del historial de servicios pagados, que les permita a los distintos 				  departamentos llevar a cabo toma de decisiones.
+	\item Permitir el acceso a la aplicaci\'on web a aquellos alumnos carentes de tel\'efono inteligente Android para hacer uso de 			  las funciones b\'asicas de este sistema (consulta de servicios, historial y servicios por efectuar).
+	\item Brindar una herramienta tecnol\'ogica escalable para futuros desarrollos.
+\end{itemize}
+
+\section{Justificaci\'on}
+Hoy en d\'ia, la ESCOM ofrece distintos servicios a su comunidad a cambio de un pago efectuado en el departamento de recursos financieros con el objetivo de contar con ingresos auto generados para el continuo desarrollo de la instituci\'on. Ejemplos de este tipo de ingreso son: pago de multas de biblioteca, reposici\'on de credencial de biblioteca, servicio de impresiones, dentales y CELEX. Estos servicios requieren de un procedimiento post pago que involucra una gran demanda de recurso material y espacio f\'isico, refiriéndonos con esto al alto consumo de papel al momento de la impresi\'on de boletas de pago y/o notas de pago, as\'i como su almacenamiento, debiendo de estar guardadas por un periodo de cinco años por motivos fiscales, las cuales una vez transcurrido este periodo pasan a ser parte de un archivo muerto. Adem\'as, a esto se suma el tiempo que le toma a la comunidad realizar este proceso, puesto que una vez realizado el pago se tiene que esperar a la entrega de un comprobante f\'isico, el cual se otorgar\'a al \'area correspondiente (biblioteca, centro de impresiones, CELEX, servicio dental) con el fin de comprobar el pago. En todos los casos este comprobante sirve como garant\'ia para la prestaci\'on de dicho servicio, lo que implica una obligaci\'on personal para el alumno el realizar una copia del mismo, la cual en muchas de las ocasiones por motivos de tiempo no la efectuamos, quedándonos de esta manera sin un amparo ante cualquier complicaci\'on que surja derivado del pago del servicio.\\
+
+Es por eso que desarrollaremos una aplicaci\'on m\'ovil que permitirá\'a dar  seguimiento a los pagos efectuados en la ESCOM. De este modo, pretendemos optimizar parte del proceso manual, dejando de lado la impresi\'on de notas de pago al menos para la entrega al alumno y permitiéndoles conservar un comprobante de pago de forma permanente.\\
+
+Adem\'as de crear un medio de interacci\'on web para los proveedores de los servicios, con lo cual se pueda almacenar y administrar la informaci\'on sobre el alumno, su pago y su estatus en el departamento.\\
+
+As\'i, se buscar\'a agilizar los procesos derivados de un pago en caja, de manera que al ser realizados se sustituya el papel del comprobante y se genere un archivo digital que ayudar\'ia a ahorrar recursos materiales (papel y t\'oner), espacios f\'isicos y tiempo. Permitiendo tambi\'en, una interacci\'on con los distintos departamentos involucrados (sala de impresiones, biblioteca, CELEX ESCOM, servicios dentales) para un mejor seguimiento y comunicaci\'on con el alumnado.
+
+\section{Descripci\'on de la propuesta}
+
+\subsection{Alcance del proyecto}
+El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a con los siguientes requerimientos.
+\begin{itemize}
+	\item Los administrativos en \'areas de servicios podr\'an visualizar y gestionar los pagos que reciban de caja para realizar un 		  servicio
+	\item Los administrativos en \'areas de biblioteca y dentales podr\'an mandar una nota digital de pago a los usuarios.
+	\item El contador y el encargado de recursos financieros podr\'an visualizar todos los conceptos de pago e imprimirlos en caso 			  de ser necesarios
+	\item El personal de caja podr\'a validar dos tipos de pago, en efectivo y por medio de un v\'aucher de pago.
+	\item El personal de caja podr\'a visualizar, aceptar o rechazar los v\'aucher de pago.
+	\item El alumno podr\'a visualizar los servicios disponibles y sus precios desde una pagina web o aplicaci\'on m\'ovil
+	\item El alumno podr\'a seleccionar entre realiar un pago por transferencia o mandar una nota de pago a caja para realizar el 				  pago en efectivo.
+	\item El alumno podr\'a agendar citas de servicio con el \'area de dentales.
+	\item Los alumnos podr\'an escoger el metodo de pago que realizen, por transferencia o efectivo.
+\end{itemize}
+
+\subsection{Requerimientos Funcionales}
+
+\textbf{RF-1:} El alumno solo podr\'a tener una unica cuenta asociada.
+ 

@@ -1,0 +1,40 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU45}{Generar Excel}{
+		Permite a la Coordinadora CELEX exportar todos los registros de pagos confirmados por caja a una hoja de cálculo en Excel. La Coordinadora CELEX puede generar la hoja de cálculo en el momento que lo requiera.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{17 de abril de 2018.}
+		\UCitem{Actor}{Coordinadora CELEX.}
+		\UCitem{Propósito}{Exportar todos los pagos confirmados por caja a una hoja de cálculo en Excel.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Archivo en formato .xls}
+		\UCitem{Precondiciones}{Debe de existir por lo menos un pago confirmado por caja.}
+		\UCitem{Postcondiciones}{Ninguna.}
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{\MSGref{MSG57}{Operación no completada}}
+		\UCitem{Tipo}{Opcional.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Generar Excel} de la pantalla \IUref{IU44}{Gestionar pagos por área}.
+			\UCpaso Realiza la exportación de los registros de pagos a una hoja de cálculo.
+			\UCpaso Genera un archivo con formato .xls \Trayref{A}
+	\end{UCtrayectoria}
+
+	\begin{UCtrayectoriaA}{A}{El sistema no puede generar el archivo .xls}
+		\UCpaso Muestra el mensaje \MSGref{MSG57}{Operación no completada}.
+		\UCpaso[\UCactor] Continua en el paso 1 del caso de uso \UCref{CU45}.
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
