@@ -3,20 +3,13 @@
 \chapter{Analisis}
 \label{Capitulo 3} 
 
-\section{Situaci\'on actual}
-
-Para una idea clara del problema que se ataca, es necesario dar una explicación del actual funcionamiento de trabajo y comunicaci\'on entre las \'areas de servicios y recursos financieros.\\
-Comencemos con el \'area de servicios dentales, el cual al recibir un servicio dental, es necesario llevar una nota de pago otorgada por el/la dentista en turno y realizar el pago de la misma en \'area de caja otorgando informaci\'on de boleta para casos de personal institucional y curp en caso de personal externo, seguido a esto se nos otorgar\'a un comprobante de pago realizado, el cual tendr\'a que ser llevado al \'area de dentales y ser almacenado por el dentista.\\
-Junto a esto, el archivo de expediente cl\'inico para el alumno sera almacenado por reglamento por un periodo de 5 años.
-Siguiendo con otro departamento, CELEX maneja un proceso de diferente en comparaci\'on con dentales al tener la necesidad de tener que realizar un pago en una sucursal BANCOMER y llevar el vaucher de pago  a caja, anotando en el vaucher informaci\'on que se requiere para la inscripci\'on (nombre,boleta,curp, idioma y nivel) , generando un nuevo comprobante que sera llevado al departamento de CELEX donde se terminara el proceso de inscripci\'on.
-
 \section{Planteamiento del problema}
 
 A pesar de que dentro de los departamentos de servicios ya se cuenta con un equipo de computo y conexión a Internet, en ninguna \'area se tiene un sistema que ayude a la administraci\'on de ingresos o gesti\'on de servicios, obligando al personal a tener que realizar todos sus procesos de gesti\'on manualmente o con programas de su mayor entendimiento.
 Aunado a que existen distintos programas de administraci\'on, en los departamentos de CELEX, Biblioteca, Dentales e Impresiones, no se tiene un sistema que comunique directamente con el servicio de caja para confirmar un pago, y solo mantienen una comunicaci\'on por medio de comprobantes impresos. 
 Adem\'as de esta falta de comunicaci\'on entre \'areas de servicios y caja, tambi\'en se obliga al usuario (cliente) a tener que realizar un acto presencial al tener que realizar su pago, limitando el posible uso de recibir pagos electr\'onicos o validar los pagos de forma digital sin estar obligado a presentarse en ese momento.
 
-\subsection{Estimación de consecuencias}
+\section{Problemáticas actuales}
 
 \begin{itemize}
 	\item Consecuencia 1. Gasto de recursos
@@ -70,7 +63,21 @@ El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a 
 	\item Los alumnos podr\'an escoger el metodo de pago que realizen, por transferencia o efectivo.
 \end{itemize}
 
-\subsection{Requerimientos Funcionales}
 
-\textbf{RF-1:} El alumno solo podr\'a tener una unica cuenta asociada.
+\subsection{Propuesta de software}
+  Dentro de la arquitectura de nuestro sistema encontraremos la interacción de varios elementos que llevaran acabo una función importante para el correcto funcionamiento. Entre estos elementos estará un servidor web para el alojamiento de la pagina y una base de datos para la persistencia de información ORM, su core y módulo Spring MVC. \\ 
+  
+ \subsection{Spring Boot}
+ Spring Boot es un framework que se ha empleado en este trabajo terminal debido a que su arquitectura se adapta a los requerimientos de este sistema, tiene ciertas ventajas que con ayuda de otras herramientas como Apache Maven nos han ayudado a levantar una infraestructura de manera relativamente sencilla, los módulos más reelevantes utilizados para este trabajo son: el módulo de mails, el módulo de tratamiento de datos. \\
  
+ Otro de los enfoques utilizados para el desarrollo de este trabajo es la inyección de dependencias, el poder inyectar dependencias dentro del proyecto permite dividir el proyecto de forma más natural en MVC (modelo, vista, controlador), se ha incluido derivado de ello el uso de anotaciónes para incluir referencias a servicios en capas más internas del sistema, así en conjunto con las tecnologías como Hibernate se ha podido contruir una infraestructura estable. \\
+ 
+\subsection{Struts 2}
+ Una de las ventajas que encontramos en usar Struts 2 es la fácil inclusión de controladores con la vista, el presente sistema utiliza una arquitectura mvc, cabe mencionar que entre otras tecnologías utiliza para maquetar pantallas Bootstrap esto en conjunto permite crear vistas complejas con una complejidad baja y al mismo tiempo gracias a Struts2 icluir funcionalidades más robustas.\\
+
+ Las acciones de Struts 2 implementan objetos JavaBeans (clases Java simples) para cada grupo de datos enviado en la consulta. Cada parámetro de la consulta se declara en la clase de acción con un nombre idéntico para realizar automáticamente la asignación de valores. La nalidad de la acción es devolver una cadena de caracteres, permitiendo seleccionar el resultado que se va a mostrar.\\
+
+\subsection{Hibernate}
+Hibernate es una herramienta de Mapeo Objeto-Relacional (Object-Relational Mapping) para la plataforma JAVA que facilita el mapeo de atributos entre una base de datos relacional tradicional y el modelo de objetos de una aplicación, mediante archivos declarativos (XML) o anotaciones en los beans de las entidades que permiten establecer este tipo de relaciones.
+Cuando desarrollamos aplicaciones en muchos de los casos ocurre que en muchas secciones todo termina siendo un conjunto de ABM (alta, baja y modicaciones de datos) que luego consultamos. Para ello se utiliza una base de datos donde hay muchas tareas repetidas: por cada objeto que quiero persistir debo crear una clase que me permita insertarlo, eliminarlo, modificarlo y consultarlo. Con excepción de consultas especiales, el resto es siempre lo mismo.
+La solución que tenemos ante esto es usar un ORM para poder ecientar las tareas y reducir todos los pasos que se mencionaron antes. Con solo congurar correctamente los archivos usados por Hibernate todas estas tareas se ejecutarían automáticamente y sólo tendremos que preocuparnos por las consultas especiales.
