@@ -1,34 +1,10 @@
-% Chapter 1
+% Chapter 1 - Introducción
 
-\chapter{Introducci\'on} % Main chapter title
+\chapter{Introducci\'on} 
 
-En el presente documento se expone una redacción sobre el desarrollo realizado dentro del Trabajo Terminal 2017-B029 "ESCOMunidad-Servicios".
+En el presente documento se muestra el análisis realizado para el desarrollo del Trabajo Terminal 2017-B029 con título ESCOMunidad - Servicios Aplicación móvil de seguimiento a pagos y servicios para la comunidad estudiantil de la ESCOM. 
 
-
-Con el fin de brindar un ambiente de trabajo pleno y agradable en la ESCOM se proveen diferentes servicios de apoyo a la comunidad como lo son Biblioteca, Sala de impresiones, servicios m\'edicos y/o dentales, papeler\'ia, laboratorios de c\'omputo, entre otros. Sin embargo, para hacer uso de alguno de estos servicios plenamente es necesario realizar un pago en el departamento de recursos financieros (caja). Estos pagos ayudan a la continuidad de los servicios otorgados, adem\'as que representan una parte importante de los ingresos auto generados por parte de la escuela. \newline
-Entre los conceptos de pago que destacan debido a la demanda por parte de la comunidad son:
-
-\begin{itemize}
-	\item Pago de multas de biblioteca
-	\item Reposici\'on de credencial de biblioteca
-	\item Servicio de impresiones
-	\item Servicios dentales
-	\item CELEX
-\end{itemize}
-
-Cabe mencionar, que no todos los pagos mencionados anteriormente se realizan directamente en caja, tal es el caso del CELEX en donde el pago se efectúa en alguna instituci\'on financiera, posterior a eso se entrega en caja el comprobante de dicho pago y ah\'i, se otorga al alumno una boleta de pago, la cual tendr\'a que presentar en el departamento correspondiente para que ese servicio se haga v\'alido.\\
-Adem\'as, en el caso espec\'ifico del servicio de impresiones es responsabilidad absoluta del alumno conservar el comprobante de pago, v\'alido hasta el momento de la elaboraci\'on de este documento por 15 impresiones. Estas 15 impresiones son v\'alidas para el servicio de copias, impresiones y ploteos. As\'i, esas 15 impresiones de inicio se podr\'ian ver reducidas dependiendo del n\'umero de copias, impresiones o ploteos que se deseen realizar en alg\'un momento. Estas equivalencias entre el n\'umero de impresiones disponibles y las necesarias para poder utilizar alguno de estos servicios son definidas semestre tras semestre por el departamento de recursos financieros. Hasta este momento durante el semestre vigente 2018-1 las tabulaciones están estipuladas de la siguiente manera:
-\begin{itemize}
-	\item 1 impresi\'on = \$0.58 = 1 impresi\'on en blanco y negro.
-	\item 5 impresiones = \$2.90 = 1 impresi\'on a color.
-	\item 15 impresiones = \$8.70 = 1 impresi\'on doble carta o 1 impresión 1/4  plotter.
-	\item 30 impresiones = \$17.40 = 1 impresi\'on en 1/4 plotter.
-	\item 60 impresiones = 1 impresi\'on en plotter completo
-	\item O m\'as en m\'ultiplos de 15 impresiones.
-\end{itemize}
-En el caso del servicio dental no se cuenta con un cat\'alogo establecido en caja, los servicios disponibles para efectuar son confirmados personalmente por el odont\'ologo(a). Sin embargo, cualquiera que \'estos sean, tienen que ser pagados directamente en caja entregando una nota de pago realizada por la dentista luego de haber efectuado el servicio dental.\\
-As\'i tambi\'en, el pago de multas de biblioteca y reposición de credencial se llevan a cabo de la misma manera, se acude a biblioteca para recibir una nota de pago donde se especifica el concepto, se realiza el pago en caja, se entrega una boleta de pago y \'esta es otorgada en biblioteca para confirmar y eliminar esa multa del sistema, o bien, hacer válida la reposici\'on de la credencial.\\
-Como vemos, son procesos que se llevan a cabo al momento de realizar un pago de servicio, lo que implica tiempo y gasto en recursos materiales (papel) y espacio físico (almacenamiento de boletas de pago). Adem\'as, conlleva una responsabilidad para el alumno el preservar una copia de las boletas o tickets de pago que se le otorgan para poder contar con alguna garant\'ia.
+Este documento está dirigido para los alumnos, profesores y personal administrativo de la Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN) con el fin de brindar un panorama general sobre la problemática actual en el proceso de pagos de la escuela y la solución que llevamos a cabo pensando en un bien común para la comunidad de la ESCOM. Además, se elaboró como una herramienta mediante la cual los sinodales asignados a este Trabajo Terminal evaluarán nuestro desempeño para esta primera etapa, esperando que sea lo suficientemente adecuada para obtener una calificación aprobatoria.
 
 \label{Capitulo 1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
@@ -44,12 +20,45 @@ Como vemos, son procesos que se llevan a cabo al momento de realizar un pago de 
 %----------------------------------------------------------------------------------------
 
 \section{Presentaci\'on}
-El siguiente documento presenta el desarrollo de un sistema de integraci\'on de diferentes servicios para la comunidad estudiantil ESCOM, Durante los siguientes cap\'itulos se encontrar\'an temas de an\'alisis, diseño, desarrollo e implementaci\'on que se realizaron durante el desarrollo de la aplicaci\'on web y m\'ovil.
+El documento consta de una Introducción, Antecedentes, Análisis, Trabajo realizado, Trabajo a futuro, Resultados y Conclusiones. Es con esta estructura que recabamos todo el trabajo efectuado para esta primera etapa del Trabajo Terminal.
+
+Así, la sección de antecedentes abordará una breve explicación del contexto en el que se está llevando a cabo el proyecto, seguido del análisis derivado del mismo y el trabajo efectuado para la presentación de este Trabajo Terminal. Con ello, mostramos también los planes a futuro que tenemos para el desarrollo de este proyecto y todos los resultados obtenidos, así como las conclusiones tanto positivas como negativas que derivaron de todo este trabajo.
+
 %----------------------------------------------------------------------------------------
 
 \section{Uso y alcance}
+Este proyecto está pensado para la comunidad de la ESCOM, buscando la optimizaci\'on del proceso de pago dentro de la Escuela Superior de Cómputo.
+Este sistema abarca diferentes áreas desde donde se pueden captar diversos conceptos de pago, en este caso específico, se trabajará con las áreas de Biblioteca, CELEX, Dentales y Fotocopiado. Estas áreas se ver\'an ampliamente beneficiadas al tener un sistema web y móvil que interactu\'e con el proceso de pagos y permita notificarles en tiempo real de quién y para qué servicios fueron realizados dichos pagos. Cabe mencionar, que no sólo las áreas serán las beneficiadas, pues también el departamento de Recursos Financieros será favorecido, logrando tener un sistema que complemente sus actividades diarias con fines informativos y de organización.
+Adem\'as de tener una unificaci\'on de las áreas mediante este sistema, tambi\'en se logrará involucrar a todo la comunidad escolar y externa, a través de la selección, comprobación y consulta de pagos considerando el catálogo de servicios disponibles para cada una de las áreas.
 
-Este trabajo terminal esta planteado para la optimizaci\'on de servicios de pago dentro de la Escuela Superior de Computo las cuales comprenden las \'areas de Biblioteca, CELEX, Dentales e Impresiones. Estos servicios se ver\'an ampliamente beneficiados al tener un sistema web que interactu\'e con la gesti\'on de pagos generados en caja para dicho departamento y permita notificarles en tiempo real de quien y para que servicios fueron realizados.
-Adem\'as de tener una unificaci\'on de los departamentos ya mencionados, tambi\'en se contara con una aplicaci\'on web y m\'ovil para el servicio del personal escolar o personal externo, en el cual se podrá consultar y pagar m\'ultiples servicios, as\'i mismo como verificar pagos anteriores.
+Este catálogo de servicios por área del que se habla abarca todos aquellos conceptos de pago que ayudan a la continuidad de esos servicios otorgados, adem\'as de que representan una parte importante de los ingresos auto generados por parte de la escuela.
 
-\section {Marco teorico}
+Entre los conceptos de pago que destacan debido a la demanda por parte de la comunidad y considerando nuestro alcance en el proyecto se encuentran los siguientes:
+
+\begin{itemize}
+	\item Pago de multas de biblioteca
+	\item Reposici\'on de credencial de biblioteca
+	\item Servicio de fotocopiado
+	\item Servicios dentales
+	\item CELEX
+\end{itemize}
+
+Cabe destacar, que no todos los pagos mencionados se realizan directamente en caja, pues para algunos de ellos se pide a los alumnos, empleados o externos efectuarlos directamente en alguna sucursal bancaria, específicamente Bancomer, para después solicitar el voucher de pago y con ello otorgar una boleta de pago emitida por el Sistema Institucional de Gestión Administrativa (SIGA) del IPN. Dicha boleta es la que servirá como garantía en cada una de las áreas para la prestación de ese servicio.
+
+%Adem\'as, en el caso espec\'ifico del servicio de impresiones es responsabilidad absoluta del alumno conservar el comprobante de pago, v\'alido hasta el momento de la elaboraci\'on de este documento por 15 impresiones. Estas 15 impresiones son v\'alidas para el servicio de copias, impresiones y ploteos. As\'i, esas 15 impresiones de inicio se podr\'ian ver reducidas dependiendo del n\'umero de copias, impresiones o ploteos que se deseen realizar en alg\'un momento. Estas equivalencias entre el n\'umero de impresiones disponibles y las necesarias para poder utilizar alguno de estos servicios son definidas semestre tras semestre por el departamento de recursos financieros. Hasta este momento durante el semestre vigente 2018-1 las tabulaciones están estipuladas de la siguiente manera:
+%\begin{itemize}
+%	\item 1 impresi\'on = \$0.58 = 1 impresi\'on en blanco y negro.
+%	\item 5 impresiones = \$2.90 = 1 impresi\'on a color.
+%	\item 15 impresiones = \$8.70 = 1 impresi\'on doble carta o 1 impresión 1/4  plotter.
+%	\item 30 impresiones = \$17.40 = 1 impresi\'on en 1/4 plotter.
+%	\item 60 impresiones = 1 impresi\'on en plotter completo
+	%\item O m\'as en m\'ultiplos de 15 impresiones.
+%\end{itemize}
+%En el caso del servicio dental no se cuenta con un cat\'alogo establecido en caja, los servicios disponibles para efectuar son confirmados personalmente por el odont\'ologo(a). Sin embargo, cualquiera que \'estos sean, tienen que ser pagados directamente en caja entregando una nota de pago realizada por la dentista luego de haber efectuado el servicio dental.\\
+%As\'i tambi\'en, el pago de multas de biblioteca y reposición de credencial se llevan a cabo de la misma manera, se acude a biblioteca para recibir una nota de pago donde se especifica el concepto, se realiza el pago en caja, se entrega una boleta de pago y \'esta es otorgada en biblioteca para confirmar y eliminar esa multa del sistema, o bien, hacer válida la reposici\'on de la credencial.\\
+
+Por lo anterior, es que buscamos la optimización de este proceso, logrando desarrollar un sistema que considere a todos los involucrados y cada una de las partes que lo conforman. Así, el sistema permitirá seleccionar un concepto de pago del área que se requiera y subir su voucher con el fin de enviarlo directamente a caja para que sea el cajero quien visualice y confirme dicho pago. La confirmación de este pago se hará mediante el anexo del comprobante emitido por el SIGA y esto será notificado a la persona que realizó el pago, a su vez se guardará el registro para su consulta posterior por parte del área a la que fue dirigido dicho depósito, o bien, para la revisión de pagos por parte de la contadora o el subdirector administrativo.
+
+Derivado del proceso anterior, encontramos una brecha importante para una de las áreas involucradas, hablamos del área de servicios dentales. Por tanto, decidimos resolverla mediante la agregación de un módulo para la gestión de citas dentro de nuestro sistema, buscando cerrar por completo un proceso que concluye con la realización de un pago.
+
+Así también, nos percatamos de una oportunidad de desarrollo bastante viable, que se propone como una posible entrega para la segunda parte de este Trabajo Terminal. Nos referimos a un módulo en el sistema que permita el pago electrónico de cada uno de los servicios disponibles en la ESCOM.
