@@ -24,6 +24,6 @@
 \contentsline {section}{\numberline {3.1}Problem\IeC {\'a}ticas actuales}{12}{section.3.1}
 \contentsline {chapter}{\numberline {4}Trabajo realizado}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Base de datos}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Casos de uso}{13}{section.4.2}
-\contentsline {chapter}{\numberline {5}Trabajo a futuro}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{16}{chapter.6}
+\contentsline {section}{\numberline {4.2}Casos de uso}{14}{section.4.2}
+\contentsline {chapter}{\numberline {5}Trabajo a futuro}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{18}{chapter.6}
