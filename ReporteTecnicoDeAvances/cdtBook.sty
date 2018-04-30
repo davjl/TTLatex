@@ -77,6 +77,10 @@
 \let\varSubSection=\subsection
 \renewcommand{\subsection}[1]{{\color{subsectionColor}\varSubSection{#1}}}
 
+\newcommand{\varSubSubSection}[1]{}
+\let\varSubSubSection=\subsubsection
+\renewcommand{\subsubsection}[1]{{\color{subsectionColor}\varSubSubSection{#1}}}
+
 \ChTitleVar{\Large\sf\color{titleColor}}
 \ChNumVar{\Huge\color{subTitleColor}}
 \ChNameVar{\Large\sf\color{subTitleColor}}

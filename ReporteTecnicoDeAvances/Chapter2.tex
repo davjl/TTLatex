@@ -3,12 +3,54 @@
 \chapter{Antecedentes}
 \label{Capitulo 2} 
 
-En este cápitulo se da a conocer un análisis sobre el funcionamiento y problematicas  que presenta la Escuela Superior de Cómputo, así como también la descripción de propuestas que podrían satisfacer las necesidades tomando en cuenta los pros y contras de cada una.
+En este capítulo se da a conocer un contexto de la problemática que tratamos de resolver mediante el desarrollo del presente Trabajo Terminal. Por tal motivo, es que hablamos sobre el actual proceso de pagos en la ESCOM y las problemáticas existentes derivadas de esto.\\
+
+Se habla de sistemas y aplicaciones que tienen una funcionalidad parecida a nuestro proyecto, detallando sus características, ventajas y desventajas. Así también, se plantea el problema a resolver y los objetivos que buscamos cumplir para lograr una solución, misma que describimos mediante nuestra propuesta de trabajo. 
+ 
+
 
 \section{Situación Actual}
 
-Para una idea clara del problema que se ataca, es necesario dar una explicación del actual funcionamiento de trabajo y comunicaci\'on entre las \'areas de servicios y recursos financieros.\\
-Comencemos con el \'area de servicios dentales, el cual al recibir un servicio dental, es necesario llevar una nota de pago otorgada por el/la dentista en turno y realizar el pago de la misma en \'area de caja otorgando informaci\'on de boleta para casos de personal institucional y curp en caso de personal externo, seguido a esto se nos otorgar\'a un comprobante de pago realizado, el cual tendr\'a que ser llevado al \'area de dentales y ser almacenado por el dentista.\\
+Para tener una idea clara del problema que se ataca, es necesario dar un contexto sobre todo lo que se ve involucrado en el proceso que se lleva a cabo actualmente en la ESCOM para realizar un pago, con el fin de obtener un servicio o producto.\\
+
+Estos servicios o productos de los que hablamos desde el principio del documento forman parte de una estrategia por parte de la ESCOM para poder adquirir recursos económicos independientes del presupuesto federal asignado, con la finalidad de dar manutención a las instalaciones, tales como, laboratorios de cómputo, aulas de clase, sanitarios, zonas verdes, entre otros.\\
+
+Lo anterior, no sólo lo realiza la ESCOM, también las demás escuelas que conforman a todo el IPN, pero cada una de estas definen qué productos o servicios pondrán a disposición de sus estudiantes, empleados o externos. Todos esos productos o servicios se encuentran en un catálogo de cuotas de productos y cuotas de aprovechamiento de Cobro Regular emitido por la Secretaría de Hacienda y Crédito Público (SHCP) a través del sistema DEPAMIN: "Módulo de Estimación de Ingresos por Concepto de Derechos, Productos y Aprovechamientos" [1].\\
+
+Dicho catálogo se renueva año con año presentando una relación aproximadamente de 1073 cuotas de productos y 19 cuotas de aprovechamientos de Cobro Regular [2]. Cada una de esas cuotas es incorporada en el SIG@, poniendo a disposición una boleta de pago, relacionada con cada cuota.\\
+
+ESCOM, en lo particular toma sólo algunos de esos conceptos descritos en el catálogo y los ofrece a toda su comunidad, incluyendo también a externos. Suele tener una clasificación para cada servicio o producto que oferta, estas clasificaciones son las siguientes:\\
+
+\begin{itemize}
+	\item Cursos de educación continua
+	\item Posgrado
+	\item CELEX
+	\item Odontológicos
+	\item Productos 
+\end{itemize}
+
+En total son 36 conceptos de pago los que ESCOM considera para la oferta de servicios o productos repartidos en cada una de las clasificaciones anteriores. Los fondos recabados mediante el pago en caja, pago en sucursal bancaria o transferencia electrónica son depositados en una cuenta de débito de BBVA Bancomer, misma que el IPN monitorea para la declaración de ingresos, por lo tanto, es necesario que el departamento de Recursos Financieros de la ESCOM tenga siempre disponibles todas las boletas de pago emitidas por el SIG@ durante cada periodo escolar.\\
+
+Tan es así, que se exige conservarlas por un periodo de cinco años a partir del año en que se expide. Esta regla no sólo aplica para el departamento de Recursos Financieros, también  para cada una de las áreas de donde derivan la prestación de los productos o servicios. Para ser más específicos, mencionaremos las áreas involucradas en cada una de las clasificaciones que se comentaron anteriormente.\\
+
+\begin{itemize}
+	\item {\bf Cursos de educación continua: }Coordinación de Educación Continua (CEC) [3].
+	\item {\bf Posgrado: }Sección de Estudios de Posgrado e Investigación (SEPI) [4].
+	\item {\bf CELEX: }Coordinación de Cursos Extracurriculares de Lenguas Extranjeras [5].
+	\item {\bf Odontológicos: }Servicio Dental.
+	\item {\bf Productos: }Fotocopiado y Biblioteca [6].
+\end{itemize}
+
+Si bien comentamos que esas boletas de pago se deben de almacenar por un periodo de cinco años, hasta el momento, ninguna de las áreas tiene claro qué es lo que sucede con toda esa documentación una vez finalizado dicho periodo. Actualmente, sólo las almacenan en carpetas y se conservan en los estantes.\\
+
+Todos los ingresos obtenidos durante el día deberán de comprobarse, puesto que se genera un corte de caja de manera diaria que permite saber el total generado, que a su vez, es notificado al Subdirector Administrativo quien será el último en dar el visto bueno para los ingresos obtenidos del día corriente.
+
+\subsection{Pagos en ESCOM}
+El proceso de pagos en ESCOM se lleva prácticamente de la misma manera en todos los servicios o productos que se ofertan, partiendo de la realización del pago en caja, sucursal bancaria o transferencia electrónica y concluyendo en la entrega al interesado en el producto o servicio de una boleta de pago emitida por el SIG@ la cual se da posteriormente al área involucrada como garantía de que se efectúo correctamente la cuota. Pueden existir algunas variantes en este proceso, pero no afectan para nada el flujo principal comentado anteriormente.
+
+Enfocados en el alcance del proyecto daremos el detalle del proceso de pago para cada una de las áreas. 
+ 
+Comencemos con el área de servicios dentales, en donde el proceso de pago comienza con la generación de una nota de pago expedida por la dentista. Esa nota de pago  y realizar el pago de la misma en \'area de caja otorgando informaci\'on de boleta para casos de personal institucional y curp en caso de personal externo, seguido a esto se nos otorgar\'a un comprobante de pago realizado, el cual tendr\'a que ser llevado al \'area de dentales y ser almacenado por el dentista.\\
 Junto a esto, el archivo de expediente cl\'inico para el alumno sera almacenado por reglamento por un periodo de 5 años.
 Siguiendo con otro departamento, CELEX maneja un proceso de diferente en comparaci\'on con dentales al tener la necesidad de tener que realizar un pago en una sucursal BANCOMER y llevar el vaucher de pago  a caja, anotando en el vaucher informaci\'on que se requiere para la inscripci\'on (nombre,boleta,curp, idioma y nivel) , generando un nuevo comprobante que sera llevado al departamento de CELEX donde se terminara el proceso de inscripci\'on.
 
