@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.16)  30 APR 2018 03:50
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.23)  30 APR 2018 04:40
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
 entering extended mode
 **./analisis.tex
 (analisis.tex
@@ -821,6 +825,18 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
  (analisis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -1951,16 +1967,87 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 11.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 11.
-(CUS.tex
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 11.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 11.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 11.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 11.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 11.
+[13
+
+]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 12.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 12.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 12.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 12.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 12.
+ (CUS.tex
+
+Package hyperref Warning: Ignoring empty anchor on input line 1.
+
+<images/gui/CUR/Dentales.jpg, id=224, 660.4675pt x 413.545pt>
+File: images/gui/CUR/Dentales.jpg Graphic file (type jpg)
+<use images/gui/CUR/Dentales.jpg>
+Package pdftex.def Info: images/gui/CUR/Dentales.jpg  used on input line 1.
+(pdftex.def)             Requested size: 470.0pt x 294.29417pt.
+
+Package hyperref Warning: Ignoring empty anchor on input line 2.
+
+<images/gui/CUR/Caja.jpg, id=225, 700.6175pt x 417.56pt>
+File: images/gui/CUR/Caja.jpg Graphic file (type jpg)
+<use images/gui/CUR/Caja.jpg>
+Package pdftex.def Info: images/gui/CUR/Caja.jpg  used on input line 2.
+(pdftex.def)             Requested size: 470.0pt x 280.12053pt.
+
+Package hyperref Warning: Ignoring empty anchor on input line 3.
+
+<images/gui/CUR/Contaduria.jpg, id=226, 860.21375pt x 409.53pt>
+File: images/gui/CUR/Contaduria.jpg Graphic file (type jpg)
+<use images/gui/CUR/Contaduria.jpg>
+Package pdftex.def Info: images/gui/CUR/Contaduria.jpg  used on input line 3.
+(pdftex.def)             Requested size: 470.0pt x 223.7612pt.
+
+Package hyperref Warning: Ignoring empty anchor on input line 4.
+
+<images/gui/CUR/CELEX.jpg, id=227, 786.94pt x 384.43625pt>
+File: images/gui/CUR/CELEX.jpg Graphic file (type jpg)
+<use images/gui/CUR/CELEX.jpg>
+Package pdftex.def Info: images/gui/CUR/CELEX.jpg  used on input line 4.
+(pdftex.def)             Requested size: 470.0pt x 229.60178pt.
 
 Package hyperref Warning: Ignoring empty anchor on input line 5.
 
+<<<<<<< HEAD
 <images/gui/Usuario.jpg, id=229, 1767.60374pt x 1170.3725pt>
 File: images/gui/Usuario.jpg Graphic file (type jpg)
 <use images/gui/Usuario.jpg>
 Package pdftex.def Info: images/gui/Usuario.jpg  used on input line 5.
 (pdftex.def)             Requested size: 328.99857pt x 217.83704pt.
+=======
+<images/gui/CUR/Usuario.jpg, id=228, 1098.1025pt x 728.7225pt>
+File: images/gui/CUR/Usuario.jpg Graphic file (type jpg)
+<use images/gui/CUR/Usuario.jpg>
+Package pdftex.def Info: images/gui/CUR/Usuario.jpg  used on input line 5.
+(pdftex.def)             Requested size: 470.0pt x 311.89905pt.
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
 ))
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 68.
 Package babel Info: Redefining spanish shorthand >>
@@ -1985,9 +2072,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 68.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 68.
+<<<<<<< HEAD
  [14
 
 ]
+=======
+ [14 <./images/gui/SPEE.jpg> <./images/gui/CUR/Dentales.jpg>]
 LaTeX Info: Redefining \. on input line 68.
 LaTeX Info: Redefining \% on input line 68.
 LaTeX Info: Redefining \. on input line 68.
@@ -2016,7 +2106,41 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 68.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 68.
+ [15 <./images/gui/CUR/Caja.jpg> <./images/gui/CUR/Contaduria.jpg>]
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 68.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 68.
+<<<<<<< HEAD
  [15 <./images/gui/SPEE.jpg> <./images/gui/Usuario.jpg>]
+=======
+ [16 <./images/gui/CUR/CELEX.jpg> <./images/gui/CUR/Usuario.jpg>]
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 68.
@@ -2060,7 +2184,11 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 71.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 71.
+<<<<<<< HEAD
  [16
+=======
+ [17
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
 
 ]
 Cap\'{\i }tulo 6.
@@ -2102,7 +2230,11 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 84.
+<<<<<<< HEAD
  [17
+=======
+ [18
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
@@ -2124,6 +2256,7 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  9891 strings out of 493305
  143005 string characters out of 3129367
  246733 words of memory out of 3000000
@@ -2152,4 +2285,34 @@ PDF statistics:
  682 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)
  248 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ 9912 strings out of 493305
+ 143324 string characters out of 3129802
+ 245673 words of memory out of 3000000
+ 13208 multiletter control sequences out of 15000+200000
+ 15042 words of font info for 57 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,13n,45p,1580b,652s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi
+600\cmbrsy10.pk> <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
+c\cmbright\dpi600\cmbrsl10.pk> <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\public\cmbright\dpi864\cmbrbx10.pk> <C:\Users\david\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\public\cmbright\dpi525\cmbr8.pk> <C:\Users\david\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr10.pk> <C:\Users\d
+avid\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbrbx10.p
+k> <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi
+864\cmbr10.pk> <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\
+cmbright\dpi720\cmbrbx10.pk> <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\david\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C:\Users\david\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr17.pk> <C:\Users\davi
+d\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1493\cmbrbx10.pk>
+<C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb>
+Output written on analisis.pdf (20 pages, 710533 bytes).
+PDF statistics:
+ 671 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 6700fcd82ebac34ad9824b1be9528fcbaebde4b0
 
