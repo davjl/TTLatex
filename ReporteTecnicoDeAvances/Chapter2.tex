@@ -46,55 +46,157 @@ Si bien comentamos que esas boletas de pago se deben de almacenar por un periodo
 Todos los ingresos obtenidos durante el día deberán de comprobarse, puesto que se genera un corte de caja de manera diaria que permite saber el total generado, que a su vez, es notificado al Subdirector Administrativo quien será el último en dar el visto bueno para los ingresos obtenidos del día corriente.
 
 \subsection{Pagos en ESCOM}
-El proceso de pagos en ESCOM se lleva prácticamente de la misma manera en todos los servicios o productos que se ofertan, partiendo de la realización del pago en caja, sucursal bancaria o transferencia electrónica y concluyendo en la entrega al interesado en el producto o servicio de una boleta de pago emitida por el SIG@ la cual se da posteriormente al área involucrada como garantía de que se efectúo correctamente la cuota. Pueden existir algunas variantes en este proceso, pero no afectan para nada el flujo principal comentado anteriormente.
+El proceso de pago en ESCOM se lleva prácticamente de la misma manera en todos los servicios o productos que se ofertan, partiendo de la realización del pago en caja, sucursal bancaria o transferencia electrónica y concluyendo en la entrega al interesado por el producto o servicio de una boleta de pago emitida por el SIG@ la cual se da posteriormente al área involucrada como garantía de que se efectúo correctamente la cuota. Pueden existir algunas variantes en este proceso, pero no afectan para nada el flujo principal comentado anteriormente.\\
 
-Enfocados en el alcance del proyecto daremos el detalle del proceso de pago para cada una de las áreas. 
- 
-Comencemos con el área de servicios dentales, en donde el proceso de pago comienza con la generación de una nota de pago expedida por la dentista. Esa nota de pago  y realizar el pago de la misma en \'area de caja otorgando informaci\'on de boleta para casos de personal institucional y curp en caso de personal externo, seguido a esto se nos otorgar\'a un comprobante de pago realizado, el cual tendr\'a que ser llevado al \'area de dentales y ser almacenado por el dentista.\\
-Junto a esto, el archivo de expediente cl\'inico para el alumno sera almacenado por reglamento por un periodo de 5 años.
-Siguiendo con otro departamento, CELEX maneja un proceso de diferente en comparaci\'on con dentales al tener la necesidad de tener que realizar un pago en una sucursal BANCOMER y llevar el vaucher de pago  a caja, anotando en el vaucher informaci\'on que se requiere para la inscripci\'on (nombre,boleta,curp, idioma y nivel) , generando un nuevo comprobante que sera llevado al departamento de CELEX donde se terminara el proceso de inscripci\'on.
+Enfocados en el alcance del proyecto daremos el detalle del proceso de pago para cada una de las áreas que estamos considerando, además de mostrar su catálogo de servicios disponibles y sus costos para este año en curso (2018). Esto se ha escrito derivado de múltiples entrevistas con las distintas áreas. Cabe mencionar que para efectos de este proyecto se entiende por usuario a todo aquel que se interese por algún producto o servicio.\\
 
-\section{Planteamiento del problema}
-A pesar de que dentro de los departamentos de servicios ya se cuenta con un equipo de computo y conexión a Internet, en ninguna \'area se tiene un sistema que ayude a la administraci\'on de ingresos o gesti\'on de servicios, obligando al personal a tener que realizar todos sus procesos de gesti\'on manualmente o con programas de su mayor entendimiento.
+\subsubsection{Servicio Dental}
+Comencemos con el área de servicios dentales, sus costos se muestran en la tabla \ref{tabla:Dentales}.\\
 
-Aunado a que existen distintas aplicaciones de administraci\'on, en los departamentos de CELEX, Biblioteca, Dentales e Impresiones, no se tiene un sistema que comunique directamente con el servicio de caja para confirmar un pago, y solo mantienen una comunicaci\'on por medio de comprobantes impresos. Obligando al usuario a presentar un rol de mediador entre estas 2 áreas, esta obligación al usuario lo compromete a tener que estar presencialmente en todo servicio que requiera.
-
- Estos comprobantes en realidad presentan un gasto inecesario de recursos, ya que en todas las áreas de servicios solo los almacenan por razones de normatividad, el cual al cumplir con el tiempo establecido son desechados, y solo el área administrativa es la que da un uso especifico a estos comprobantes.
-
-En caso de los usuarios la problematica es muy similar, después de realizar un pago existen situaciones por la cual no hacen entrega del comprobante de pago y nunca llegan a efectuar por perdida de este. Además en caso de área de impresines se presenta la situación de la entrega de otro comprobante que sirve para realizar posteriores impresiones, el cual también llega a ser extraviado.
-
-Si bien el número de impresiones de estos comprobantes no es múy grande por alumno, si lo es en proporción de toda la comunidad, ya que en un día normal se pueden llegar realizar aproximadamente 50 impresiones, y en días finales de parcial imprimer hasta 200 hojas.
-
-\section{Estado del arte}
-
-Durante nuestra investigaci\'on de mercado, nos encontramos con sistemas que tienen una fuerte relaci\'on con el proyecto a trabajar pero implementado en situaciones distintas, adem\'as de tener funcionalidades variadas.\\
-Los sistemas con mayor similitud los podemos encontrar en la tabla \ref{tabla:Productos}
 \begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|p{25mm}|p{75mm}|p{25mm}|}
-\hline
-Software & Caracter\'isticas & Costo \\
-\hline \hline
-"SISTEMA DE MONEDERO VIRTUAL PARA PAGOS ESCOLARES" & El Sistema de Monedero Virtual para Pagos Escolares es un sistema de prepago, que permite a los alumnos realizar pagos dentro y fuera de la Unidad Profesional Interdisciplinaria en Ingenier\'ia y Tecnolog\'ias Avanzadas (UPIITA) & Sin costo \\ \hline
+	\begin{center}
+		\begin{tabular}{|p{110mm}|p{25mm}|}
+			\hline
+			{\bf Producto/Servicio} &  {\bf Monto} \\
+			\hline
+			Servicio Médico de Aplicación de Amalgama. Estudiantes del IPN & \$ 74.00\\ \hline
+			Servicio Médico de Aplicación de Amalgama. Público en General & \$ 142.00\\ \hline
+			Servicio Médico de Aplicación de Amalgama. Trabajadores del IPN & \$ 101.00\\ \hline
+			Servicio Médico de Cementación Incrustación. Estudiantes del IPN y Comunidad del IPN & \$ 68.00\\ \hline
+			Servicio Médico de Consulta de Odontología. Comunidad del IPN & \$ 27.00\\ \hline
+			Servicio Médico de Curación. Estudiantes del IPN & \$ 27.00\\ \hline
+			Servicio Médico de Curación. Comunidad del IPN & \$ 74.00\\ \hline
+			Servicio Médico de Curación. Trabajadores & \$ 47.00\\ \hline
+			Servicio Médico de Curación. Trabajadores & \$ 59.00\\ \hline
+			Servicio Médico de Extracción de piezas dentales. Docentes y empleados & \$ 66.00\\ \hline
+			Servicio Médico de Extracción de piezas dentales. Docentes y empleados & \$ 180.00\\ \hline
+			Servicio Médico de Impresión Parcial (hilo retractor, yeso velmix, hule, rectificador, alginato, yeso piedra y cera) & \$ 81.00\\ \hline
+			Servicio Médico de Profilaxis. Estudiantes del IPN & \$ 108.00\\ \hline
+			Servicio Médico de Profilaxis. Comunidad Politécnica & \$163.00\\ \hline
+			Servicio Médico de Profilaxis. Público en General & \$ 196.00\\ \hline
+			Servicio Médico de Resina autopolimerizable. Estudiantes del IPN & \$ 155.00\\ \hline
+			Servicio Médico de Resina autopolimerizable. Docentes y empleados & \$ 175.00\\ \hline
+			Servicio Médico de Resina chica & \$ 41.00\\ \hline
+			Servicio Médico de Resina. Comunidad Politécnica & \$ 172.00\\ \hline		
+		\end{tabular}
+		\caption{Catálogo de servicios dentales.}
+		\label{tabla:Dentales}
+	\end{center}
+\end{table}
 
-TTR-12-1-029 Prototipo para el manejo de “Cero Papel”. & Es un sistema que permite el manejo, intercambio y control de la informaci\'on dentro de una organizaci\'on para optimizar los procedimientos y tareas, disminuyendo el uso de papel mediante la implementaci\'on de un sistema que permita administrar los usuarios y los documentos & Sin costo\\ \hline
+En este caso, cuando un usuario requiere de algún servicio odontológico se presenta en el consultorio sin cita previa para la atención con algún dentista en turno, después, éste hace un análisis del problema del paciente, sin previo pago realiza el servicio diagnosticado o solicitado para finalmente realizar una nota de pago que le entrega al usuario la cual debe de presentar a caja para efectuar su pago en efectivo. Una vez realizado, el cajero genera e imprime en dos ocasiones el comprobante del SIG@ para después entregarle uno de ellos al usuario y otro para su resguardo. Este comprobante es el que el usuario entrega al dentista para confirmar su pago, mismo que almacena por políticas de la institución. Si el paciente necesita más servicios odontológicos el proceso se repite.\\
 
-“Ventanilla Virtual UdeG” & Ventanilla Virtual tiene tecnolog\'ias desarrolladas por universitarios y busca brindar una plataforma para que, en una primera etapa, los estudiantes puedan hacer tr\'amites, dar seguimiento, recuperarlos y hacer pagos respectivos & Sin costo \\ \hline
-
-“Campus Pay” & Desarrollo que ofrece a estudiantes la posibilidad de realizar todos los pagos relacionados con sus estudios desde dispositivos m\'oviles con cualquier tarjeta de cr\'edito o d\'ebito & Sin costo \\ \hline
-
-“School control” & Aplicaci\'on m\'ovil que realiza reportes, asignaci\'on de pagos, consulta de estad\'isticas en tiempo real, monitoreo/edici\'on de la informaci\'on escolar, entrega de calificaciones, control de asistencia y comportamiento de los alumnos entre otras soluciones dise\~nadas espec\'ificamente para colegios que les deja tiempo valioso para dedicarlo a lo que verdaderamente saben hacer, que es enseñar & desde \$149 por alumno al a\~no, costo absorbido totalmente por el colegio. \\ \hline
-
-“Aplicaci\'on escolar” & Es una aplicaci\'on m\'ovil para dispositivos Android e IOS en la cual las escuelas pueden enviar informaci\'on como mensajes de pagos, tareas, circulares, así como seguimientos acad\'emicos y calificaciones graficadas directo al celular de los padres o alumnos con notificación tipo WhatsApp. Los pap\'as descargan la aplicaci\'on con el nombre de su colegio desde Play Store o App Store ya que es personalizada a cada escuela & Pago inicial de \$31,000, posterior a la prueba piloto se cobran \$6,000 mensuales por cada 400 alumnos. El costo es absorbido por el colegio. \\ \hline
-
-\end{tabular}
-\caption{Productos similares}
-\label{tabla:Productos}
+\subsubsection{CELEX}
+Ahora bien, hablemos del área de CELEX, mencionando primero sus costos. Estos se muestran en la tabla \ref{tabla:Celex}.\\
+\newpage
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{110mm}|p{25mm}|}
+			\hline
+			{\bf Producto/Servicio} &  {\bf Monto} \\
+			\hline
+			Curso de Idiomas semanal o sabatino, 40 horas. Comunidad IPN & \$ 544.00\\ \hline
+			Curso de Idiomas semanal o sabatino, 40 horas. Público en General & \$ 1,053.00\\ \hline			
+		\end{tabular}
+	\caption{Catálogo de servicios CELEX.}
+\label{tabla:Celex}
 \end{center}
 \end{table}
 
+Para esta área, el proceso de pago es muy similar, el usuario tiene que efectuar el pago directamente en cualquier sucursal bancaria BBVA Bancomer a la cuenta que previamente se le otorgó acudiendo a las oficinas del CELEX. Es importante decir, que también se puede efectuar el pago a través de una transferencia electrónica hacia el mismo banco. Aquí, no son permitidos los pagos directamente en la caja de la ESCOM.\\
+
+Una vez efectuado el pago el usuario debe de acudir a la caja de la ESCOM para presentar el voucher emitido por el banco, o bien, la captura de pantalla o impresión que compruebe la transferencia electrónica. Hecho eso, el cajero emite la boleta de pago del SIG@ y la imprime en dos ocasiones, una la entrega al usuario como garantía de su pago y otra la deja para su resguardo. El usuario acude a las oficinas del CELEX con esa boleta y la entrega a la coordinadora del área para que ella lo registre en sus listas de inscripciones y posteriormente le asigne un grupo y un horario. 
+
+Cabe destacar que el CELEX actualmente no cuenta con ningún sistema independiente de la ofimática que le apoye para la administración de sus inscripciones y grupos. Su gestión se basa en el uso de hojas de cálculo en Excel.
+
+\subsubsection{Área de Fotocopiado}
+Esta área se basa en un solo concepto de pago del que se derivan algunas consideraciones para la oferta de todos sus servicios. El concepto de pago y su costo se muestran en la tabla \ref{tabla:Fotocopiado}.\\
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{110mm}|p{25mm}|}
+			\hline
+			{\bf Producto/Servicio} &  {\bf Monto} \\
+			\hline
+			Impresiones láser t/carta (equivalente a 15 impresiones) & \$ 9.28\\ \hline			
+		\end{tabular}
+		\caption{Catálogo de servicios de fotocopiado.}
+		\label{tabla:Fotocopiado}
+	\end{center}
+\end{table}
+
+Los servicios proporcionados por esta área se concentran en las impresiones a blanco y negro, a color, copias y ploteos. El costo para cada uno de ellos como bien lo apreciamos en la tabla parte de un solo concepto de pago equivalente a 15 impresiones.  Estas equivalencias entre el n\'umero de impresiones disponibles y las necesarias para poder utilizar alguno de estos servicios son definidas semestre tras semestre por el departamento de Recursos Financieros. Hasta este momento durante el semestre vigente 2018-2 las tabulaciones están estipuladas de la siguiente manera:
+\begin{itemize}
+	\item 1 impresi\'on = \$0.62 = 1 impresi\'on o copia en blanco y negro.
+	\item 5 impresiones = \$3.083 = 1 impresi\'on o copia a color.
+	\item 15 impresiones = \$9.25 = 1 impresi\'on o copia doble carta o 1 impresión 1/4  plotter.
+	\item 30 impresiones = \$18.50 = 1 impresi\'on en 1/4 plotter.
+	\item 60 impresiones = \$37.00 = 1 impresi\'on en plotter completo
+\item O m\'as en m\'ultiplos de 15 impresiones.
+\end{itemize} 
+
+El proceso de pago comienza cuando el usuario acude a la caja de la ESCOM para realizar su pago en efectivo equivalente al número de impresiones deseadas. El cajero emite la boleta de pago del SIG@ y realiza la impresión de la misma en dos ocasiones, una de ellas se la otorga al usuario para que haga válido su pago en el área y otra la deja a su resguardo. 
+El usuario con esa boleta se presenta en el área de fotocopiado y solicita cualquiera de los servicios que ya mencionamos.\\
+
+Una vez efectuado el servicio, el encargado del área solicita la boleta de pago al usuario y la intercambia por un pequeño papel que entre otros datos contiene el número de impresiones por el que es válido, cada vez que un usuario hace una impresión el encargado representa con un símbolo en este papel el número de impresiones usadas hasta que estas se terminan y si el usuario necesita más tiene que empezar todo el proceso nuevamente.
+
+Este papel del que hablamos, será válido únicamente por el semestre en curso y es responsabilidad totalmente del usuario la conservación del mismo. Si éste se extravía se tendrá que realizar de nuevo el pago a pesar de que se pudieron haber tenido todavía impresiones disponibles.
+
+\subsubsection{Área de Biblioteca}
+Los conceptos de pago que en esta área se consideran son únicamente dos y se muestran en la tabla \ref{tabla:Biblioteca}.\\
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{110mm}|p{25mm}|}
+			\hline
+			{\bf Producto/Servicio} &  {\bf Monto} \\
+			\hline
+			Multa de biblioteca & \$ 6.50\\ \hline	
+			Reposición de credencial de biblioteca & \$ 26.00\\ \hline		
+		\end{tabular}
+		\caption{Catálogo de servicios de fotocopiado.}
+		\label{tabla:Biblioteca}
+	\end{center}
+\end{table}
+
+El proceso de pago comienza con la asistencia del usuario a la Biblioteca de la ESCOM, ahí, el encargado del área le dará una nota de pago sin ningún formato con el concepto y la cantidad a pagar. El usuario acude a la caja de la ESCOM con dicha nota y efectúa el pago.\\
+
+El cajero por su parte, emite el comprobante del SIG@ y realiza la impresión del mismo en dos ocasiones, uno se lo entrega al usuario y el otro lo resguarda. Hecho lo anterior, el usuario regresa a la biblioteca y presenta el comprobante que le fue dado en caja para que sea liberada la multa o bien, la credencial de la biblioteca.\\
+
+Si el usuario en otra ocasión presenta una multa en su historial o pierde de nuevo la credencial tendrá que realizar el procedimiento nuevamente.\\
+
+Es importante recordar que todos los comprobantes de pago emitidos por el SIG@ deberán de ser guardados por un periodo de cinco años tanto en el departamento de Recursos Financieros como en cada una de las áreas. Esto por reglas de negocio del mismo IPN.
+
+\section{Estado del arte}
+
+Durante nuestra investigaci\'on de mercado, nos encontramos con sistemas que tienen una fuerte relaci\'on con el proyecto a trabajar, pero implementados en situaciones distintas, adem\'as de tener funcionalidades variadas. Si bien, actualmente existen muchas aplicaciones o sistemas enfocados en la gestión de pagos, la gran mayoría funcionan como desarrollos independientes de un contexto dejando de lado la integración a futuro de más módulos o incluso sistemas. Es por ello, que nosotros buscamos desarrollar un sistema que permita la escalabilidad a favor de la gestión de procesos tomando como punto de partida justamente la gestión de pagos.\\
+
+Los sistemas con mayor similitud a nuestro desarrollo los podemos encontrar en la tabla \ref{tabla:Productos}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{30mm}|p{75mm}|p{25mm}|}
+			\hline
+			{\bf Software} & {\bf Caracter\'isticas} & {\bf Costo} \\
+			\hline 
+			"SISTEMA DE MONEDERO VIRTUAL PARA PAGOS ESCOLARES" & El Sistema de Monedero Virtual para Pagos Escolares es un sistema de prepago, que permite a los alumnos realizar pagos dentro y fuera de la Unidad Profesional Interdisciplinaria en Ingenier\'ia y Tecnolog\'ias Avanzadas (UPIITA) [7] & Sin costo \\ \hline
+			
+			TTR-12-1-029 Prototipo para el manejo de “Cero Papel”. & Es un sistema que permite el manejo, intercambio y control de la informaci\'on dentro de una organizaci\'on para optimizar los procedimientos y tareas, disminuyendo el uso de papel mediante la implementaci\'on de un sistema que permita administrar los usuarios y los documentos [8] & Sin costo\\ \hline
+			
+			“Ventanilla Virtual UdeG” & Ventanilla Virtual tiene tecnolog\'ias desarrolladas por universitarios y busca brindar una plataforma para que, en una primera etapa, los estudiantes puedan hacer tr\'amites, dar seguimiento, recuperarlos y hacer pagos respectivos [9] & Sin costo \\ \hline
+			
+			“Campus Pay” & Desarrollo que ofrece a estudiantes la posibilidad de realizar todos los pagos relacionados con sus estudios desde dispositivos m\'oviles con cualquier tarjeta de cr\'edito o d\'ebito [10][11] & Sin costo \\ \hline
+			
+			“School control” & Aplicaci\'on m\'ovil que realiza reportes, asignaci\'on de pagos, consulta de estad\'isticas en tiempo real, monitoreo/edici\'on de la informaci\'on escolar, entrega de calificaciones, control de asistencia y comportamiento de los alumnos entre otras soluciones dise\~nadas espec\'ificamente para colegios que les deja tiempo valioso para dedicarlo a lo que verdaderamente saben hacer, que es enseñar [12][13]& desde \$149 por alumno al a\~no, costo absorbido totalmente por el colegio. \\ \hline
+			
+			“Aplicaci\'on escolar” & Es una aplicaci\'on m\'ovil para dispositivos Android e IOS en la cual las escuelas pueden enviar informaci\'on como mensajes de pagos, tareas, circulares, así como seguimientos acad\'emicos y calificaciones graficadas directo al celular de los padres o alumnos con notificación tipo WhatsApp. Los pap\'as descargan la aplicaci\'on con el nombre de su colegio desde Play Store o App Store ya que es personalizada a cada escuela [14][15]& Pago inicial de \$31,000, posterior a la prueba piloto se cobran \$6,000 mensuales por cada 400 alumnos. El costo es absorbido por el colegio. \\ \hline		
+		\end{tabular}
+		\caption{Sistemas o aplicaciones relacionadas}
+		\label{tabla:Productos}
+	\end{center}
+\end{table}
+
 \newpage
-De estos sistemas encontramos las siguientes ventajas y desventajas:
+De estos sistemas encontramos las siguientes ventajas y desventajas considerando el contexto bajo el cual nosotros estaremos trabajando:
 \begin{itemize}
 	\item {\bf SISTEMA DE MONEDERO VIRTUAL PARA PAGOS ESCOLARES}
 	\begin{itemize}
@@ -104,9 +206,10 @@ De estos sistemas encontramos las siguientes ventajas y desventajas:
 		\end{itemize}
 		\item Desventajas:
 		\begin{itemize}
-			\item Presenta un diseño poco responsivo.
+			\item Carece de un diseño responsivo.
 			\item Para realizar el pago es necesario imprimir un comprobante.
-			\item Se necesita realizar un abono previo.
+			\item Se necesita efectuar un abono previo.
+			\item Sólo se planteó como un prototipo.
 		\end{itemize}
 	\end{itemize}
 	\item {\bf TTR-12-1-029 Prototipo para el manejo de Cero Papel}
@@ -118,7 +221,7 @@ De estos sistemas encontramos las siguientes ventajas y desventajas:
 		\end{itemize}
 		\item Desventajas:
 		\begin{itemize}
-			\item Solo es una sistema de ahorro de papel.
+			\item Solo es un sistema que busca la optimización de recurso material (papel).
 		\end{itemize}
 	\end{itemize}
 	\item {\bf Ventanilla Virtual UdeG}
@@ -140,15 +243,15 @@ De estos sistemas encontramos las siguientes ventajas y desventajas:
 	\begin{itemize}
 		\item Ventajas:
 		\begin{itemize}
-			\item Permite a toda la comunidad Universitaria realizar pagos de forma electrónica.
+			\item Permite a toda la comunidad universitaria realizar pagos de forma electrónica.
 			\item Permite el pago a todas las áreas que lo requieran.
 			\item Permite al alumno la consulta de información académica.
-			\item No tiene costo.
-			\item Permite cualquier tarjeta.
+			\item No tiene costo para los usuarios de la aplicación.
+			\item Permite cualquier tarjeta de débito o crédito.
 		\end{itemize}
 		\item Desventajas:
 		\begin{itemize}
-			\item Genera un costo en la institución educativa en la que se utiliza.
+			\item Genera un costo en la institución educativa en la que se implementa.
 		\end{itemize}
 	\end{itemize}	
 	\item {\bf School control}
@@ -157,13 +260,13 @@ De estos sistemas encontramos las siguientes ventajas y desventajas:
 		\begin{itemize}
 			\item Permite el pago en línea.
 			\item Elimina las comisiones de tarjeta de crédito.
-			\item Realiza metricas de información sobre el colegio.
+			\item Realiza métricas de información sobre el colegio.
 			\item Permite una administración de accesos al sistema.
 			\item Tiene un módulo de apoyo para maestros.
 		\end{itemize}
 		\item Desventajas:
 		\begin{itemize}
-			\item Tiene un costo basico de \$149.00 por alumno.
+			\item Tiene un costo básico de \$149.00 por alumno.
 		\end{itemize}
 	\end{itemize}	
 	
@@ -173,7 +276,7 @@ De estos sistemas encontramos las siguientes ventajas y desventajas:
 		\begin{itemize}
 			\item Permite mensajes de pagos.
 			\item Permite seguimientos académicos.
-			\item Genera Notificaciónes.
+			\item Genera notificaciones.
 			\item Aplicación personalizada por institución.
 			\item Tiene un módulo de apoyo para maestros.
 		\end{itemize}
@@ -184,7 +287,20 @@ De estos sistemas encontramos las siguientes ventajas y desventajas:
 	\end{itemize}
 \end{itemize}
 
-De todos los sistemas presentados, {\bf Ventanilla Virutal UdeG} y {\bf Campus pay} son considerados como los módelos de mayor importancia con respecto a sus beneficios y funcionalidades que presenta. Sin embargo, el uso de estos servicios genera un gasto económico en la obtención de equipo y licencias dentro de la institución.
+Contextualizando todos estos sistemas y aplicaciones a nuestro trabajo, nos percatamos que la {\bf Ventanilla Virutal UdeG} y la aplicación móvil {\bf Campus pay} son los modelos de referencia que tenemos para el desarrollo y mejora de nuestro proyecto. Entendemos que son bastante funcionales, pero también creemos que se encuentran carentes de escalabilidad e inclusión hacia otros sistemas para la gestión de procesos. 
+
+\section{Planteamiento del problema}
+A pesar de que dentro de los departamentos de servicios ya se cuenta con un equipo de computo y conexión a Internet, en ninguna \'area se tiene un sistema que ayude a la administraci\'on de ingresos o gesti\'on de servicios, obligando al personal a tener que realizar todos sus procesos de gesti\'on manualmente o con programas de su mayor entendimiento.
+
+Aunado a que existen distintas aplicaciones de administraci\'on, en los departamentos de CELEX, Biblioteca, Dentales e Impresiones, no se tiene un sistema que comunique directamente con el servicio de caja para confirmar un pago, y solo mantienen una comunicaci\'on por medio de comprobantes impresos. Obligando al usuario a presentar un rol de mediador entre estas 2 áreas, esta obligación al usuario lo compromete a tener que estar presencialmente en todo servicio que requiera.
+
+ Estos comprobantes en realidad presentan un gasto inecesario de recursos, ya que en todas las áreas de servicios solo los almacenan por razones de normatividad, el cual al cumplir con el tiempo establecido son desechados, y solo el área administrativa es la que da un uso especifico a estos comprobantes.
+
+En caso de los usuarios la problematica es muy similar, después de realizar un pago existen situaciones por la cual no hacen entrega del comprobante de pago y nunca llegan a efectuar por perdida de este. Además en caso de área de impresines se presenta la situación de la entrega de otro comprobante que sirve para realizar posteriores impresiones, el cual también llega a ser extraviado.
+
+Si bien el número de impresiones de estos comprobantes no es múy grande por alumno, si lo es en proporción de toda la comunidad, ya que en un día normal se pueden llegar realizar aproximadamente 50 impresiones, y en días finales de parcial imprimer hasta 200 hojas.
+
+
 
 \section{Metodología}
 	Para el desarrollo del sistema utilizaremos la metodologia incremental de Harlan Mills, ésta se basa en la idea de diseñar una implementación inicial, exponerla al comentario del usuario, y luego desarrollarla en sus diversas versiones hasta producir un sistema adecuado. %===========================Referenciar---------------
