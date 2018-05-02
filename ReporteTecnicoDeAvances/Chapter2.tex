@@ -3,11 +3,9 @@
 \chapter{Antecedentes}
 \label{Capitulo 2} 
 
-En este capítulo se da a conocer un contexto de la problemática que tratamos de resolver mediante el desarrollo del presente Trabajo Terminal. Por tal motivo, es que hablamos sobre el actual proceso de pagos en la ESCOM y las problemáticas existentes derivadas de esto.\\
+En este capítulo se da a conocer un contexto de la problemática que tratamos de resolver mediante el desarrollo del presente Trabajo Terminal. Por tal motivo, es que hablamos sobre el actual proceso de pagos en la ESCOM y todo lo que en eso se involucra.\\
 
-Se habla de sistemas y aplicaciones que tienen una funcionalidad parecida a nuestro proyecto, detallando sus características, ventajas y desventajas. Así también, se plantea el problema a resolver y los objetivos que buscamos cumplir para lograr una solución, misma que describimos mediante nuestra propuesta de trabajo. 
- 
-
+Se habla de sistemas y aplicaciones que tienen una funcionalidad parecida a nuestro proyecto, detallando sus características, ventajas y desventajas con base en el contexto sobre el cual estamos trabajando para que así podamos tener algún modelo de referencia para nuestro desarrollo.\\
 
 \section{Situación Actual}
 
@@ -287,101 +285,135 @@ De estos sistemas encontramos las siguientes ventajas y desventajas considerando
 	\end{itemize}
 \end{itemize}
 
-Contextualizando todos estos sistemas y aplicaciones a nuestro trabajo, nos percatamos que la {\bf Ventanilla Virutal UdeG} y la aplicación móvil {\bf Campus pay} son los modelos de referencia que tenemos para el desarrollo y mejora de nuestro proyecto. Entendemos que son bastante funcionales, pero también creemos que se encuentran carentes de escalabilidad e inclusión hacia otros sistemas para la gestión de procesos. 
-
-\section{Planteamiento del problema}
-A pesar de que dentro de los departamentos de servicios ya se cuenta con un equipo de computo y conexión a Internet, en ninguna \'area se tiene un sistema que ayude a la administraci\'on de ingresos o gesti\'on de servicios, obligando al personal a tener que realizar todos sus procesos de gesti\'on manualmente o con programas de su mayor entendimiento.
-
-Aunado a que existen distintas aplicaciones de administraci\'on, en los departamentos de CELEX, Biblioteca, Dentales e Impresiones, no se tiene un sistema que comunique directamente con el servicio de caja para confirmar un pago, y solo mantienen una comunicaci\'on por medio de comprobantes impresos. Obligando al usuario a presentar un rol de mediador entre estas 2 áreas, esta obligación al usuario lo compromete a tener que estar presencialmente en todo servicio que requiera.
-
- Estos comprobantes en realidad presentan un gasto inecesario de recursos, ya que en todas las áreas de servicios solo los almacenan por razones de normatividad, el cual al cumplir con el tiempo establecido son desechados, y solo el área administrativa es la que da un uso especifico a estos comprobantes.
-
-En caso de los usuarios la problematica es muy similar, después de realizar un pago existen situaciones por la cual no hacen entrega del comprobante de pago y nunca llegan a efectuar por perdida de este. Además en caso de área de impresines se presenta la situación de la entrega de otro comprobante que sirve para realizar posteriores impresiones, el cual también llega a ser extraviado.
-
-Si bien el número de impresiones de estos comprobantes no es múy grande por alumno, si lo es en proporción de toda la comunidad, ya que en un día normal se pueden llegar realizar aproximadamente 50 impresiones, y en días finales de parcial imprimer hasta 200 hojas.
-
-
-
-\section{Metodología}
-	Para el desarrollo del sistema utilizaremos la metodologia incremental de Harlan Mills, ésta se basa en la idea de diseñar una implementación inicial, exponerla al comentario del usuario, y luego desarrollarla en sus diversas versiones hasta producir un sistema adecuado. %===========================Referenciar---------------
-	%Libro de ingeneria de software somerville 
-	
-	Se tomo en cuenta esta metodología por los siguientes beneficios:
-	\begin{itemize}
-		\item Permite descomponer el proyecto en varios incrementos aislados.
-		\item En cada incremento se incorporan los requisitos básicos. 
-		\item Es posible realizar un trabajo en paralelo por parte de los integrantes del equipo.
-		\item Es sencillo obtener retroalimentación de los directores y coordinadores de área.
-	\end{itemize}
-
-\section{Objetivo general}
-Desarrollar una aplicaci\'on m\'ovil sobre el sistema operativo Android en conjunto con una aplicaci\'on web para permitir el seguimiento de los pagos realizados en el departamento de recursos financieros de la ESCOM, limitándose al pago de multas de biblioteca, reposici\'on de credencial de biblioteca, servicio de impresiones, dentales y CELEX, con la finalidad de optimizar en tiempo, recursos materiales y espacios f\'isicos en el proceso entre los departamentos involucrados y alumnos.
-
-\section{Objetivos particulares}
-\begin{itemize}
-	\item Optimizar recurso material, espec\'ificamente papel durante el proceso de pago de alg\'un servicio, mediante la 				digitalizaci\'on de documentos.
-	\item Optimizar el espacio f\'isico de los departamentos involucrados por medio de la reducci\'on de comprobantes de pago, notas de pago e historiales.
-	\item Agilizar el proceso de seguimiento a pagos tanto para el alumno, como para las \'areas involucradas.
-	\item Desarrollar una herramienta de reporteo derivada del historial de servicios pagados, que les permita a los distintos 				  departamentos llevar a cabo toma de decisiones.
-	\item Permitir el acceso a la aplicaci\'on web a aquellos alumnos carentes de tel\'efono inteligente Android para hacer uso de 			  las funciones b\'asicas de este sistema (consulta de servicios, historial y servicios por efectuar).
-	\item Brindar una herramienta tecnol\'ogica escalable para futuros desarrollos.
-\end{itemize}
-
-\section{Justificaci\'on}
-Hoy en d\'ia, la ESCOM ofrece distintos servicios a su comunidad a cambio de un pago efectuado en el departamento de recursos financieros con el objetivo de contar con ingresos auto generados para el continuo desarrollo de la instituci\'on. Ejemplos de este tipo de ingreso son: pago de multas de biblioteca, reposici\'on de credencial de biblioteca, servicio de impresiones, dentales y CELEX. Estos servicios requieren de un procedimiento post pago que involucra una gran demanda de recurso material y espacio f\'isico, refiriéndonos con esto al alto consumo de papel al momento de la impresi\'on de boletas de pago y/o notas de pago, as\'i como su almacenamiento, debiendo de estar guardadas por un periodo de cinco años por motivos fiscales, las cuales una vez transcurrido este periodo pasan a ser parte de un archivo muerto. Adem\'as, a esto se suma el tiempo que le toma a la comunidad realizar este proceso, puesto que una vez realizado el pago se tiene que esperar a la entrega de un comprobante f\'isico, el cual se otorgar\'a al \'area correspondiente (biblioteca, centro de impresiones, CELEX, servicio dental) con el fin de comprobar el pago. En todos los casos este comprobante sirve como garant\'ia para la prestaci\'on de dicho servicio, lo que implica una obligaci\'on personal para el alumno el realizar una copia del mismo, la cual en muchas de las ocasiones por motivos de tiempo no la efectuamos, quedándonos de esta manera sin un amparo ante cualquier complicaci\'on que surja derivado del pago del servicio.\\
-
-Es por eso que desarrollaremos una aplicaci\'on m\'ovil que permitirá\'a dar  seguimiento a los pagos efectuados en la ESCOM. De este modo, pretendemos optimizar parte del proceso manual, dejando de lado la impresi\'on de notas de pago al menos para la entrega al alumno y permitiéndoles conservar un comprobante de pago de forma permanente.\\
-
-Adem\'as de crear un medio de interacci\'on web para los proveedores de los servicios, con lo cual se pueda almacenar y administrar la informaci\'on sobre el alumno, su pago y su estatus en el departamento.\\
-
-As\'i, se buscar\'a agilizar los procesos derivados de un pago en caja, de manera que al ser realizados se sustituya el papel del comprobante y se genere un archivo digital que ayudar\'ia a ahorrar recursos materiales (papel y t\'oner), espacios f\'isicos y tiempo. Permitiendo tambi\'en, una interacci\'on con los distintos departamentos involucrados (sala de impresiones, biblioteca, CELEX ESCOM, servicios dentales) para un mejor seguimiento y comunicaci\'on con el alumnado.
+Contextualizando todos estos sistemas y aplicaciones a nuestro trabajo, nos percatamos que la {\bf Ventanilla Virutal UdeG} y la aplicación móvil {\bf Campus pay} son los modelos de referencia que tenemos para el desarrollo y mejora de nuestro proyecto. Entendemos que son bastante funcionales, pero también creemos que se encuentran carentes de escalabilidad e inclusión hacia otros sistemas para la gestión de procesos.\\
 
 \section{Marco Teórico}
+Para poder comprender mejor el desarrollo de este Trabajo Terminal definiremos algunos conceptos principales a partir de los cuales basamos nuestro proyecto. Los conceptos a considerar son: aplicación web; aplicación móvil; Interfaz de Programación de Aplicaciones (API); aplicación móvil nativa; aplicaciones web sobre móviles; aplicación móvil híbrida; Modelo Vista Controlador; framework; Spring Boot; Struts 2; Hibernate ORM; y por último, Xamarin.\\
 
-\subsection{Pagina WEB}
-Aunque los inicios de Internet se remontan a los años sesenta, no ha sido hasta los años noventa cuando, gracias a la Web, se ha extendido su uso por todo el mundo. En pocos años la Web ha evolucionado enormemente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos estáticos a páginas complejas con contenidos dinámicos que provienen de bases de datos, lo que permite la creación de "aplicaciones web". De forma breve, una aplicación web se puede definir como una aplicación en la cual un usuario por medio de un navegador realiza peticiones a una aplicación remota accesible a través de Internet (o a través de una intranet) y que recibe una respuesta que se muestra en el propio navegador. %===========================Referenciar---------------
-%http://rua.ua.es/dspace/handle/10045/16995
-\subsection{Aplicaciones Web sobre Móviles}
-Las aplicaciones web sobre móviles son aplicaciones que no necesitan ser instaladas en el dispositivo para poder ejecutase. Están basadas en tecnologías HTML, CSS y Javascript, y que se ejecutan en un navegador. A diferencia de las web móviles, cuyo objetivo básico es mostrar información, estas aplicaciones tienen como objetivo interaccionar con el dispositivo y con el usuario. De esta manera, se le saca un mayor partido a la contextualización. %===========================Referenciar---------------
-%https://www.exabyteinformatica.com/uoc/Informatica/Tecnologia_y_desarrollo_en_dispositivos_moviles/Tecnologia_y_desarrollo_en_dispositivos_moviles_(Modulo_4).pdf
+\subsection{Aplicación Web}
+Una aplicación web (web-based application) es un tipo especial de aplicación cliente/servidor, donde tanto el cliente (el navegador, explorador o visualizador) como
+el servidor (el servidor web) y el protocolo mediante el que se comunican (HTTP)
+están estandarizados y no han de ser creados por el programador de aplicaciones.\\
 
+El protocolo HTTP forma parte de la familia de protocolos de comunicaciones TCP/IP, que son los empleados en Internet. Estos protocolos permiten la conexión de sistemas heterogéneos, lo que facilita el intercambio de información entre distintos ordenadores.\\
 
-\section{Descripci\'on de la propuesta}
-
-\subsection{Alcance del proyecto}
-El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a con los siguientes requerimientos.
 \begin{itemize}
-	\item Los administrativos en \'areas de servicios podr\'an visualizar y gestionar los pagos que reciban de caja para realizar un 		  servicio
-	\item Los administrativos en \'areas de biblioteca y dentales podr\'an mandar una nota digital de pago a los usuarios.
-	\item El contador y el encargado de recursos financieros podr\'an visualizar todos los conceptos de pago e imprimirlos en caso de ser necesarios
-	\item El personal de caja podr\'a validar dos tipos de pago, en efectivo y por medio de un voucher de pago.
-	\item El personal de caja podr\'a visualizar, aceptar o rechazar los voucher de pago.
-	\item El alumno podr\'a visualizar los servicios disponibles y sus precios desde una pagina web o aplicaci\'on m\'ovil
-	\item El alumno podr\'a seleccionar entre realiar un pago por transferencia o mandar una nota de pago a caja para realizar el 				  pago en efectivo.
-	\item El alumno podr\'a agendar citas de servicio con el \'area de dentales.
-	\item Los alumnos podr\'an escoger el metodo de pago que realizen, por transferencia o efectivo.
+	\item {\bf El cliente: }El cliente web es un programa con el que interacciona el usuario para solicitar a un servidor web el envío de los recursos que desea obtener mediante HTTP.
+	\item {\bf El servidor: }El servidor web es un programa que está esperando permanentemente las solicitudes	de conexión mediante el protocolo HTTP por parte de los clientes web. [16]
 \end{itemize}
 
-\subsection{Interección con el usuario}
-En nuestra arquitectura de sistema es necesario una comunicación entre varios elementos que al trabajar en conjunto permitan un correcto funcionamiento. Entre estos elementos estará una base de datos para la persistencia de información, un servidor web para el alojamiento de la pagina.\\ 
-\IUfig[1]{gui/a}{}{Arquitectura}
-\newpage
+Algunos de los usos principales de una aplicación web son los siguientes:
+\begin{itemize}
+	\item Permitir a los usuarios localizar información de forma rápida y sencilla en un sitio Web en el que se almacena gran cantidad de contenido.
+	\item Recoger, guardar y analizar datos suministrados por los visitantes de los sitios.
+	\item Actualizar sitios Web cuyo contenido cambia constantemente. [17]
+\end{itemize}
+
+\subsection{Aplicación móvil}
+Una aplicación móvil es una aplicación informática desarrollada para ser ejecutada en teléfonos inteligentes, tabletas y otros dispositivos móviles.\\
+
+Por lo general, se encuentran disponibles a través de plataformas de distribución, operadas por las compañías propietarias de los sistemas operativos móviles como Android, iOS, BlackBerry OS, Windows Phone, entre otros. Existen aplicaciones móviles gratuitas u otras de pago, donde en promedio el 20 a 30\% del costo de la aplicación se destina al distribuidor y el resto es para el desarrollador.
+
+Existen tres tipos de aplicaciones que se pueden desarrollar:
+\begin{itemize}
+	\item Aplicaciones móviles nativas.
+	\item Aplicaciones Web.
+	\item Aplicaciones Híbridas.
+\end{itemize}
+
+Cada uno de estos tipos de aplicaciones se explicarán a detalle.\\
+
+\subsection{Interfaz de Programación de Aplicaciones (API)}
+Una Interfaz de Programación de Aplicaciones es una especificación destinada a ser utilizada como interfaz de componentes de software para comunicarse entre ellos. Una API puede incluir especificaciones para rutinas, estructuras de datos, objetos clases y variables.\\
+
+Una API puede describir las formas en que se realiza una tarea en particular. Por lo tanto, la API generalmente incluye una descripción de todas las funciones o rutinas que proporciona.\\
+
+En los lenguajes orientados a objetos, una API generalmente incluye una descripción de un conjunto de definiciones de clase, con un conjunto de comportamientos asociados con esas clases. La API en este caso se puede concebir como la totalidad de todos los métodos públicamente expuestos por las clases (generalmente llamado la interfaz de clase). Esto significa que la API prescribe los métodos por los cuales uno interactúa con los objetos derivados de las definiciones de clase. [18]\\
+
+\subsection{Aplicación móvil nativa}
+Las aplicaciones nativas tienen archivos ejecutables binarios que se descargan directamente al dispositivo y se almacenan localmente.  La manera más común de descargar una aplicación nativa es visitando una tienda de aplicaciones, como App Store de Apple, PlayStore de Android o App World de BlackBerry, pero existen otros métodos
+que a veces ofrece el proveedor móvil. La aplicación nativa puede acceder libremente a todas las APIs que el proveedor del SO ponga a disposición y, en muchos casos, tiene características y funciones únicas que son típicas de ese sistema operativo móvil en particular.\\
+
+Para crear una aplicación nativa, los desarrolladores deben escribir el código fuente y crear recursos adicionales, como imágenes, segmentos de audio y diversos archivos de declaración específicos del sistema operativo. Utilizando herramientas provistas por el distribuidor del sistema operativo, se compila el código fuente para crear un ejecutable en formato binario que se pueda empaquetar junto con el resto de los recursos y estar listo para la distribución.\\
+
+Si bien el proceso de desarrollo suele ser similar para diferentes sistemas operativos, el Software Development Kit (SDK) es específico de la plataforma, y cada sistema operativo móvil viene con sus propias herramientas. En la tabla \ref{tabla:SDK} se muestran los formatos de aplicación para cada sistema operativo.\\
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{p{25mm}|p{25mm}|p{25mm}|p{30mm}}
+			\hline
+			 {\bf Apple iOS} &  {\bf Android} & {\bf Blackberry OS} & {\bf Windows Phone} \\
+			\hline
+			 .app & .apk & .cod &.xap\\ \hline		
+		\end{tabular}
+		\caption{Formatos de aplicación.}
+		\label{tabla:SDK}
+	\end{center}
+\end{table}
+
+Estas diferencias entre plataformas ocasionan una de las desventajas más criticas del enfoque de desarrollo nativo: el código
+escrito para una plataforma móvil no se puede usar en otra, por lo cual el desarrollo y el mantenimiento de aplicaciones nativas para
+múltiples sistemas operativos se convierte en una tarea muy ardua y costosa. [19]
+
+\subsection{Aplicaciones Web sobre Móviles}
+Las aplicaciones web sobre móviles son aplicaciones que no necesitan ser instaladas en el dispositivo para poder ejecutase. Están basadas en tecnologías HTML, CSS y Javascript, que se ejecutan en un navegador. [20]\\
+
+Una de las principales ventajas de una aplicación Web es su soporte para múltiples plataformas y el bajo costo de desarrollo.
+La mayoría de los proveedores móviles utilizan el mismo motor de búsqueda en sus navegadores, llamado WebKit, que es un proyecto de fuente abierta conducido principalmente por Google y Apple y que ofrece la más completa implementación de HTML5 disponible en la actualidad. [19]\\
+
+\subsection{Aplicación móvil híbrida}
+El enfoque híbrido combina desarrollo nativo con tecnología Web. Usando este enfoque, los desarrolladores escriben gran parte de su aplicación en tecnologías Web para múltiples plataformas, y mantienen el acceso directo a APIs nativas cuando lo necesitan.\\
+
+El enfoque híbrido ofrece un término medio que, en muchas situaciones, constituye lo mejor de ambos mundos, en especial si el desarrollador desea emplearlo en múltiples sistemas operativos. [19]\\
+
+\subsection{Modelo Vista Controlador (MVC)}
+MVC por sus siglas en inglés, es un patrón de diseño de arquitectura de software usado principalmente en aplicaciones que manejan gran cantidad de datos y transacciones complejas donde se requiere una mejor separación de conceptos para que el desarrollo esté estructurado de una mejor manera, facilitando la programación en diferentes capas de manera paralela e independiente. MVC sugiere la separación del software en 3 estratos: Modelo, Vista y Controlador.  [21]\\
+
+\begin{itemize}
+	\item {\bf Modelo: }Es la representación de la información que maneja la aplicación.
+	\item {\bf Vista: }Es la representación del modelo en forma gráfica disponible para la interacción con el usuario.
+	\item {\bf Controlador: }Es la capa encargada de manejar y responder las solicitudes del usuario, procesando la información necesaria y modificando el Modelo en caso de ser necesario.
+\end{itemize}
+
+Este modelo de arquitectura presenta varias ventajas [22]:
+\begin{itemize}
+	\item Separación clara entre los componentes de un programa; lo cual permite su implementación por
+	separado.
+	\item API muy bien definida;
+	cualquiera que use el API, podrá reemplazar el Modelo, la Vista o el Controlador, sin aparente dificultad.
+	\item Conexión entre el Modelo y sus Vistas dinámica; se produce en tiempo de ejecución, no en tiempo de compilación. 
+\end{itemize}
+
+\subsection{Framework}
+Un framework no es ningún software ni herramienta que se ejecuta y que nos ofrece una interfaz gráfica desde la que trabajar, sino que es un conjunto de archivos y
+directorios que facilitan la creación de aplicaciones, ya que incorporan funcionalidades ya desarrolladas y
+probadas, implementadas en un determinado lenguaje de programación.\\
+
+El objetivo principal de todo framework es facilitar las cosas a la hora de desarrollar una aplicación, haciendo que nos centremos en el verdadero problema y nos olvidemos de implementar funcionalidades que son de uso común como puede ser el registro de un usuario, establecer conexión con la base de datos, manejo de sesiones de usuario o el almacenamiento en base de datos de contenido cacheado. [23]\\
 
 \subsection{Spring Boot}
-Spring Boot es un framework que se ha empleado en este trabajo terminal debido a que su arquitectura se adapta a los requerimientos de este sistema, tiene ciertas ventajas que con ayuda de otras herramientas como Apache Maven nos han ayudado a levantar una infraestructura de manera relativamente sencilla, los módulos más reelevantes utilizados para este trabajo son: el módulo de mails, el módulo de tratamiento de datos. \\
+Spring Boot es un framework que facilita la creación de aplicaciones independientes, de grado de producción, que simplemente se ejecutan. La mayoría de las aplicaciones Spring Boot necesitan muy poca configuración de Spring.\\
 
-Otro de los enfoques utilizados para el desarrollo de este trabajo es la inyección de dependencias, el poder inyectar dependencias dentro del proyecto permite dividir el proyecto de forma más natural en MVC (modelo, vista, controlador), se ha incluido derivado de ello el uso de anotaciónes para incluir referencias a servicios en capas más internas del sistema, así en conjunto con las tecnologías como Hibernate se ha podido contruir una infraestructura estable. \\
+Se recomienda que se use una herramienta de compilación que admita la administración de dependencias (como Maven o Gradle). [24]\\
+
+Apache Maven es una herramienta de gestión y comprensión de proyectos de software. Basándose en el concepto de un modelo de objeto de proyecto (POM), Maven puede gestionar la compilación, los informes y la documentación de un proyecto a partir de una pieza central de información.\\
 
 \subsection{Struts 2}
-Una de las ventajas que encontramos en usar Struts 2 es la fácil inclusión de controladores con la vista, el presente sistema utiliza una arquitectura mvc, cabe mencionar que entre otras tecnologías utiliza para maquetar pantallas Bootstrap esto en conjunto permite crear vistas complejas con una complejidad baja y al mismo tiempo gracias a Struts2 icluir funcionalidades más robustas.\\
+El framework web de Apache Struts es una solución gratuita de código abierto para la creación de aplicaciones web en Java.\\
 
-Las acciones de Struts 2 implementan objetos JavaBeans (clases Java simples) para cada grupo de datos enviado en la consulta. Cada parámetro de la consulta se declara en la clase de acción con un nombre idéntico para realizar automáticamente la asignación de valores. La nalidad de la acción es devolver una cadena de caracteres, permitiendo seleccionar el resultado que se va a mostrar.\\
+Favorece la convención sobre la configuración, es extensible usando una arquitectura de complemento y se envía con complementos para admitir REST, AJAX y JSON. [26]\\
 
-\subsection{Hibernate}
-Hibernate es una herramienta de Mapeo Objeto-Relacional (Object-Relational Mapping) para la plataforma JAVA que facilita el mapeo de atributos entre una base de datos relacional tradicional y el modelo de objetos de una aplicación, mediante archivos declarativos (XML) o anotaciones en los beans de las entidades que permiten establecer este tipo de relaciones.
-Cuando desarrollamos aplicaciones en muchos de los casos ocurre que en muchas secciones todo termina siendo un conjunto de ABM (alta, baja y modicaciones de datos) que luego consultamos. Para ello se utiliza una base de datos donde hay muchas tareas repetidas: por cada objeto que quiero persistir debo crear una clase que me permita insertarlo, eliminarlo, modificarlo y consultarlo. Con excepción de consultas especiales, el resto es siempre lo mismo.
-La solución que tenemos ante esto es usar un ORM para poder eficientar las tareas y reducir todos los pasos que se mencionaron antes. Con solo congurar correctamente los archivos usados por Hibernate todas estas tareas se ejecutarían automáticamente y sólo tendremos que preocuparnos por las consultas especiales.\\
+\subsection{Hibernate ORM}
+Hibernate ORM permite a los desarrolladores escribir aplicaciones con mayor facilidad, cuyos datos sobreviven al proceso de solicitud. Hibernate se preocupa por la persistencia de los datos tal como se aplica a las bases de datos relacionales (a través de JDBC).\\
+
+Hibernate es una herramienta de Mapeo Objeto-Relacional (ORM) para la plataforma JAVA que facilita el mapeo de atributos entre una base de datos relacional tradicional y el modelo de objetos de una aplicación, mediante archivos declarativos (XML) o anotaciones en los beans de las entidades que permiten establecer este tipo de relaciones. [27]\\
 
 \subsection{Xamarin}
-	Xamarin es un entorno de desarrollo para aplicaciones nativas en multiples sistemas operativos móviles, permitiendo una sutil integración de Android y IOS en un solo código de programación.
-	
+Xamarin es una plataforma que proporciona al desarrollador herramientas que pueden ayudarlo a crear aplicaciones móviles multiplataforma. Las aplicaciones pueden tener todas las características nativas y también compartir la base de código común al mismo tiempo.\\
+
+Xamarin permite llamar al código existente escrito en otros lenguajes específicos de la plataforma, como Java en Android. Pero eso es solo cuando se está construyendo algo muy específico que no se puede implementar en diferentes plataformas. Xamarin ha convertido todo el SDK de Android e iOS a C\# para que se pueda codificar en un lenguaje más familiar. Y como se puede usar C\# para codificar ambas plataformas, se necesita recordar menos sintaxis. Se Puede acceder a casi cualquier API de iOS o Android en C\# con las herramientas de Xamarin. [28]\\
+
+\subsection{PostgreSQL}
+PostgreSQL es un sistema de base de datos objeto-relacional potente y abierto que utiliza y amplía el lenguaje SQL combinado con muchas características que almacenan y escalan de forma segura las cargas de trabajo de datos más complicadas.\\
+
+PostgreSQL se ha ganado una sólida reputación por su arquitectura comprobada, confiabilidad, integridad de datos, sólido conjunto de características, extensibilidad y la dedicación de la comunidad de código abierto detrás del software para entregar constantemente soluciones eficaces e innovadoras. PostgreSQL se ejecuta en todos los principales sistemas operativos. [29]
+

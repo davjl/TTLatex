@@ -5,56 +5,39 @@
 \contentsline {chapter}{\numberline {2}Antecedentes}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Situaci\IeC {\'o}n Actual}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Pagos en ESCOM}{4}{subsection.2.1.1}
-<<<<<<< HEAD
 \contentsline {subsubsection}{Servicio Dental}{5}{section*.2}
 \contentsline {subsubsection}{CELEX}{5}{section*.3}
 \contentsline {subsubsection}{\IeC {\'A}rea de Fotocopiado}{6}{section*.4}
 \contentsline {subsubsection}{\IeC {\'A}rea de Biblioteca}{7}{section*.5}
 \contentsline {section}{\numberline {2.2}Estado del arte}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Planteamiento del problema}{10}{section.2.3}
-\contentsline {section}{\numberline {2.4}Metodolog\IeC {\'\i }a}{10}{section.2.4}
-\contentsline {section}{\numberline {2.5}Objetivo general}{11}{section.2.5}
-\contentsline {section}{\numberline {2.6}Objetivos particulares}{11}{section.2.6}
-\contentsline {section}{\numberline {2.7}Justificaci\'on}{11}{section.2.7}
-\contentsline {section}{\numberline {2.8}Marco Te\IeC {\'o}rico}{12}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Pagina WEB}{12}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Aplicaciones Web sobre M\IeC {\'o}viles}{12}{subsection.2.8.2}
-\contentsline {section}{\numberline {2.9}Descripci\'on de la propuesta}{12}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Alcance del proyecto}{12}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Interecci\IeC {\'o}n con el usuario}{13}{subsection.2.9.2}
-\contentsline {subsection}{\numberline {2.9.3}Spring Boot}{14}{subsection.2.9.3}
-\contentsline {subsection}{\numberline {2.9.4}Struts 2}{14}{subsection.2.9.4}
-\contentsline {subsection}{\numberline {2.9.5}Hibernate}{14}{subsection.2.9.5}
-\contentsline {subsection}{\numberline {2.9.6}Xamarin}{14}{subsection.2.9.6}
+\contentsline {section}{\numberline {2.3}Marco Te\IeC {\'o}rico}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Aplicaci\IeC {\'o}n Web}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Aplicaci\IeC {\'o}n m\IeC {\'o}vil}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Interfaz de Programaci\IeC {\'o}n de Aplicaciones (API)}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Aplicaci\IeC {\'o}n m\IeC {\'o}vil nativa}{11}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Aplicaciones Web sobre M\IeC {\'o}viles}{12}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Aplicaci\IeC {\'o}n m\IeC {\'o}vil h\IeC {\'\i }brida}{12}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Modelo Vista Controlador (MVC)}{12}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Framework}{13}{subsection.2.3.8}
+\contentsline {subsection}{\numberline {2.3.9}Spring Boot}{13}{subsection.2.3.9}
+\contentsline {subsection}{\numberline {2.3.10}Struts 2}{13}{subsection.2.3.10}
+\contentsline {subsection}{\numberline {2.3.11}Hibernate ORM}{13}{subsection.2.3.11}
+\contentsline {subsection}{\numberline {2.3.12}Xamarin}{14}{subsection.2.3.12}
+\contentsline {subsection}{\numberline {2.3.13}PostgreSQL}{14}{subsection.2.3.13}
 \contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Problem\IeC {\'a}ticas actuales}{15}{section.3.1}
-\contentsline {chapter}{\numberline {4}Trabajo realizado}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Base de datos}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Casos de uso}{17}{section.4.2}
-\contentsline {chapter}{\numberline {5}Trabajo a futuro}{20}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{21}{chapter.6}
-=======
-\contentsline {section}{\numberline {2.2}Planteamiento del problema}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Estado del arte}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Metodolog\IeC {\'\i }a}{8}{section.2.4}
-\contentsline {section}{\numberline {2.5}Objetivo general}{8}{section.2.5}
-\contentsline {section}{\numberline {2.6}Objetivos particulares}{8}{section.2.6}
-\contentsline {section}{\numberline {2.7}Justificaci\'on}{9}{section.2.7}
-\contentsline {section}{\numberline {2.8}Marco Te\IeC {\'o}rico}{9}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Pagina WEB}{9}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Aplicaciones Web sobre M\IeC {\'o}viles}{10}{subsection.2.8.2}
-\contentsline {section}{\numberline {2.9}Descripci\'on de la propuesta}{10}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Alcance del proyecto}{10}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Interecci\IeC {\'o}n con el usuario}{10}{subsection.2.9.2}
-\contentsline {subsection}{\numberline {2.9.3}Spring Boot}{11}{subsection.2.9.3}
-\contentsline {subsection}{\numberline {2.9.4}Struts 2}{12}{subsection.2.9.4}
-\contentsline {subsection}{\numberline {2.9.5}Hibernate}{12}{subsection.2.9.5}
-\contentsline {subsection}{\numberline {2.9.6}Xamarin}{12}{subsection.2.9.6}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Problem\IeC {\'a}ticas actuales}{13}{section.3.1}
-\contentsline {chapter}{\numberline {4}Trabajo realizado}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Base de datos}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Casos de uso}{16}{section.4.2}
-\contentsline {chapter}{\numberline {5}Trabajo a futuro}{19}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{20}{chapter.6}
->>>>>>> 61de9c63092a6c110684cb6b5eaf1ef065e6f570
+\contentsline {section}{\numberline {3.1}Planteamiento del problema}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Problem\IeC {\'a}ticas actuales}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}Objetivo general}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}Objetivos particulares}{17}{section.3.4}
+\contentsline {section}{\numberline {3.5}Justificaci\'on}{17}{section.3.5}
+\contentsline {section}{\numberline {3.6}Descripci\'on de la propuesta}{18}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Alcance del proyecto}{18}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Interacci\IeC {\'o}n con el usuario}{19}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Metodolog\IeC {\'\i }a}{20}{section.3.7}
+\contentsline {chapter}{\numberline {4}Trabajo realizado}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Base de datos}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}Casos de uso}{23}{section.4.2}
+\contentsline {chapter}{\numberline {5}Trabajo a futuro}{26}{chapter.5}
+\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Resultados}{27}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusiones}{27}{section.6.2}

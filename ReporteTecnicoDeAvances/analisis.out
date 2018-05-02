@@ -5,25 +5,34 @@
 \BOOKMARK [1][-]{section.2.1}{Situaci\363n Actual}{chapter.2}% 5
 \BOOKMARK [2][-]{subsection.2.1.1}{Pagos en ESCOM}{section.2.1}% 6
 \BOOKMARK [1][-]{section.2.2}{Estado del arte}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{Planteamiento del problema}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.4}{Metodolog\355a}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.5}{Objetivo general}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.6}{Objetivos particulares}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.7}{Justificaci\363n}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.8}{Marco Te\363rico}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.8.1}{Pagina WEB}{section.2.8}% 14
-\BOOKMARK [2][-]{subsection.2.8.2}{Aplicaciones Web sobre M\363viles}{section.2.8}% 15
-\BOOKMARK [1][-]{section.2.9}{Descripci\363n de la propuesta}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.9.1}{Alcance del proyecto}{section.2.9}% 17
-\BOOKMARK [2][-]{subsection.2.9.2}{Interecci\363n con el usuario}{section.2.9}% 18
-\BOOKMARK [2][-]{subsection.2.9.3}{Spring Boot}{section.2.9}% 19
-\BOOKMARK [2][-]{subsection.2.9.4}{Struts 2}{section.2.9}% 20
-\BOOKMARK [2][-]{subsection.2.9.5}{Hibernate}{section.2.9}% 21
-\BOOKMARK [2][-]{subsection.2.9.6}{Xamarin}{section.2.9}% 22
-\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Problem\341ticas actuales}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Trabajo realizado}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Base de datos}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{Casos de uso}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{Trabajo a futuro}{}% 28
-\BOOKMARK [0][-]{chapter.6}{Resultados y conclusiones}{}% 29
+\BOOKMARK [1][-]{section.2.3}{Marco Te\363rico}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{Aplicaci\363n Web}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Aplicaci\363n m\363vil}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.3}{Interfaz de Programaci\363n de Aplicaciones \(API\)}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.4}{Aplicaci\363n m\363vil nativa}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.5}{Aplicaciones Web sobre M\363viles}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.6}{Aplicaci\363n m\363vil h\355brida}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.7}{Modelo Vista Controlador \(MVC\)}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.8}{Framework}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.9}{Spring Boot}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.10}{Struts 2}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.11}{Hibernate ORM}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.12}{Xamarin}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.13}{PostgreSQL}{section.2.3}% 21
+\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Planteamiento del problema}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Problem\341ticas actuales}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Objetivo general}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{Objetivos particulares}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.5}{Justificaci\363n}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.6}{Descripci\363n de la propuesta}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.6.1}{Alcance del proyecto}{section.3.6}% 29
+\BOOKMARK [2][-]{subsection.3.6.2}{Interacci\363n con el usuario}{section.3.6}% 30
+\BOOKMARK [1][-]{section.3.7}{Metodolog\355a}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{Trabajo realizado}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Base de datos}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Casos de uso}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{Trabajo a futuro}{}% 35
+\BOOKMARK [0][-]{chapter.6}{Resultados y conclusiones}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Resultados}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Conclusiones}{chapter.6}% 38
