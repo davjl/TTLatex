@@ -30,9 +30,34 @@
 \BOOKMARK [2][-]{subsection.3.6.2}{Interacci\363n con el usuario}{section.3.6}% 30
 \BOOKMARK [1][-]{section.3.7}{Metodolog\355a}{chapter.3}% 31
 \BOOKMARK [0][-]{chapter.4}{Trabajo realizado}{}% 32
-\BOOKMARK [1][-]{section.4.1}{Base de datos}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.2}{Casos de uso}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Trabajo a futuro}{}% 35
-\BOOKMARK [0][-]{chapter.6}{Resultados y conclusiones}{}% 36
-\BOOKMARK [1][-]{section.6.1}{Resultados}{chapter.6}% 37
-\BOOKMARK [1][-]{section.6.2}{Conclusiones}{chapter.6}% 38
+\BOOKMARK [1][-]{section.4.1}{An\341lisis realizado}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Base de datos}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Casos de uso}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.4}{CU1 Registrar usuario}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 39
+\BOOKMARK [1][-]{section.4.5}{CU8 Visualizar servicios}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.5.1}{Descripci\363n completa}{section.4.5}% 41
+\BOOKMARK [2][-]{subsection.4.5.2}{Atributos importantes}{section.4.5}% 42
+\BOOKMARK [2][-]{subsection.4.5.3}{Trayectorias del Caso de Uso}{section.4.5}% 43
+\BOOKMARK [1][-]{section.4.6}{CU14 Cargar comprobante de pago}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.6.1}{Descripci\363n completa}{section.4.6}% 45
+\BOOKMARK [2][-]{subsection.4.6.2}{Atributos importantes}{section.4.6}% 46
+\BOOKMARK [2][-]{subsection.4.6.3}{Trayectorias del Caso de Uso}{section.4.6}% 47
+\BOOKMARK [1][-]{section.4.7}{CU34 Visualizar archivo de pagos por a\361o}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.7.1}{Descripci\363n completa}{section.4.7}% 49
+\BOOKMARK [2][-]{subsection.4.7.2}{Atributos importantes}{section.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.7.3}{Trayectorias del Caso de Uso}{section.4.7}% 51
+\BOOKMARK [1][-]{section.4.8}{CU35 Visualizar pagos por mes}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.8.1}{Descripci\363n completa}{section.4.8}% 53
+\BOOKMARK [2][-]{subsection.4.8.2}{Atributos importantes}{section.4.8}% 54
+\BOOKMARK [2][-]{subsection.4.8.3}{Trayectorias del Caso de Uso}{section.4.8}% 55
+\BOOKMARK [1][-]{section.4.9}{CU36 Visualizar pagos por fecha}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.9.1}{Descripci\363n completa}{section.4.9}% 57
+\BOOKMARK [2][-]{subsection.4.9.2}{Atributos importantes}{section.4.9}% 58
+\BOOKMARK [2][-]{subsection.4.9.3}{Trayectorias del Caso de Uso}{section.4.9}% 59
+\BOOKMARK [0][-]{chapter.5}{Trabajo a futuro}{}% 60
+\BOOKMARK [0][-]{chapter.6}{Resultados y conclusiones}{}% 61
+\BOOKMARK [1][-]{section.6.1}{Resultados}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.2}{Conclusiones}{chapter.6}% 63

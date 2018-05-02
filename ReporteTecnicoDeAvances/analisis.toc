@@ -27,17 +27,42 @@
 \contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Planteamiento del problema}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Problem\IeC {\'a}ticas actuales}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Objetivo general}{17}{section.3.3}
-\contentsline {section}{\numberline {3.4}Objetivos particulares}{17}{section.3.4}
-\contentsline {section}{\numberline {3.5}Justificaci\'on}{17}{section.3.5}
-\contentsline {section}{\numberline {3.6}Descripci\'on de la propuesta}{18}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Alcance del proyecto}{18}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Interacci\IeC {\'o}n con el usuario}{19}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}Metodolog\IeC {\'\i }a}{20}{section.3.7}
-\contentsline {chapter}{\numberline {4}Trabajo realizado}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Base de datos}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Casos de uso}{23}{section.4.2}
-\contentsline {chapter}{\numberline {5}Trabajo a futuro}{26}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Resultados}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusiones}{27}{section.6.2}
+\contentsline {section}{\numberline {3.3}Objetivo general}{18}{section.3.3}
+\contentsline {section}{\numberline {3.4}Objetivos particulares}{18}{section.3.4}
+\contentsline {section}{\numberline {3.5}Justificaci\'on}{18}{section.3.5}
+\contentsline {section}{\numberline {3.6}Descripci\'on de la propuesta}{19}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Alcance del proyecto}{19}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Interacci\IeC {\'o}n con el usuario}{20}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Metodolog\IeC {\'\i }a}{21}{section.3.7}
+\contentsline {chapter}{\numberline {4}Trabajo realizado}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis realizado}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Base de datos}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Casos de uso}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}CU1 Registrar usuario}{26}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{26}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{26}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{27}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}CU8 Visualizar servicios}{29}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Descripci\IeC {\'o}n completa}{29}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Atributos importantes}{29}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Trayectorias del Caso de Uso}{29}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}CU14 Cargar comprobante de pago}{31}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Descripci\IeC {\'o}n completa}{31}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Atributos importantes}{31}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Trayectorias del Caso de Uso}{31}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.7}CU34 Visualizar archivo de pagos por a\IeC {\~n}o}{33}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Descripci\IeC {\'o}n completa}{33}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Atributos importantes}{33}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Trayectorias del Caso de Uso}{33}{subsection.4.7.3}
+\contentsline {section}{\numberline {4.8}CU35 Visualizar pagos por mes}{35}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Descripci\IeC {\'o}n completa}{35}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Atributos importantes}{35}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}Trayectorias del Caso de Uso}{35}{subsection.4.8.3}
+\contentsline {section}{\numberline {4.9}CU36 Visualizar pagos por fecha}{37}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Descripci\IeC {\'o}n completa}{37}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Atributos importantes}{37}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}Trayectorias del Caso de Uso}{37}{subsection.4.9.3}
+\contentsline {chapter}{\numberline {5}Trabajo a futuro}{42}{chapter.5}
+\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Resultados}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusiones}{43}{section.6.2}

@@ -1,13 +1,13 @@
-En el presente documento se icorporan parte de los casos de uso que han derivado del análisis realizado a las areas involucradas, los participantes han tenido que ser mediadores entre los distintos departamentos para llegar a un acuerdo en el que el sistema les sea útil y práctico. En la primera entrega se presentará el documento técnico, la maquetación de las pantallas y la primera parte del modelo de datos que servirá para hacer una gestión simple del problema y por lo tanto se escribirá el código correspondiente sólo a esta gestión.\\
+En el presente capítulo se habla del trabajo realizado para esta primera etapa del presente Trabajo Terminal. Se incluyen los casos de uso principales para el desarrollo de este proyecto derivados del análisis realizado durante las entrevistas con las áreas involucradas.\\
 
-El primer paso de todo el análisis se inicio con una serie de entrevistas elaboradas a las áreas de servicios de Caja, Contaduría, CELEX y Dentales, en las cuales nos mencionaron el proceso en que operan y como es que realizan los tramites de los servicios que imparte cada una. Durante estas primeras entrevista se busco identificar las mayores debilidades y necesidades que presentaban en su actual modelo de procesos.\\
+Hemos tenido que actuar como mediadores entre los distintos departamentos para llegar a una solución en común. En la primera entrega se considera este reporte técnico de avances, el maquetado de las pantallas y la primera parte del modelo de datos que servirá para hacer una gestión simple del problema y por lo tanto se escribirá el código correspondiente sólo a esta gestión.\\
 
-Luego de tener identificados los puntos más cruciales de para el sistema, se desarrollaron una serie de modelos de vistas para los usuarios (Mockups) con los cuales logramos tener una mayor comunicación, ya que al tener un modelo de vista, estos nos explicaron a mayor detalle que funcionalidades eran las que necesitaban y que otras no tenian un ninguna importancia para ellos. Con los servicios de caja y contaduría se tuvo el mayor número de visitas para poder tener bien definidos que funcionalidades se encontraban dentro de nuestras posibilidades sin tener que entrar en conflicto con el sistema SIGA. Para el área de CELEX se presento una comunicación de lo más sencilla, ya que se tuvo el apoyo de un alumno de ESCOM que se encontraba realizando servicio social en dicha área, con lo cual se logro un comunicado más técnico. No fue así en el caso de área dental, en la cual fue muy difícil llegar a un entendimiento mutuo con las dentistas , ya que al inicio de las entrevistas nos comentaron muchas deficiencias de procesos de pago, además de hacer mención de funcionalidades que ellas podrían usar personalmente en el sistema, y que luego de presentar el modelado de vistas, ya no tomaban como funcionales muchos de los puntos que ellas mismo planteaban, caso fue el generar nota de pago. Posteriormente de estas entrevistas y no llegar a un acuerdo mutuo, se establecio junto con nuestros directores un modelo que cumpliera con las necesidades iniciales que presentaron las dentistas, con el fin de evitar una perdida mayor de tiempo.\\
+\section{Análisis realizado}
+El primer paso de todo el análisis se inicio con una serie de entrevistas elaboradas a las áreas de servicios de Caja, Contaduría, CELEX y Dentales, en las cuales nos mencionaron el proceso en que operan y como es que realizan los trámites de los servicios que imparte cada una. Durante estas primeras entrevistas se buscó identificar las mayores debilidades y necesidades que presentaban en su actual modelo de procesos.\\
 
-El siguiente proceso fue la definición y modelado de nuestros casos de uso, los cuales en una primera instancia obtuvimos 75 casos de uso, de los cuales durante el desarrollo de la descripción encontramos muchos casos de uso repetidos y algunos sin identificar, es por ello que luego de un análisis mucho más detallado logramos reducirlos hasta la cantidad de 45 casos de uso, esto por motivo de haber ubicado algunos casos que si bien el nombre era distinto su funcionalidad es la misma.\\
+Luego de tener identificados los puntos más cruciales del sistema, se desarrollaron una serie de interfaces para los usuarios (Mockups) logrando una propuesta de desarrollo inicial permitiendo tener una mayor comunicación, ya que al tener un modelo de vista, nos pudieron explicar a  detalle qué funcionalidades son las que necesitaban y cuáles no tenían ninguna importancia para ellos. Con los servicios de caja y contaduría se tuvo el mayor número de visitas para poder tener bien definidos que funcionalidades se encontraban dentro de nuestras posibilidades sin tener que entrar en conflicto con el sistema SIG@. Para el área de CELEX se presentó una comunicación de lo más sencilla, pudiendo captar de forma inmediata los requerimientos para esta área. No fue así en el caso de área dental, en la cual fue muy difícil llegar a un entendimiento mutuo con ambas dentistas, ya que al inicio de las entrevistas nos comentaron muchas deficiencias de procesos de pago, además de hacer mención de funcionalidades que ellas podrían usar personalmente en el sistema, y que después de presentar el modelado de vistas, ya no tomaban como funcionales. Posteriormente de estas entrevistas y no llegar a un acuerdo mutuo, se estableció junto con nuestros directores un modelo que cumpliera con las necesidades iniciales que presentaron las dentistas, con el fin de evitar una mayor pérdida de tiempo en el análisis y la implementación.\\
 
-Un punto muy importante por definir es que durante todas las entrevistas se noto que el mayor peso de importancia termino recayendo en el sistema de desarrollo web, es por ello que se
-ha llegado a la conclusíon de que la aplicación no puede ser en su totalidad móvil debido a que las áreas involucradas informan que no sería práctico para sus correspondientes gestiones. Por tal motivo se ha decidido realizar una aplicación hibrida que cumplirá de cualquier forma con las funciones de una aplicación móvil al ser responsiva, agregando la funcionalidad de notificaciones a dispositivos móviles para los actores del sistema quienes declararon les sería de utilidad.\\
+El siguiente proceso fue la definición y modelado de nuestros casos de uso, los cuales en una primera instancia resultaron en un total de 75, mismos que disminuyeron posteriormente al realizar una reingeniería. Así, se logró reducirlos hasta la cantidad de 45 casos de uso.\\
 
 \section{Base de datos}
 El siguiente diagrama entidad-relación será mapeado en un modelo ORM debido a que las tecnologías empleadas en este trabajo incluyen herramientas que transforman entidades en objetos, lo cual reduce el tiempo de desarrollo.\\
@@ -17,9 +17,17 @@ Esta primera entrega consta de 13 entidades que modelan el flujo de una gestión
 
 \newpage
 \section{Casos de uso}
-Se presentan los diagramas de los casos de uso mas relevantes del sistema en sus respectivos paquetes:
+Se presentan los diagramas de los casos de uso mas relevantes del sistema en sus respectivos paquetes. La descripción de los  casos de uso principales para este sistema también se presentan, el compendio completo de los casos de uso mencionados con anterioridad se puede consultar en la siguiente dirección https://github.com/davjl/TTLatex\\
 
+\cfinput{cu/CU1}
+\cfinput{cu/CU8}
+\cfinput{cu/CU14}
+\cfinput{cu/CU34}
+\cfinput{cu/CU35}
+\cfinput{cu/CU36}
+\newpage
 \cfinput{CUS}
+
 
 %\subsection{Redacción de casos de uso}
 %El análisis de la primer parte del trabajo terminal nos arrojó 45 casos de uso de los cuales a continuación se presentan:\\

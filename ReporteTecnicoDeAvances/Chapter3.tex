@@ -44,7 +44,7 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item Papel agotado.
 		\item Generación de tickets de pago que carecen de una validez oficial.
 	\end{itemize}
-
+	
 	\item Problema 2. Espacios físicos insuficientes.\\
 	{\bf Causas:}
 	\begin{itemize}
@@ -56,8 +56,8 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item Oficinas carentes de un orden.
 		\item Mala imagen de las oficinas.
 	\end{itemize}
-
-	\item Problema 3. El encargado de la caja de ESCOM no se encuentra en el lugar.
+	
+	\item Problema 3. El encargado de la caja de ESCOM no se encuentra en el lugar.\\
 	{\bf Causas:}
 	\begin{itemize}
 		\item Tomó su hora de comida.
@@ -73,7 +73,7 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item Pérdida de tiempo para el usuario que necesita un servicio.
 		\item Mala experiencia del usuario.		
 	\end{itemize}
-	\item Problema 4. Pérdida del comprobante de pago emitido por el SIG@.
+	\item Problema 4. Pérdida del comprobante de pago emitido por el SIG@.\\
 	{\bf Causas:}
 	\begin{itemize}
 		\item Caja entrega el comprobante físicamente al usuario.
@@ -84,27 +84,36 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item El usuario no cuenta con una garantía para reclamar su servicio.
 		\item La realización del pago de servicio por segunda ocasión.
 	\end{itemize}
-	\item {Problema 4. }
-	
-	
-	
-	\item Consecuencia 2. Adquisición de servicios
+	\item Problema 5. Evación de pago.\\
+	{\bf Causas:}
 	\begin{itemize}
-		\item En ocaciones el alumno pierde su comprobante de pago sin haber efectuado el servicio. 
-		\item El alumno no esta supervisado a realizar el pago luego de haber recibido el servicio en área dental.
+		\item El usuario solicita un servicio dental antes de realizar el pagar.
+	\end{itemize}
+	{\bf Consecuencias:}
+	\begin{itemize}
+		\item El usuario no esta supervisado a generar el pago luego de haber recibido el servicio en área dental.
 	\end{itemize}
 	
-	\item Consecuencia 3. Tiempos.
+	\item Consecuencia 6. Tiempos.\\
+	{\bf Causas:}
 	\begin{itemize}
 		\item Para efectuar un servicio en CELEX es necesario entregar personalmente un voucher de pago en caja con información personal al reverso.
 		\item Para hacer valido cualquier servicio es indispensable presentar físicamente el comprobante de pago generado en caja.
 	\end{itemize}
-	
-	%	\item Consecuencia 4. Pagos en línea.
-	%	\begin{itemize}
-	%		\item Se tiene un modo de pago por transferencia Bancomer pero %		solo para algunos servicios.
-	%	\end{itemize}
-	
+	{\bf Consecuencias:}
+	\begin{itemize}
+		\item El alumno se ve obligado a estar presente en cualquier pago de servicio.
+		\item Planeación de tiempos por parte del usuario.
+	\end{itemize}
+	\item Problema 7. Los administrativos no siguen los procesos establecidos por la institución.\\
+	{\bf Causas: }
+	\begin{itemize}
+		\item En área dental primero se realiza el servicio al usuario y luego se efectua el pago.
+	\end{itemize}
+	{\bf Consecuencias:}
+	\begin{itemize}
+		\item 	El sistema actual utilizado al ser precario permite que los administrativos en turno no sigan los procesos establecidos por la institución.
+	\end{itemize}
 \end{itemize}
 
 \section{Objetivo general}
@@ -145,13 +154,33 @@ El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a 
 	\item Los alumnos podr\'an escoger el metodo de pago que realizen, por transferencia o efectivo.
 \end{itemize}
 
+Por lo anterior, se ha propuesto el presente trabajo terminal el cual, después de un exhaustivo análisis por parte del equipo involucrado con los distintos encargados de las ya mencionadas áreas,  ha determinado que lo que se necesita es un sistema de pagos electrónicos el cual permita a un usuario interactuar a distancia con los servicios proporcionados en la ESCOM y que como resultado optimice los procesos explicados en capítulos anteriores así como los recursos que se desperdician actualmente. Principalmente se buscará ahorrar tiempo y esfuerzo por parte de los administrativos, alumnos y externos(comunidad ESCOM) evitando que estos se tengan que transportar hasta la institución para realizar un pago.
+
+Así, este sistema está pensado para ser un desarrollo web y móvil que en conjunto brindarán una solución para la gestión del proceso de pagos en la ESCOM. Si bien, el cumplimiento de los objetivos recaen en gran parte en el desarrollo web, se planea realizar una aplicación móvil híbrida buscando reutilizar código y haciendo más accesible nuestra aplicación. Esto porque al final del desarrollo resultaría en una aplicación móvil que puede ser soportada en sistemas operativos tanto en Android como en iOS.
+
+Las tecnologías contempladas para el desarrollo serán las siguientes:
+\begin{itemize}
+	\item Spring Boot
+	\item Struts 2
+	\item Hibernate ORM
+	\item PostgreSQL
+	\item Bootstrap
+	\item JQuery - DataTables
+	\item Velocity	
+	\item Xamarin
+\end{itemize}
+
+En conjunto todas estas tecnologías nos permitirán realizar un proyecto cuya arquitectura está pensada en el Modelo Vista Controlador con el fin de tener una separación entre las capas del sistema.\\
+
+Las bondades de distintos conceptos que nos brinda Spring Framework se notan en la inyección de dependencias que permitirán el desarrollo de una aplicación con código más limpio lo cual se traduce a código más mantenible y en una importante disminución de posible soporte. No sólo Spring Framework nos da la para nuestro desarrollo, también Struts 2 y Hibernate ORM, pues nos facilitan el acoplamiento entre la interfaz gráfica del usuario y la lógica de negocio. Así, el uso de Bootstrap nos permitirá la responsividad natural de la interfaz del usuario complementando el desarrollo pensado para la aplicación móvil puesto que con el uso de Xamarin nos permitirá generar una versión híbrida con llamadas a páginas web. 
+
 \subsection{Interacción con el usuario}
-En nuestra arquitectura de sistema es necesario una comunicación entre varios elementos que al trabajar en conjunto permitan un correcto funcionamiento. Entre estos elementos estará una base de datos para la persistencia de información, un servidor web para el alojamiento de la pagina.\\ 
+En nuestra arquitectura de sistema es necesaria una comunicación entre distintos elementos que al trabajar en conjunto permitan un correcto funcionamiento. Entre estos elementos consideramos una base de datos para la persistencia de la información y un servidor web para el alojamiento de la pagina, además de todos los actores que se involucran en el proceso de pagos .\ 
 \IUfig[1]{gui/a}{}{Arquitectura}
 \newpage
 
 \section{Metodología}
-Para el desarrollo del sistema utilizaremos la metodologia incremental de Harlan Mills, ésta se basa en la idea de diseñar una implementación inicial, exponerla al comentario del usuario, y luego desarrollarla en sus diversas versiones hasta producir un sistema adecuado. %===========================Referenciar---------------
+Para el desarrollo del sistema utilizaremos la metodologia incremental de Harlan Mills, la cual se basa en la idea de diseñar una implementación inicial, exponerla al comentario del usuario, y luego desarrollarla en sus diversas versiones hasta producir un sistema adecuado. %===========================Referenciar---------------
 %Libro de ingeneria de software somerville 
 
 Se tomo en cuenta esta metodología por los siguientes beneficios:
@@ -162,3 +191,4 @@ Se tomo en cuenta esta metodología por los siguientes beneficios:
 	\item Es sencillo obtener retroalimentación de los directores y coordinadores de área.
 \end{itemize}
 
+Así, se plantearon un total de 14 incrementos para el desarrollo completo del sistema. Todos estos se han trabajado de forma paralela hasta esta parte del Trabajo Terminal, siendo factor importante para los avances constantes en la realización de este proyecto.
