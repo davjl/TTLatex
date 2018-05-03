@@ -32,7 +32,6 @@
 \contentsline {section}{\numberline {3.5}Justificaci\'on}{18}{section.3.5}
 \contentsline {section}{\numberline {3.6}Descripci\'on de la propuesta}{19}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Alcance del proyecto}{19}{subsection.3.6.1}
-<<<<<<< HEAD
 \contentsline {subsection}{\numberline {3.6.2}Interacci\IeC {\'o}n con el usuario}{20}{subsection.3.6.2}
 \contentsline {section}{\numberline {3.7}Metodolog\IeC {\'\i }a}{21}{section.3.7}
 \contentsline {chapter}{\numberline {4}Trabajo realizado}{23}{chapter.4}
@@ -67,14 +66,3 @@
 \contentsline {chapter}{\numberline {6}Resultados y conclusiones}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Resultados}{43}{section.6.1}
 \contentsline {section}{\numberline {6.2}Conclusiones}{43}{section.6.2}
-=======
-\contentsline {subsection}{\numberline {3.6.2}Interacci\IeC {\'o}n con el usuario}{19}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}Metodolog\IeC {\'\i }a}{20}{section.3.7}
-\contentsline {chapter}{\numberline {4}Trabajo realizado}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Base de datos}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Casos de uso}{23}{section.4.2}
-\contentsline {chapter}{\numberline {5}Trabajo a futuro}{26}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Resultados}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusiones}{27}{section.6.2}
->>>>>>> ec335eefee2a7056a53b904c593c733c9646142d
