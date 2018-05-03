@@ -4,7 +4,12 @@
 
 En el presente documento se muestra el análisis realizado para el desarrollo del Trabajo Terminal 2017-B029 con título ESCOMunidad - Servicios Aplicación móvil de seguimiento a pagos y servicios para la comunidad estudiantil de la ESCOM.\\
 
-Este documento está dirigido para los alumnos, profesores y personal administrativo de la Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN) con el fin de brindar un panorama general sobre la problemática actual en el proceso de pagos de la escuela y la solución que llevamos a cabo pensando en un bien común para la comunidad de la ESCOM. Además, se elaboró como una herramienta mediante la cual los sinodales asignados a este Trabajo Terminal evaluarán nuestro desempeño para esta primera etapa, esperando que sea lo suficientemente adecuada para obtener una calificación aprobatoria.
+Actualmente en la Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN) se prestan una variedad de servicios tanto para alumnos, empleados y personal externo que permiten obtener una ganancia generada para la misma escuela.
+
+Los servicios de más uso por parte de los usuarios esta enfocado a las áreas de servicios dentales, impresiones, CELEX y biblioteca, las cuales para poder otorgar un servicio, es necesario la elaboración de un pago efectuado dentro del sistema de caja de ESCOM. Cabe mencionar que en caso de servicios CELEX los pagos se generan por medio del sistema bancario BBVA Bancomer, el cual, luego de generar el pago es necesario llevar el comprobante de pago a caja.
+
+Después de efectuar el pago en caja, se nos hace entrega de un comprobante para proporcionar en el área en que se solicito el servicio. 
+
 
 \label{Capitulo 1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
@@ -22,33 +27,40 @@ Este documento está dirigido para los alumnos, profesores y personal administra
 \section{Presentaci\'on}
 El documento consta de una Introducción, Antecedentes, Análisis, Trabajo realizado, Trabajo a futuro, Resultados y Conclusiones. Es con esta estructura que recabamos todo el trabajo efectuado para esta primera etapa del Trabajo Terminal.\\
 
-Así, la sección de antecedentes abordará una breve explicación del contexto en el que se está llevando a cabo el proyecto, seguido del análisis derivado del mismo y el trabajo efectuado para la presentación de este Trabajo Terminal. Con ello, mostramos también los planes a futuro que tenemos para el desarrollo de este proyecto y todos los resultados obtenidos, así como las conclusiones tanto positivas como negativas que derivaron de todo este trabajo.\\
+Así, la sección de antecedentes abordará una explicación del acutal modo de operar en las distintas áreas de servicios en el que se está llevando a cabo el proyecto, seguido del análisis derivado del mismo y el trabajo efectuado para la presentación de este Trabajo Terminal. Con ello, mostramos también los planes a futuro que tenemos para el desarrollo de este proyecto y todos los resultados obtenidos, así como las conclusiones tanto positivas como negativas que derivaron de todo este trabajo.\\
 
 %----------------------------------------------------------------------------------------
+\section{A quién va dirigido}
+Este documento está dirigido principalmente para Directores y Sinodales del presente Trabajo Terminal, además de alumnos, profesores y personal administrativo de la ESCOM, con el fin de brindar un panorama general sobre la problemática actual en el proceso de pagos de la escuela y la solución que llevamos a cabo pensando en un bien común para la comunidad de la ESCOM.
 
 \section{Uso y alcance}
-Este proyecto está pensado para la comunidad de la ESCOM, buscando la optimizaci\'on del proceso de pago dentro de la Escuela Superior de Cómputo.
-Este sistema abarca diferentes áreas desde donde se pueden captar diversos conceptos de pago, en este caso específico, se trabajará con las áreas de Biblioteca, CELEX, Dentales y Fotocopiado. Estas áreas se ver\'an ampliamente beneficiadas al tener un sistema web y móvil que interactu\'e con el proceso de pagos y permita notificarles en tiempo real de quién y para qué servicios fueron realizados dichos pagos. Cabe mencionar, que no sólo las áreas serán las beneficiadas, pues también el departamento de Recursos Financieros será favorecido, logrando tener un sistema que complemente sus actividades diarias con fines informativos y de organización.
-Adem\'as de tener una unificaci\'on de las áreas mediante este sistema, tambi\'en se logrará involucrar a todo la comunidad escolar y externa, a través de la selección, comprobación y consulta de pagos considerando el catálogo de servicios disponibles para cada una de las áreas.\\
 
-Este catálogo de servicios por área del que se habla abarca todos aquellos conceptos de pago que ayudan a la continuidad de esos servicios otorgados, adem\'as de que representan una parte importante de los ingresos auto generados por parte de la escuela.\\
+Este documento esta diseñano para permitir a todo lector tener un entendimiento sobre el modo de operación en las áreas de servicios mas influyentes para usuarios y los procesos de pago para efectuar un servicio en ESCOM. Además de tener como principal finalidad validar el trabajo desarrollado durante el periodo del Trabajo Terminal 2017-B029.
 
-Entre los conceptos de pago que destacan debido a la demanda por parte de la comunidad y considerando nuestro alcance en el proyecto se encuentran los siguientes:
+Sin embargo, no debe olvidarse que el ámbito temporal de este documento esta sujeto a un periodo de análisis elaborado en el año 2018-2019, limitando este documento a posibles cambios de administración o procesos de pago posteriores.
+ 
+%Este proyecto está pensado para la comunidad de la ESCOM, buscando la optimizaci\'on del proceso de pago dentro de la Escuela Superior de Cómputo.
+%Este sistema abarca diferentes áreas desde donde se pueden captar diversos conceptos de pago, en este caso específico, se trabajará con las áreas de Biblioteca, CELEX, Dentales y Fotocopiado. Estas áreas se ver\'an ampliamente beneficiadas al tener un sistema web y móvil que interactu\'e con el proceso de pagos y permita notificarles en tiempo real de quién y para qué servicios fueron realizados dichos pagos. Cabe mencionar, que no sólo las áreas serán las beneficiadas, pues también el departamento de Recursos Financieros será favorecido, logrando tener un sistema que complemente sus actividades diarias con fines informativos y de organización.
+%Adem\'as de tener una unificaci\'on de las áreas mediante este sistema, tambi\'en se logrará involucrar a todo la comunidad escolar y externa, a través de la selección, comprobación y consulta de pagos considerando el catálogo de servicios disponibles para cada una de las áreas.\\
 
-\begin{itemize}
-	\item Pago de multas de biblioteca
-	\item Reposici\'on de credencial de biblioteca
-	\item Servicio de fotocopiado
-	\item Servicios dentales
-	\item CELEX
-\end{itemize}
+%Este catálogo de servicios por área del que se habla abarca todos aquellos conceptos de pago que ayudan a la continuidad de esos servicios otorgados, adem\'as de que representan una parte importante de los ingresos auto generados por parte de la escuela.\\
 
-Cabe destacar, que no todos los pagos mencionados se realizan directamente en caja, pues para algunos de ellos se pide a los alumnos, empleados o externos efectuarlos directamente en alguna sucursal bancaria, específicamente Bancomer, para después solicitar el voucher de pago y con ello otorgar una boleta de pago emitida por el Sistema Institucional de Gestión Administrativa (SIG@) del IPN. Dicha boleta es la que servirá como garantía tanto para la persona que realiza el pago, como para el encargado de cada una de las áreas en donde se presta ese servicio.\\
+%Entre los conceptos de pago que destacan debido a la demanda por parte de la comunidad y considerando nuestro alcance en el proyecto se encuentran los siguientes:
 
-Por lo anterior, es que buscamos la optimización de este proceso, logrando desarrollar un sistema que considere a todos los involucrados y cada una de las partes que lo conforman. Así, el sistema permitirá seleccionar un concepto de pago del área que se requiera y subir su voucher de pago al sistema con el fin de enviarlo directamente a caja para que sea el cajero quien visualice y confirme dicho pago. La confirmación de este pago se hará mediante el anexo al sistema del comprobante emitido por el SIG@ y esto será notificado a la persona que realizó el pago, a su vez se guardará el registro para su consulta posterior por parte del área a la que fue dirigido dicho depósito, o bien, para la revisión de pagos por parte de la contadora o el subdirector administrativo.\\
+%\begin{itemize}
+%	\item Pago de multas de biblioteca
+%	\item Reposici\'on de credencial de biblioteca
+%	\item Servicio de fotocopiado
+%	\item Servicios dentales
+%	\item CELEX
+%\end{itemize}
 
-Derivado del proceso anterior, encontramos una brecha importante para una de las áreas involucradas, hablamos del área de servicios dentales. Por tanto, decidimos resolverla mediante la agregación de un módulo para la gestión de citas dentro de nuestro sistema, buscando cerrar por completo un proceso que concluye con la realización de un pago.\\
+%Cabe destacar, que no todos los pagos mencionados se realizan directamente en caja, pues para algunos de ellos se pide a los alumnos, empleados o externos efectuarlos directamente en alguna sucursal bancaria, específicamente Bancomer, para después solicitar el voucher de pago y con ello otorgar una boleta de pago emitida por el Sistema Institucional de Gestión Administrativa (SIG@) del IPN. Dicha boleta es la que servirá como garantía tanto para la persona que realiza el pago, como para el encargado de cada una de las áreas en donde se presta ese servicio.\\
 
-Así también, nos percatamos de una oportunidad de desarrollo bastante viable, que se propone como una posible entrega para la segunda parte de este Trabajo Terminal. Nos referimos a un módulo en el sistema que permita el pago electrónico de cada uno de los servicios disponibles en la ESCOM.
+%Por lo anterior, es que buscamos la optimización de este proceso, logrando desarrollar un sistema que considere a todos los involucrados y cada una de las partes que lo conforman. Así, el sistema permitirá seleccionar un concepto de pago del área que se requiera y subir su voucher de pago al sistema con el fin de enviarlo directamente a caja para que sea el cajero quien visualice y confirme dicho pago. La confirmación de este pago se hará mediante el anexo al sistema del comprobante emitido por el SIG@ y esto será notificado a la persona que realizó el pago, a su vez se guardará el registro para su consulta posterior por parte del área a la que fue dirigido dicho depósito, o bien, para la revisión de pagos por parte de la contadora o el subdirector administrativo.\\
+
+%Derivado del proceso anterior, encontramos una brecha importante para una de las áreas involucradas, hablamos del área de servicios dentales. Por tanto, decidimos resolverla mediante la agregación de un módulo para la gestión de citas dentro de nuestro sistema, buscando cerrar por completo un proceso que concluye con la realización de un pago.\\
+
+%Así también, nos percatamos de una oportunidad de desarrollo bastante viable, que se propone como una posible entrega para la segunda parte de este Trabajo Terminal. Nos referimos a un módulo en el sistema que permita el pago electrónico de cada uno de los servicios disponibles en la ESCOM.
 
 %As\'i tambi\'en, el pago de multas de biblioteca y reposición de credencial se llevan a cabo de la misma manera, se acude a biblioteca para recibir una nota de pago donde se especifica el concepto, se realiza el pago en caja, se entrega una boleta de pago y \'esta es otorgada en biblioteca para confirmar y eliminar esa multa del sistema, o bien, hacer válida la reposici\'on de la credencial.\\
