@@ -8,21 +8,21 @@ En este capítulo se describirá el análisis realizado para este proyecto, part
 Así también, se plantean los objetivos que buscamos cumplir para lograr una solución, justificando también nuestro desarrollo y describiendo nuestra propuesta de trabajo.\\
 
 \section{Planteamiento del problema}
-A pesar de que en cada uno de los departamentos de servicios ya se cuenta con un equipo de cómputo y conexión a Internet, ninguno de ellos tiene un sistema que ayude a la gestión de los pagos que en ellos recae, obligando al personal a tener que realizar todos sus procesos de forma manual o ayudarse de las herramientas de ofimática que se les proporcionan.\\
+A pesar de que en cada una de las áreas de servicios ya se cuenta con un equipo de cómputo y conexión a Internet, ninguna de ellas tiene un sistema que ayude a la gestión de sus pagos, obligando al personal a tener que realizar todos sus procesos de forma manual o ayudarse de las herramientas de ofimática que se les proporcionan.\\
 
-Aunado a esto, se carece de un sistema que comunique directamente con el servicio de caja para confirmar y aprobar un pago, sólo se  mantiene una comunicación por medio de comprobantes impresos comprometiendo al usuario a asistir forzosamente a caja para poder realizar o recibir cualquier servicio.\\
+Aunado a esto, se carece de un sistema que comunique directamente a las áreas con el servicio de caja para confirmar y aprobar un pago, sólo se  mantiene una comunicación entre ellas por medio de comprobantes impresos comprometiendo al usuario a asistir forzosamente a caja para poder realizar o recibir cualquier servicio.\\
 
 Lo anterior, se convierte en un problema que puede ser visto desde rubros diferentes. Uno de ellos es el del usuario que necesita disponer de alguno de los servicios, pues en todos los casos, se ve obligado a presentarse directamente en la caja para comprobar el pago independientemente de la forma en cómo lo haya efectuado. Por tanto, si el usuario no le es posible acudir por alguna razón, el pago no podría llegar a ser aprobado desencadenando así más inconvenientes. Hablamos de que en algunos casos el usuario tendrá que realizar de nueva cuenta el pago, o bien, podría retrasarse más de lo esperado para poder recibir el servicio por el cual está pagando.\\
 
-Y no solo encontramos esos problemas para el usuario, también recae en él toda la responsabilidad de conservar el comprobante de pago emitido por caja hasta que le sea posible llevarlo al área donde lo hará válido. De la mano tenemos que una vez entregado ese comprobante, el usuario se queda sin ninguna garantía de que en algún momento efectúo su pago dejándolo sin ningún recurso para argumentar lo contrario. Esta situación en específico se puede presentar en las áreas de Fotocopiado, CELEX y Biblioteca.\\
+También recae en el usuario toda la responsabilidad de conservar el comprobante de pago emitido por caja hasta que le sea posible llevarlo al área donde lo hará válido. De la mano tenemos que una vez entregado ese comprobante, el usuario se queda sin ninguna garantía de que en algún momento efectúo su pago dejándolo sin ningún recurso para argumentar lo contrario. Esta situación en específico se presenta en las áreas de Fotocopiado, CELEX y Biblioteca.\\
 
 Otro rubro que podemos considerar es el de las áreas que proporcionan los servicios, pues como mencionamos, carecen de un sistema que les apoye en el proceso de pagos de sus servicios. Esto los orilla a idear métodos que creen son los más convenientes, pero en realidad sólo rezagan sus procesos, y en ocasiones se salen de la normatividad impuesta por la ESCOM. Sumado a esto, tenemos que cada una de estas áreas debe de almacenar por cinco años las boletas de pago recibidas, lo que nos habla de carpetas llenas de comprobantes de pago que al final de ese periodo simplemente se van a desechar siendo un gasto de recurso material innecesario tanto en lo económico como en lo ambiental.\\
 
-Un último rubro a considerar será el del departamento de Recursos Financieros, que si bien ya cuentan con un sistema que recaba la información de los pagos que se reciben diariamente, no cuentan con un archivo de pagos que le permita optimizar recursos materiales, espacios físicos y sobretodo tiempo para el usuario. Decimos esto, porque cada pago recibido implica la impresión de dos boletas de pago, el resguardo de la misma por un periodo de cinco años y además la presencia obligatoria del usuario para confirmar el pago de algún servicio.\\
+Un último rubro a considerar será el del departamento de Recursos Financieros, que si bien ya cuentan con un sistema que recaba la información de los pagos que se reciben diariamente, no cuentan con un archivo de pagos que le permita reducir el gasto de recursos materiales, espacios físicos y sobretodo tiempo para el usuario. Decimos esto, porque cada pago recibido implica la impresión de dos boletas de pago, el resguardo de la misma por un periodo de cinco años y además la presencia obligatoria del usuario para confirmar el pago de algún servicio.\\
 
-Si bien el número de impresiones de estos comprobantes por alumno no es significativo, si lo es considerando que toda la comunidad al menos en una ocasión requiere de algún tipo de servicio.\\
+Si bien el número de impresiones de estos comprobantes por alumno no es significativo, si lo es considerando que los alumnos, personal administrativo, docentes y externos al menos en una ocasión requieren de algún tipo de servicio.\\
 
-Bajo esta perspectiva, hablamos de que en promedio se realizan durante un día 100 impresiones, dejando de lado que en periodos de término de semestre o de exámenes a Título de Suficiencia se llegan a imprimir hasta 200 hojas. Considerando la cantidad promedio por día hablamos de que durante un semestre se imprimen aproximadamente 12,000 hojas, contemplando que el tiempo efectivo del semestre son 120 días (4 meses).\\
+Bajo esta perspectiva, hablamos de que en promedio se realizan durante un día 100 impresiones, sin considerar que en periodos de término de semestre o de exámenes a Título de Suficiencia se llegan a imprimir hasta 200 hojas. Considerando la cantidad promedio por día hablamos de que durante un semestre se imprimen aproximadamente 12,000 hojas, contemplando que el tiempo efectivo del semestre son 120 días (4 meses).\\
 
 Si lo trasladamos a datos ambientales, nos daremos cuenta del impacto negativo al medio ambiente que esto tiene. Hablamos de que un árbol sirve para producir 8000 hojas de papel, lo que nos lleva a pensar que en un año se estaría acabando con tres árboles aproximadamente, sumando el uso de 8880 litros de agua para su fabricación teniendo en cuenta que por cada hoja de papel se ocupan 370 cc.\\
 
@@ -32,32 +32,32 @@ Por todo lo anterior, es importante el desarrollo de un sistema que nos permita 
 A raíz del planteamiento del problema, pudimos detectar todas las problemáticas actuales existentes en el proceso de pagos, dándonos la oportunidad de señalar las causas y consecuencias para cada una.\\
 
 \begin{itemize}
-	\item Problema 1. Gasto de recursos materiales.\\
-	{\bf Causas:}
+	\item {\bf Problema 1. Gasto de recursos materiales: papel y tinta.}\\
+	Causas:
 	\begin{itemize}
-		\item Alto consumo de hojas de papel en la impresión de comprobantes de pago para alumnos y gestión de caja.
+		\item Alto consumo de hojas de papel en la impresión de comprobantes de pago para alumnos y caja.
 		\item Gasto de tinta para impresiones.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
 		\item Mayor asignación de recursos económicos para la compra de artículos de papelería.
 		\item Papel agotado.
 		\item Generación de tickets de pago que carecen de una validez oficial.
 	\end{itemize}
 	
-	\item Problema 2. Espacios físicos insuficientes.\\
-	{\bf Causas:}
+	{\bf \item Problema 2. Espacios físicos insuficientes.}\\
+	Causas:
 	\begin{itemize}
 		\item Todas las boletas de pago emitidas por el SIG@ se deben de almacenar por un periodo de cinco años.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
 		\item Estantes llenos de carpetas con los comprobantes de pago.
 		\item Oficinas carentes de un orden.
 		\item Mala imagen de las oficinas.
 	\end{itemize}
-	\item Problema 3. El encargado de la caja de ESCOM no se encuentra en el lugar.\\
-	{\bf Causas:}
+	{\bf \item Problema 3. El responsable de la caja de la ESCOM no se encuentra en el lugar.}\\
+	Causas:
 	\begin{itemize}
 		\item Tomó su hora de comida.
 		\item Se presenta el cambio de turno.
@@ -65,73 +65,88 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item Acudió al sanitario.
 		\item No cumple con la normatividad de la escuela.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
-		\item No se puede efectuar el pago por un servicio, específicamente de Fotocopiado, Biblioteca y CELEX.
+		\item No se puede efectuar el pago por un servicio, específicamente de Fotocopiado, Biblioteca y Dentales.
 		\item ESCOM pierde la oportunidad de recibir ingresos.
 		\item Pérdida de tiempo para el usuario que necesita un servicio.
 		\item Mala experiencia del usuario.		
 	\end{itemize}
-	\item Problema 4. Pérdida del comprobante de pago emitido por el SIG@.\\
-	{\bf Causas:}
+	{\bf \item Problema 4. Pérdida del comprobante de pago emitido por el SIG@.}\\
+	Causas:
 	\begin{itemize}
 		\item Caja entrega el comprobante físicamente al usuario.
 		\item El usuario no acude el mismo día de emisión a entregar el comprobante en el área.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
 		\item El usuario no cuenta con una garantía para reclamar su servicio.
 		\item La realización del pago de servicio por segunda ocasión.
 	\end{itemize}
-	\item Problema 5. Evación de pago.\\
-	{\bf Causas:}
+	{\bf \item Problema 5. Evasión de pago para servicios dentales.}\\
+	Causas:
 	\begin{itemize}
-		\item El usuario solicita un servicio dental antes de realizar el pagar.
+		\item El dentista debe brindar el servicio dental al usuario antes de realizar el pago.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
-		\item El usuario no esta supervisado a generar el pago luego de haber recibido el servicio en área dental.
+		\item El usuario no realiza su pago en caja.
+		\item El usuario puede solicitar de nuevo un servicio sin haber pagado el anterior.
+		\item Pérdida de ingresos para la ESCOM.
 	\end{itemize}
-<<<<<<< HEAD
-	
-=======
-
-	{\bf Consecuencias:}
+	{\bf \item Problema 6. Tiempo en el proceso de pago.}\\
+	Causas:
 	\begin{itemize}
-		\item El usuario no esta supervisado a generar el pago luego de haber recibido el servicio en área dental.
-	\end{itemize}
->>>>>>> 0e79af2a045bd070195cf123805ce1d66952492b
-	\item Consecuencia 6. Tiempos.\\
-	{\bf Causas:}
-	\begin{itemize}
-		\item Para efectuar un servicio en CELEX es necesario entregar personalmente un voucher de pago en caja con información personal al reverso.
+		\item Para hacer válido un servicio en CELEX es necesario entregar personalmente el voucher de pago en caja con información personal al reverso.
 		\item Para hacer valido cualquier servicio es indispensable presentar físicamente el comprobante de pago generado en caja.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
 		\item El alumno se ve obligado a estar presente en cualquier pago de servicio.
-		\item Planeación de tiempos por parte del usuario.
+		\item Para el usuario puede tomar más tiempo la conclusión de su pago.
+		\item El usuario está limitado a la disposición de las áreas para recibir su pago.
 	\end{itemize}
-	\item Problema 7. Los administrativos no siguen los procesos establecidos por la institución.\\
-	{\bf Causas: }
+	{\bf \item Problema 7. Los administrativos no siguen las normas establecidas por la institución.}\\
+	Causas:
 	\begin{itemize}
-		\item En área dental primero se realiza el servicio al usuario y luego se efectua el pago.
+		\item Abandonan sus puestos de trabajo.
+		\item No cumplen con sus horarios de trabajo.
 	\end{itemize}
-	{\bf Consecuencias:}
+	Consecuencias:
 	\begin{itemize}
-		\item 	El sistema actual utilizado al ser precario permite que los administrativos en turno no sigan los procesos establecidos por la institución.
-<<<<<<< HEAD
-	\end{itemize}	
-=======
+		\item Procesos inconclusos.
+		\item Mala experiencia del usuario.
+		\item Genera una imagen negativa de la actual administración.
 	\end{itemize}
-
-	
-	%	\item Consecuencia 4. Pagos en línea.
-	%	\begin{itemize}
-	%		\item Se tiene un modo de pago por transferencia Bancomer pero %		solo para algunos servicios.
-	%	\end{itemize}
->>>>>>> 0e79af2a045bd070195cf123805ce1d66952492b
+	{\bf \item Problema 8. El servicio dental carece de un sistema para la gestión de citas y control de servicios.}\\
+	Causas:
+	\begin{itemize}
+		\item Desinterés por mejorar el servicio.
+		\item Rechazo al cambio.
+		\item Mantener una zona de confort.		
+	\end{itemize}
+	Consecuencias:
+	\begin{itemize}
+		\item Traslape de consultas.
+		\item Pérdida de tiempo para los usuarios.
+		\item Nuevo historial clínico cada vez que se acude a consulta.
+		\item No se puede comprobar el pago del usuario.
+	\end{itemize}
+	{\bf \item Problema 9. Pago de servicios de forma presencial.}\\
+	Causas:
+	\begin{itemize}
+		\item No existe un sistema de pagos electrónico.
+		\item La boleta de pago emitida por el SIG@ se entrega físicamente en caja.
+		\item Caja comprueba el pago del usuario solicitando físicamente el voucher de pago.
+	\end{itemize}
+	Consecuencias:
+	\begin{itemize}
+		\item Pérdida de tiempo del usuario.
+		\item El pago de servicios se limita a que el usuario tenga la disponibilidad de acudir a caja.
+	\end{itemize}
 \end{itemize}
+
+De estas problemáticas, se consideran las primeras ocho dentro del alcance del proyecto el cual se definirá más adelante. La última problemática que hace referencia al pago electrónico aún se sigue considerando como un posible entregable para la segunda parte de este Trabajo Terminal debido a que para la solución de ese punto necesitamos de un contrato con BBVA Bancomer para que se nos de acceso a su aplicación de pagos y podamos añadirla a nuestro sistema. Sin embargo, se nos pide estar declarados como personas físicas con actividad empresarial o como personas morales para poder firmar ese contrato por lo que se expuso esta propuesta al Subdirector Administrativo de la ESCOM y actualmente se encuentra en revisión.\\
 
 \section{Objetivo general}
 Desarrollar una aplicaci\'on m\'ovil sobre el sistema operativo Android en conjunto con una aplicaci\'on web para permitir el seguimiento de los pagos realizados en el departamento de recursos financieros de la ESCOM, limitándose al pago de multas de biblioteca, reposici\'on de credencial de biblioteca, servicio de impresiones, dentales y CELEX, con la finalidad de optimizar en tiempo, recursos materiales y espacios f\'isicos el proceso entre los departamentos involucrados y alumnos.\\
@@ -147,15 +162,25 @@ Desarrollar una aplicaci\'on m\'ovil sobre el sistema operativo Android en conju
 \end{itemize}
 
 \section{Justificaci\'on}
-Hoy en d\'ia, la ESCOM ofrece distintos servicios a su comunidad a cambio de un pago efectuado en el departamento de recursos financieros con el objetivo de contar con ingresos auto generados para el continuo desarrollo de la instituci\'on. Ejemplos de este tipo de ingreso son: pago de multas de biblioteca, reposici\'on de credencial de biblioteca, servicio de impresiones, dentales y CELEX. Estos servicios requieren de un procedimiento post pago que involucra una gran demanda de recurso material y espacio f\'isico, refiriéndonos con esto al alto consumo de papel al momento de la impresi\'on de boletas de pago y/o notas de pago, as\'i como su almacenamiento, debiendo de estar guardadas por un periodo de cinco años por motivos fiscales, las cuales una vez transcurrido este periodo pasan a ser parte de un archivo muerto. Adem\'as, a esto se suma el tiempo que le toma a la comunidad realizar este proceso, puesto que una vez realizado el pago se tiene que esperar a la entrega de un comprobante f\'isico, el cual se otorgar\'a al \'area correspondiente (biblioteca, centro de impresiones, CELEX, servicio dental) con el fin de comprobar el pago. En todos los casos este comprobante sirve como garant\'ia para la prestaci\'on de dicho servicio, lo que implica una obligaci\'on personal para el alumno el realizar una copia del mismo, la cual en muchas de las ocasiones por motivos de tiempo no la efectuamos, quedándonos de esta manera sin un amparo ante cualquier complicaci\'on que surja derivado del pago del servicio.\\
+Los servicios proporcionados por la ESCOM siguen un proceso de pago para hacerlos válidos que actualmente involucra una gran demanda de recurso material, específicamente papel y espacios físicos. Además, del tiempo que le toma al usuario realizar este proceso. Con el análisis efectuado nos dimos cuenta que sería de gran ayuda el desarrollo de un sistema que mejore este proceso y que además formalice los actuales procedimientos que llevan a cabo cada una de las áreas involucradas.\\
 
-Es por eso que desarrollaremos una aplicaci\'on m\'ovil que permitirá\'a dar  seguimiento a los pagos efectuados en la ESCOM. De este modo, pretendemos optimizar parte del proceso manual, dejando de lado la impresi\'on de notas de pago al menos para la entrega al alumno y permitiéndoles conservar un comprobante de pago de forma permanente.\\
+Es por eso que desarrollaremos un sistema web y móvil que permitirá dar seguimiento a los pagos efectuados en la ESCOM. Esto se logrará a través del anexo del voucher de pago por parte del usuario para enviarlo directamente a caja para que ahí se realice su aprobación y al mismo tiempo se emita la boleta del SIG@, misma que será adjuntada en el sistema para su resguardo. Estos pagos también los podrán consultar las áreas con el objetivo de corroborar los pagos recibidos durante el día corriente. \\
 
-Adem\'as de crear un medio de interacci\'on web para los proveedores de los servicios, con lo cual se pueda almacenar y administrar la informaci\'on sobre el alumno, su pago y su estatus en el departamento.\\
+Así, el sistema reducirá el número de impresiones por día, lo que se deduce en un ahorro de recurso material y espacios físicos.\\
 
-As\'i, se buscar\'a agilizar los procesos derivados de un pago en caja, de manera que al ser realizados se sustituya el papel del comprobante y se genere un archivo digital que ayudar\'ia a ahorrar recursos materiales (papel y t\'oner), espacios f\'isicos y tiempo. Permitiendo tambi\'en, una interacci\'on con los distintos departamentos involucrados (sala de impresiones, biblioteca, CELEX ESCOM, servicios dentales) para un mejor seguimiento y comunicaci\'on con el alumnado.\\
+También, se traduce en una reducción de tiempo para el usuario, pues no dependerá del hecho de acudir a caja para hacer válido su pago, pues lo podrá realizar desde cualquier lugar en el que tenga acceso a Internet, ya sea por medio de la aplicación web o móvil.\\ 
+
+Con este Trabajo Terminal se pretende apoyar a las áreas de servicios, al departamento de Recursos Financieros, a los alumnos, docentes y externos en todo este proceso.\\
+
+Cabe mencionar que el desarrollo de este sistema considera su escalabilidad a futuro, pensando en que sería un buen complemento para cualquier aplicación enfocada en la gestión de procesos.\\
 
 \section{Descripci\'on de la propuesta}
+
+La propuesta de trabajo se basa en un sistema web y móvil que permitirá dar seguimiento al proceso de pagos en la ESCOM. Se trata de un sistema que le permitirá al usuario seleccionar un concepto de pago del área que requiera y subir su voucher de pago al sistema con el fin de enviarlo directamente a caja para que sea el cajero quien visualice y confirme dicho pago. La confirmación de este pago se hará mediante el anexo al sistema del comprobante emitido por el SIG@. A su vez, se guardará el registro para su consulta posterior por parte del área a la que fue dirigido dicho depósito, o bien, para la revisión de pagos por parte de la contadora o el subdirector administrativo.\\
+
+Tanto el cajero como el usuario podrán recibir notificaciones respecto a los pagos, pues el sistema actuará de forma interactiva mediante el envío de las mismas. Por un lado, el cajero recibirá una notificación en cuanto le sea enviado un pago, por otro lado el usuario recibirá una notificación en cuanto caja haya confirmado el pago o en el peor de los casos lo haya rechazado. De este modo, el cajero sabe de quién y para qué fue efectuado un pago y a su vez, el usuario sabe si su pago ya fue confirmado o presenta algún inconveniente.\\
+
+También, el sistema incluirá un módulo para la gestión de citas de servicios dentales, buscando resolver la problemática planteada anteriormente. Con esto, se logra una mejor administración para el área, además de que se consigue cerrar esa brecha que existe en el pago de esos servicios.\\
 
 \subsection{Alcance del proyecto}
 El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a con los siguientes requerimientos.
