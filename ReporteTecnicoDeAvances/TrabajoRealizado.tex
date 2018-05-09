@@ -1,33 +1,119 @@
-En el presente capítulo se habla del trabajo realizado para esta primera etapa del presente Trabajo Terminal. Se incluyen los casos de uso principales para el desarrollo de este proyecto derivados del análisis realizado durante las entrevistas con las áreas involucradas.\\
+En el presente capítulo se habla del trabajo realizado para esta primera etapa del Trabajo Terminal. Hablamos de los primeros incrementos realizados y todo lo que de éstos obtuvimos.\\
 
-Hemos tenido que actuar como mediadores entre los distintos departamentos para llegar a una solución en común. En la primera entrega se considera este reporte técnico de avances, el maquetado de las pantallas y la primera parte del modelo de datos que servirá para hacer una gestión simple del problema y por lo tanto se escribirá el código correspondiente sólo a esta gestión.\\
+Se incluyen diagramas de casos de uso representando las funciones más relevantes del sistema. Incluimos también un modelo de base de datos, producto del análisis del sistema.\\
 
 \section{Análisis realizado}
-El primer paso de todo el análisis se inicio con una serie de entrevistas elaboradas a las áreas de servicios de Caja, Contaduría, CELEX y Dentales, en las cuales nos mencionaron el proceso en que operan y como es que realizan los trámites de los servicios que imparte cada una. Durante estas primeras entrevistas se buscó identificar las mayores debilidades y necesidades que presentaban en su actual modelo de procesos.\\
+Durante esta primera etapa hemos tenido que actuar como mediadores entre las distintas áreas para llegar a una solución en común. Esto debido a opiniones encontradas por parte de los responsables de cada una de las áreas.\\
 
-Luego de tener identificados los puntos más cruciales del sistema, se desarrollaron una serie de interfaces para los usuarios (Mockups) logrando una propuesta de desarrollo inicial permitiendo tener una mayor comunicación, ya que al tener un modelo de vista, nos pudieron explicar a  detalle qué funcionalidades son las que necesitaban y cuáles no tenían ninguna importancia para ellos. Con los servicios de caja y contaduría se tuvo el mayor número de visitas para poder tener bien definidos que funcionalidades se encontraban dentro de nuestras posibilidades sin tener que entrar en conflicto con el sistema SIG@. Para el área de CELEX se presentó una comunicación de lo más sencilla, pudiendo captar de forma inmediata los requerimientos para esta área. No fue así en el caso de área dental, en la cual fue muy difícil llegar a un entendimiento mutuo con ambas dentistas, ya que al inicio de las entrevistas nos comentaron muchas deficiencias de procesos de pago, además de hacer mención de funcionalidades que ellas podrían usar personalmente en el sistema, y que después de presentar el modelado de vistas, ya no tomaban como funcionales. Posteriormente de estas entrevistas y no llegar a un acuerdo mutuo, se estableció junto con nuestros directores un modelo que cumpliera con las necesidades iniciales que presentaron las dentistas, con el fin de evitar una mayor pérdida de tiempo en el análisis y la implementación.\\
+Esta discrepancia de opiniones nos tomó bastante tiempo de análisis, repercutiendo en el desarrollo del sistema. Sin embargo, estamos convencidos que tener un buen análisis del sistema es la base para poder definir el éxito del mismo.\\
 
-El siguiente proceso fue la definición y modelado de nuestros casos de uso, los cuales en una primera instancia resultaron en un total de 75, mismos que disminuyeron posteriormente al realizar una reingeniería. Así, se logró reducirlos hasta la cantidad de 45 casos de uso.\\
+A continuación, describiremos los incrementos realizados durante esta primera etapa del Trabajo Terminal.\\
 
-\section{Base de datos}
-El siguiente diagrama entidad-relación será mapeado en un modelo ORM debido a que las tecnologías empleadas en este trabajo incluyen herramientas que transforman entidades en objetos, lo cual reduce el tiempo de desarrollo.\\
-Esta primera entrega consta de 13 entidades que modelan el flujo de una gestión de pago.
+\subsection{Incremento 1. Mesas de trabajo}
+El Trabajo Terminal se comenzó con varias reuniones en las áreas involucradas para esta primera parte. El primer contacto fue con el área de CELEX, posteriormente nos reunimos con el área de servicios dentales y por último conversamos con el departamento de Recursos Financieros, específicamente con la contadora de la ESCOM.\\
 
-\IUfig[1]{gui/SPEE}{}{Modelo de base de datos}
+\subsubsection{Mesas de trabajo CELEX}
+En esta área se tuvieron tres sesiones con la coordinadora del CELEX, cada una de estas reuniones fueron bastante productivas y nos permitieron plantear un flujo inicial para nuestro sistema.\\
 
-\newpage
+En la primer sesión se planteó nuestra propuesta de solución tratando de dar una idea general de nuestro sistema. Aquí fue que se nos explicó la forma en cómo se ve involucrado el CELEX con el proceso de pago realizado en la ESCOM, de ahí que nosotros brindamos opciones adicionales para incluir en nuestro sistema. De momento, a la coordinadora le parecieron buenas las propuestas, lo que nos dio la opción de realizar unas maquetaciones del sistema para mostrarlas en la siguiente sesión. \\
+
+Las propuestas adicionales que de inicio se le mencionaron fueron las siguientes:\\
+
+\begin{itemize}
+	\item Notificaciones móviles y web de pagos confirmados por caja.
+	\item Módulo para la gestión de sus inscripciones.
+	\item Módulo para la gestión de horarios y grupos.	
+\end{itemize}
+
+En la segunda reunión, mostramos el maquetado para hacer más entendible el rol que CELEX desempeñaría. En este momento, la coordinadora de CELEX determinó que las opciones propuestas no serían necesarias, pues la gestión de sus grupos e inscripciones la mantendría como hasta el momento. Por tanto, corregimos el maquetado inicial para poder presentarlo en una siguiente sesión. \\
+
+Así, en la tercer y última reunión se mostró el maquetado actualizado. La coordinadora aprobó el diseño y el flujo que CELEX tendría dentro de nuestro sistema.\\
+
+Estas mesas de trabajo fueron el punto de partida para comenzar nuestro sistema, pues nos permitió llegar a las mesas de trabajo con servicios dentales ya con una propuesta de trabajo hecha similar a la aprobada en CELEX. Lo anterior se debe a que el proceso de pago era muy similar.\\
+
+\subsubsection{Mesas de trabajo Servicios Dentales}
+En estas mesas de trabajo se tuvo que considerar la opinión de las dos dentistas encargadas del área de servicio dental. Fue complicado acordar estas reuniones pues los horarios de cada dentista se conflictuaban debido a su agenda de consultas. El primer contacto se tuvo con la dentista del turno matutino y posteriormente con la dentista del turno vespertino.\\
+
+En la primer sesión que se tuvo con cada una de las dentistas se mostró la propuesta de trabajo que pensamos de inicio para servicios dentales. Esta propuesta se basaba en un maquetado hecho, derivado de lo platicado en reuniones anteriores con el área de CELEX pues el proceso de pago era muy similar. Ambas dentistas nos expresaron el proceso de pagos en el que se veía involucrado el área y ambas coincidieron hasta este punto.\\
+
+De lo anterior, nos pudimos dar cuenta de algunas carencias que se tienen en el área referente al proceso de pagos, por lo que les planteamos algunas propuestas de solución a cada una de las dentistas. Estas propuestas fueron las siguientes:\\
+
+\begin{itemize}
+	\item Módulo para la gestión de citas.
+	\item Generación de notas de pago digitales.
+	\item Generación de cuestionario médico y consulta de forma digital.
+	\item Seguimiento a pacientes.
+\end{itemize}
+
+Esas propuestas fueron planteadas como una solución en común para ambas dentistas, buscando que trabajaran sobre una misma herramienta pues hasta el momento cada una de ellas gestiona sus citas y consultas de manera distinta. De inicio, ambas dentistas estuvieron de acuerdo con nuestras propuestas haciéndonos ver que serían una buena solución en el proceso de pago pues todo en conjunto formaba parte de ese proceso.\\
+
+Fue entonces que decidimos elaborar una nueva maquetación para esta área abarcando las propuestas adicionales que se hicieron y que habían sido aprobadas. Este maquetado lo presentamos en una sesión posterior, primero a la dentista del turno matutino y nos dio su visto bueno. En cambio, la dentista del turno vespertino rechazó por completo tal propuesta, señalando que lo que en un momento le pareció bueno, ahora le parecía innecesario y bastante controlador para su labor como dentista. Nos comentó que sólo nos enfocáramos en la confirmación y consulta de pagos y que dejáramos de lado la gestión de citas, cuestionarios médicos, consultas y notas de pago digital. Esto nos puso en conflicto pues nos vimos obligados a detenernos en este punto y tratar de idear una solución en común para ambas dentistas.\\
+
+Para ello, nos apoyamos de nuestros directores de Trabajo Terminal a quienes se les platicó esta diferencia de opiniones. De aquí fue que optamos por incluir dentro de nuestro sistema lo propuesto en la primer reunión con las dentistas basando nuestra decisión en las normas establecidas en la ESCOM y los consejos dados por los directores.
+
+Así fue que pudimos unificar una solución para ambas dentistas planteando a cada una de ella el motivo por el cual se realizaba de esa manera y dejando en claro que este sistema es un proyecto académico con fines de titulación. Por tanto, no estaban obligadas a hacer uso del mismo, que si bien será una herramienta de mucha ayuda en su área, no forma parte esencial de su labor como dentistas.\\
+
+Teniendo los procesos claros, tanto para el CELEX como para servicios dentales y las soluciones que daremos para cada una de ellas acudimos al departamento de Recursos Financieros para hablar específicamente con la contadora.\\
+
+\subsubsection{Mesas de de trabajo con Contadora}
+
+Fue necesario acordar reuniones de trabajo con la contadora pues en caja y contaduría recaen todos los depósitos y comprobantes de pago que los usuarios realizan con el fin de obtener un servicio.\\
+
+Aquí, se nos explicó más a detalle el proceso y todo lo que se involucra en él refiriéndonos a sistemas existentes y personal.\\
+
+En la primer sesión que se tuvo se presentó un maquetado con el flujo que tendría ella como contadora y el personal encargado de caja. Aquí fue donde se notaron la gran parte de problemas explicados anteriormente por lo que se plantearon diversas opciones.\\
+
+\begin{itemize}
+	\item Comprobación de pagos de los usuarios por medio de un archivo enviado directamente a caja.
+	\item Gestión de pagos por día, meses y años.
+	\item Almacenamiento de comprobantes de pago en una base de datos, disponible en el momento que ella lo requiera.
+	\item Visualización de comprobantes de pago y boletas SIG@.
+\end{itemize}
+
+Con esas propuestas fue que llegamos a la segunda reunión y se presentó una nueva maquetación con el flujo correspondiente. Estas opciones y diseño fueron aprobados por ella haciendo mención de que serviría como herramienta adicional al sistema SIG@.\\
+
+Hasta este punto, teníamos todas las maquetaciones referentes al área de CELEX, servicios dentales y Recursos Financieros. Nos hacía falta el análisis del usuario que realizaría un pago. Nos enfocamos en los problemas que nosotros como alumnos hemos presentado al momento de efectuar un pago y de ahí comenzamos a realizar maquetados y propuestas de funcionalidades al sistema.\\
+
+Las decisiones finales las tomamos con el apoyo de nuestros directores, teniendo así un análisis general del sistema, listo para comenzar a modelar y desarrollar.\\
+
+\section{Incremento 2. Maquetación del sistema}
+En este incremento ya contábamos con algunas maquetaciones hechas pues fueron las que se propusieron de inicio para cada una de las áreas involucradas en esta primera etapa.\\
+
+Aquí sólo modelamos el diseño del sistema mejorando los modelos que de inicio nos fueron aprobados por los responsables de las áreas. Así, esta maquetación nos arrojó un total de 55 pantallas las cuales fueron elaboradas con el software Balsamiq Mockups 3. El compendio de todo este maquetado lo podrán observar en la siguiente dirección: https://github.com/davjl/TTLatex\\
+
 \section{Casos de uso}
-Se presentan los diagramas de los casos de uso mas relevantes del sistema en sus respectivos paquetes. La descripción de los  casos de uso principales para este sistema también se presentan, el compendio completo de los casos de uso mencionados con anterioridad se puede consultar en la siguiente dirección https://github.com/davjl/TTLatex\\
+Este análisis nos llevo a identificar las funcionalidades del sistema que se tradujeron en diagramas de paquetes y casos de uso. Esto formó parte de nuestro tercer incremento.\\
 
-\cfinput{cu/CU1}
-\cfinput{cu/CU8}
-\cfinput{cu/CU14}
-\cfinput{cu/CU34}
-\cfinput{cu/CU35}
-\cfinput{cu/CU36}
+\subsection{Incremento 3. Casos de uso}
+Se pudieron identificar 45 casos de uso para esta primera etapa los cuales representan las funcionalidades principales del sistema. Estos casos de uso podrán aumentar para la segunda parte del Trabajo Terminal, producto de las mesas de trabajo pendientes con las áreas de biblioteca y fotocopiado, o bien, de las observaciones que se realicen durante la evaluación de esta primera etapa.\\
+
+Para entender de forma general el comportamiento del sistema y los actores que se verán involucrados realizamos un diagrama de paquetes con sus respectivas relaciones. Este se muestra a continuación:\\
+
+\IUfig[1]{gui/diagramaPaquetes}{}{Diagrama de paquetes.}
+\newpage
+En este diagrama podemos ver que se involucran ocho actores dentro del sistema, cada uno de ellos con una relación directa a caja pues ahí es donde recaerán todos los pagos de servicios. Cada actor tendrá su propio acceso al sistema lo que implicará un control de permisos dependiendo tipo de acceso.\\
+
+Así también, cada uno de estos paquetes mostrados cuenta con funcionalidades específicas, éstas se representan mediante casos de uso. Cabe mencionar que sólo mostramos los casos de uso más relevantes de nuestro sistema pues son estos en los que recaen los objetivos planteados. Los casos de uso los representamos mediante un diagrama y sus relaciones que tienen con los actores.\\
+
 \newpage
 \cfinput{CUS}
 
 
-%\subsection{Redacción de casos de uso}
-%El análisis de la primer parte del trabajo terminal nos arrojó 45 casos de uso de los cuales a continuación se presentan:\\
+
+\newpage
+Podemos ver que algunos actores comparten casos de uso y algunos realizan funciones específicas de acuerdo al papel que desempeñan en el sistema.\\
+\newpage
+El compendio con la descripción de los 45 casos de uso se puede consultar en la siguiente dirección: https://github.com/davjl/TTLatex
+
+\newpage
+\section{Base de datos}
+Como última parte del trabajo realizado para esta primera etapa, modelamos nuestra base de datos para representar el acceso a la información. Se planteó un primer diseño que consider un flujo simple para el proceso de pago en nuestro sistema.\\
+
+\subsection{Incremento 4. Base de datos}
+Este primer diseño de la base de datos se hizo con la intención de poder desarrollar un flujo simple del proceso de pagos. Consta de un total de 13 relaciones, cada una de ellas colocada dentro del esquema que le corresponde dentro del flujo del sistema.\\
+
+\IUfig[1]{gui/SPEE}{}{Modelo de base de datos}
+
+Este modelo se tradujo a código SQL con la intención de implementar esta primera base de datos y ver el comportamiento que tenía con nuestro proyecto de desarrollo. Cabe mencionar que este modelo será modificado para la segunda parte del Trabajo Terminal, agregando relaciones que representen el flujo de las áreas módulos faltantes.
+
+

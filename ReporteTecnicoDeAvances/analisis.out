@@ -25,37 +25,18 @@
 \BOOKMARK [1][-]{section.3.5}{Justificaci\363n}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.6}{Descripci\363n de la propuesta}{chapter.3}% 26
 \BOOKMARK [2][-]{subsection.3.6.1}{Alcance del proyecto}{section.3.6}% 27
-\BOOKMARK [2][-]{subsection.3.6.2}{Interacci\363n con el usuario}{section.3.6}% 28
-\BOOKMARK [1][-]{section.3.7}{Metodolog\355a}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Trabajo realizado}{}% 30
-\BOOKMARK [1][-]{section.4.1}{An\341lisis realizado}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{Base de datos}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.3}{Casos de uso}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.4}{CU1 Registrar usuario}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 35
-\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 36
-\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 37
-\BOOKMARK [1][-]{section.4.5}{CU8 Visualizar servicios}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.5.1}{Descripci\363n completa}{section.4.5}% 39
-\BOOKMARK [2][-]{subsection.4.5.2}{Atributos importantes}{section.4.5}% 40
-\BOOKMARK [2][-]{subsection.4.5.3}{Trayectorias del Caso de Uso}{section.4.5}% 41
-\BOOKMARK [1][-]{section.4.6}{CU14 Cargar comprobante de pago}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.6.1}{Descripci\363n completa}{section.4.6}% 43
-\BOOKMARK [2][-]{subsection.4.6.2}{Atributos importantes}{section.4.6}% 44
-\BOOKMARK [2][-]{subsection.4.6.3}{Trayectorias del Caso de Uso}{section.4.6}% 45
-\BOOKMARK [1][-]{section.4.7}{CU34 Visualizar archivo de pagos por a\361o}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.7.1}{Descripci\363n completa}{section.4.7}% 47
-\BOOKMARK [2][-]{subsection.4.7.2}{Atributos importantes}{section.4.7}% 48
-\BOOKMARK [2][-]{subsection.4.7.3}{Trayectorias del Caso de Uso}{section.4.7}% 49
-\BOOKMARK [1][-]{section.4.8}{CU35 Visualizar pagos por mes}{chapter.4}% 50
-\BOOKMARK [2][-]{subsection.4.8.1}{Descripci\363n completa}{section.4.8}% 51
-\BOOKMARK [2][-]{subsection.4.8.2}{Atributos importantes}{section.4.8}% 52
-\BOOKMARK [2][-]{subsection.4.8.3}{Trayectorias del Caso de Uso}{section.4.8}% 53
-\BOOKMARK [1][-]{section.4.9}{CU36 Visualizar pagos por fecha}{chapter.4}% 54
-\BOOKMARK [2][-]{subsection.4.9.1}{Descripci\363n completa}{section.4.9}% 55
-\BOOKMARK [2][-]{subsection.4.9.2}{Atributos importantes}{section.4.9}% 56
-\BOOKMARK [2][-]{subsection.4.9.3}{Trayectorias del Caso de Uso}{section.4.9}% 57
-\BOOKMARK [0][-]{chapter.5}{Trabajo a futuro}{}% 58
-\BOOKMARK [0][-]{chapter.6}{Resultados y conclusiones}{}% 59
-\BOOKMARK [1][-]{section.6.1}{Resultados}{chapter.6}% 60
-\BOOKMARK [1][-]{section.6.2}{Conclusiones}{chapter.6}% 61
+\BOOKMARK [2][-]{subsection.3.6.2}{Propuesta de software}{section.3.6}% 28
+\BOOKMARK [2][-]{subsection.3.6.3}{Interacci\363n con el usuario}{section.3.6}% 29
+\BOOKMARK [1][-]{section.3.7}{Metodolog\355a}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{Trabajo realizado}{}% 31
+\BOOKMARK [1][-]{section.4.1}{An\341lisis realizado}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.1.1}{Incremento 1. Mesas de trabajo}{section.4.1}% 33
+\BOOKMARK [1][-]{section.4.2}{Incremento 2. Maquetaci\363n del sistema}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Casos de uso}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{Incremento 3. Casos de uso}{section.4.3}% 36
+\BOOKMARK [1][-]{section.4.4}{Base de datos}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.1}{Incremento 4. Base de datos}{section.4.4}% 38
+\BOOKMARK [0][-]{chapter.5}{Resultados y conclusiones}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Resultados}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{Conclusiones}{chapter.5}% 41
+\BOOKMARK [0][-]{chapter.6}{Trabajo a futuro}{}% 42

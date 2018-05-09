@@ -45,7 +45,7 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item Generación de tickets de pago que carecen de una validez oficial.
 	\end{itemize}
 	
-	{\bf \item Problema 2. Espacios físicos insuficientes.}\\
+	{\bf \item Problema 2. Desaprovechamiento de espacios físicos.}\\
 	Causas:
 	\begin{itemize}
 		\item Todas las boletas de pago emitidas por el SIG@ se deben de almacenar por un periodo de cinco años.
@@ -106,7 +106,7 @@ A raíz del planteamiento del problema, pudimos detectar todas las problemática
 		\item Para el usuario puede tomar más tiempo la conclusión de su pago.
 		\item El usuario está limitado a la disposición de las áreas para recibir su pago.
 	\end{itemize}
-	{\bf \item Problema 7. Los administrativos no siguen las normas establecidas por la institución.}\\
+	{\bf \item Problema 7. Los responsables de las áreas no siguen las normas establecidas por la institución.}\\
 	Causas:
 	\begin{itemize}
 		\item Abandonan sus puestos de trabajo.
@@ -183,46 +183,57 @@ Tanto el cajero como el usuario podrán recibir notificaciones respecto a los pa
 También, el sistema incluirá un módulo para la gestión de citas de servicios dentales, buscando resolver la problemática planteada anteriormente. Con esto, se logra una mejor administración para el área, además de que se consigue cerrar esa brecha que existe en el pago de esos servicios.\\
 
 \subsection{Alcance del proyecto}
-El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a con los siguientes requerimientos.
+El sistema de “Escomunidad-Servicios” descrito en esta propuesta cumplir\'a con los siguientes requerimientos de usuario.\\
+
 \begin{itemize}
-	\item Los administrativos en \'areas de servicios podr\'an visualizar y gestionar los pagos que reciban de caja para realizar un 		  servicio
-	\item Los administrativos en \'areas de biblioteca y dentales podr\'an mandar una nota digital de pago a los usuarios.
-	\item El contador y el encargado de recursos financieros podr\'an visualizar todos los conceptos de pago e imprimirlos en caso de ser necesarios
-	\item El personal de caja podr\'a validar dos tipos de pago, en efectivo y por medio de un voucher de pago.
-	\item El personal de caja podr\'a visualizar, aceptar o rechazar los voucher de pago.
-	\item El alumno podr\'a visualizar los servicios disponibles y sus precios desde una pagina web o aplicaci\'on m\'ovil
-	\item El alumno podr\'a seleccionar entre realiar un pago por transferencia o mandar una nota de pago a caja para realizar el 				  pago en efectivo.
-	\item El alumno podr\'a agendar citas de servicio con el \'area de dentales.
-	\item Los alumnos podr\'an escoger el metodo de pago que realizen, por transferencia o efectivo.
+	\item El alumno, empleado o externo podrá crear una cuenta de usuario para el uso del sistema.
+	\item Los responsables de las \'areas de servicios podr\'an visualizar y gestionar los pagos que reciban de caja para realizar un 		  servicio
+	\item Los responsables de las \'areas de biblioteca y dentales podr\'an mandar una nota digital de pago a los usuarios.
+	\item El contador podr\'a visualizar todos los pagos recibidos e imprimirlos en caso de ser necesario.
+	\item El cajero podr\'a validar dos tipos de pago, en efectivo y por medio de un voucher de pago.
+	\item El cajero podr\'a visualizar el voucher de pago del usuario. 
+	\item El cajero podrá aceptar o rechazar los voucher de pago del usuario.
+	\item El alumno, empleado o externo podr\'a visualizar el catálogo de servicios disponibles en el área de CELEX, biblioteca, fotocopiado y servicios dentales.
+	\item El alumno, empleado o externo podr\'a adjuntar su comprobante de pago para enviarlo a caja.
+	\item El alumno, empleado o externo podr\'a agendar citas con el área de servicios dentales.
+	\item El cajero podrá adjuntar el comprobante de pago del SIG@.
+	\item Las áreas de servicios dispondrán de un archivo de pagos con los recibos de pago de los últimos cinco años.
+	\item El alumno, empleado o externo podrá recibir notificaciones de confirmación o rechazo de sus pagos.
+	\item El cajero recibirá notificaciones cada vez que reciba un voucher de pago.
 \end{itemize}
 
-Por lo anterior, se ha propuesto el presente trabajo terminal el cual, después de un exhaustivo análisis por parte del equipo involucrado con los distintos encargados de las ya mencionadas áreas,  ha determinado que lo que se necesita es un sistema de pagos electrónicos el cual permita a un usuario interactuar a distancia con los servicios proporcionados en la ESCOM y que como resultado optimice los procesos explicados en capítulos anteriores así como los recursos que se desperdician actualmente. Principalmente se buscará ahorrar tiempo y esfuerzo por parte de los administrativos, alumnos y externos(comunidad ESCOM) evitando que estos se tengan que transportar hasta la institución para realizar un pago.
+Todos estos requerimientos se desarrollarán  considerando solo a las áreas de CELEX, servicios dentales, biblioteca y fotocopiado.\\ 
 
 Así, este sistema está pensado para ser un desarrollo web y móvil que en conjunto brindarán una solución para la gestión del proceso de pagos en la ESCOM. Si bien, el cumplimiento de los objetivos recaen en gran parte en el desarrollo web, se planea realizar una aplicación móvil híbrida buscando reutilizar código y haciendo más accesible nuestra aplicación. Esto porque al final del desarrollo resultaría en una aplicación móvil que puede ser soportada en sistemas operativos tanto en Android como en iOS.
 
+
+\subsection{Propuesta de software}
 Las tecnologías contempladas para el desarrollo serán las siguientes:
 \begin{itemize}
-	\item Spring Boot
+	\item Spring Framework
 	\item Struts 2
 	\item Hibernate ORM
 	\item PostgreSQL
 	\item Bootstrap
-	\item JQuery - DataTables
-	\item Velocity	
 	\item Xamarin
 \end{itemize}
 
 En conjunto todas estas tecnologías nos permitirán realizar un proyecto cuya arquitectura está pensada en el Modelo Vista Controlador con el fin de tener una separación entre las capas del sistema.\\
 
-Las bondades de distintos conceptos que nos brinda Spring Framework se notan en la inyección de dependencias que permitirán el desarrollo de una aplicación con código más limpio lo cual se traduce a código más mantenible y en una importante disminución de posible soporte. No sólo Spring Framework nos da la para nuestro desarrollo, también Struts 2 y Hibernate ORM, pues nos facilitan el acoplamiento entre la interfaz gráfica del usuario y la lógica de negocio. Así, el uso de Bootstrap nos permitirá la responsividad natural de la interfaz del usuario complementando el desarrollo pensado para la aplicación móvil puesto que con el uso de Xamarin nos permitirá generar una versión híbrida con llamadas a páginas web. 
+Las bondades que nos brinda Spring Framework se notan en la inyección de dependencias que permitirán el desarrollo de una aplicación con código más limpio lo cual se traduce a código más mantenible y a disminución de posible soporte. No sólo Spring Framework nos da las herramientas para nuestro desarrollo, también Struts 2 y Hibernate ORM, pues nos facilitan el acoplamiento entre la interfaz gráfica del usuario y la lógica de negocio.\\
+
+Pensando en el diseño del sistema haremos uso de Bootstrap lo que nos permitirá la responsividad natural de la interfaz del usuario complementando el desarrollo pensado para la aplicación móvil puesto que con el uso de Xamarin reutilizaremos código para la creación de una aplicación móvil híbrida con llamadas a páginas web. 
 
 \subsection{Interacción con el usuario}
-En nuestra arquitectura de sistema es necesaria una comunicación entre distintos elementos que al trabajar en conjunto permitan un correcto funcionamiento. Entre estos elementos consideramos una base de datos para la persistencia de la información y un servidor web para el alojamiento de la pagina, además de todos los actores que se involucran en el proceso de pagos .\ 
-\IUfig[1]{gui/a}{}{Arquitectura}
+En nuestra arquitectura de sistema es necesaria la comunicación entre distintos elementos que permitan un flujo correcto del proceso de pagos. Entre estos elementos consideramos una base de datos para la persistencia de la información, un servidor web para el alojamiento de la aplicación, además de todos los actores que se involucran en el proceso de pagos.\\
+
+La interacción entre cada uno de esos elementos se muestra a continuación.
+
+\IUfig[1]{gui/arquitectura}{}{Arquitectura del sistema.}
 \newpage
 
 \section{Metodología}
-Para el desarrollo del sistema utilizaremos la metodologia incremental de Harlan Mills, la cual se basa en la idea de diseñar una implementación inicial, exponerla al comentario del usuario, y luego desarrollarla en sus diversas versiones hasta producir un sistema adecuado. %===========================Referenciar---------------
+Para el desarrollo del sistema utilizaremos la metodología incremental de Harlan Mills, la cual se basa en la idea de diseñar una implementación inicial, exponerla al comentario del usuario, y luego desarrollarla en sus diversas versiones hasta producir un sistema adecuado. %===========================Referenciar---------------
 %Libro de ingeneria de software somerville 
 
 Se tomo en cuenta esta metodología por los siguientes beneficios:
@@ -233,4 +244,22 @@ Se tomo en cuenta esta metodología por los siguientes beneficios:
 	\item Es sencillo obtener retroalimentación de los directores y coordinadores de área.
 \end{itemize}
 
-Así, se plantearon un total de 14 incrementos para el desarrollo completo del sistema. Todos estos se han trabajado de forma paralela hasta esta parte del Trabajo Terminal, siendo factor importante para los avances constantes en la realización de este proyecto.
+Así, se plantearon un total de 14 incrementos para el desarrollo completo del sistema. Todos estos se han trabajado de forma paralela hasta esta parte del Trabajo Terminal, siendo factor importante para los avances constantes en la realización de este proyecto. Cabe mencionar que se han modificado los alcances de algunos incrementos debido a la etapa de análisis del proyecto. Los incrementos que se plantearon son los siguientes:\\
+
+Incremento 1: Análisis de requisitos.\\
+Incremento 2: Generación de base de datos de información de servicios y pagos.\\
+Incremento 3: Diseño e implementación de la aplicación web con módulos CELEX y servicios dentales.\\
+Incremento 4: Diseño e implementación del módulo de reportaje a pagos CELEX.\\
+Incremento 5: Diseño e implementación del módulo de seguimiento a pagos de servicios dentales.\\
+Incremento 6: Elaboración de una primera parte del manual de usuario.\\
+Incremento 7: Pruebas del sistema en conjunto de las iteraciones 2, 3, 4 y 5.\\
+Incremento 8: Elaboración y revisión del documento para evaluación de TT 1.\\
+Incremento 9: Diseño e implementación de la aplicación web con módulos impresiones y biblioteca.\\
+Incremento 10: Diseño e implementación del módulo de seguimiento a pagos de biblioteca.\\
+Incremento 11: Diseño e implementación del módulo de seguimiento a pagos de impresiones.\\
+Incremento 12: Elaboración final del manual de usuario.\\
+Incremento 13: Pruebas del sistema en conjunto de todos los módulos.\\
+Incremento 14: Elaboración y revisión del documento final para TT 2.\\
+
+Hasta esta parte del Trabajo Terminal se ha tratado de trabajar de manera paralela los primeros siete incrementos, haciendo algunas adecuaciones que nos permitan mostrar un avance del sistema. 
+

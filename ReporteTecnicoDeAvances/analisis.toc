@@ -33,37 +33,21 @@
 \contentsline {section}{\numberline {3.5}Justificaci\'on}{21}{section.3.5}
 \contentsline {section}{\numberline {3.6}Descripci\'on de la propuesta}{22}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Alcance del proyecto}{22}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Interacci\IeC {\'o}n con el usuario}{23}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}Propuesta de software}{23}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Interacci\IeC {\'o}n con el usuario}{23}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Metodolog\IeC {\'\i }a}{24}{section.3.7}
 \contentsline {chapter}{\numberline {4}Trabajo realizado}{26}{chapter.4}
 \contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis realizado}{26}{section.4.1}
-\contentsline {section}{\numberline {4.2}Base de datos}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}Casos de uso}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}CU1 Registrar usuario}{29}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{29}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{29}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{30}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}CU8 Visualizar servicios}{32}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Descripci\IeC {\'o}n completa}{32}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Atributos importantes}{32}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Trayectorias del Caso de Uso}{32}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}CU14 Cargar comprobante de pago}{34}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Descripci\IeC {\'o}n completa}{34}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Atributos importantes}{34}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Trayectorias del Caso de Uso}{34}{subsection.4.6.3}
-\contentsline {section}{\numberline {4.7}CU34 Visualizar archivo de pagos por a\IeC {\~n}o}{36}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Descripci\IeC {\'o}n completa}{36}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Atributos importantes}{36}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Trayectorias del Caso de Uso}{36}{subsection.4.7.3}
-\contentsline {section}{\numberline {4.8}CU35 Visualizar pagos por mes}{38}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Descripci\IeC {\'o}n completa}{38}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Atributos importantes}{38}{subsection.4.8.2}
-\contentsline {subsection}{\numberline {4.8.3}Trayectorias del Caso de Uso}{38}{subsection.4.8.3}
-\contentsline {section}{\numberline {4.9}CU36 Visualizar pagos por fecha}{40}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Descripci\IeC {\'o}n completa}{40}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Atributos importantes}{40}{subsection.4.9.2}
-\contentsline {subsection}{\numberline {4.9.3}Trayectorias del Caso de Uso}{40}{subsection.4.9.3}
-\contentsline {chapter}{\numberline {5}Trabajo a futuro}{45}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultados y conclusiones}{46}{chapter.6}
-\contentsline {section}{\numberline {6.1}Resultados}{46}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusiones}{46}{section.6.2}
+\contentsline {subsection}{\numberline {4.1.1}Incremento 1. Mesas de trabajo}{26}{subsection.4.1.1}
+\contentsline {subsubsection}{Mesas de trabajo CELEX}{26}{section*.9}
+\contentsline {subsubsection}{Mesas de trabajo Servicios Dentales}{27}{section*.10}
+\contentsline {subsubsection}{Mesas de de trabajo con Contadora}{28}{section*.11}
+\contentsline {section}{\numberline {4.2}Incremento 2. Maquetaci\IeC {\'o}n del sistema}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Casos de uso}{29}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Incremento 3. Casos de uso}{29}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Base de datos}{35}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Incremento 4. Base de datos}{35}{subsection.4.4.1}
+\contentsline {chapter}{\numberline {5}Resultados y conclusiones}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Resultados}{36}{section.5.1}
+\contentsline {section}{\numberline {5.2}Conclusiones}{36}{section.5.2}
+\contentsline {chapter}{\numberline {6}Trabajo a futuro}{38}{chapter.6}
