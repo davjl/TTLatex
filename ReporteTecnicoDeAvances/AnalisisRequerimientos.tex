@@ -1,0 +1,209 @@
+\section{Análisis de requerimientos}
+\subsection{Requisitos funcionales}
+
+{\bf Requisitos funcionales generales}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF & Inicio de sesión & Todo usuario registrado podrá iniciar sesión.\\
+			\hline
+			RF & Cerrar sesión & Todo usuario registrado podrá cerrar sesión.\\
+			\hline
+			RF & Notificaciones & Todo usuario deberá poder recibir notificaciones que sean de importancia para el actor.\\
+			\hline
+			RF & Historial & Todo usuario podrá visualizar el historial de pagos aprobados en su área.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales para todo usuario.}
+		\label{tabla:RFG}
+	\end{center}
+\end{table}
+
+{\bf Requisitos funcionales para alumnos, empleados o externos no registrados}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF & Registrar usuario & Todo usuario podrá registrarse al sistema en el momento que lo deseen.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales para todo usuario.}
+		\label{tabla:RFRU}
+	\end{center}
+\end{table}
+
+{\bf Requisitos funcionales área de administración financiera y áreas de servicios}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF & Visualización de pagos aprobados & Todos los usuarios podrán visualizar los pagos aprobados para el área correspondiente.\\
+			\hline
+			RF & Impresión de comprobantes & Todos los usuarios podrán realizar la impresión de los comprobantes sigaa en caso de ser necesario.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales de área administrativa y áreas de servicios.}
+		\label{tabla:RFAAS}
+	\end{center}
+\end{table}
+
+{\bf Requisitos funcionales para Alumnos, Empleados y Externos}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF01 & Ver servicios disponibles & Los usuarios podrán visualízar todos los servicios que se brinden dentro de las áreas mencionadas anteriormente.\\ \hline
+			RF02 & Generar pago & Los usuarios podrán realizar su pago desde la aplicación web o móvil.\\		\hline
+			RF03 & Agendar cita & Los usuarios pueden tener la opción de generar una cita en el área dental.\\
+			\hline
+			RF04 & Cargar comprobante de pago & Los usuarios podrán subir al sistema multiples comprobantes de pago en formato jpg y pdf que no supere los 500KB.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales Alumnos, Empleados y Externos.}
+		\label{tabla:RFU}
+	\end{center}
+\end{table}
+
+{\bf Requisitos funcionales para área de caja}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF05 & Cambiar estado de pago & El cajero podra cambiar el estado del pago recibido (Aceptado o Rechazado).\\
+			\hline
+			RF06 & Descripción del rechazo & Si el pago es rechazado el cajero deberá agregar una descripción del motivo de rechazo.\\
+			\hline
+			RF07 & Adjuntar comprobante sigaa & En caso de que el pago sea aprobado el cajero deberá adjuntar el comprobante sigaa.\\
+			\hline
+			RF08 & Corte de caja & El cajero podrá realizar un corte de caja.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales Cajero.}
+		\label{tabla:RFAC}
+	\end{center}
+\end{table}
+
+{\bf Requisitos funcionales en área dental}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF09 & Cambiar estado de cita & Las dentistas podrán cambiar el estado de la cita a "no asistio"\\ 
+			\hline
+			RF10 & Cancelar cita & Las dentistas tendrán la opción de poder cancelar una cita.\\
+			\hline
+			RF11 & Generar comprobante de pago & Las dentistas podrán generar un comprobante digital de pago para los usuarios del servicio.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales área dental.}
+		\label{tabla:RFAD}
+	\end{center}
+\end{table}
+
+{\bf Requisitos funcionales para área CELEX}
+\begin{table}[htbp]	
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{75mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RF12 & Generar excel & El coordinador del área CELEX podrá generar un archivo excel de los pagos recibidos.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales área CELEX.}
+		\label{tabla:RFACX}
+	\end{center}
+\end{table}
+
+\subsection{Requisitos no funcionales}
+\begin{table}[htbp]	
+	\begin{center}
+		\begin{tabular}{|p{25mm}|p{100mm}|}
+			\hline
+			ID&Descripción\\
+			\hline \hline
+			RNF & La aplicación móvil podrá ser ejecutada en el sistema operativo android 2.7.\\
+			\hline
+			RNF & La aplicación web deberá ejecutarse perfectamente en google chrome y firefox.\\
+			\hline
+		\end{tabular}
+		\caption{Requisitos funcionales área CELEX.}
+		\label{tabla:RNF}
+	\end{center}
+\end{table}
+
+\subsection{Reglas de negocio}
+\begin{table}[htbp]	
+	\begin{center}
+		\begin{tabular}{|p{15mm}|p{30mm}|p{80mm}|}
+			\hline
+			ID&Nombre&Descripción \\
+			\hline \hline
+			RNEG & Unicidad del usuario & Toda persona registrada en el sistema unicamente puede poseer una cuenta de usuario.\\
+			\hline
+			RNEG & Perfilamiento del usuario & Solo existiran 3 tipos de usuario \begin{itemize}
+				\item Alumno: Identificado por número de boleta.
+				\item Empleado: Identificado por número de empleado.
+				\item Externo: Identificado por el CURP.
+			\end{itemize}\\
+			\hline 
+			RNEG & Acciones que requieren notificación & Para las siguientes acciones se considera importante una notificación dependiendo del actor: \begin{itemize}
+				\item Alumno, Empleado y Externo: \begin{itemize}
+					\item Cambios de estado en los pagos enviados a caja.
+					\item Cancelación de citas en área dental.
+					\item Recordatorio de proxima cita.
+				\end{itemize}
+				\item Caja: Un nuevo pago en el sistema en espera de revisión.
+				\item áreas de servicio: Pagos aprobados por caja en el área correspondiente.
+				\item Contador: Cortes de caja.
+				\item Área dental: Agenda de nueva cita.
+			\end{itemize}\\
+			\hline
+			RNG & Estado del archivo & Al ser enviado un pago para revisión en caja se consideran 3 posibles estados: \begin{itemize}
+				\item Rojo: Pago rechazado.
+				\item Amarillo: Pago en espera de revisión.
+				\item Verde: Pago aprobado.
+			\end{itemize}\\
+			\hline
+			RNG & Fecha limite de pago & En caso de los servicios en CELEX se cuenta con un periodo de tiempo para la realización del pago la cual consiste en X días después de la convocatoria.\\
+			\hline
+			RNG & Validaciones de comprobante de pago & Un comprobante de pago deberá cumplir las siguientes especificaciones: \begin{itemize}
+				\item Formato del archivo jpg o pdf.
+				\item Tamaño del archivo no superior a 500KB.
+			\end{itemize}\\
+			\hline
+			RNG & Registro de coordinadores & Solo el director administrativo podrá registrar en el sistema a nuevos coordinadores de área.\\
+			\hline
+			RNG & Baja de coordinadores & Solo el director administrativo podrá dar de baja en el sistema a los coordinadores de área.\\
+			\hline
+			RNG & Campos obligatorios & Los campos marcados con \* deberán ser obligatorios.\\
+			\hline
+			RNG & Validación de caracteres & El usuario no podrá ingresar caractes no establecidos.\\
+			\hline
+			RNG & Periodos de cita & Para el registro de una cita se deberá de considerar los siguientes horarios además de la desiponibilidad \begin{itemize}
+				\item Matutino: 9:00 a 15:00
+				\item Vespertino 15:00 a 9:00
+			\end{itemize}\\
+			\hline
+			RNEG & Horarios corte de caja & El corte de caja solo se podrá realizar en el horario de 15:00- 15:10 y 20:00-20:10.\\
+			\hline
+			RNEG & Cortes de caja ajeno al horario & En caso de que se tenga que realizar un corte de caja fuera del tiempo dicho anteriormente solo el subdirector administrativo podrá habilitar la función de corte de caja.\\
+			\hline
+		\end{tabular}
+		\caption{Reglas de Negocio}
+		\label{tabla:RNEG}
+	\end{center}
+\end{table}

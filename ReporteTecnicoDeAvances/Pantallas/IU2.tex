@@ -1,0 +1,41 @@
+\subsection{IU2 Modificar Información Personal.}
+
+\subsubsection{Objetivo}{
+	Pantalla para modificar información que se ingreso erroneamente durante el registro o se requiere de un campo por razones personales.
+}
+	
+\subsubsection{Diseño}
+	 Muestra un formulario con la información del usuario previamente registrado para poder modificar los campos necesarios. Además se muestran los bótones \IUbutton {Modificar} y \IUbutton{Cancelar}
+
+\IUfig[.6]{gui/Usuario/ModificarDatos}{IU2}{Modificar Información Personal}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+\subsubsection{Entradas}
+\begin{itemize}
+	\item Selecciona un tipo de usuario.
+	\item Nombre(s).
+	\item Primer apellido.
+	\item Segundo apellido.
+	\item CURP
+	\item Número de boleta ó Número de empleado.
+	\item Correo electrónico.
+	\item Telefono celular.
+\end{itemize}
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Modificar}:Verifica que la información proporcionada sea correcta y solo en caso de ser una operación exitosa se redireccionará a la pantalla \IUref{IU5}{Login}
+	\item \IUbutton{Cancelar}:Cancela la operación de modificar y regresa a la pantalla de \IUref{IU5.1}{Bienvenida}
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG1} Operación exitosa.
+		\item {\bf MSG50} Campo obligatorio.
+		\item {\bf MSG51} Campo no válido.
+		\item {\bf MSG52} Longitud no válida.
+		\item {\bf MSG53} Formato no válido.
+	\end{Citemize}

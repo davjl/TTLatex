@@ -1,24 +1,39 @@
-\newpage
-\subsection{IU12 Eliminar usuario}
+\subsection{IU12 Visualizar servicios biblioteca}
 
-\subsubsection{Objetivo}
-	Bloquear a un usuario.
+\subsubsection{Objetivo}{
+	Mostrar los diferentes servicios disponibles, precios y una pequeña descripción de estos. 
+}
 	
 \subsubsection{Diseño}
-	 	
+	Se muestra una caja de texto que sirve como buscador, una tabla con los campos:\begin{itemize}
+		\item Servicios.
+		\item Precio.
+		\item Descripción.
+		\item Acciones.
+	\end{itemize}, Dentro de acciones se muestran los siguientes iconos 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/spei}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
+	, y un botón \IUbutton{Regresar}.
 
-\IUfig[.65]{gui/UI12}{IU12}{Eliminar usuario}
+\IUfig[.6]{gui/Usuario/VisualizarServiciosBiblioteca}{IU12}{Visualizar Servicios biblioteca}
 
-\subsubsection{Entradas}
+%\subsubsection{Salidas}
 
-	clic del mouse 
-	
+%	Comentarios ingresados debajo de la información del componente electrónico.
 
-\subsubsection{Salidas}
+%\subsubsection{Entradas}
 
-	Ninguna
 
 \subsubsection{Comandos}
 \begin{itemize}
-	\item \IUbutton{Eliminar}: Se abre una ventana con la leyenda "Esta seguro de eliminar a este usuario?".
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}: Redirecciona a la pantalla de \IUref{IU14}{Cargar comprobante de pago}
+	\item
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/spei}}}: Redirecciona a la pantalla de \IUref{IU13}{Pago electrónico}
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU8}{Visualizr servicios}
 \end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG50} Campo obligatorio.
+%		\item {\bf MSG55} Usuario y/o contraseña incorrectos.
+%	\end{Citemize}

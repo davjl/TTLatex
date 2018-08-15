@@ -1,26 +1,39 @@
-\newpage
-\subsection{IU10 Editar perfil}
+\subsection{IU10 Visualizar servicios CELEX}
 
-\subsubsection{Objetivo}
-	Cambiar los datos del perfil relacionados con el usuario.
+\subsubsection{Objetivo}{
+	Mostrar los diferentes servicios disponibles, precios y una pequeña descripción de estos. 
+}
 	
 \subsubsection{Diseño}
-	Esta pantalla aparece al dar clic en el botón \IUbutton{Editar perfil} de la \IUref{IU9}{Perfil de usuario}, consta de seis cuadros de texto donde el 
-	el usuario puede cambiar la iformación asociado a las etiquetas, un botón para cargar una imagen al perfil, otro botón para guardar los datos y otro más 			para cancelar el proceso y regresar al perfil 	\IUref{IU9}{Perfil de usuario}.
+	Se muestra una caja de texto que sirve como buscador, una tabla con los campos: \begin{itemize}
+		\item Servicios.
+		\item Precio.
+		\item Descripción
+		\item Acciones
+	\end{itemize} Dentro de acciones se muestran los siguientes iconos 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/spei}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}},
+	y el botón \IUbutton{Regresar}.
 
-\IUfig[.65]{gui/UI10}{IU10}{Editar perfil.}
+\IUfig[.6]{gui/Usuario/VisualizarServiciosCelex}{IU10}{Visualizar Servicios CELEX}
 
-\subsection{Entradas}
-	el nombre de usuario, la escuela de procedencia, hypervínculo de facebook, hypervínculo de twitter, correo electrónico, imagen en formato png o jpg.
+%\subsubsection{Salidas}
 
-\subsubsection{Salidas}
+%	Comentarios ingresados debajo de la información del componente electrónico.
 
-	Mensaje de error/exito 
-	
+%\subsubsection{Entradas}
+
 
 \subsubsection{Comandos}
 \begin{itemize}
-	\item \IUbutton{Examinar...}: Se abre un explorador de archivos donde el usuario selecione una imagen.
-	\item \IUbutton{Guardar}: Se registra la nueva información del usuario y muestra un mensaje.
-	\item \IUbutton{Cancelar}: Se abre la pantalla del perfil de usuario \IUref{IU9}{Perfil de usuario}.
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}: Redirecciona a la pantalla de \IUref{IU14}{Cargar comprobante de pago}
+	\item
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/spei}}}: Redirecciona a la pantalla de \IUref{IU13}{Pago electrónico}
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU8}{Visualizr servicios}
 \end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG50} Campo obligatorio.
+%		\item {\bf MSG55} Usuario y/o contraseña incorrectos.
+%	\end{Citemize}

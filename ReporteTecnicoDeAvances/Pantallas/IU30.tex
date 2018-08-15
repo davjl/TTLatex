@@ -1,0 +1,41 @@
+\subsection{IU30 Visualizar historial clínico}
+
+\subsubsection{Objetivo}{
+	Mostrar el historial clínico del pasiente.
+}
+	
+\subsubsection{Diseño}
+	Se muestra la información básica del pasiente, una caja de texto que sirve como buscador, una tabla con los campos: \begin{itemize}
+		\item Estatus.
+		\item Fecha.
+		\item Acciones.
+	\end{itemize}
+	dentro de acciones se muestran los siguientes iconos 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/cuestionario}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verConsulta}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}. También se muestra información hacerca del significado de colores en el estatus, además de un botón \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Dentales/VisualizarHistorialClinico}{IU30}{Visualizar historial clínico}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/cuestionario}}}: Redirecciona a la pantalla \IUref{IU26}{Visualizar cuestionario}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verConsulta}}}: Redirecciona a la pantalla \IUref{IU31}{Visualizar consulta}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}: Redirecciona a la pantalla \IUref{IU33}{Ver nota de pago}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG50} Campo obligatorio.
+%		\item {\bf MSG55} Usuario y/o contraseña incorrectos.
+%	\end{Citemize}

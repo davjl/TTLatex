@@ -1,0 +1,31 @@
+\subsection{IU27 Realizar consulta.}
+
+\subsubsection{Objetivo}{
+	Poder hacer una descripción del tratamiento a realizar.
+}
+	
+\subsubsection{Diseño}
+	Muestra los datos del paciente registrado, una lista de checkbox con los conceptos más comunes de consulta y un panel desplegable con la cantidad en caso de ser posible, dos cajas de texto, un odontograma y dos botones \IUbutton{Enviar nota de pago} y \IUbutton{Cancelar}.
+
+\IUfig[.6]{gui/Dentales/RealizarConsulta}{IU27}{Realizar consulta}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+\subsubsection{Entradas}
+\begin{itemize}
+	\item Descripción del tratamiento a realizar en caso de no encontrarse en la lista de checkbox.
+	\item Descripción de la consulta realizada.
+\end{itemize}
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item Odontograma: Posee una serie de checkbox para identificar el o los dientos que reciben tratamiento.
+	\item \IUbutton{Enviar nota de pago}: Guarda los datos ingresados y se redireccionará a la pantalla \IUref{IU28}{Enviar nota de pago}.
+	\item \IUbutton{Cancelar}: Redirecciona a la pantalla de \IUref{IU5.4}{Bienvenida área dental}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%	\end{Citemize}

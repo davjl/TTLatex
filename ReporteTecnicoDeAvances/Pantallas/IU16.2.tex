@@ -1,0 +1,34 @@
+\subsection{IU16.2 Visualizar comprobante pago caja}
+
+\subsubsection{Objetivo}{
+	Permite al cajero visualizar el comprobante de pago.
+}
+	
+\subsubsection{Diseño}
+	Se muestra el comprobante de pago del usuario, los botones \IUbutton{Aceptar}, \IUbutton{Rechazar} y \IUbutton{Regresar}.
+	Además en caso de seleccionar la opción de rechazar se activa una caja de texto y un botón \IUbutton{Enviar}.
+
+\IUfig[.6]{gui/Cajero/VisualizarComprobantePago}{IU16.2}{Visualizar comprobante caja}
+
+\subsubsection{Salidas}
+	Cambio de estado en el pago.
+	Notificaciones al usuario.
+
+\subsubsection{Entradas}
+	Motivo de rechazo del comprobante de pago.
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Aceptar}: Manda una notificación al usuario y redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
+	\item \IUbutton{Rechazar}: Activa la caja de texto y el botón \IUbutton{Enviar}.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla: \IUref{IU39}{Gestionar pagos caja}.
+	\item \IUbutton{Enviar}: Manda una notificación al usuario y redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

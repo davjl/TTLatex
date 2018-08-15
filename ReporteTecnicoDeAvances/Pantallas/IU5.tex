@@ -1,26 +1,28 @@
-\subsection{IU5 Oferta de Venta}
+\subsection{IU5 Login}
 
-\subsubsection{Objetivo}
-	Mostrar la información del componente electrónico para la venta o donación, así como también, los comentarios de usuarios interesados.
+\subsubsection{Objetivo}{
+	Pantalla de inicio que permite a los usuarios ingresar en el sistema.
+}
 	
 \subsubsection{Diseño}
-	Esta pantalla aparece al dar clic en el título del componente electrónico. Se visualiza la información del componente electrónico, imágenes del mismo y una caja de texto para ingresar comentarios.
+	Esta pantalla aparece al ingresar mediante la URL del sistema. Se visualizan las cajas de texto de correo y contraseña, las opciones de registro y recuperación de contraseña, además del botón \IUbutton{Login}.
 
-\IUfig[.5]{gui/OfertaVenta}{IU5}{Oferta de Venta}
+\IUfig[.6]{gui/Usuario/Registro}{IU5}{Login}
 
-\subsubsection{Salidas}
+%\subsubsection{Salidas}
 
-	Comentarios ingresados debajo de la información del componente electrónico.
+%	Comentarios ingresados debajo de la información del componente electrónico.
 
 \subsubsection{Entradas}
-Comentario.
+Correo de usuario y contraseña.
 
 \subsubsection{Comandos}
 \begin{itemize}
-	\item \IUbutton{Enviar}: Se habilita una vez que la caja de texto tenga contenido. Si tiene contenido se envía y se muestra el comentario debajo de la información del componente.
+	\item \IUbutton{Login}: Realiza una busqueda del usuario y contraseña para saber que la información ingresada sea la correcta. En caso contrario se mostrará un mensaje de error.
 \end{itemize}
 
-%\subsubsection{Mensajes}
-	%\begin{Citemize}
-	%	\item {\bf MSG1} Error al verificar los datos de acceso, vuelva a intentarlo.
-	%\end{Citemize}
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG50} Campo obligatorio.
+		\item {\bf MSG55} Usuario y/o contraseña incorrectos.
+	\end{Citemize}

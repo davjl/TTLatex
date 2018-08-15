@@ -26,7 +26,7 @@
 		\UCitem{Precondiciones}{Tener un registro previo en el sistema}
 		\UCitem{Postcondiciones}{Ninguna.}
 		\UCitem{Reglas de Negocio}{Ninguna.}
-		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG55-} {Usuario y/o contraseña incorrectos.}}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG55} {Usuario y/o contraseña incorrectos.}}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
@@ -39,12 +39,12 @@
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{Faltan datos obligatorios}
-			\UCpaso Muestra el Mensaje {\bf MSG50-} ''Campo obligatorio'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU5}{Login} 
 			\UCpaso Continua en el paso 2 del \UCref{CU5}.
 		\end{UCtrayectoriaA}
 
 		\begin{UCtrayectoriaA}{B}{Usuario y/o contraseña incorrectos}
-			\UCpaso  Muestra el Mensaje {\bf MSG55-} ``Usuario y/o contraseña incorrectos.'' en la pantalla \IUref{IU5}{Login} 
+			\UCpaso  Muestra el Mensaje \MSGref{MSG55}{Usuario y/o contraseña incorrectos} en la pantalla \IUref{IU5}{Login} 
 			\UCpaso Continua en el paso 2 del \UCref{CU5}
 		\end{UCtrayectoriaA}
 	

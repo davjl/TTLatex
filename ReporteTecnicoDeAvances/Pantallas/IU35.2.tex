@@ -1,0 +1,38 @@
+\subsection{IU35.2 Visualizar pagos por mes dentales}
+
+\subsubsection{Objetivo}{
+	Permitir al dentista visualizar un historial de todos los pagos realizados al área dental en caja por periodo de meses.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una caja de texto que sirve como buscador, una tabla con los siguientes campos:
+	\begin{itemize}
+		\item Mes.
+		\item Total ingresos.
+		\item Acciones.
+	\end{itemize}
+	En el apartado de acciones se utiliza el icono
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}, además de los botones \IUbutton{Imprimir todos} y \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Dentales/VisualizarPagosMes}{IU35.2}{Visualizar archivo de pagos por mes dentales}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}: Redirecciona a la pantalla \IUref{IU36.2}{Visualizar pagos por fecha dentales}.
+	\item \IUbutton{Imprimir todos}: Permite generar una impresión de todos los archivos del año.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU34.2}{Visualizar archivo de pagos por año dentales}
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

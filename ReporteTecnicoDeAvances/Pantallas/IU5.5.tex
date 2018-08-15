@@ -1,0 +1,41 @@
+\subsection{IU5.5 Bienvenida CELEX}
+
+\subsubsection{Objetivo}{
+	Mostrar una pantalla de Bienvenida al coordinador CELEX luego de ingresar al sistema.
+}
+	
+\subsubsection{Diseño}
+	En la parte superior de la pantalla se visualizan los logos de la institución y la escuela, el nombre del sistema, una imagen para notificaciones y un {\bf Menú de sesión}.
+	En el lado izquierdo de la pantalla se muestra el {\bf Menú principal} para navegar en el sistema.
+	En el centro de la pantalla desplegará toda la información necesaria a las opciones seleccionadas.
+	En la parte inferior de la pantalla se muestra información y dirección de la institución.
+
+\IUfig[.6]{gui/CELEX/Celex}{IU5.5}{Bienvenida área CELEX}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+%\subsubsection{Entradas}
+%Correo de usuario y contraseña.
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item {\bf Menú de sesión}: Contiene la opción de:
+	\begin{itemize}
+		\item Cerrar sesión. Redirecciona a la pantalla \IUref{IU5}{Login}
+	\end{itemize}
+	\item Imagen de notificaciones: al dar click en la imagen se mostrarán notificaciones que sean de interes para el actor.
+	\item {\bf Menú principal}: Contiene las opciones de navegación:
+	\begin{itemize}
+		\item Pagos. Redirecciona a la pantalla \IUref{IU44}{Gestionar pagos por área}.
+		\item Archivo de pagos. Redirecciona a la pantalla \IUref{IU34}{Visualizar archivo de pagos por año}.
+		\item Manual usuario.
+	\end{itemize}
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG50} Campo obligatorio.
+%		\item {\bf MSG55} Usuario y/o contraseña incorrectos.
+%	\end{Citemize}

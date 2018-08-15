@@ -1,0 +1,41 @@
+\subsection{IU36.2 Visualizar pagos por fecha dentales}
+
+\subsubsection{Objetivo}{
+	Permitir al dentista visualizar un historial de todos los pagos realizados para el área dental en caja por periodo de días.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una caja de texto que sirve como buscador, una tabla con los siguientes campos:
+	\begin{itemize}
+		\item Nombre.
+		\item Curp.
+		\item Boleta.
+		\item Fecha.
+		\item Cantidad.
+		\item Acciones.
+	\end{itemize}
+	En el apartado de acciones se utiliza el icono
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}}, además de los botones \IUbutton{Imprimir todos} y \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Dentales/VisualizarPagosFecha}{IU36.2}{Visualizar archivo de pagos por fecha dentales}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}}: Redirecciona a la pantalla \IUref{IU32}{Visualizar comprobante sigaa}.
+	\item \IUbutton{Imprimir todos}: Permite generar una impresión de todos los archivos del mes.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU35.2}{Visualizar archivo de pagos por mes dentales}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

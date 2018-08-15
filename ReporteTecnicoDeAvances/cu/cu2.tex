@@ -40,8 +40,8 @@
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Selecciona la opción {\bf Modificar datos} del menú \IUref{IU5.1.2}{Menú de sesión}.
-		\UCpaso Muestra la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso[\UCactor] Selecciona la opción {\bf Modificar datos} del {\bf Menú de sesión}.
+		\UCpaso Muestra la pantalla \IUref{IU2}{Modificar Información Personal}.
 		\UCpaso Obtiene la información del usuario y la muestra en cada campo del formulario de la pantalla \IUref{IU2}{Modificar Información Personal}.
 		\UCpaso[\UCactor] Edita los campos del formulario de la pantalla \IUref{IU2}{Modificar Información Personal} que desea actualizar y presiona el botón \IUbutton{Modificar}.\Trayref{A}
 		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
@@ -50,7 +50,7 @@
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
 		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro duplicado.
 		\UCpaso Actualiza la información personal del Usuario.
-		\UCpaso Direcciona al usuario a la pantalla \IUref{IU05}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
+		\UCpaso Direcciona al usuario a la pantalla \IUref{IU5}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
@@ -59,22 +59,22 @@
 			\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
-			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU2}{Modificar Información Personal}.
 			\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 		\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU2}{Modificar Información Personal}.
 		\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 	\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{D}{El usuario ingresó el CURP, Número de boleta o Número de empleado	 con longitud incorrecta.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU2}{Modificar Información Personal}.
 		\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 	\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU02}{Modificar Información Personal}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU2}{Modificar Información Personal}.
 		\UCpaso[\UCactor] Continua en el paso 4 del \UCref{CU2}.
 	\end{UCtrayectoriaA}
 	

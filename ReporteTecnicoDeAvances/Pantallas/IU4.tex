@@ -1,0 +1,34 @@
+\subsection{IU4 Recuperar contraseña.}
+
+\subsubsection{Objetivo}{
+	Permitir al usuario un medio de recuperación de contraseña.
+}
+	
+\subsubsection{Diseño}
+	 Se muestran dos cajas de texto en las cueles se solicita su número de usuario y correo electrónico, además de los botónes \IUbutton{Enviar} y \IUbutton{Cancelar}.
+
+\IUfig[.6]{gui/Usuario/RecuperarContrasena}{IU4}{Recuperar Contraseña}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+\subsubsection{Entradas}
+\begin{itemize}
+	\item Número de usuario
+	\item Contraseña
+\end{itemize}
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Enviar}: Verifica los datos de las cajas de texto y solo en caso de ser una operación correcta se redireccionará a la pantalla \IUref{IU5}{Login}.
+	\item \IUbutton{Cancelar}: Cancela la operación correspondiente y regresa a la pantalla de \IUref{IU5}{Login}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG5} Correo enviado.
+		\item {\bf MSG50} Campo obligatorio.
+		\item {\bf MSG51} Campo no valido.
+		\item {\bf MSG58} Contraseñas diferentes.
+	\end{Citemize}

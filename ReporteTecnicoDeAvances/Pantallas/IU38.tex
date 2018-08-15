@@ -1,0 +1,41 @@
+\subsection{IU38 Gestionar pagos contaduría}
+
+\subsubsection{Objetivo}{
+	Permitir al contador(a) visualizar los pagos autorizados por el cajero durante el día.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una caja de texto que sirve como buscador, una tabla con los siguientes campos:
+	\begin{itemize}
+		\item Servicio.
+		\item Precio.
+		\item Fecha de entrega.
+		\item Acciones.
+	\end{itemize}
+	En el apartado de acciones se utilizan los iconos
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}} y 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}}, también se muestra el total de la suma de todos los precios y el botón \IUbutton{Imprimir todos}.
+
+\IUfig[.6]{gui/Contador/GestionarPagos}{IU38}{Gestionar pagos contaduría}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}}: Redirecciona a la pantalla \IUref{IU32}{Visualizar comprobante sigaa}.
+	\item
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}: Redirecciona a la pantalla \IUref{IU16.1}{Visualizar comprobante pago}.
+	\item \IUbutton{Imprimir todos}: Permite generar una impresión de todos los archivos.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

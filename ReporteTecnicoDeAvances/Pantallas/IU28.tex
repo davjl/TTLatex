@@ -1,0 +1,30 @@
+\subsection{IU28 Enviar nota de pago}
+
+\subsubsection{Objetivo}{
+	 Permite al dentista generar una nota de pago con el concepto del servicio realizado. 
+}
+	
+\subsubsection{Diseño}
+	Muestra una descripción del usuario, conceptos y cantidad del servicio otorgado, además de los botones \IUbutton{Enviar} y \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Dentales/EnviarNotaPago}{IU28}{Enviar nota de pago}.
+
+\subsubsection{Salidas}
+		Nota de pago en el sistema del usuario.
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Enviar}: Finaliza la nota de pago y es mandada al perfil del usuario para su visualización, además redirecciona a la pantalla \IUref{IU5.4}{Bienvenida área dental}.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU27}{Realizar consulta}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG7} Nota enviada.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+	\end{Citemize}

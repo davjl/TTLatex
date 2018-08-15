@@ -1,0 +1,33 @@
+\subsection{IU14 Cargar comprobante pago}
+
+\subsubsection{Objetivo}{
+	Mostrar un medio para que el usuario pueda subir un comprabante de pago al sistema.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una descripción de los requisitos que debe cumlplir el comprobante de pago, el icono 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}} y los botones \IUbutton{Enviar}, \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Usuario/CargarComprobantePago}{IU14}{Cargar Comprobante Pago}
+
+\subsubsection{Salidas}
+
+	Notificación en caja de un nuevo pago.
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}: Abre un selector de archivos para subir el archivo necesario.
+	\item \IUbutton{Enviar}: Redirecciona a la pantalla \IUref{IU15}{Gestionar pagos usuario}.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU8}{Visualizar servicios}
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG2} Se adjunto el archivo correctamente.
+		\item {\bf MSG3} Archivo enviado correctamente.
+		\item {\bf MSG56} Formato de archivo no válido.
+		\item {\bf MSG55} Operación no completada.
+	\end{Citemize}

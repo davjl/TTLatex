@@ -1,0 +1,32 @@
+\subsection{IU3 Verificar cuenta.}
+
+\subsubsection{Objetivo}{
+	Permitir al usuario ingresar una contraseña la cual deberá verificar, si no existen errores, al oprimir el botón \IUbutton{Enviar} se activará la cuenta del usuario.
+}
+	
+\subsubsection{Diseño}
+	 Se muestran dos cajas de texto en las cueles se solicita una contraseña, y un botón \IUbutton{Enviar}.
+
+\IUfig[.6]{gui/Usuario/VerificarCuenta}{IU3}{Verificar cuenta}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+\subsubsection{Entradas}
+\begin{itemize}
+	\item Contraseña
+\end{itemize}
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Enviar}: Verifica los datos de las cajas de texto y solo en caso de ser una operación correcta se redireccionará a la pantalla \IUref{IU5}{Login}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG1} Operación exitosa.
+		\item {\bf MSG50} Campo obligatorio.
+		\item {\bf MSG51} Campo no valido.
+		\item {\bf MSG58} Contraseñas diferentes.
+	\end{Citemize}

@@ -28,28 +28,34 @@
 			}
 		\UCitem{Postcondiciones}{Se activa la cuenta del usuario.}
 		\UCitem{Reglas de Negocio}{Ninguna}
-		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG58}{Contraseñas diferentes}}
 		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU5}{Login}}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU03}{Verificar Contraseña}.
-		\UCpaso[\UCactor] Ingresa en la pantalla \IUref{IU03}{Verificar Contraseña} su contraseña y su confirmación de contraseña.
-		\UCpaso[\UCactor] Presiona el botón  \IUbutton{Enviar}.\Trayref{A}, \Trayref{B}
-		\UCpaso Dirige a la pantalla \IUref{IU05}{Login}.
-		\UCpaso Muesta el mesanje  \MSGref{MSG1}{Operación exitosa} en la pantalla \IUref{IU05}{Login}.
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU3}{Verificar Contraseña}.
+		\UCpaso[\UCactor] Ingresa en la pantalla \IUref{IU3}{Verificar Contraseña} su contraseña y su confirmación de contraseña.
+		\UCpaso[\UCactor] Presiona el botón  \IUbutton{Enviar}.
+		\UCpaso Valida los campos ingresados \Trayref{A}, \Trayref{B}, \Trayref{C}.
+		\UCpaso Dirige a la pantalla \IUref{IU5}{Login}.
+		\UCpaso Muesta el mesanje  \MSGref{MSG1}{Operación exitosa} en la pantalla \IUref{IU5}{Login}.
 		\UCpaso Envía correo electrónico al usuario informando que su cuenta ha sido activada
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario no ingresó todos los campos obligatorios.}
-			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU03}{Verificar contraseña}.
-			\UCpaso[\UCactor] Continua en el paso 1 del \UCref{CU3}.
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU3}{Verificar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
 		\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{B}{El usuario ingresó campos no válidos.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU03}{Verificar Contraseña}.
-		\UCpaso[\UCactor] Continua en el paso 1 del \UCref{CU3}.
-	\end{UCtrayectoriaA}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU3}{Verificar Contraseña}.
+		\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{C}{El usuario ingreso una contraseña diferente en validar contraseña.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG58}{Contraseñas diferentes} en la pantalla \IUref{IU3}{Verificar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
 
 	
 

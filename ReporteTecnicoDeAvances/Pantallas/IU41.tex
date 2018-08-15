@@ -1,0 +1,32 @@
+\subsection{IU41 Cargar comprobante sigaa}
+
+\subsubsection{Objetivo}{
+	Permitir al cajero adjuntar a un pago recibido y aprobado el comprobante sigaa.
+}
+	
+\subsubsection{Diseño}
+	Se muestra un apartado de folio para identificar el comprobante sigaa, un icono
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}} y los botones \IUbutton{Enviar}, \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Cajero/AdjuntarComprobanteSigaa}{IU41}{Cargar comprobante sigaa}
+
+\subsubsection{Salidas}
+	Estado de pago aprobado y archivo sigaa como comprobante.
+
+\subsubsection{Entradas}
+	Archivo sigaa.
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}: Abre un selector de archivos para selccionar el archivo correspondiente.
+	\item \IUbutton{Enviar}: Sube al sistema el archivo sigaa y redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG4} Archivo guardado correctamente.
+		\item {\bf MSG60} Error al guardar comprobante.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+	\end{Citemize}

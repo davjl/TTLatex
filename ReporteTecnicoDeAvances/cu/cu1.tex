@@ -42,10 +42,10 @@
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU05}{Login}.
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.
 		\UCpaso[\UCactor] Presiona la opción {\bf Registrar Usuario} 
-		\UCpaso Dirige a la pantalla \IUref{IU01}{Registrar Usuario}.
-		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU01}{Registrar Usuario} el tipo de usuario que desea registrar.
+		\UCpaso Dirige a la pantalla \IUref{IU1}{Registrar Usuario}.
+		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU1}{Registrar Usuario} el tipo de usuario que desea registrar.
 		\UCpaso Con base en la regla de negocio \BRref{RN02}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
 		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Registrar}.\Trayref{A}
 		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
@@ -54,7 +54,7 @@
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
 		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro previo.
 		\UCpaso Registra un nuevo usuario.
-		\UCpaso Direcciona al usuario a la pantalla \IUref{IU05}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
+		\UCpaso Direcciona al usuario a la pantalla \IUref{IU5}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
@@ -63,22 +63,22 @@
 			\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
-			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU01}{Registrar usuario}.
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU1}{Registrar usuario}.
 			\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 		\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU01}{Registrar usuario}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 	\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{D}{El usuario ingresó el CURP, Número de boleta o Número de empleado	 con longitud incorrecta.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU01}{Registrar usuario}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 	\end{UCtrayectoriaA}
 	
 		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU01}{Registrar usuario}.
+		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 	\end{UCtrayectoriaA}
 	

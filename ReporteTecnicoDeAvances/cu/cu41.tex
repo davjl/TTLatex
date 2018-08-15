@@ -18,11 +18,11 @@
 		\UCitem{Actor}{Administrador Caja.}
 		\UCitem{Propósito}{Tener el registro del comprobante sigaa en el sistema.}
 		\UCitem{Entradas}{Ninguna.}
-		\UCitem{Salidas}{\MSGref{MSG6-}{Archivo guardado correctamente}.}
+		\UCitem{Salidas}{\MSGref{MSG4-}{Archivo guardado correctamente}.}
 		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{Ninguna.}
 		\UCitem{Reglas de Negocio}{Ninguna.}
-		\UCitem{Errores}{\MSGref{MSG60-}{Error al guardar comprobannte sigaa}}
+		\UCitem{Errores}{\MSGref{MSG60-}{Error al guardar comprobannte}}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
@@ -37,11 +37,11 @@
 		\UCpaso Cierra el selector de archivos
 		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Enviar}
 		\UCpaso Sube el archivo en el sistema. \Trayref{A} 
-		\UCpaso Muestra el mensaje {\bf MSG6-} ''Archivo guardado correctamente'' y redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
+		\UCpaso Muestra el mensaje {\bf MSG4-} ''Archivo guardado correctamente'' y redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
 	\end{UCtrayectoria}
 	
 	\begin{UCtrayectoriaA}{A}{El sistema no se encuentra disponible}
-		\UCpaso Muestra el Mensaje {\bf MSG60-} ''Error al guardar comprobante sigaa'' en la pantalla \IUref{IU41}{Adjuntar pago sigaa} 
+		\UCpaso Muestra el Mensaje {\bf MSG60-} ''Error al guardar comprobante'' en la pantalla \IUref{IU41}{Adjuntar pago sigaa} 
 		\UCpaso[\UCactor] Continua en 7 del \UCref{CU42}.
 	\end{UCtrayectoriaA}
 		

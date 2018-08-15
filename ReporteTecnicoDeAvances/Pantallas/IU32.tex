@@ -1,0 +1,29 @@
+\subsection{IU32 Visualizar comprobante sigaa}
+
+\subsubsection{Objetivo}{
+	Visualizar el comprobante de pago sigaa emitido por caja.
+}
+	
+\subsubsection{Diseño}
+	Se muestra el comprobante de pago sigaa emitido por caja validando el pago realizado y un botón \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Usuario/VisualizarComprobanteSigaa}{IU32}{Visualizar comprobante sigaa}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Regresar}: En caso de ser un alumno, empleado o personal externo se redirecciona a la pantalla \IUref{IU18}{Visualizar historial de pagos}, para cualquier otro usuario se redirecciona a la pantalla \IUref{IU44}{Gestionar pagos por área} o \IUref{IU36}{Visualizar pagos por fecha}, además en el caso del contador también puede regresar a la pantalla \IUref{IU38}{Gestionar pagos contaduría}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

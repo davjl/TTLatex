@@ -1,0 +1,38 @@
+\subsection{IU15 Gestionar pagos usuario}
+
+\subsubsection{Objetivo}{
+	Mostrar los pagos que estan en un estado de revisión por parte de caja.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una caja de texto que sirve como buscador, una tabla con los campos:
+	\begin{itemize}
+		\item Estatus de caja.
+		\item Fecha de entrega.
+		\item Cantidad.
+		\item Concepto.
+		\item Acciones
+	\end{itemize}
+	Dentro de acciones se muestran los siguientes iconos
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}, para el estatus de caja se utiliza un semáforo de colores para identeficar el estado y fuera de la tabla se da una descripción del significado de cada color.
+
+\IUfig[.6]{gui/Usuario/GestionarPagos}{IU15}{Gestionar pagos usuario}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}: Redirecciona a la pantalla \IUref{IU16}{Visualizar comprobante de pago}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

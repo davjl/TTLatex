@@ -1,0 +1,45 @@
+\subsection{IU19 Gestionar notas de pago usuarios}
+
+\subsubsection{Objetivo}{
+	Permitir a los usuarios visualizar las notas de pago que fueron generadas en las áreas de impresiones y dentales para realizar un servicio.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una caja de texto que sirve como buscador y una tabla con los siguientes campos:
+	\begin{itemize}
+		\item Servicio.
+		\item Precio.
+		\item Acciones
+	\end{itemize}
+	En el apartado de acciones se utilizan los iconos
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}, 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/spei}}}, 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/pagoCaja}}}, 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}.
+
+\IUfig[.6]{gui/Usuario/GestionarNotasPago}{IU19}{Gestionar notas de pago usuarios}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}: Redirecciona a la pantalla \IUref{IU20}{Visualizar nota de pago}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/spei}}}: Redirecciona a la pantalla \IUref{IU13}{Realizar pago electrónico}.
+	\item
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/pagoCaja}}}: Redirecciona a la pantalla \IUref{IU17}{Pagar nota de pago en caja}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}: Redirecciona a la pantalla \IUref{IU14}{Cargar comprobante pago}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

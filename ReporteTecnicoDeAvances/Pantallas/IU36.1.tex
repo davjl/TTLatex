@@ -1,0 +1,45 @@
+\subsection{IU36.1 Visualizar pagos por fecha contabilidad}
+
+\subsubsection{Objetivo}{
+	Permitir al contador(a) visualizar un historial de todos los pagos realizados en caja por periodo de días.
+}
+	
+\subsubsection{Diseño}
+	Se muestra una caja de texto que sirve como buscador, una tabla con los siguientes campos:
+	\begin{itemize}
+		\item Nombre.
+		\item Curp.
+		\item Boleta.
+		\item Fecha.
+		\item Cantidad.
+		\item Acciones.
+	\end{itemize}
+	En el apartado de acciones se utilizan los iconos
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}},
+	además de los botones \IUbutton{Imprimir todos} y \IUbutton{Regresar}.
+
+\IUfig[.6]{gui/Contador/VisualizarPagosFecha}{IU36.1}{Visualizar archivo de pagos por fecha contabilidad}
+
+%\subsubsection{Salidas}
+
+
+%\subsubsection{Entradas}
+
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/archivoSigaa}}}: Redirecciona a la pantalla \IUref{IU32}{Visualizar comprobante sigaa}.
+	\item
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}: Redirecciona a la pantalla \IUref{IU16.1}{Visualizar comprobante pago}.
+	\item \IUbutton{Imprimir todos}: Permite generar una impresión de todos los archivos del mes.
+	\item \IUbutton{Regresar}: Redirecciona a la pantalla \IUref{IU35.1}{Visualizar archivo de pagos por mes contabilidad}.
+\end{itemize}
+
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG2} Se adjunto el archivo correctamente.
+%		\item {\bf MSG3} Archivo enviado correctamente.
+%		\item {\bf MSG56} Formato de archivo no válido.
+%		\item {\bf MSG55} Operación no completada.
+%	\end{Citemize}

@@ -1,27 +1,51 @@
-\subsection{IU23 Pantalla de Control de Acceso}
+\subsection{IU23 Gestionar citas}
 
-\subsubsection{Objetivo}
-	Controlar el acceso al sistema mediante una contraseña a fin de que cada usuario acceda solo a las operaciones permitidas para su perfil.
-
+\subsubsection{Objetivo}{
+	Mostrar una lista con todos los usuarios que han realizado una cita para consulta. 
+}
+	
 \subsubsection{Diseño}
-	Esta pantalla aparece al iniciar el sistema. Para ingresar al mismo se debe escribir el Número de Boleta del estudiante y la contraseña de acceso. 
+	Se muestra una caja de texto que sirve como buscador, una tabla con los campos: \begin{itemize}
+		\item Estatus paciente.
+		\item Nombre.
+		\item Curp.
+		\item Número de boleta o empleado.
+		\item Fecha.
+		\item Hora.
+		\item Acciones.
+	\end{itemize} En el apartado de acciones se utilizan los iconos 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/cuestionario}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/consulta}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/historialClinico}}},
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/reagenda}}} y 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/noAsistio}}}.
+	Además de una descripción del significado de colores para el status del paciente.
 
-\IUfig[.5]{gui/Login}{IU23}{Pantalla de Control de Acceso.}
+\IUfig[.6]{gui/Dentales/GestionarCitas}{IU23}{Gestionar citas}
 
-\subsubsection{Salidas}
+%\subsubsection{Salidas}
 
-	Ninguna.
+%	Comentarios ingresados debajo de la información del componente electrónico.
 
-\subsubsection{Entradas}
-Número de Boleta y Contraseña del Estudiante.
+%\subsubsection{Entradas}
+
 
 \subsubsection{Comandos}
 \begin{itemize}
-	\item \IUbutton{Entrar}: Verifica que el Estudiante se encuentre registrado y la contraseña sea la correcta. Si la verificación es correcta, se muestra la \IUref{UI32}{Pantalla de Selección de Seminario}.
-	\item \IUbutton{Ayuda}: Muestra la ayuda de esta pantalla \IUref{UI50}{Pantalla de Ayuda}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/cuestionario}}}: Redirecciona a la pantalla \IUref{IU26}{Visualizar cuestionario}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/consulta}}}: Redirecciona a la pantalla \IUref{IU27}{Realizar consulta}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/historialClinico}}}: Redirecciona a la pantalla \IUref{IU30}{Visualizar historial clínico}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/reagenda}}}: Redirecciona a la pantalla \IUref{IU25}{Reagendar}.
+	\item 
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/noAsistio}}}: Cambia el estado del paciente a inasistencia.
 \end{itemize}
 
-\subsubsection{Mensajes}
-	\begin{Citemize}
-		\item {\bf MSG5} Error al verificar los datos de acceso, vuelva a intentarlo.
-	\end{Citemize}
+%\subsubsection{Mensajes}
+%	\begin{Citemize}
+%		\item {\bf MSG50} Campo obligatorio.
+%		\item {\bf MSG55} Usuario y/o contraseña incorrectos.
+%	\end{Citemize}

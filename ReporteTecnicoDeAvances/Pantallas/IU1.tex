@@ -1,0 +1,41 @@
+\subsection{IU1 Registrar Usuario.}
+
+\subsubsection{Objetivo}{
+	Pantalla de registro al sistema para alumnos, personal externo y empleados del IPN.
+}
+	
+\subsubsection{Diseño}
+	 Muestra un formulario para llenar con información basica del solicitante. En caso de ser alumno se habilitará el cuadro de texto de boleta, en caso de ser empleado se solicitará el número de empleado y si es personal externo solo se solicitará su CURP. Además se muestran los bótones \IUbutton {Registrar} y \IUbutton{Cancelar}
+
+\IUfig[.6]{gui/Usuario/RegistrarUsuario}{IU1}{Registrar Usuario}
+
+%\subsubsection{Salidas}
+
+%	Comentarios ingresados debajo de la información del componente electrónico.
+
+\subsubsection{Entradas}
+\begin{itemize}
+	\item Selecciona un tipo de usuario.
+	\item Nombre(s).
+	\item Primer apellido.
+	\item Segundo apellido.
+	\item CURP
+	\item Número de boleta ó Número de empleado.
+	\item Correo electrónico.
+	\item Telefono celular.
+\end{itemize}
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Registrar}:Verifica que la información proporcionada sea correcta y solo en caso de ser una operación exitosa se redireccionará a la pantalla \IUref{IU5}{Login}.
+	\item \IUbutton{Cancelar}:Cancela la operación de registro y regresa a la pantalla de \IUref{IU5}{Login}
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG1} Operación exitosa.
+		\item {\bf MSG50} Campo obligatorio.
+		\item {\bf MSG51} Campo no válido.
+		\item {\bf MSG52} Longitud no válida.
+		\item {\bf MSG53} Formato no válido.
+	\end{Citemize}
