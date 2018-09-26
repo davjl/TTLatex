@@ -86,19 +86,19 @@
 }
 %\newcommand{\NFRitem}[5]{\multirow{2}{*}{#1} & \multirow{2}{*}{#2} & {#3} & \multirow{2}{*}{#5} \\* & & {#4} & \\ \hline}
 
-\newcommand{\NFRitem}[5]{\multirow{2}{*}{#1} & \multirow{2}{*}{#2} & {$\mathfrak{N}$}-{#3}  \\* & & {$\mathfrak{E}$}-{#4} \\ \hline}
+\newcommand{\NFRitem}[5]{\multirow{2}{*}{#1} & \multirow{2}{*}{#2} & {#3}  \\ \hline}
 
 \newenvironment{NFRequieriments}[1][tblReqColor]
 {%
 	\arrayrulecolor{#1}%
-	\par\begin{longtable}{| p{.08\textwidth} | p{.17\textwidth} | p{.67\textwidth} |}% p{.06\textwidth} | }
+	\par\begin{longtable}{| p{.08\textwidth} | p{.27\textwidth} | p{.57\textwidth} |}% p{.06\textwidth} | }
 		\arrayrulecolor{#1}%
 		\hline%
 		\rowcolor{#1}%
 		\multicolumn{3}{|c|}{\bf\color{#1}Requerimientos No funcionales}\\%
 		\arrayrulecolor{white}%
 		\rowcolor{#1}%
-		\FRitem{\color{white}\bf Id}{\color{white}\bf Atributo}{\color{white}\bf Necesidad/Estrategia}{\color{white}\bf Prob.}\endhead%
+		\FRitem{\color{white}\bf Id}{\color{white}\bf Nombre}{\color{white}\bf Descripción}{\color{white}\bf Prob.}\endhead%
 		\arrayrulecolor{#1}%
 }{%
 	\end{longtable} %

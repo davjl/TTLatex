@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Presentaci\'on}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}A qui\IeC {\'e}n va dirigido}{1}{section.1.2}
@@ -47,311 +47,312 @@
 \contentsline {subsection}{\numberline {4.3.1}Incremento 3. Casos de uso}{29}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Base de datos}{35}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Incremento 4. Base de datos}{35}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de requerimientos}{35}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Requisitos funcionales}{35}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Requisitos no funcionales}{35}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Reglas de negocio}{35}{subsection.4.5.3}
-\contentsline {chapter}{\numberline {5}Resultados y conclusiones}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Resultados}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Conclusiones}{39}{section.5.2}
-\contentsline {chapter}{\numberline {6}Trabajo a futuro}{41}{chapter.6}
-\contentsline {chapter}{\numberline {7}Anexo I: Casos de Uso}{42}{chapter.7}
-\contentsline {section}{\numberline {7.1}CU1 Registrar usuario}{44}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Descripci\IeC {\'o}n completa}{44}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Atributos importantes}{44}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Trayectorias del Caso de Uso}{45}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}CU2 Modificar informaci\IeC {\'o}n personal}{47}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Descripci\IeC {\'o}n completa}{47}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Atributos importantes}{47}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Trayectorias del Caso de Uso}{48}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}CU3 Verificar Cuenta}{50}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Descripci\IeC {\'o}n completa}{50}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Atributos importantes}{50}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Trayectorias del Caso de Uso}{50}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}CU4 Recuperar Contrase\IeC {\~n}a}{52}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Descripci\IeC {\'o}n completa}{52}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Atributos importantes}{52}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Trayectorias del Caso de Uso}{52}{subsection.7.4.3}
-\contentsline {section}{\numberline {7.5}CU5 Login}{54}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Descripci\IeC {\'o}n completa}{54}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Atributos importantes}{54}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Trayectorias del Caso de Uso}{54}{subsection.7.5.3}
-\contentsline {section}{\numberline {7.6}CU6 Cerrar sesi\IeC {\'o}n}{56}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Descripci\IeC {\'o}n completa}{56}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Atributos importantes}{56}{subsection.7.6.2}
-\contentsline {subsection}{\numberline {7.6.3}Trayectorias del Caso de Uso}{56}{subsection.7.6.3}
-\contentsline {section}{\numberline {7.7}CU7 Visualizar Notificaciones}{57}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Descripci\IeC {\'o}n completa}{57}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Atributos importantes}{57}{subsection.7.7.2}
-\contentsline {subsection}{\numberline {7.7.3}Trayectorias del Caso de Uso}{57}{subsection.7.7.3}
-\contentsline {section}{\numberline {7.8}CU8 Visualizar servicios}{58}{section.7.8}
-\contentsline {subsection}{\numberline {7.8.1}Descripci\IeC {\'o}n completa}{58}{subsection.7.8.1}
-\contentsline {subsection}{\numberline {7.8.2}Atributos importantes}{58}{subsection.7.8.2}
-\contentsline {subsection}{\numberline {7.8.3}Trayectorias del Caso de Uso}{58}{subsection.7.8.3}
-\contentsline {section}{\numberline {7.9}CU9 Visualizar servicios dentales}{60}{section.7.9}
-\contentsline {subsection}{\numberline {7.9.1}Descripci\IeC {\'o}n completa}{60}{subsection.7.9.1}
-\contentsline {subsection}{\numberline {7.9.2}Atributos importantes}{60}{subsection.7.9.2}
-\contentsline {subsection}{\numberline {7.9.3}Trayectorias del Caso de Uso}{60}{subsection.7.9.3}
-\contentsline {section}{\numberline {7.10}CU10 Visualizar servicios CELEX}{61}{section.7.10}
-\contentsline {subsection}{\numberline {7.10.1}Descripci\IeC {\'o}n completa}{61}{subsection.7.10.1}
-\contentsline {subsection}{\numberline {7.10.2}Atributos importantes}{61}{subsection.7.10.2}
-\contentsline {subsection}{\numberline {7.10.3}Trayectorias del Caso de Uso}{61}{subsection.7.10.3}
-\contentsline {section}{\numberline {7.11}CU11 Visualizar servicios de fotocopiado}{63}{section.7.11}
-\contentsline {subsection}{\numberline {7.11.1}Descripci\IeC {\'o}n completa}{63}{subsection.7.11.1}
-\contentsline {subsection}{\numberline {7.11.2}Atributos importantes}{63}{subsection.7.11.2}
-\contentsline {subsection}{\numberline {7.11.3}Trayectorias del Caso de Uso}{63}{subsection.7.11.3}
-\contentsline {section}{\numberline {7.12}CU12 Visualizar servicios de biblioteca}{65}{section.7.12}
-\contentsline {subsection}{\numberline {7.12.1}Descripci\IeC {\'o}n completa}{65}{subsection.7.12.1}
-\contentsline {subsection}{\numberline {7.12.2}Atributos importantes}{65}{subsection.7.12.2}
-\contentsline {subsection}{\numberline {7.12.3}Trayectorias del Caso de Uso}{65}{subsection.7.12.3}
-\contentsline {section}{\numberline {7.13}CU14 Cargar comprobante de pago}{67}{section.7.13}
-\contentsline {subsection}{\numberline {7.13.1}Descripci\IeC {\'o}n completa}{67}{subsection.7.13.1}
-\contentsline {subsection}{\numberline {7.13.2}Atributos importantes}{67}{subsection.7.13.2}
-\contentsline {subsection}{\numberline {7.13.3}Trayectorias del Caso de Uso}{67}{subsection.7.13.3}
-\contentsline {section}{\numberline {7.14}CU15 Gestionar pagos usuario}{69}{section.7.14}
-\contentsline {subsection}{\numberline {7.14.1}Descripci\IeC {\'o}n completa}{69}{subsection.7.14.1}
-\contentsline {subsection}{\numberline {7.14.2}Atributos importantes}{69}{subsection.7.14.2}
-\contentsline {subsection}{\numberline {7.14.3}Trayectorias del Caso de Uso}{69}{subsection.7.14.3}
-\contentsline {section}{\numberline {7.15}CU16 Visualizar comprobante de pago}{71}{section.7.15}
-\contentsline {subsection}{\numberline {7.15.1}Descripci\IeC {\'o}n completa}{71}{subsection.7.15.1}
-\contentsline {subsection}{\numberline {7.15.2}Atributos importantes}{71}{subsection.7.15.2}
-\contentsline {subsection}{\numberline {7.15.3}Trayectorias del Caso de Uso}{71}{subsection.7.15.3}
-\contentsline {section}{\numberline {7.16}CU18 Visualizar historial de pagos}{72}{section.7.16}
-\contentsline {subsection}{\numberline {7.16.1}Descripci\IeC {\'o}n completa}{72}{subsection.7.16.1}
-\contentsline {subsection}{\numberline {7.16.2}Atributos importantes}{72}{subsection.7.16.2}
-\contentsline {subsection}{\numberline {7.16.3}Trayectorias del Caso de Uso}{72}{subsection.7.16.3}
-\contentsline {section}{\numberline {7.17}CU32 Visualizar comprobante sigaa}{74}{section.7.17}
-\contentsline {subsection}{\numberline {7.17.1}Descripci\IeC {\'o}n completa}{74}{subsection.7.17.1}
-\contentsline {subsection}{\numberline {7.17.2}Atributos importantes}{74}{subsection.7.17.2}
-\contentsline {subsection}{\numberline {7.17.3}Trayectorias del Caso de Uso}{74}{subsection.7.17.3}
-\contentsline {section}{\numberline {7.18}CU34 Visualizar archivo de pagos por a\IeC {\~n}o}{75}{section.7.18}
-\contentsline {subsection}{\numberline {7.18.1}Descripci\IeC {\'o}n completa}{75}{subsection.7.18.1}
-\contentsline {subsection}{\numberline {7.18.2}Atributos importantes}{75}{subsection.7.18.2}
-\contentsline {subsection}{\numberline {7.18.3}Trayectorias del Caso de Uso}{75}{subsection.7.18.3}
-\contentsline {section}{\numberline {7.19}CU35 Visualizar pagos por mes}{77}{section.7.19}
-\contentsline {subsection}{\numberline {7.19.1}Descripci\IeC {\'o}n completa}{77}{subsection.7.19.1}
-\contentsline {subsection}{\numberline {7.19.2}Atributos importantes}{77}{subsection.7.19.2}
-\contentsline {subsection}{\numberline {7.19.3}Trayectorias del Caso de Uso}{77}{subsection.7.19.3}
-\contentsline {section}{\numberline {7.20}CU36 Visualizar pagos por fecha}{79}{section.7.20}
-\contentsline {subsection}{\numberline {7.20.1}Descripci\IeC {\'o}n completa}{79}{subsection.7.20.1}
-\contentsline {subsection}{\numberline {7.20.2}Atributos importantes}{79}{subsection.7.20.2}
-\contentsline {subsection}{\numberline {7.20.3}Trayectorias del Caso de Uso}{79}{subsection.7.20.3}
-\contentsline {section}{\numberline {7.21}CU38 Gestionar pagos contadur\IeC {\'\i }a}{81}{section.7.21}
-\contentsline {subsection}{\numberline {7.21.1}Descripci\IeC {\'o}n completa}{81}{subsection.7.21.1}
-\contentsline {subsection}{\numberline {7.21.2}Atributos importantes}{81}{subsection.7.21.2}
-\contentsline {subsection}{\numberline {7.21.3}Trayectorias del Caso de Uso}{81}{subsection.7.21.3}
-\contentsline {section}{\numberline {7.22}CU40 Cargar pagos}{83}{section.7.22}
-\contentsline {subsection}{\numberline {7.22.1}Descripci\IeC {\'o}n completa}{83}{subsection.7.22.1}
-\contentsline {subsection}{\numberline {7.22.2}Atributos importantes}{83}{subsection.7.22.2}
-\contentsline {subsection}{\numberline {7.22.3}Trayectorias del Caso de Uso}{83}{subsection.7.22.3}
-\contentsline {section}{\numberline {7.23}CU41 Cargar comprobante sigaa}{84}{section.7.23}
-\contentsline {subsection}{\numberline {7.23.1}Descripci\IeC {\'o}n completa}{84}{subsection.7.23.1}
-\contentsline {subsection}{\numberline {7.23.2}Atributos importantes}{84}{subsection.7.23.2}
-\contentsline {subsection}{\numberline {7.23.3}Trayectorias del Caso de Uso}{84}{subsection.7.23.3}
-\contentsline {section}{\numberline {7.24}CU42 Aceptar comprobante de pago}{86}{section.7.24}
-\contentsline {subsection}{\numberline {7.24.1}Descripci\IeC {\'o}n completa}{86}{subsection.7.24.1}
-\contentsline {subsection}{\numberline {7.24.2}Atributos importantes}{86}{subsection.7.24.2}
-\contentsline {subsection}{\numberline {7.24.3}Trayectorias del Caso de Uso}{86}{subsection.7.24.3}
-\contentsline {section}{\numberline {7.25}CU44 Gestionar pagos por \IeC {\'a}rea}{87}{section.7.25}
-\contentsline {subsection}{\numberline {7.25.1}Descripci\IeC {\'o}n completa}{87}{subsection.7.25.1}
-\contentsline {subsection}{\numberline {7.25.2}Atributos importantes}{87}{subsection.7.25.2}
-\contentsline {subsection}{\numberline {7.25.3}Trayectorias del Caso de Uso}{87}{subsection.7.25.3}
-\contentsline {section}{\numberline {7.26}CU45 Generar Excel}{89}{section.7.26}
-\contentsline {subsection}{\numberline {7.26.1}Descripci\IeC {\'o}n completa}{89}{subsection.7.26.1}
-\contentsline {subsection}{\numberline {7.26.2}Atributos importantes}{89}{subsection.7.26.2}
-\contentsline {subsection}{\numberline {7.26.3}Trayectorias del Caso de Uso}{89}{subsection.7.26.3}
-\contentsline {chapter}{\numberline {8}Anexo II: Pantallas}{90}{chapter.8}
-\contentsline {subsection}{\numberline {8.0.1}IU1 Registrar Usuario.}{90}{subsection.8.0.1}
-\contentsline {subsubsection}{Objetivo}{90}{section*.12}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{90}{section*.13}
-\contentsline {subsubsection}{Entradas}{90}{section*.14}
-\contentsline {subsubsection}{Comandos}{90}{section*.15}
-\contentsline {subsubsection}{Mensajes}{91}{section*.16}
-\contentsline {subsection}{\numberline {8.0.2}IU2 Modificar Informaci\IeC {\'o}n Personal.}{91}{subsection.8.0.2}
-\contentsline {subsubsection}{Objetivo}{91}{section*.17}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{91}{section*.18}
-\contentsline {subsubsection}{Entradas}{91}{section*.19}
-\contentsline {subsubsection}{Comandos}{92}{section*.20}
-\contentsline {subsubsection}{Mensajes}{92}{section*.21}
-\contentsline {subsection}{\numberline {8.0.3}IU3 Verificar cuenta.}{92}{subsection.8.0.3}
-\contentsline {subsubsection}{Objetivo}{92}{section*.22}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{92}{section*.23}
-\contentsline {subsubsection}{Entradas}{93}{section*.24}
-\contentsline {subsubsection}{Comandos}{93}{section*.25}
-\contentsline {subsubsection}{Mensajes}{93}{section*.26}
-\contentsline {subsection}{\numberline {8.0.4}IU4 Recuperar contrase\IeC {\~n}a.}{93}{subsection.8.0.4}
-\contentsline {subsubsection}{Objetivo}{93}{section*.27}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{93}{section*.28}
-\contentsline {subsubsection}{Entradas}{93}{section*.29}
-\contentsline {subsubsection}{Comandos}{94}{section*.30}
-\contentsline {subsubsection}{Mensajes}{94}{section*.31}
-\contentsline {subsection}{\numberline {8.0.5}IU5 Login}{94}{subsection.8.0.5}
-\contentsline {subsubsection}{Objetivo}{94}{section*.32}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{94}{section*.33}
-\contentsline {subsubsection}{Entradas}{94}{section*.34}
-\contentsline {subsubsection}{Comandos}{94}{section*.35}
-\contentsline {subsubsection}{Mensajes}{95}{section*.36}
-\contentsline {subsection}{\numberline {8.0.6}IU5.1 Bienvenida usuarios}{95}{subsection.8.0.6}
-\contentsline {subsubsection}{Objetivo}{95}{section*.37}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{95}{section*.38}
-\contentsline {subsubsection}{Comandos}{95}{section*.39}
-\contentsline {subsection}{\numberline {8.0.7}IU5.2 Bienvenida contador}{96}{subsection.8.0.7}
-\contentsline {subsubsection}{Objetivo}{96}{section*.40}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{96}{section*.41}
-\contentsline {subsubsection}{Comandos}{96}{section*.42}
-\contentsline {subsection}{\numberline {8.0.8}IU5.3 Bienvenida cajero}{97}{subsection.8.0.8}
-\contentsline {subsubsection}{Objetivo}{97}{section*.43}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{97}{section*.44}
-\contentsline {subsubsection}{Comandos}{97}{section*.45}
-\contentsline {subsection}{\numberline {8.0.9}IU5.4 Bienvenida \IeC {\'a}rea dental}{98}{subsection.8.0.9}
-\contentsline {subsubsection}{Objetivo}{98}{section*.46}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{98}{section*.47}
-\contentsline {subsubsection}{Comandos}{98}{section*.48}
-\contentsline {subsection}{\numberline {8.0.10}IU5.5 Bienvenida CELEX}{99}{subsection.8.0.10}
-\contentsline {subsubsection}{Objetivo}{99}{section*.49}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{99}{section*.50}
-\contentsline {subsubsection}{Comandos}{99}{section*.51}
-\contentsline {subsection}{\numberline {8.0.11}IU8 Visualizar servicios}{99}{subsection.8.0.11}
-\contentsline {subsubsection}{Objetivo}{99}{section*.52}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{99}{section*.53}
-\contentsline {subsubsection}{Comandos}{100}{section*.54}
-\contentsline {subsection}{\numberline {8.0.12}IU9 Visualizar servicios dentales}{100}{subsection.8.0.12}
-\contentsline {subsubsection}{Objetivo}{100}{section*.55}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{100}{section*.56}
-\contentsline {subsubsection}{Comandos}{101}{section*.57}
-\contentsline {subsection}{\numberline {8.0.13}IU10 Visualizar servicios CELEX}{101}{subsection.8.0.13}
-\contentsline {subsubsection}{Objetivo}{101}{section*.58}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{101}{section*.59}
-\contentsline {subsubsection}{Comandos}{101}{section*.60}
-\contentsline {subsection}{\numberline {8.0.14}IU11 Visualizar servicios fotocopiado}{102}{subsection.8.0.14}
-\contentsline {subsubsection}{Objetivo}{102}{section*.61}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{102}{section*.62}
-\contentsline {subsubsection}{Comandos}{102}{section*.63}
-\contentsline {subsection}{\numberline {8.0.15}IU12 Visualizar servicios biblioteca}{102}{subsection.8.0.15}
-\contentsline {subsubsection}{Objetivo}{102}{section*.64}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{102}{section*.65}
-\contentsline {subsubsection}{Comandos}{103}{section*.66}
-\contentsline {subsection}{\numberline {8.0.16}IU14 Cargar comprobante pago}{104}{subsection.8.0.16}
-\contentsline {subsubsection}{Objetivo}{104}{section*.67}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.68}
-\contentsline {subsubsection}{Salidas}{104}{section*.69}
-\contentsline {subsubsection}{Comandos}{104}{section*.70}
-\contentsline {subsubsection}{Mensajes}{104}{section*.71}
-\contentsline {subsection}{\numberline {8.0.17}IU15 Gestionar pagos usuario}{105}{subsection.8.0.17}
-\contentsline {subsubsection}{Objetivo}{105}{section*.72}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{105}{section*.73}
-\contentsline {subsubsection}{Comandos}{105}{section*.74}
-\contentsline {subsection}{\numberline {8.0.18}IU16 Visualizar comprobante de pago}{105}{subsection.8.0.18}
-\contentsline {subsubsection}{Objetivo}{105}{section*.75}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{105}{section*.76}
-\contentsline {subsubsection}{Comandos}{105}{section*.77}
-\contentsline {subsection}{\numberline {8.0.19}IU16.1 Visualizar comprobante pago}{106}{subsection.8.0.19}
-\contentsline {subsubsection}{Objetivo}{106}{section*.78}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{106}{section*.79}
-\contentsline {subsubsection}{Comandos}{106}{section*.80}
-\contentsline {subsection}{\numberline {8.0.20}IU16.2 Visualizar comprobante pago caja}{107}{subsection.8.0.20}
-\contentsline {subsubsection}{Objetivo}{107}{section*.81}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{107}{section*.82}
-\contentsline {subsubsection}{Salidas}{107}{section*.83}
-\contentsline {subsubsection}{Entradas}{107}{section*.84}
-\contentsline {subsubsection}{Comandos}{107}{section*.85}
-\contentsline {subsection}{\numberline {8.0.21}IU18 Visualizar historial de pagos}{107}{subsection.8.0.21}
-\contentsline {subsubsection}{Objetivo}{107}{section*.86}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{107}{section*.87}
-\contentsline {subsubsection}{Comandos}{108}{section*.88}
-\contentsline {subsection}{\numberline {8.0.22}IU19 Gestionar notas de pago usuarios}{108}{subsection.8.0.22}
-\contentsline {subsubsection}{Objetivo}{108}{section*.89}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{108}{section*.90}
-\contentsline {subsubsection}{Comandos}{109}{section*.91}
-\contentsline {subsection}{\numberline {8.0.23}IU21 Agendar cita}{109}{subsection.8.0.23}
-\contentsline {subsubsection}{Objetivo}{109}{section*.92}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{109}{section*.93}
-\contentsline {subsubsection}{Comandos}{109}{section*.94}
-\contentsline {subsection}{\numberline {8.0.24}IU22 Concluir cita}{110}{subsection.8.0.24}
-\contentsline {subsubsection}{Objetivo}{110}{section*.95}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{110}{section*.96}
-\contentsline {subsubsection}{Salidas}{111}{section*.97}
-\contentsline {subsubsection}{Comandos}{111}{section*.98}
-\contentsline {subsubsection}{Mensajes}{111}{section*.99}
-\contentsline {subsection}{\numberline {8.0.25}IU23 Gestionar citas}{111}{subsection.8.0.25}
-\contentsline {subsubsection}{Objetivo}{111}{section*.100}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{111}{section*.101}
-\contentsline {subsubsection}{Comandos}{111}{section*.102}
-\contentsline {subsection}{\numberline {8.0.26}IU26 Visualizar cuestionario}{112}{subsection.8.0.26}
-\contentsline {subsubsection}{Objetivo}{112}{section*.103}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.104}
-\contentsline {subsubsection}{Comandos}{112}{section*.105}
-\contentsline {subsection}{\numberline {8.0.27}IU27 Realizar consulta.}{112}{subsection.8.0.27}
-\contentsline {subsubsection}{Objetivo}{113}{section*.106}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{113}{section*.107}
-\contentsline {subsubsection}{Entradas}{113}{section*.108}
-\contentsline {subsubsection}{Comandos}{113}{section*.109}
-\contentsline {subsection}{\numberline {8.0.28}IU28 Enviar nota de pago}{114}{subsection.8.0.28}
-\contentsline {subsubsection}{Objetivo}{114}{section*.110}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{114}{section*.111}
-\contentsline {subsubsection}{Salidas}{114}{section*.112}
-\contentsline {subsubsection}{Comandos}{114}{section*.113}
-\contentsline {subsubsection}{Mensajes}{114}{section*.114}
-\contentsline {subsection}{\numberline {8.0.29}IU29 Gestionar pacientes}{115}{subsection.8.0.29}
-\contentsline {subsubsection}{Objetivo}{115}{section*.115}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.116}
-\contentsline {subsubsection}{Comandos}{115}{section*.117}
-\contentsline {subsection}{\numberline {8.0.30}IU30 Visualizar historial cl\IeC {\'\i }nico}{115}{subsection.8.0.30}
-\contentsline {subsubsection}{Objetivo}{115}{section*.118}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.119}
-\contentsline {subsubsection}{Comandos}{116}{section*.120}
-\contentsline {subsection}{\numberline {8.0.31}IU31 Visualizar consulta.}{116}{subsection.8.0.31}
-\contentsline {subsubsection}{Objetivo}{116}{section*.121}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{116}{section*.122}
-\contentsline {subsubsection}{Comandos}{116}{section*.123}
-\contentsline {subsection}{\numberline {8.0.32}IU32 Visualizar comprobante sigaa}{116}{subsection.8.0.32}
-\contentsline {subsubsection}{Objetivo}{116}{section*.124}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{116}{section*.125}
-\contentsline {subsubsection}{Comandos}{116}{section*.126}
-\contentsline {subsection}{\numberline {8.0.33}IU34.1 Visualizar archivo de pagos por a\IeC {\~n}o contabilidad}{117}{subsection.8.0.33}
-\contentsline {subsubsection}{Objetivo}{117}{section*.127}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{117}{section*.128}
-\contentsline {subsubsection}{Comandos}{118}{section*.129}
-\contentsline {subsection}{\numberline {8.0.34}IU34.2 Visualizar archivo de pagos por a\IeC {\~n}o dentales}{118}{subsection.8.0.34}
-\contentsline {subsubsection}{Objetivo}{118}{section*.130}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{118}{section*.131}
-\contentsline {subsubsection}{Comandos}{119}{section*.132}
-\contentsline {subsection}{\numberline {8.0.35}IU35.1 Visualizar pagos por mes contabilidad}{119}{subsection.8.0.35}
-\contentsline {subsubsection}{Objetivo}{119}{section*.133}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{119}{section*.134}
-\contentsline {subsubsection}{Comandos}{119}{section*.135}
-\contentsline {subsection}{\numberline {8.0.36}IU35.2 Visualizar pagos por mes dentales}{120}{subsection.8.0.36}
-\contentsline {subsubsection}{Objetivo}{120}{section*.136}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{120}{section*.137}
-\contentsline {subsubsection}{Comandos}{120}{section*.138}
-\contentsline {subsection}{\numberline {8.0.37}IU36.1 Visualizar pagos por fecha contabilidad}{120}{subsection.8.0.37}
-\contentsline {subsubsection}{Objetivo}{120}{section*.139}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{120}{section*.140}
-\contentsline {subsubsection}{Comandos}{121}{section*.141}
-\contentsline {subsection}{\numberline {8.0.38}IU36.2 Visualizar pagos por fecha dentales}{122}{subsection.8.0.38}
-\contentsline {subsubsection}{Objetivo}{122}{section*.142}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{122}{section*.143}
-\contentsline {subsubsection}{Comandos}{122}{section*.144}
-\contentsline {subsection}{\numberline {8.0.39}IU38 Gestionar pagos contadur\IeC {\'\i }a}{123}{subsection.8.0.39}
-\contentsline {subsubsection}{Objetivo}{123}{section*.145}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{123}{section*.146}
-\contentsline {subsubsection}{Comandos}{123}{section*.147}
-\contentsline {subsection}{\numberline {8.0.40}IU39 Gestionar pagos caja}{123}{subsection.8.0.40}
-\contentsline {subsubsection}{Objetivo}{123}{section*.148}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{123}{section*.149}
-\contentsline {subsubsection}{Comandos}{124}{section*.150}
-\contentsline {subsection}{\numberline {8.0.41}IU41 Cargar comprobante sigaa}{124}{subsection.8.0.41}
-\contentsline {subsubsection}{Objetivo}{124}{section*.151}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{124}{section*.152}
-\contentsline {subsubsection}{Salidas}{124}{section*.153}
-\contentsline {subsubsection}{Entradas}{124}{section*.154}
-\contentsline {subsubsection}{Comandos}{124}{section*.155}
-\contentsline {subsubsection}{Mensajes}{125}{section*.156}
-\contentsline {subsection}{\numberline {8.0.42}IU44.1 Gestionar pagos dentales}{125}{subsection.8.0.42}
-\contentsline {subsubsection}{Objetivo}{125}{section*.157}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{125}{section*.158}
-\contentsline {subsubsection}{Comandos}{126}{section*.159}
-\contentsline {subsection}{\numberline {8.0.43}IU44.2 Gestionar pagos CELEX}{126}{subsection.8.0.43}
-\contentsline {subsubsection}{Objetivo}{126}{section*.160}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{126}{section*.161}
-\contentsline {subsubsection}{Comandos}{126}{section*.162}
+\contentsline {chapter}{\numberline {5}Resultados y conclusiones}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Resultados}{36}{section.5.1}
+\contentsline {section}{\numberline {5.2}Conclusiones}{36}{section.5.2}
+\contentsline {chapter}{\numberline {6}Trabajo a futuro}{38}{chapter.6}
+\contentsline {chapter}{\numberline {7}Reglas de negocio}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}An\IeC {\'a}lisis de requerimientos}{39}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Requisitos funcionales}{39}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Requisitos no funcionales}{42}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Reglas de negocio}{42}{subsection.7.1.3}
+\contentsline {chapter}{\numberline {8}Anexo I: Casos de Uso}{47}{chapter.8}
+\contentsline {section}{\numberline {8.1}CU1 Registrar usuario}{49}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Descripci\IeC {\'o}n completa}{49}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Atributos importantes}{49}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Trayectorias del Caso de Uso}{50}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}CU2 Modificar informaci\IeC {\'o}n personal}{52}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Descripci\IeC {\'o}n completa}{52}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Atributos importantes}{52}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Trayectorias del Caso de Uso}{53}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}CU3 Verificar Cuenta}{55}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Descripci\IeC {\'o}n completa}{55}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Atributos importantes}{55}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Trayectorias del Caso de Uso}{55}{subsection.8.3.3}
+\contentsline {section}{\numberline {8.4}CU4 Recuperar Contrase\IeC {\~n}a}{57}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Descripci\IeC {\'o}n completa}{57}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Atributos importantes}{57}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}Trayectorias del Caso de Uso}{57}{subsection.8.4.3}
+\contentsline {section}{\numberline {8.5}CU5 Login}{59}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Descripci\IeC {\'o}n completa}{59}{subsection.8.5.1}
+\contentsline {subsection}{\numberline {8.5.2}Atributos importantes}{59}{subsection.8.5.2}
+\contentsline {subsection}{\numberline {8.5.3}Trayectorias del Caso de Uso}{59}{subsection.8.5.3}
+\contentsline {section}{\numberline {8.6}CU6 Cerrar sesi\IeC {\'o}n}{61}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Descripci\IeC {\'o}n completa}{61}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}Atributos importantes}{61}{subsection.8.6.2}
+\contentsline {subsection}{\numberline {8.6.3}Trayectorias del Caso de Uso}{61}{subsection.8.6.3}
+\contentsline {section}{\numberline {8.7}CU7 Visualizar Notificaciones}{62}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}Descripci\IeC {\'o}n completa}{62}{subsection.8.7.1}
+\contentsline {subsection}{\numberline {8.7.2}Atributos importantes}{62}{subsection.8.7.2}
+\contentsline {subsection}{\numberline {8.7.3}Trayectorias del Caso de Uso}{62}{subsection.8.7.3}
+\contentsline {section}{\numberline {8.8}CU8 Visualizar servicios}{63}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}Descripci\IeC {\'o}n completa}{63}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.2}Atributos importantes}{63}{subsection.8.8.2}
+\contentsline {subsection}{\numberline {8.8.3}Trayectorias del Caso de Uso}{63}{subsection.8.8.3}
+\contentsline {section}{\numberline {8.9}CU9 Visualizar servicios dentales}{65}{section.8.9}
+\contentsline {subsection}{\numberline {8.9.1}Descripci\IeC {\'o}n completa}{65}{subsection.8.9.1}
+\contentsline {subsection}{\numberline {8.9.2}Atributos importantes}{65}{subsection.8.9.2}
+\contentsline {subsection}{\numberline {8.9.3}Trayectorias del Caso de Uso}{65}{subsection.8.9.3}
+\contentsline {section}{\numberline {8.10}CU10 Visualizar servicios CELEX}{66}{section.8.10}
+\contentsline {subsection}{\numberline {8.10.1}Descripci\IeC {\'o}n completa}{66}{subsection.8.10.1}
+\contentsline {subsection}{\numberline {8.10.2}Atributos importantes}{66}{subsection.8.10.2}
+\contentsline {subsection}{\numberline {8.10.3}Trayectorias del Caso de Uso}{66}{subsection.8.10.3}
+\contentsline {section}{\numberline {8.11}CU11 Visualizar servicios de fotocopiado}{68}{section.8.11}
+\contentsline {subsection}{\numberline {8.11.1}Descripci\IeC {\'o}n completa}{68}{subsection.8.11.1}
+\contentsline {subsection}{\numberline {8.11.2}Atributos importantes}{68}{subsection.8.11.2}
+\contentsline {subsection}{\numberline {8.11.3}Trayectorias del Caso de Uso}{68}{subsection.8.11.3}
+\contentsline {section}{\numberline {8.12}CU12 Visualizar servicios de biblioteca}{70}{section.8.12}
+\contentsline {subsection}{\numberline {8.12.1}Descripci\IeC {\'o}n completa}{70}{subsection.8.12.1}
+\contentsline {subsection}{\numberline {8.12.2}Atributos importantes}{70}{subsection.8.12.2}
+\contentsline {subsection}{\numberline {8.12.3}Trayectorias del Caso de Uso}{70}{subsection.8.12.3}
+\contentsline {section}{\numberline {8.13}CU14 Cargar comprobante de pago}{72}{section.8.13}
+\contentsline {subsection}{\numberline {8.13.1}Descripci\IeC {\'o}n completa}{72}{subsection.8.13.1}
+\contentsline {subsection}{\numberline {8.13.2}Atributos importantes}{72}{subsection.8.13.2}
+\contentsline {subsection}{\numberline {8.13.3}Trayectorias del Caso de Uso}{72}{subsection.8.13.3}
+\contentsline {section}{\numberline {8.14}CU15 Gestionar pagos usuario}{74}{section.8.14}
+\contentsline {subsection}{\numberline {8.14.1}Descripci\IeC {\'o}n completa}{74}{subsection.8.14.1}
+\contentsline {subsection}{\numberline {8.14.2}Atributos importantes}{74}{subsection.8.14.2}
+\contentsline {subsection}{\numberline {8.14.3}Trayectorias del Caso de Uso}{74}{subsection.8.14.3}
+\contentsline {section}{\numberline {8.15}CU16 Visualizar comprobante de pago}{76}{section.8.15}
+\contentsline {subsection}{\numberline {8.15.1}Descripci\IeC {\'o}n completa}{76}{subsection.8.15.1}
+\contentsline {subsection}{\numberline {8.15.2}Atributos importantes}{76}{subsection.8.15.2}
+\contentsline {subsection}{\numberline {8.15.3}Trayectorias del Caso de Uso}{76}{subsection.8.15.3}
+\contentsline {section}{\numberline {8.16}CU18 Visualizar historial de pagos}{77}{section.8.16}
+\contentsline {subsection}{\numberline {8.16.1}Descripci\IeC {\'o}n completa}{77}{subsection.8.16.1}
+\contentsline {subsection}{\numberline {8.16.2}Atributos importantes}{77}{subsection.8.16.2}
+\contentsline {subsection}{\numberline {8.16.3}Trayectorias del Caso de Uso}{77}{subsection.8.16.3}
+\contentsline {section}{\numberline {8.17}CU32 Visualizar comprobante sigaa}{79}{section.8.17}
+\contentsline {subsection}{\numberline {8.17.1}Descripci\IeC {\'o}n completa}{79}{subsection.8.17.1}
+\contentsline {subsection}{\numberline {8.17.2}Atributos importantes}{79}{subsection.8.17.2}
+\contentsline {subsection}{\numberline {8.17.3}Trayectorias del Caso de Uso}{79}{subsection.8.17.3}
+\contentsline {section}{\numberline {8.18}CU34 Visualizar archivo de pagos por a\IeC {\~n}o}{80}{section.8.18}
+\contentsline {subsection}{\numberline {8.18.1}Descripci\IeC {\'o}n completa}{80}{subsection.8.18.1}
+\contentsline {subsection}{\numberline {8.18.2}Atributos importantes}{80}{subsection.8.18.2}
+\contentsline {subsection}{\numberline {8.18.3}Trayectorias del Caso de Uso}{80}{subsection.8.18.3}
+\contentsline {section}{\numberline {8.19}CU35 Visualizar pagos por mes}{82}{section.8.19}
+\contentsline {subsection}{\numberline {8.19.1}Descripci\IeC {\'o}n completa}{82}{subsection.8.19.1}
+\contentsline {subsection}{\numberline {8.19.2}Atributos importantes}{82}{subsection.8.19.2}
+\contentsline {subsection}{\numberline {8.19.3}Trayectorias del Caso de Uso}{82}{subsection.8.19.3}
+\contentsline {section}{\numberline {8.20}CU36 Visualizar pagos por fecha}{84}{section.8.20}
+\contentsline {subsection}{\numberline {8.20.1}Descripci\IeC {\'o}n completa}{84}{subsection.8.20.1}
+\contentsline {subsection}{\numberline {8.20.2}Atributos importantes}{84}{subsection.8.20.2}
+\contentsline {subsection}{\numberline {8.20.3}Trayectorias del Caso de Uso}{84}{subsection.8.20.3}
+\contentsline {section}{\numberline {8.21}CU38 Gestionar pagos contadur\IeC {\'\i }a}{86}{section.8.21}
+\contentsline {subsection}{\numberline {8.21.1}Descripci\IeC {\'o}n completa}{86}{subsection.8.21.1}
+\contentsline {subsection}{\numberline {8.21.2}Atributos importantes}{86}{subsection.8.21.2}
+\contentsline {subsection}{\numberline {8.21.3}Trayectorias del Caso de Uso}{86}{subsection.8.21.3}
+\contentsline {section}{\numberline {8.22}CU40 Cargar pagos}{88}{section.8.22}
+\contentsline {subsection}{\numberline {8.22.1}Descripci\IeC {\'o}n completa}{88}{subsection.8.22.1}
+\contentsline {subsection}{\numberline {8.22.2}Atributos importantes}{88}{subsection.8.22.2}
+\contentsline {subsection}{\numberline {8.22.3}Trayectorias del Caso de Uso}{88}{subsection.8.22.3}
+\contentsline {section}{\numberline {8.23}CU41 Cargar comprobante sigaa}{89}{section.8.23}
+\contentsline {subsection}{\numberline {8.23.1}Descripci\IeC {\'o}n completa}{89}{subsection.8.23.1}
+\contentsline {subsection}{\numberline {8.23.2}Atributos importantes}{89}{subsection.8.23.2}
+\contentsline {subsection}{\numberline {8.23.3}Trayectorias del Caso de Uso}{89}{subsection.8.23.3}
+\contentsline {section}{\numberline {8.24}CU42 Aceptar comprobante de pago}{91}{section.8.24}
+\contentsline {subsection}{\numberline {8.24.1}Descripci\IeC {\'o}n completa}{91}{subsection.8.24.1}
+\contentsline {subsection}{\numberline {8.24.2}Atributos importantes}{91}{subsection.8.24.2}
+\contentsline {subsection}{\numberline {8.24.3}Trayectorias del Caso de Uso}{91}{subsection.8.24.3}
+\contentsline {section}{\numberline {8.25}CU44 Gestionar pagos por \IeC {\'a}rea}{92}{section.8.25}
+\contentsline {subsection}{\numberline {8.25.1}Descripci\IeC {\'o}n completa}{92}{subsection.8.25.1}
+\contentsline {subsection}{\numberline {8.25.2}Atributos importantes}{92}{subsection.8.25.2}
+\contentsline {subsection}{\numberline {8.25.3}Trayectorias del Caso de Uso}{92}{subsection.8.25.3}
+\contentsline {section}{\numberline {8.26}CU45 Generar Excel}{94}{section.8.26}
+\contentsline {subsection}{\numberline {8.26.1}Descripci\IeC {\'o}n completa}{94}{subsection.8.26.1}
+\contentsline {subsection}{\numberline {8.26.2}Atributos importantes}{94}{subsection.8.26.2}
+\contentsline {subsection}{\numberline {8.26.3}Trayectorias del Caso de Uso}{94}{subsection.8.26.3}
+\contentsline {chapter}{\numberline {9}Anexo II: Pantallas}{95}{chapter.9}
+\contentsline {subsection}{\numberline {9.0.1}IU1 Registrar Usuario.}{95}{subsection.9.0.1}
+\contentsline {subsubsection}{Objetivo}{95}{section*.12}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{95}{section*.13}
+\contentsline {subsubsection}{Entradas}{95}{section*.14}
+\contentsline {subsubsection}{Comandos}{95}{section*.15}
+\contentsline {subsubsection}{Mensajes}{96}{section*.16}
+\contentsline {subsection}{\numberline {9.0.2}IU2 Modificar Informaci\IeC {\'o}n Personal.}{96}{subsection.9.0.2}
+\contentsline {subsubsection}{Objetivo}{96}{section*.17}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{96}{section*.18}
+\contentsline {subsubsection}{Entradas}{96}{section*.19}
+\contentsline {subsubsection}{Comandos}{97}{section*.20}
+\contentsline {subsubsection}{Mensajes}{97}{section*.21}
+\contentsline {subsection}{\numberline {9.0.3}IU3 Verificar cuenta.}{97}{subsection.9.0.3}
+\contentsline {subsubsection}{Objetivo}{97}{section*.22}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{97}{section*.23}
+\contentsline {subsubsection}{Entradas}{98}{section*.24}
+\contentsline {subsubsection}{Comandos}{98}{section*.25}
+\contentsline {subsubsection}{Mensajes}{98}{section*.26}
+\contentsline {subsection}{\numberline {9.0.4}IU4 Recuperar contrase\IeC {\~n}a.}{98}{subsection.9.0.4}
+\contentsline {subsubsection}{Objetivo}{98}{section*.27}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{98}{section*.28}
+\contentsline {subsubsection}{Entradas}{98}{section*.29}
+\contentsline {subsubsection}{Comandos}{99}{section*.30}
+\contentsline {subsubsection}{Mensajes}{99}{section*.31}
+\contentsline {subsection}{\numberline {9.0.5}IU5 Login}{99}{subsection.9.0.5}
+\contentsline {subsubsection}{Objetivo}{99}{section*.32}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{99}{section*.33}
+\contentsline {subsubsection}{Entradas}{99}{section*.34}
+\contentsline {subsubsection}{Comandos}{99}{section*.35}
+\contentsline {subsubsection}{Mensajes}{100}{section*.36}
+\contentsline {subsection}{\numberline {9.0.6}IU5.1 Bienvenida usuarios}{100}{subsection.9.0.6}
+\contentsline {subsubsection}{Objetivo}{100}{section*.37}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{100}{section*.38}
+\contentsline {subsubsection}{Comandos}{100}{section*.39}
+\contentsline {subsection}{\numberline {9.0.7}IU5.2 Bienvenida contador}{101}{subsection.9.0.7}
+\contentsline {subsubsection}{Objetivo}{101}{section*.40}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{101}{section*.41}
+\contentsline {subsubsection}{Comandos}{101}{section*.42}
+\contentsline {subsection}{\numberline {9.0.8}IU5.3 Bienvenida cajero}{102}{subsection.9.0.8}
+\contentsline {subsubsection}{Objetivo}{102}{section*.43}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{102}{section*.44}
+\contentsline {subsubsection}{Comandos}{102}{section*.45}
+\contentsline {subsection}{\numberline {9.0.9}IU5.4 Bienvenida \IeC {\'a}rea dental}{103}{subsection.9.0.9}
+\contentsline {subsubsection}{Objetivo}{103}{section*.46}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{103}{section*.47}
+\contentsline {subsubsection}{Comandos}{103}{section*.48}
+\contentsline {subsection}{\numberline {9.0.10}IU5.5 Bienvenida CELEX}{104}{subsection.9.0.10}
+\contentsline {subsubsection}{Objetivo}{104}{section*.49}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.50}
+\contentsline {subsubsection}{Comandos}{104}{section*.51}
+\contentsline {subsection}{\numberline {9.0.11}IU8 Visualizar servicios}{104}{subsection.9.0.11}
+\contentsline {subsubsection}{Objetivo}{104}{section*.52}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.53}
+\contentsline {subsubsection}{Comandos}{105}{section*.54}
+\contentsline {subsection}{\numberline {9.0.12}IU9 Visualizar servicios dentales}{105}{subsection.9.0.12}
+\contentsline {subsubsection}{Objetivo}{105}{section*.55}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{105}{section*.56}
+\contentsline {subsubsection}{Comandos}{106}{section*.57}
+\contentsline {subsection}{\numberline {9.0.13}IU10 Visualizar servicios CELEX}{106}{subsection.9.0.13}
+\contentsline {subsubsection}{Objetivo}{106}{section*.58}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{106}{section*.59}
+\contentsline {subsubsection}{Comandos}{106}{section*.60}
+\contentsline {subsection}{\numberline {9.0.14}IU11 Visualizar servicios fotocopiado}{107}{subsection.9.0.14}
+\contentsline {subsubsection}{Objetivo}{107}{section*.61}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{107}{section*.62}
+\contentsline {subsubsection}{Comandos}{107}{section*.63}
+\contentsline {subsection}{\numberline {9.0.15}IU12 Visualizar servicios biblioteca}{107}{subsection.9.0.15}
+\contentsline {subsubsection}{Objetivo}{107}{section*.64}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{107}{section*.65}
+\contentsline {subsubsection}{Comandos}{108}{section*.66}
+\contentsline {subsection}{\numberline {9.0.16}IU14 Cargar comprobante pago}{109}{subsection.9.0.16}
+\contentsline {subsubsection}{Objetivo}{109}{section*.67}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{109}{section*.68}
+\contentsline {subsubsection}{Salidas}{109}{section*.69}
+\contentsline {subsubsection}{Comandos}{109}{section*.70}
+\contentsline {subsubsection}{Mensajes}{109}{section*.71}
+\contentsline {subsection}{\numberline {9.0.17}IU15 Gestionar pagos usuario}{110}{subsection.9.0.17}
+\contentsline {subsubsection}{Objetivo}{110}{section*.72}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{110}{section*.73}
+\contentsline {subsubsection}{Comandos}{110}{section*.74}
+\contentsline {subsection}{\numberline {9.0.18}IU16 Visualizar comprobante de pago}{110}{subsection.9.0.18}
+\contentsline {subsubsection}{Objetivo}{110}{section*.75}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{110}{section*.76}
+\contentsline {subsubsection}{Comandos}{110}{section*.77}
+\contentsline {subsection}{\numberline {9.0.19}IU16.1 Visualizar comprobante pago}{111}{subsection.9.0.19}
+\contentsline {subsubsection}{Objetivo}{111}{section*.78}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{111}{section*.79}
+\contentsline {subsubsection}{Comandos}{111}{section*.80}
+\contentsline {subsection}{\numberline {9.0.20}IU16.2 Visualizar comprobante pago caja}{112}{subsection.9.0.20}
+\contentsline {subsubsection}{Objetivo}{112}{section*.81}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.82}
+\contentsline {subsubsection}{Salidas}{112}{section*.83}
+\contentsline {subsubsection}{Entradas}{112}{section*.84}
+\contentsline {subsubsection}{Comandos}{112}{section*.85}
+\contentsline {subsection}{\numberline {9.0.21}IU18 Visualizar historial de pagos}{112}{subsection.9.0.21}
+\contentsline {subsubsection}{Objetivo}{112}{section*.86}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.87}
+\contentsline {subsubsection}{Comandos}{113}{section*.88}
+\contentsline {subsection}{\numberline {9.0.22}IU19 Gestionar notas de pago usuarios}{113}{subsection.9.0.22}
+\contentsline {subsubsection}{Objetivo}{113}{section*.89}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{113}{section*.90}
+\contentsline {subsubsection}{Comandos}{114}{section*.91}
+\contentsline {subsection}{\numberline {9.0.23}IU21 Agendar cita}{114}{subsection.9.0.23}
+\contentsline {subsubsection}{Objetivo}{114}{section*.92}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{114}{section*.93}
+\contentsline {subsubsection}{Comandos}{114}{section*.94}
+\contentsline {subsection}{\numberline {9.0.24}IU22 Concluir cita}{115}{subsection.9.0.24}
+\contentsline {subsubsection}{Objetivo}{115}{section*.95}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.96}
+\contentsline {subsubsection}{Salidas}{116}{section*.97}
+\contentsline {subsubsection}{Comandos}{116}{section*.98}
+\contentsline {subsubsection}{Mensajes}{116}{section*.99}
+\contentsline {subsection}{\numberline {9.0.25}IU23 Gestionar citas}{116}{subsection.9.0.25}
+\contentsline {subsubsection}{Objetivo}{116}{section*.100}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{116}{section*.101}
+\contentsline {subsubsection}{Comandos}{116}{section*.102}
+\contentsline {subsection}{\numberline {9.0.26}IU26 Visualizar cuestionario}{117}{subsection.9.0.26}
+\contentsline {subsubsection}{Objetivo}{117}{section*.103}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{117}{section*.104}
+\contentsline {subsubsection}{Comandos}{117}{section*.105}
+\contentsline {subsection}{\numberline {9.0.27}IU27 Realizar consulta.}{117}{subsection.9.0.27}
+\contentsline {subsubsection}{Objetivo}{118}{section*.106}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{118}{section*.107}
+\contentsline {subsubsection}{Entradas}{118}{section*.108}
+\contentsline {subsubsection}{Comandos}{118}{section*.109}
+\contentsline {subsection}{\numberline {9.0.28}IU28 Enviar nota de pago}{119}{subsection.9.0.28}
+\contentsline {subsubsection}{Objetivo}{119}{section*.110}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{119}{section*.111}
+\contentsline {subsubsection}{Salidas}{119}{section*.112}
+\contentsline {subsubsection}{Comandos}{119}{section*.113}
+\contentsline {subsubsection}{Mensajes}{119}{section*.114}
+\contentsline {subsection}{\numberline {9.0.29}IU29 Gestionar pacientes}{120}{subsection.9.0.29}
+\contentsline {subsubsection}{Objetivo}{120}{section*.115}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{120}{section*.116}
+\contentsline {subsubsection}{Comandos}{120}{section*.117}
+\contentsline {subsection}{\numberline {9.0.30}IU30 Visualizar historial cl\IeC {\'\i }nico}{120}{subsection.9.0.30}
+\contentsline {subsubsection}{Objetivo}{120}{section*.118}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{120}{section*.119}
+\contentsline {subsubsection}{Comandos}{121}{section*.120}
+\contentsline {subsection}{\numberline {9.0.31}IU31 Visualizar consulta.}{121}{subsection.9.0.31}
+\contentsline {subsubsection}{Objetivo}{121}{section*.121}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{121}{section*.122}
+\contentsline {subsubsection}{Comandos}{121}{section*.123}
+\contentsline {subsection}{\numberline {9.0.32}IU32 Visualizar comprobante sigaa}{121}{subsection.9.0.32}
+\contentsline {subsubsection}{Objetivo}{121}{section*.124}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{121}{section*.125}
+\contentsline {subsubsection}{Comandos}{121}{section*.126}
+\contentsline {subsection}{\numberline {9.0.33}IU34.1 Visualizar archivo de pagos por a\IeC {\~n}o contabilidad}{122}{subsection.9.0.33}
+\contentsline {subsubsection}{Objetivo}{122}{section*.127}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{122}{section*.128}
+\contentsline {subsubsection}{Comandos}{123}{section*.129}
+\contentsline {subsection}{\numberline {9.0.34}IU34.2 Visualizar archivo de pagos por a\IeC {\~n}o dentales}{123}{subsection.9.0.34}
+\contentsline {subsubsection}{Objetivo}{123}{section*.130}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{123}{section*.131}
+\contentsline {subsubsection}{Comandos}{124}{section*.132}
+\contentsline {subsection}{\numberline {9.0.35}IU35.1 Visualizar pagos por mes contabilidad}{124}{subsection.9.0.35}
+\contentsline {subsubsection}{Objetivo}{124}{section*.133}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{124}{section*.134}
+\contentsline {subsubsection}{Comandos}{124}{section*.135}
+\contentsline {subsection}{\numberline {9.0.36}IU35.2 Visualizar pagos por mes dentales}{125}{subsection.9.0.36}
+\contentsline {subsubsection}{Objetivo}{125}{section*.136}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{125}{section*.137}
+\contentsline {subsubsection}{Comandos}{125}{section*.138}
+\contentsline {subsection}{\numberline {9.0.37}IU36.1 Visualizar pagos por fecha contabilidad}{125}{subsection.9.0.37}
+\contentsline {subsubsection}{Objetivo}{125}{section*.139}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{125}{section*.140}
+\contentsline {subsubsection}{Comandos}{126}{section*.141}
+\contentsline {subsection}{\numberline {9.0.38}IU36.2 Visualizar pagos por fecha dentales}{127}{subsection.9.0.38}
+\contentsline {subsubsection}{Objetivo}{127}{section*.142}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{127}{section*.143}
+\contentsline {subsubsection}{Comandos}{127}{section*.144}
+\contentsline {subsection}{\numberline {9.0.39}IU38 Gestionar pagos contadur\IeC {\'\i }a}{128}{subsection.9.0.39}
+\contentsline {subsubsection}{Objetivo}{128}{section*.145}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{128}{section*.146}
+\contentsline {subsubsection}{Comandos}{128}{section*.147}
+\contentsline {subsection}{\numberline {9.0.40}IU39 Gestionar pagos caja}{128}{subsection.9.0.40}
+\contentsline {subsubsection}{Objetivo}{128}{section*.148}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{128}{section*.149}
+\contentsline {subsubsection}{Comandos}{129}{section*.150}
+\contentsline {subsection}{\numberline {9.0.41}IU41 Cargar comprobante sigaa}{129}{subsection.9.0.41}
+\contentsline {subsubsection}{Objetivo}{129}{section*.151}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{129}{section*.152}
+\contentsline {subsubsection}{Salidas}{129}{section*.153}
+\contentsline {subsubsection}{Entradas}{129}{section*.154}
+\contentsline {subsubsection}{Comandos}{129}{section*.155}
+\contentsline {subsubsection}{Mensajes}{130}{section*.156}
+\contentsline {subsection}{\numberline {9.0.42}IU44.1 Gestionar pagos dentales}{130}{subsection.9.0.42}
+\contentsline {subsubsection}{Objetivo}{130}{section*.157}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.158}
+\contentsline {subsubsection}{Comandos}{131}{section*.159}
+\contentsline {subsection}{\numberline {9.0.43}IU44.2 Gestionar pagos CELEX}{131}{subsection.9.0.43}
+\contentsline {subsubsection}{Objetivo}{131}{section*.160}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.161}
+\contentsline {subsubsection}{Comandos}{131}{section*.162}
