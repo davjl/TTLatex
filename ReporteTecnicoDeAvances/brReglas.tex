@@ -7,7 +7,7 @@
 		\FRitem {RF5}{Inicio de sesión}{Todo usuario registrado en el sistema podrá iniciar sesión.}\\
 		\FRitem {RF6}{Cerrar sesión}{Todo usuario registrado en el sistema podrá cerrar sesión.}\\
 		\FRitem {RF7}{Notificaciones}{Todo usuario deberá poder recibir notificacioness que sean de importancia para el actor}\\
-		\FRitem {RF32}{Historial}{Todo usuario podrá visualizar el comprobante sigaa respecto al área correspondiente.}\\
+		\FRitem {RF32}{Historial}{Todo usuario podrá visualizar el historial de los comprobantes SIG@ con respecto al área correspondiente.}\\
 		\caption{Requisitos funcionales para todo usuario.}
 		\label{tabla:RFGenerales}
 	\end{requerimientos}
@@ -20,7 +20,7 @@
 	
 	\begin{requerimientos}[blue]{}
 		\FRitem{RF34}{Visualización de pagos aprobados}{Los coordinadores de área de servicio, contador y subdirector administrativo podrán visualizar los pagos aprobados para el área correspondiente seccionando por año, mes y día.}\\
-		\FRitem{RF37}{Impresión de comprobantes}{Todos los coordinadores de área, contador y subdirector administrativo podrán reealizar la impresión de los comprobantes sigaa en caso de ser necesario.}\\
+		\FRitem{RF37}{Impresión de comprobantes SIG@}{Todos los coordinadores de área, contador y subdirector administrativo podrán reealizar la impresión de los comprobantes SIG@ en caso de ser necesario.}\\
 		\caption{Requisitos funcionales de área administrativa y áreas de servicios}
 		\label{table:RFAdministrativosServicios}
 	\end{requerimientos}
@@ -30,12 +30,12 @@
 		\FRitem{RF3}{Verificar cuenta}{Para termianr el registro en sistema el usuario (alumno, empleado, externo) deberá verificar su cuenta ingresando dos veces la contraseña}\\
 		\FRitem{RF4}{Recuperar contraseña}{El usuario (alumno, empleado, externo) podrá recuperar su contraseña en cualquier momento por medio del correo electrónico con el que se registro y el número del perfil de usuario.}\\
 		\FRitem{RF8}{Visualizar servicios}{El usuario (alumno, empleado, externo) podrá visualizar todos los servicios y costos que se brinden dentro de las áreas mencionadas anteriormente.}\\
-		\FRitem{RF13}{Pago electrónico}{El usuario (alumno, empleado, externo) podrá realizar el pago electrónico del servicio en cualquier hora.}\\  %-------------****************
-		\FRitem{RF14}{Subir comprobate de pago}{El usuario (alumno, empleado, externo) podrá subir el comprobante de pago en cualquier hora}\\%------------------****************
+		\FRitem{RF13}{Pago electrónico}{El usuario (alumno, empleado, externo) podrá realizar el pago electrónico del servicio en cualquier hora.}\\
+		\FRitem{RF14}{Subir voucher de pago}{El usuario (alumno, empleado, externo) podrá subir el voucher de pago en cualquier hora}\\%------------------****************
 		\FRitem{RF15}{Gestionar pagos usuario}{El usuario (alumno, empleado, externo) podrá visualizar en cualquier momento las notas de pago generadas por algun servicio.}\\
-		\FRitem{RF16}{Visualizar comprobante pago}{El usuario (alumno, empleado, externo) podrá visualizar en cualquier momento el comprobante de pago enviado.}\\
+		\FRitem{RF16}{Visualizar comprobante pago}{El usuario (alumno, empleado, externo) podrá visualizar en cualquier momento el voucher de pago enviado.}\\
 		\FRitem{RF17}{Pagar nota de pago en caja}{El usuario (alumno, empleado, externo) podrá mandar una nota de pago a caja para realizar el pago en efectivo}\\
-		\FRitem{RF19}{Gestionar notas de pago}{El usuario (alumno, empleado, externo) podrá ralizar las cualquiera de las siguientes operaciones en el comprobante de pago que elija \begin{itemize}
+		\FRitem{RF19}{Gestionar notas de pago}{El usuario (alumno, empleado, externo) podrá realizar cualquiera de las siguientes operaciones en la nota de pago que elija \begin{itemize}
 				\item Visualizar nota de pago.
 				\item Cargar comprobante de pago. 
 				\item Pagar nota de pago en caja.
@@ -53,10 +53,9 @@
 	\end{requerimientos}
 	
 	\begin{requerimientos}[blue]{}
-		\FRitem{RF42}{Aprobar pago}{El cajero podrá aprobar un pago recibido.}\\
-		\FRitem{RF43}{Rechazar pago}{El cajero podrá rechazar un pago recibido.}\\
+		\FRitem{RF42}{Aprobar pago}{El cajero podrá aprobar o rechazar un pago recibido.}\\
 		%\FRitem{RF}{Descripción del rechazo}{Si el pago es rechazado el cajero deberá agregar una descripción del motivo de rechazo.}\\
-		\FRitem{RF41}{Adjuntar comprobante sigaa}{En caso de que el pago sea aprobado el cajero deberá adjuntar el comprobante sigaa.}\\
+		\FRitem{RF41}{Adjuntar comprobante SIG@}{En caso de que el pago sea aprobado el cajero deberá adjuntar el comprobante SIG@.}\\
 		\FRitem{RF40}{Corte de caja}{El cajero podrá realizar el corte de caja solo en los horarios establecidos.}\\
 		\caption{Requisitos funcionales Cajero.}
 		\label{tabla:RFCaja}
@@ -72,11 +71,10 @@
 			\end{itemize}}\\
 		\FRitem{RF24}{Marcar inasistencia}{La dentista podrá marcar la inasistencia en caso de que el usuario(alumno, empleado, externo) no asista en el horario marcado}\\
 		\FRitem{RF25}{Cancelar cita}{En caso de que el dentista no pueda realizar la consulta en el horario establecido deberá cancelar la cita}\\
-		\FRitem{RF26}{Visualizar cuestionario}{El dentista podrá visualizar las respuestas del cuestionario realizado por el usuario (alummno, empleado, externo)}\\
-		\FRitem{RF27}{Realizar consulta}{El dentista podrá realizar una consulta aun sin previa cita y deberá agregar una descripción del tratamiento}\\
-		\FRitem{RF28}{Enviar nota de pago}{El dentista solo podrá enviar una nota de pago al usuario(alumno, empleado, externo) al finalizar la consulta}\\
-		\FRitem{RF29}{Gestionar pacientes}{Los dentistas podran visualizar un registro de todos sus pacientes en cualquier momento}\\
-		\FRitem{RF30}{Visualizar historial clínico}{}\\
+		\FRitem{RF26}{Visualizar cuestionario}{La dentista podrá visualizar las respuestas del cuestionario realizado por el usuario (alummno, empleado, externo)}\\
+		\FRitem{RF27}{Realizar consulta}{La dentista podrá realizar una consulta aun sin previa cita y deberá agregar una descripción del tratamiento}\\
+		\FRitem{RF28}{Enviar nota de pago}{La dentista solo podrá enviar una nota de pago al usuario(alumno, empleado, externo) al finalizar la consulta}\\
+		\FRitem{RF29}{Gestionar pacientes}{Las dentistas podran visualizar un registro de todos sus pacientes en cualquier momento}\\
 		\FRitem{RF33}{Generar comprobante de pago}{Después de una consulta las dentistas podrán generar un comprobante digital de pago para el paciente.}\\
 		\caption{Requisitos funcionales área dental}
 		\label{tabla:RFDental}
@@ -91,10 +89,9 @@
 \subsection{Requisitos no funcionales}
 \begin{NFRequieriments}
 	\NFRitem{RNF1}{Ejecución en navegadores}{La aplicación web deberá ejecutarse perfectamente en google chrome y firefox.}{}\\
-	\NFRitem{RNF2}{Versión de ejecución Android}{La aplicación móvil podrá ser ejecutada en el sistema operativo android 2.7}{}\\
+	\NFRitem{RNF2}{Versión de ejecución Android}{La aplicación móvil podrá ser ejecutada a partir del sistema operativo android 2.7 en adelante}{}\\
 	\NFRitem{RNF3}{Navegación}{El sistema deberá permitir una navegación de forma intuitiva}{}\\
 	\NFRitem{RNF4}{Tipos de datos}{Los datos que se ingresen deberán ser congruentes con los solicitados}{}\\
-	
 \end{NFRequieriments}
 	
 
@@ -119,7 +116,7 @@
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR3}{Perfilamiento de coordinadores área de servicios}
+\begin{BussinesRule}{BR3}{Perfilamiento de coordinadores en área de servicios}
 	\BRitem[Descripción:] Solo existirán cuatro tipos de coordinadores para cada área.
 	\begin{itemize}
 		\item Biblioteca.
@@ -133,14 +130,14 @@
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR4}{Número de coordinadores área de servicios}
-	\BRitem[Descripción:] En todas las áreas se podrá registrar hasta dos coordinadoreas para diferentes turnos (matutino, vespertino).
+	\BRitem[Descripción:] En todas las áreas se podrá registrar hasta dos coordinadores para diferentes turnos (matutino, vespertino).
 	\BRitem[Clase:]Integridad
 	\BRitem[Tipo:] Cronometrada.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR5}{Perfilamiento de coordinadores área administrativa}
-	\BRitem[Descripción:] Para el área administrativa existirán tres tipos de rol \begin{itemize}
+	\BRitem[Descripción:] Para el área administrativa solo se trabajarán tres tipos de rol \begin{itemize}
 		\item Cajero.
 		\item Contador.
 		\item Subdirector administrativo.
@@ -154,6 +151,7 @@
 	\BRitem[Descripción:] Para poder realizar el registro de un usuario se deberá ingresar los siguientes datos \begin{itemize}
 		\item Tipo de usaurio.
 		\item Nombre.
+		\item Primer apellido.
 		\item Segundo apellido.
 		\item Curp.
 		\item Correo electrónico.
@@ -166,9 +164,9 @@
 
 \begin{BussinesRule}{BR7}{Modificar información personal}
 	\BRitem[Descripción:] El usuario solo podrá modificar su información personal luego de identificarse previamente con su contraseña.
-	\BRitem[Clase:]
-	\BRitem[Tipo:]
-	\BRitem[Nivel:]
+	\BRitem[Clase:] Condición.
+	\BRitem[Tipo:] Habilitador.
+	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR8}{Acciones que requieren notificación}
@@ -188,8 +186,8 @@
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR9}{Estado del archivo}
-	\BRitem[Descripción:] Al ser enviado un pago para revisión en caja se consideran 3 posibles estados: \begin{itemize}
+\begin{BussinesRule}{BR9}{Estado de voucher}
+	\BRitem[Descripción:] Al ser enviado un voucher de pago para revisión en caja se consideran 3 posibles estados: \begin{itemize}
 		\item Rojo: Pago rechazado.
 		\item Amarillo: Pago en espera de revisión.
 		\item Verde: Pago aprobado.
@@ -206,8 +204,15 @@
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR11}{Archivo del comprobante de pago}
-	\BRitem[Descripción:]Un comprobante de pago deberá cumplir las siguientes especificaciones: \begin{itemize}
+\begin{BussinesRule}{BR11}{Operatividad de servicios}
+	\BRitem[Descripción:] Solo el subdirector administrativo podrá dar de baja un servicio o bien reactivarlo.
+	\BRitem[Clase:] Ejecutivo.
+	\BRitem[Tipo:] Integridad.
+	\BRitem[Nivel:] Control.
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR12}{Archivo del voucher de pago}
+	\BRitem[Descripción:]Un voucher de pago deberá cumplir las siguientes especificaciones: \begin{itemize}
 		\item Formato del archivo jpg o pdf.
 		\item Tamaño del archivo no superior a 500KB.
 	\end{itemize}
@@ -216,42 +221,49 @@
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR12}{Validación de un comprobante de pago}
-	\BRitem[Descripción:] Para validar un comprobante este deberá ser legible.
+\begin{BussinesRule}{BR13}{Validación de un voucher de pago}
+	\BRitem[Descripción:] Para validar un comprobante este deberá ser legible y no deberá poseer un número de operación repetido con otro comprobante.
 	\BRitem[Clase:] Condición.
 	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Influenciador.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR13}{Registro de coordinadores}
+\begin{BussinesRule}{BR14}{Almacenamiento de archivos}
+	\BRitem[Descripción:] En la área de recursos financieros se deberá almacenar por un periodo de 5 años todos los voucher de pago y comprobante SIG@, de igual manera las áreas de servicios deberán almacenar el comprobante SIG@.
+	\BRitem[Clase:] Integridad.
+	\BRitem[Tipo:] Cronometrada.
+	\BRitem[Nivel:] Control.
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR15}{Registro de coordinadores}
 	\BRitem[Descripción:]Solo el director administrativo podrá registrar en el sistema a nuevos coordinadores de área.
 	\BRitem[Clase:] Integridad.
 	\BRitem[Tipo:] Ejecutivo.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR14}{Baja de coordinadores}
+\begin{BussinesRule}{BR16}{Baja de coordinadores}
 	\BRitem[Descripción:]Solo el director administrativo podrá dar de baja en el sistema a los coordinadores de área.
 	\BRitem[Clase:] Integridad.
 	\BRitem[Tipo:] Ejecutivo.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR15}{Campos obligatorios}
-	\BRitem[Descripción:] Los campos marcados con * deberán ser obligatorios.
+\begin{BussinesRule}{BR17}{Campos obligatorios}
+	\BRitem[Descripción:] Los campos marcados con * deberán ser proposionados obligatoriamente.
 	\BRitem[Clase:] Condición.
 	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR16}{Validación de caracteres}
+\begin{BussinesRule}{BR18}{Validación de caracteres}
 	\BRitem[Descripción:] El usuario no podrá ingresar caracteres sin establecer.
 	\BRitem[Clase:] Condición.
 	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR17}{Periodos de cita}
+\begin{BussinesRule}{BR19}{Periodos de cita}
 	\BRitem[Descripción:] Para el registro de una cita se deberá de considerar la desiponibilidad y los siguientes horarios:  \begin{itemize}
 		\item Matutino: 9:00 a 15:00 Hrs
 		\item Vespertino 15:00 a 21:00 Hrs
@@ -261,29 +273,29 @@
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR18}{Horarios corte de caja}
+\begin{BussinesRule}{BR20}{Horarios corte de caja}
 	\BRitem[Descripción:]  El corte de caja solo se podrá realizar en el horario de 14:00- 14:10 y 20:30-20:40.
 	\BRitem[Clase:] Autorización.
 	\BRitem[Tipo:] Cronometrado.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR19}{Cortes de caja ajeno al horario}
-	\BRitem[Descripción:] En caso de que se tenga que realizar un corte de caja fuera del tiempo dicho anteriormente solo el subdirector administrativo podrá habilitar la función de corte de caja.
+\begin{BussinesRule}{BR21}{Cortes de caja ajeno al horario}
+	\BRitem[Descripción:] En caso de que se tenga que realizar un corte de caja fuera de los tiempos dichos anteriormente, solo el subdirector administrativo podrá habilitar la función de corte de caja fuera de horario.
 	\BRitem[Clase:] Autorización.
 	\BRitem[Tipo:] Ejecutivo.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR20}{Gestionar notas de pago}
+\begin{BussinesRule}{BR22}{Gestionar notas de pago}
 	\BRitem[Descripción:] El usuario solo deberá observar las notas de los servicios que ha solicitado.
 	\BRitem[Clase:] Autorización.
 	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR21}{Gestionar pagos}
-	\BRitem[Descripción:] En la gestion de pagos solo se visualizarán los pagos que se han mandado a caja.
+\begin{BussinesRule}{BR23}{Gestionar pagos}
+	\BRitem[Descripción:] En la gestión de pagos solo se visualizarán los vouchers que se han mandado a caja.
 	\BRitem[Clase:] Autorización.
 	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Control.

@@ -57,7 +57,7 @@ Teniendo los procesos claros, tanto para el CELEX como para servicios dentales y
 
 \subsubsection{Mesas de de trabajo con Contadora}
 
-Fue necesario acordar reuniones de trabajo con la contadora pues en caja y contaduría recaen todos los depósitos y comprobantes de pago que los usuarios realizan con el fin de obtener un servicio.\\
+Fue necesario acordar reuniones de trabajo con la contadora pues en caja y contaduría recaen todos los depósitos y vouchers de pago que los usuarios realizan con el fin de obtener un servicio.\\
 
 Aquí, se nos explicó más a detalle el proceso y todo lo que se involucra en él refiriéndonos a sistemas existentes y personal.\\
 
@@ -67,7 +67,7 @@ En la primer sesión que se tuvo se presentó un maquetado con el flujo que tend
 	\item Comprobación de pagos de los usuarios por medio de un archivo enviado directamente a caja.
 	\item Gestión de pagos por día, meses y años.
 	\item Almacenamiento de comprobantes de pago en una base de datos, disponible en el momento que ella lo requiera.
-	\item Visualización de comprobantes de pago y boletas SIG@.
+	\item Visualización de tickets de pago y comprobantes SIG@.
 \end{itemize}
 
 Con esas propuestas fue que llegamos a la segunda reunión y se presentó una nueva maquetación con el flujo correspondiente. Estas opciones y diseño fueron aprobados por ella haciendo mención de que serviría como herramienta adicional al sistema SIG@.\\
@@ -97,17 +97,14 @@ Así también, cada uno de estos paquetes mostrados cuenta con funcionalidades e
 
 \newpage
 \cfinput{CUS}
+\hfill
 
-
-
-\newpage
-Podemos ver que algunos actores comparten casos de uso y algunos realizan funciones específicas de acuerdo al papel que desempeñan en el sistema.\\
-\newpage
-El compendio con la descripción de los 45 casos de uso se puede consultar en la siguiente dirección: https://github.com/davjl/TTLatex
+Podemos ver que algunos actores comparten casos de uso y algunos realizan funciones específicas de acuerdo al papel que desempeñan en el sistema.
+El compendio con la descripción de los casos de uso se puede consultar al final del documento Anexo I: Casos de Uso
 
 \newpage
 \section{Base de datos}
-Como última parte del trabajo realizado para esta primera etapa, modelamos nuestra base de datos para representar el acceso a la información. Se planteó un primer diseño que consider un flujo simple para el proceso de pago en nuestro sistema.\\
+Como última parte del trabajo realizado para esta primera etapa, modelamos nuestra base de datos para representar el acceso a la información. Se planteó un primer diseño que considera un flujo simple para el proceso de pago en nuestro sistema.\\
 
 \subsection{Incremento 4. Base de datos}
 Este primer diseño de la base de datos se hizo con la intención de poder desarrollar un flujo simple del proceso de pagos. Consta de un total de 13 relaciones, cada una de ellas colocada dentro del esquema que le corresponde dentro del flujo del sistema.\\
@@ -115,5 +112,11 @@ Este primer diseño de la base de datos se hizo con la intención de poder desar
 \IUfig[1]{gui/SPEE}{}{Modelo de base de datos}
 
 Este modelo se tradujo a código SQL con la intención de implementar esta primera base de datos y ver el comportamiento que tenía con nuestro proyecto de desarrollo. Cabe mencionar que este modelo será modificado para la segunda parte del Trabajo Terminal, agregando relaciones que representen el flujo de las áreas módulos faltantes.
+
+\cfinput{brModelo}
+\newpage
+\cfinput{brProceso}
+\newpage
+\cfinput{brReglas}
 
 

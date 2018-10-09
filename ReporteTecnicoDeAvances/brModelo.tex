@@ -1,5 +1,3 @@
-Presentación del capítulo
-
 %--------------------------------------------------
 \section{Modelo de entidades del negocio}
 
@@ -8,15 +6,42 @@ Diagrama de clases con las entidades del negocio.
 
 %--------------------------------------------------
 \section{Descripción de atributos}
-
-Describa para cada Entidad sus atributos y su significado. Por ejemplo:
-
 % - - - - - - - - - - - - - - - - - - - - - - - - -
-\subsection{Atributos de ``Alumno''}
-
+\subsection{Atributos principales del ``Voucher de pago''}
 \begin{description}
-	\item[boleta: ] Cadena de 10 dígitos que identifica de manera única a un alumno. AL estructura es YYYYEEDDDD  donde YYYY es el año de registro, EE es la clave de la escuela donde se registró y DDDD es un consecutivo para cada escuela.
-	\item[Nombre: ] Nombre del alumno.
-	\item[Status: ] Corresponde al estado del alumno. Debe ser uno de los valores permitidos para ``Status del Alumno'' (ver glosario).
+	\item[Fecha: ] Fecha de realización del pago en banco.
+	\item[Hora: ] Hora de realización del pago en banco.
+	\item[Número de folio: ] Número que identifica una operación bancaria.
+	\item[Nombre: ] Al reverso del voucher se deberá anotar el nombre completo del usuario que solicita el servicio.
+	\item[Boleta, Num. empleado , Curp: ] El usuario se debe identificar por medio de boleta, num. empleado y curp.
+	\item[Servicio: ] Se debe agregar el servicio que esta pagando.  
 \end{description}
 
+\subsection{Atributos principales de ``Comprobante SIG@''}
+\begin{description}
+	\item[Folio: ] Número identificador del comprobante SIG@.
+	\item[Fecha: ] Fecha de realización del pago en caja.
+	\item[Hora: ] Hora de realización del pago en caja.
+	\item[Nombre: ] Nombre del usuario que solicita el servicio.
+	\item[Boleta, num. empleado, Curp :] Identificador de usuario.
+\end{description}
+
+\subsection{Atributos principales de ``Nota de pago''}
+\begin{description}
+	\item[Fecha: ] Fecha de realización de servico o consulta del servicio para poder efectuar.
+	\item[Concepto: ] Servicio del pago a realizar y cantidad a pagar.
+\end{description}
+
+\subsection{Atributos principales de ``Ticket de impresiones''}
+\begin{description}
+	\item[Cantidad: ] Se específica la cantidad de impresiones a las que equivale el ticket.
+	\item[Validez: ] Señala el periodo de tiempo valido.
+	\item[Número de impresiones: ] En caso de realizar algúna impresión se anota el número que imprimió. 
+\end{description}
+
+%\subsection{Atributos principales de ``Ticket de impresiones''}
+%\begin{description}
+%	\item[Cantidad: ] Se específica la cantidad de impresiones a las que equivale el ticket.
+%	\item[Validez: ] Señala el periodo de tiempo valido.
+%	\item[Número de impresiones: ] En caso de realizar algúna impresión se anota el número que imprimió. 
+%\end{description}
