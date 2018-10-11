@@ -1,7 +1,42 @@
 %--------------------------------------------------
 \section{Proceso ajustado}
+En esta sección presentamos la funcionalidad de nuestro sistema aplicado al negocio.
 
 \IUfig[.8]{gui/app}{}{Flujo con sistema implementado}
+
+\begin{enumerate}
+	\item El Usuario accede al sistema web o móvil "Escomunidad-Servicios".
+	\item Consulta los servicios disponibles.
+	\item En caso de que no sea necesario presentese en el área de servicio continuar en el punto 7.
+	\item Acude al área de servicio para poder atender el servicio que requiera.
+	\item El Coordinador de área atiende su solictud y genera una nota de pago en el sistema SPEE.
+	\item El sistema ''Escomunidad-Servicios'' envía la nota a la cuenta del usuario para que pueda realizar el pago.
+	\item En el sistema ''Escomunidad-Servicios'' el usuario selecciona un método de pago.
+	\item El usuario tiene dos opciones de pago.
+		\begin{enumerate}
+			\item Pago en caja
+			\begin{enumerate}[I]
+				\item Acude a caja a realizar el pago.
+			\end{enumerate}
+			\item Envio de comprobante digítal por el sistema ''Escomunidad-Servicios''.
+			\begin{enumerate}[I]
+				\item Realiza el pago en una sucursal bancomer.
+				\item Sube en el sistema ''Escomunidad-Servicios'' el voucher de pago.
+				\item El sistema ''Escomunidad-Servicios'' envía el voucher a caja.
+				\item El cajero Recibe el voucher.
+				\item Comprueba que la información y datos sean correctos.
+			\end{enumerate}
+		\end{enumerate}
+	\item El cajero registra el pago en el sistema SIG@.
+	\item Adjunta el comprobante SIG@ en el sistema ''Escomunidad-Servicios''.
+	\item El sistema ''Escomunidad-Servicios'' envía el comprobante SIG@ al usuario y al área donde fue requerido el pago.
+	\item El usuario acude al área donde requirio el servicio (Si no es necesario que se presente saltar este punto).
+	\item El coordinador de área consulta los servicios pagados en el día.
+	\item Identifica el pago del usuario.
+	\item Realiza el servicio.
+	\item Confirma el servicio elaborado.
+	
+\end{enumerate}
 
 %Describa el proceso como será con la introducción del sistema.
 
@@ -11,7 +46,7 @@
 % - - - - - - - - - - - - - - - - - - - - - - - - -
 \subsection{Participantes}
 
-En esta sección se describen los los actores y funciones que participan en los procesos de pagos explicados en capitulos anteriores.
+En esta sección se describen los los actores y funciones que participan en los procesos de pagos actuales.
 
 {\bf Encargado de caja:}\begin{itemize}
 	\item Descripción: Persona que labora en un horario matutino o vespertino y es encargada de recibir y verificar los pagos para las los diferentes servicios que se brindan en la escuela.
@@ -31,8 +66,8 @@ En esta sección se describen los los actores y funciones que participan en los 
 	\item Área: Departamento de recursos financieros.
 	\item Responsabilidades:\begin{itemize}
 		\item Verificar que las cuentas recibidas esten correctas y en orden.
-		\item Atender cualquier anomalia en el registro de pagos.
-		\item Llevar un correcto orden administrativo en cuando a ingresos y egresos.
+		\item Atender cualquier anomalía en el registro de pagos.
+		\item Llevar un correcto orden administrativo en cuanto a ingresos y egresos.
 		\item Almacenar los voucher de pago y comprobante SIG@.
 	\end{itemize}
 \end{itemize}
@@ -85,9 +120,53 @@ En esta sección se describen los los actores y funciones que participan en los 
 \subsection{Proceso de pago en servicio dental}
 
 \IUfig[.9]{gui/banco}{}{Flujo actual en servicios dentales}
+
+\begin{enumerate}
+	\item El usuario acude sin previa cita al área dental.
+	\item Solicita una consulta.
+	\item El dentista hace una consulta de revisión.
+	\item Si es posible realizar la consulta continuar en 7.
+	\item La dentista agenda una cita.
+	\item El usuario se presenta el día acordado.
+	\item La dentista realiza el servicio.
+	\item Realiza una nota de pago al usuario.
+	\item El usuario acude a caja a realizar el pago.
+	\item El cajero reegistra el pago.
+	\item Generá 2 comprobantes SIG@.
+	\item Almacena un comprobante y el otro es entregado al usuario.
+	\item El usuario entrega el comprobante SIG@ en el área dental.
+	\item El dentista almacena el comprobante.
+\end{enumerate}
+
 %diagramas y explicación de los procesos: describir las actividades.
 
 % - - - - - - - - - - - - - - - - - - - - - - - - -
 \subsection{Proceso de pago para servicios sin nota de pago}
 \IUfig[.9]{gui/efectivo}{}{Flujo actual de servicios sin nota de pago}
+
+\begin{enumerate}
+	\item El usuario acude al área del servicio que necesita.
+	\item Consulta precios y servicios.
+	\item El usuario tiene dos opciones de pago (Para el caso de CELEX solo se permite el pago en banco).
+		\begin{enumerate}
+			\item Pago en caja
+			\begin{enumerate}[I]
+				\item Acude a caja a realizar el pago.
+			\end{enumerate}
+			\item Pago en banco.
+			\begin{enumerate}[I]
+				\item Realiza el pago en una sucursal bancomer.
+				\item Entrega el voucher recibido en caja.
+				\item El cajero Recibe el voucher.
+				\item Comprueba que la información y datos sean correctos.
+			\end{enumerate}
+		\end{enumerate}
+	\item Registra el pago en el sistema SIG@.
+	\item Imprime dos comprobantes SIG@.
+	\item Almacena un comprobante y el otro es entregado al usuario.
+	\item El usuario hace entrega del comprobante donde necesita el servicio.
+	\item El coordinador del área realiza el servicio.
+	\item Se almacena el comprobante. 
+\end{enumerate}
+
 %diagramas y explicación de los procesos: describir las actividades.

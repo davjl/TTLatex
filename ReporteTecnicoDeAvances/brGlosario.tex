@@ -1,55 +1,107 @@
-Introduction al capítulo
-
 %--------------------------------------------------
+\section{Generalidades}
+ Para efectos del presente documento se entiende por:
+ 
+\begin{description}
+	\item[TT: ] Trabajo Terminal.
+	\item[TT I: ] Trabajo Terminal uno.
+	\item[TT II: ] Trabajo Terminal dos.
+\end{description}
+
+
 \section{Glosario de términos}
 
-Liste todos los termino del negocio.
-
 \begin{description}
-	\item[TT: ] 
-	\item[Actor:]
-	\item[Caso de Uso: ] Define una pieza de comportamiento coherente, sin revelar la estructura interna del sistema.
-	\item[Diagrama de casos de uso: ]
-	\item[Modelo de datos: ]
-	\item[Sistema: ]
-	\item[Aplicación: ]
-	\item[Usuario: ] Toda persona que se interese por algún producto o servicio.
-	\item[Módulo: ]
-	\item[Diseño responsivo:]
-	\item[Arquitectura de sistema: ]
-	\item[Plataforma de desarrollo: ]
-	\item[Mapeo Objeto-Relacional: ]
-	\item[Protocolo: ]
-	\item[Sistema heterogéneos: ]
-	\item[API: ]
-	\item[HTML: ]
-	\item[CSS :]
-	\item[JavaScript: ]
-	\item[HTML5: ]
-	\item[Archivos ejecutables binarios: ]
-	\item[Sistema Operativo: ]
-	\item[Código fuente: ]
-	\item[Software Development Kit: ] 
-	\item[Tiempo de ejecución: ]
-	\item[Tiempo de compilación: ]
-	\item[Rest :]
-	\item[AJAX: ]
-	\item[JSON: ]
-	\item[Plugin: ]
-	\item[RESTful: ]
-	\item[URL: ]
-	\item[Framework: ]
-	\item[Front- end: ]
-	\item[Back-end: ]
-	\item[Base de datos: ]
-	\item[Lenguaje SQL: ]
-	\item[Objeto: ]
-	\item[JDBC: ]
-	\item[Atributo: ]
-	\item[XML: ]
-	\item[Bean:	]
-	\item[Entidad: ]
-	\item[Inyección de dependencias: ]
+	\item[Actor:] Idealización de una persona externa, de un proceso, o de una cosa que interactúa con el sistema.
 	
+	\item[AJAX: ] Es un acrónimo de Asynchronous JavaScript + XML, que se puede traducir como "JavaScript asíncrono + XML".
+	
+	\item[API: ] Es un código que indica a las aplicaciones cómo pueden mantener una comunicación entre sí. Estas reglas permiten que los distintos programas mantengan interacciones.
+	
+	\item[Aplicación web: ] Es una página web especial, que tiene información sobre la que se puede interactuar e incluso cambiar.
+	
+	\item[Archivos ejecutables binarios: ] Son archivos que indican al sistema que ha de realizar un trabajo.
+	
+	\item[Arquitectura de sistema: ] Es la organización fundamental de un sistema, que incluye sus componentes, las relaciones entre sí y el ambiente, y los principios que gobiernan su diseño y evolución.
+	
+	\item[Atributo: ] Son las caracterísiticas individuales que diferencian un objeto de otro y determinan su apariencia, estado u otras cualidades
+	
+	\item[Back-end: ] Enfocado en hacer que todo lo que está detrás de un sitio web funcione correctamente. Toma los datos, los procesa y los envía al usuario.
+	
+	\item[Base de datos: ] Una base de datos es una aplicación independiente que almacena una colección de datos.
+	
+	\item[Base de datos relacional: ] Se refiere a la relación que existe entre las distintas entidades o tablas de la base.
+	
+	\item[Bean:	] Es una clase destinada a almacenar una cantidad de datos para nuestro programa. Su fin es encapsular información, para reutilizar código fuente, estructurando el código fuente en unidades lo más sencillas posible.
+	
+	\item[Caso de Uso: ] Define una pieza de comportamiento coherente, sin revelar la estructura interna del sistema.
+	
+	\item[Código fuente: ] Es el conjunto de líneas de texto que pautan las instrucciones que debe seguir un ordenador para ejecutar ese programa.
+	
+	\item[CSS :] Hojas de Estilo en Cascada es el lenguaje utilizado para describir la presentación de documentos HTML o XML.
+	
+	\item[Diagrama de casos de uso: ] Muestran las relaciones entre los casos de uso de un sistema y sus actores.
+	
+	\item[Diseño responsivo:] Se trata de redimencionar y colocar los elementos de la web de forma que se adapten al ancho de cada dispositivo permitiendo una correcta visualización y una mejor experiencia de usuario.
+	
+	\item[Entidad: ] Las entidades son objetos que viven corto tiempo en memoria, pero son persistentes en la base de datos.
+	
+	\item[Framework: ] Es un esquema para el desarrollo y/o la implementación de una aplicación.
+	
+	\item[Front- end: ] Se enfoca en el usuario, en todo con lo que podemos interactuar y lo que vemos mientras navegamos.
+	
+	\item[HTML: ] Lenguaje de Marcado para hipertextos es el elemento de construcción más básico de una página web y se usa para crear y representar visualmente una página web.
+	
+	\item[HTML5: ] Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance, HTML5 es la última versión de HTML.
+	
+	\item[Inyección de dependencias: ] Consiste en inyectar comportamientos a componentes.
+	
+	\item[JavaScript: ] Es un lenguaje ligero e interpretado, orientado a objetos con  funciones de primera clase, más conocido como el lenguaje de script para páginas web.
+	
+	\item[JDBC: ] La API JDBC consiste en un conjunto de interfaces y clases escribas en el lenguaje de programación Java. Con estas interfaces y clases estándar, los programadores pueden escribir aplicaciones que conecten con bases de datos, envíen consultas escritas en el lenguaje de consulta estructurada y procesen los resultados.
+	
+	\item[JSON: ] Es un formato ligero de intercambio de datos.
+	
+	\item[Lenguaje SQL: ]  SQL es un lenguaje declarativo estándar internacional de comunicación dentro de las bases de datos que nos permite a todos el acceso y manipulación de datos en una base de datos.
+	
+	\item[Mapeo Objeto-Relacional: ] Es una técnica de programación para convertir datos del sistema de tipos utilizado en un lenguaje de programación orientado a objetos al utilizado en una base de datos relacional.
+	
+	\item[Modelo de datos: ] Mecanismo formal para representar y manipular información de manera general y sistemática
+	
+	\item[Módulo: ] Es una colección de definiciones de variables, funciones y tipos (entre otras cosas) que pueden ser importadas para ser usadas desde cualquier programa.
+	
+	\item[Objeto: ]  Componente o código de software que contiene en sí mismo tanto sus características como sus comportamientos.
+	
+	\item[Pagina web: ] Es un documento al que se puede acceder a través de un navegador. La información de las páginas web es, normalmente, estática (sólo se puede leer, no interactuar con ella).
+	
+	\item[Plugin: ] Es aquella aplicación que, en un programa informático, añade una funcionalidad adicional o una nueva característica al software.
+	
+	\item[Programación Orientada a Objetos: ] Es un paradigma de programación que usa objetos y sus interacciones para diseñar aplicaciones y programas de computadora. 
+	
+	\item[Protocolo de comunicación: ] Es un conjunto de reglas y procedimientos que deben respetarse para el envío y la recepción de datos a través de una red. 
+	
+	\item[Rest :] Conjunto de restricciones con las que podemos crear un estilo de arquitectura software, la cual podremos usar para crear aplicaciones web respetando HTTP. 
+	
+	\item[RESTful: ] Hace referencia a un servicio web que implementa la arquitectura REST.
+	
+	\item[Script: ]	Conjunto de órdenes guardadas en un archivo, permiten manipular la apariencia y crear efectos especiales bastante atractivos.
+	
+	\item[Sistema heterogéneos: ] Se dice que es un sistema heterogeneo cuando sus componentes son distintos pero pueden comunicarse entre si por medios comunes.
+	
+	\item[Sistema Operativo: ] Conjunto de programas especialmente hechos para la ejecución de varias tareas, en las que sirve de intermediario entre el usuario y la computadora (Windows, MacOS, Linux, etc).
+	
+	\item[Software Development Kit: ] Reúne un grupo de herramientas que permiten la programación de aplicaciones móviles.
+	
+	\item[Tiempo de compilación: ] Período de tiempo en el que un compilador transforma un código programado a un código que pueda ejecutar una computadora.
+	
+	\item[Tiempo de ejecución: ] Es el período en el que un programa es ejecutado por el sistema operativo.
+	
+	\item[TT: ] Trabajo Terrminal.
+	
+	\item[URL: ] Se trata de la secuencia de caracteres que sigue un estándar y que permite denominar recursos dentro del entorno de Internet para que puedan ser localizados.
+	
+	\item[Usuario: ] Toda persona que se interese por algún producto o servicio.
+	
+	\item[XML: ]Extensible Markup Language (XML) es un formato universal para datos y documentos estructurados. Los archivos XML tienen una extensión de archivo de xml.
 	
 \end{description}
