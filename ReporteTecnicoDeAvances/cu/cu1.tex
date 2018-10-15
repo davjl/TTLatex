@@ -8,14 +8,13 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 \begin{UseCase}{CU1}{Registrar usuario}{
-		Permite al usuario darse de alta dentro del sistema. El usuario puede tomar el papel de Alumno, Empleado o Externo.\\
-		\newline El Alumno puede identificarse por medio de su número de boleta, el Empleado por su número de empleado y el Externo a través de su CURP.
+		Permite a una persona darse de alta dentro del sistema.
 }
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{Roberto Mendoza Saavedra.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
-		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
+		\UCitem{Actor}{Usuario.}
 		\UCitem{Propósito}{Agregar un usuario al sistema.}
 		\UCitem{Entradas}{Datos del usuario: 
 		\begin{itemize}
@@ -36,29 +35,30 @@
 				\item No debe existir un registro previo del usuario.
 			\end{itemize}}
 		\UCitem{Postcondiciones}{Se agrega un nuevo registro a la base de datos.}
-		\UCitem{Reglas de Negocio}{\BRref{RN01}{Unicidad del usuario}, \BRref{RN02}{Perfilamiento del usuario}}
+		\UCitem{Reglas de Negocio}{\BRref{RN1}{Unicidad del usuario}, \BRref{RN2}{Perfilamiento del usuario}, \BRref{RN6}{Información requerida para agregar un usuario}, \BRref{RN20}{Longitud de número de boleta alumno y número de empleado}}
 		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG52}{Longitud no válida}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG54}{Usuario duplicado}.}
 		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU5}{Login}}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
 		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.
-		\UCpaso[\UCactor] Presiona la opción {\bf Registrar Usuario} 
-		\UCpaso Dirige a la pantalla \IUref{IU1}{Registrar Usuario}.
+		\UCpaso[\UCactor] Presiona la opción {\bf Registrar usuario} 
+		\UCpaso Dirige a la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU1}{Registrar Usuario} el tipo de usuario que desea registrar.
-		\UCpaso Con base en la regla de negocio \BRref{RN02}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
+		\UCpaso Con base en la regla de negocio \BRref{RN2}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
 		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Registrar}.\Trayref{A}
-		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
+		\UCpaso  Con base en la regla de negocio \BRref{RN6}{Información requerida para agregar un usuario} verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
 		\UCpaso Verifica que los campos ingresados sean válidos. \Trayref{C}
-		\UCpaso Verifica que la longitud del CURP, número de boleta o número de empleado tengan la longitud correcta. \Trayref{D}
+		\UCpaso Con base en la regla de negocio \BRref{RN20}{Longitud de número de boleta alumno y número de empleado} verifica que el número de boleta o número de empleado tengan la longitud correcta. \Trayref{D}
+		\UCpaso Verifica que la longitud del CURP tengan la longitud correcta. \Trayref{D}
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
-		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro previo.
+		\UCpaso Basado en la regla de negocio \BRref{RN1}{Unicidad del usuario} verifica que no exista un registro previo.  \Trayref{F}
 		\UCpaso Registra un nuevo usuario.
 		\UCpaso Direcciona al usuario a la pantalla \IUref{IU5}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
-			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU1}{Registrar Usuario}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU1}{Registrar usuario}
 			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
 			\end{UCtrayectoriaA}
 		
@@ -77,8 +77,13 @@
 		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 	\end{UCtrayectoriaA}
 	
-		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
+	\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
 		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
+	\begin{UCtrayectoriaA}{F}{El usuario ya existe en el sistema.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG54}{Usuario duplicado} en la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
 	\end{UCtrayectoriaA}
 	

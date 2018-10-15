@@ -259,10 +259,21 @@
 	\end{description}
 }
 
+\newenvironment{Message}[2]%linea original
+{%
+	\hypertarget{#1}{}%Linea original
+	\noindent{\large{\bf Mensaje:} #1 #2}%line Original
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
+	}
+	{%
+	\end{description}
+}
+
 
 
 \newcommand{\BRitem}[1][]{\item[#1]}
 
+\newcommand{\MSGitem}[1][]{\item[#1]}
  
  
 \newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}

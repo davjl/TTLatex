@@ -18,23 +18,23 @@
 		\UCitem{Actor}{Administrador Caja.}
 		\UCitem{Propósito}{Cambiar el estado del comprobante de pendiente a aceptado.}
 		\UCitem{Entradas}{Ninguna.}
-		\UCitem{Salidas}{\MSGref{MSG5-}{Comprobante aceptado}.}
+		\UCitem{Salidas}{\MSGref{MSG6}{Comprobante aceptado}.}
 		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{Ninguna.}	
-		\UCitem{Reglas de Negocio}{\BRref{RN20}{Validaciones de comprobante de pago}.}
-		\UCitem{Errores}{\MSGref{MSG59-}{No se pudo cambiar el estado del comprobante}}
+		\UCitem{Reglas de Negocio}{\BRref{RN13}{Validación de un voucher de pago}.}
+		\UCitem{Errores}{\MSGref{MSG61}{No se pudo cambiar el estado del comprobante}}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
 		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Aceptar} en la pantalla \IUref{IU16}{Visualizar comprobante pago}.
 		\UCpaso Sube el archivo en el sistema. \Trayref{A}
-		\UCpaso Muestra El mensaje {\bf MSG5-} ''Comprobante aceptado''.
+		\UCpaso Muestra El mensaje \MSGref{MSG6}{Comprobante aceptado}.
 		\UCpaso Redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}. 
 	\end{UCtrayectoria}
 	
 	\begin{UCtrayectoriaA}{A}{El sistema no se encuentra disponible}
-		\UCpaso Muestra el Mensaje {\bf MSG59-} ''No pudo cambiarse el estado del comprobante'' en la pantalla \IUref{IU16}{Visualizar comprobante pago} 
+		\UCpaso Muestra el Mensaje \MSGref{MSG61}{No se pudo cambiar el estado del comprobante} en la pantalla \IUref{IU16}{Visualizar comprobante pago} 
 		\UCpaso[\UCactor] Continua en 1 del \UCref{CU42}.
 	\end{UCtrayectoriaA}
 		

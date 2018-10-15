@@ -9,13 +9,13 @@
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
 \begin{UseCase}{CU8}{Visualizar servicios}{
-		Permite al Usuario visualizar una lista de los servicios disponibles en el sistema para la gestión de pagos mediante la pantalla \IUref{IU08}{Visualizar Servicios}.\\\\Estos servicios disponibles serán los de Biblioteca, CELEX, Dentales y Fotocopiado.
+		Permite al Usuario visualizar una lista de los servicios disponibles en el sistema para la gestión de pagos mediante la pantalla \IUref{IU8}{Visualizar Servicios}.\\\\Estos servicios disponibles serán los de Biblioteca, CELEX, Dentales y Fotocopiado.
 	}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{Roberto Mendoza Saavedra.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{17 de abril de 2018.}
-		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
+		\UCitem{Actor}{Usuario.}
 		\UCitem{Propósito}{Tener un medio de visualización de todos los servicios disponibles para la gestión de pagos.}
 		\UCitem{Entradas}{Servicio seleccionado para la gestión de pagos.}
 		\UCitem{Salidas}{
@@ -28,7 +28,7 @@
 		\UCitem{Precondiciones}{Debe de existir por lo menos un servicio disponible para la gestión de pagos.}
 		\UCitem{Postcondiciones}{Ninguna.}
 		\UCitem{Reglas de Negocio}{Ninguna.}
-		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio}}
+		\UCitem{Errores}{Ninguno.}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
@@ -37,14 +37,14 @@
 			\UCpaso Obtiene la lista de todos los servicios disponibles para la gestión de pagos.
 			\UCpaso Muestra al Usuario la pantalla \IUref{IU08}{Visualizar Servicios}.
 			\UCpaso[\UCactor]Selecciona un servicio de la lista para realizar su gestión de pagos.
-			\UCpaso[\UCactor]Presiona el botón \IUbutton{Mostrar} de la pantalla \IUref{IU08}{Visualizar Servicios.}
-			\UCpaso Valida que el Usuario haya ingresado el campo marcado como obligatorio en la pantalla \IUref{IU08}{Visualizar Servicios}.\Trayref{A}			
+			\UCpaso[\UCactor]Presiona el botón \IUbutton{Mostrar} de la pantalla \IUref{IU8}{Visualizar Servicios.}
+			%\UCpaso Valida que el Usuario haya ingresado el campo marcado como obligatorio en la pantalla \IUref{IU08}{Visualizar Servicios}.\Trayref{A}			
 	\end{UCtrayectoria}
 	
-		\begin{UCtrayectoriaA}{A}{El Usuario no ingresó todos los campos obligatorios.}
-		\UCpaso Muestra el mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU08}{Visualizar Servicios}.
-		\UCpaso[\UCactor] Continua en el paso 4 del caso de uso \UCref{CU8}.			
-	\end{UCtrayectoriaA}
+%		\begin{UCtrayectoriaA}{A}{El Usuario no ingresó todos los campos obligatorios.}
+%		\UCpaso Muestra el mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU08}{Visualizar Servicios}.
+%		\UCpaso[\UCactor] Continua en el paso 4 del caso de uso \UCref{CU8}.			
+%	\end{UCtrayectoriaA}
 
 	{\bf Puntos de extensión}\\\\
 	{\bf Causa de la extensión:}El actor selecciona el servicio de Biblioteca.\\

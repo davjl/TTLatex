@@ -104,7 +104,7 @@
 \BOOKMARK [2][-]{subsection.7.12.1}{Descripci\363n completa}{section.7.12}% 104
 \BOOKMARK [2][-]{subsection.7.12.2}{Atributos importantes}{section.7.12}% 105
 \BOOKMARK [2][-]{subsection.7.12.3}{Trayectorias del Caso de Uso}{section.7.12}% 106
-\BOOKMARK [1][-]{section.7.13}{CU14 Cargar comprobante de pago}{chapter.7}% 107
+\BOOKMARK [1][-]{section.7.13}{CU14 Cargar vouhcer de pago}{chapter.7}% 107
 \BOOKMARK [2][-]{subsection.7.13.1}{Descripci\363n completa}{section.7.13}% 108
 \BOOKMARK [2][-]{subsection.7.13.2}{Atributos importantes}{section.7.13}% 109
 \BOOKMARK [2][-]{subsection.7.13.3}{Trayectorias del Caso de Uso}{section.7.13}% 110
@@ -112,7 +112,7 @@
 \BOOKMARK [2][-]{subsection.7.14.1}{Descripci\363n completa}{section.7.14}% 112
 \BOOKMARK [2][-]{subsection.7.14.2}{Atributos importantes}{section.7.14}% 113
 \BOOKMARK [2][-]{subsection.7.14.3}{Trayectorias del Caso de Uso}{section.7.14}% 114
-\BOOKMARK [1][-]{section.7.15}{CU16 Visualizar comprobante de pago}{chapter.7}% 115
+\BOOKMARK [1][-]{section.7.15}{CU16 Visualizar voucher de pago}{chapter.7}% 115
 \BOOKMARK [2][-]{subsection.7.15.1}{Descripci\363n completa}{section.7.15}% 116
 \BOOKMARK [2][-]{subsection.7.15.2}{Atributos importantes}{section.7.15}% 117
 \BOOKMARK [2][-]{subsection.7.15.3}{Trayectorias del Caso de Uso}{section.7.15}% 118
@@ -120,7 +120,7 @@
 \BOOKMARK [2][-]{subsection.7.16.1}{Descripci\363n completa}{section.7.16}% 120
 \BOOKMARK [2][-]{subsection.7.16.2}{Atributos importantes}{section.7.16}% 121
 \BOOKMARK [2][-]{subsection.7.16.3}{Trayectorias del Caso de Uso}{section.7.16}% 122
-\BOOKMARK [1][-]{section.7.17}{CU32 Visualizar comprobante sigaa}{chapter.7}% 123
+\BOOKMARK [1][-]{section.7.17}{CU32 Visualizar comprobante SIG@}{chapter.7}% 123
 \BOOKMARK [2][-]{subsection.7.17.1}{Descripci\363n completa}{section.7.17}% 124
 \BOOKMARK [2][-]{subsection.7.17.2}{Atributos importantes}{section.7.17}% 125
 \BOOKMARK [2][-]{subsection.7.17.3}{Trayectorias del Caso de Uso}{section.7.17}% 126
@@ -161,9 +161,9 @@
 \BOOKMARK [2][-]{subsection.7.26.2}{Atributos importantes}{section.7.26}% 161
 \BOOKMARK [2][-]{subsection.7.26.3}{Trayectorias del Caso de Uso}{section.7.26}% 162
 \BOOKMARK [0][-]{chapter.8}{Anexo II: Pantallas}{}% 163
-\BOOKMARK [1][-]{subsection.8.0.1}{IU1 Registrar Usuario.}{chapter.8}% 164
-\BOOKMARK [2][-]{subsection.8.0.2}{IU2 Modificar Informaci\363n Personal.}{subsection.8.0.1}% 165
-\BOOKMARK [2][-]{subsection.8.0.3}{IU3 Verificar cuenta.}{subsection.8.0.1}% 166
+\BOOKMARK [1][-]{subsection.8.0.1}{IU1 Registrar usuario.}{chapter.8}% 164
+\BOOKMARK [2][-]{subsection.8.0.2}{IU2 Modificar informaci\363n personal.}{subsection.8.0.1}% 165
+\BOOKMARK [2][-]{subsection.8.0.3}{IU3 Verificar contrase\361a.}{subsection.8.0.1}% 166
 \BOOKMARK [2][-]{subsection.8.0.4}{IU4 Recuperar contrase\361a.}{subsection.8.0.1}% 167
 \BOOKMARK [2][-]{subsection.8.0.5}{IU5 Login}{subsection.8.0.1}% 168
 \BOOKMARK [2][-]{subsection.8.0.6}{IU5.1 Bienvenida usuarios}{subsection.8.0.1}% 169
@@ -176,7 +176,7 @@
 \BOOKMARK [2][-]{subsection.8.0.13}{IU10 Visualizar servicios CELEX}{subsection.8.0.1}% 176
 \BOOKMARK [2][-]{subsection.8.0.14}{IU11 Visualizar servicios fotocopiado}{subsection.8.0.1}% 177
 \BOOKMARK [2][-]{subsection.8.0.15}{IU12 Visualizar servicios biblioteca}{subsection.8.0.1}% 178
-\BOOKMARK [2][-]{subsection.8.0.16}{IU14 Cargar comprobante pago}{subsection.8.0.1}% 179
+\BOOKMARK [2][-]{subsection.8.0.16}{IU14 Cargar voucher de pago}{subsection.8.0.1}% 179
 \BOOKMARK [2][-]{subsection.8.0.17}{IU15 Gestionar pagos usuario}{subsection.8.0.1}% 180
 \BOOKMARK [2][-]{subsection.8.0.18}{IU16 Visualizar comprobante de pago}{subsection.8.0.1}% 181
 \BOOKMARK [2][-]{subsection.8.0.19}{IU16.1 Visualizar comprobante pago}{subsection.8.0.1}% 182
@@ -192,7 +192,7 @@
 \BOOKMARK [2][-]{subsection.8.0.29}{IU29 Gestionar pacientes}{subsection.8.0.1}% 192
 \BOOKMARK [2][-]{subsection.8.0.30}{IU30 Visualizar historial cl\355nico}{subsection.8.0.1}% 193
 \BOOKMARK [2][-]{subsection.8.0.31}{IU31 Visualizar consulta.}{subsection.8.0.1}% 194
-\BOOKMARK [2][-]{subsection.8.0.32}{IU32 Visualizar comprobante sigaa}{subsection.8.0.1}% 195
+\BOOKMARK [2][-]{subsection.8.0.32}{IU32 Visualizar comprobante SIG@}{subsection.8.0.1}% 195
 \BOOKMARK [2][-]{subsection.8.0.33}{IU34.1 Visualizar archivo de pagos por a\361o contabilidad}{subsection.8.0.1}% 196
 \BOOKMARK [2][-]{subsection.8.0.34}{IU34.2 Visualizar archivo de pagos por a\361o dentales}{subsection.8.0.1}% 197
 \BOOKMARK [2][-]{subsection.8.0.35}{IU35.1 Visualizar pagos por mes contabilidad}{subsection.8.0.1}% 198
@@ -204,6 +204,7 @@
 \BOOKMARK [2][-]{subsection.8.0.41}{IU41 Cargar comprobante sigaa}{subsection.8.0.1}% 204
 \BOOKMARK [2][-]{subsection.8.0.42}{IU44.1 Gestionar pagos dentales}{subsection.8.0.1}% 205
 \BOOKMARK [2][-]{subsection.8.0.43}{IU44.2 Gestionar pagos CELEX}{subsection.8.0.1}% 206
-\BOOKMARK [0][-]{chapter.9}{Anexo III: Glosario}{}% 207
-\BOOKMARK [1][-]{section.9.1}{Generalidades}{chapter.9}% 208
-\BOOKMARK [1][-]{section.9.2}{Glosario de t\351rminos}{chapter.9}% 209
+\BOOKMARK [0][-]{chapter.9}{Anexo III: Mensajes del sistema}{}% 207
+\BOOKMARK [0][-]{chapter.10}{Anexo IV: Glosario}{}% 208
+\BOOKMARK [1][-]{section.10.1}{Generalidades}{chapter.10}% 209
+\BOOKMARK [1][-]{section.10.2}{Glosario de t\351rminos}{chapter.10}% 210
