@@ -9,7 +9,7 @@
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
 \begin{UseCase}{CU15}{Gestionar pagos usuario}{
-		Permite al usuario visualizar los pagos del día confirmados por el Cajero.
+		Permite al usuario visualizar los pagos enviados al cajero y su estado.
 	}
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{David De Jesús López.}
@@ -28,13 +28,13 @@
 			\end{itemize}.}
 		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{Ninguna.}	
-		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Reglas de Negocio}{\BRref{RN9}{Estado de voucher}}
 		\UCitem{Errores}{Ninguna.}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Gestion de pagos} del menu \IUref{IU5.1}{Bienvenida usuarios}.
+		\UCpaso[\UCactor] Da clic en la opción \IUbutton{Gestion de pagos} del {\bf Menú principal} en la pantalla \IUref{IU5.1}{Bienvenida usuarios}.
 		\UCpaso Muestra la pantalla \IUref{IU15}{Gestionar pagos usuario} con el icono. 
 		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}.
 		

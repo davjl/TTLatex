@@ -14,8 +14,8 @@
 		\UCitem{Autor}{Roberto Mendoza Saavedra.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
-		\UCitem{Actor}{Contador, Subdirector Administrativo, Dentista, Coordinadora Celex, Administrador Fotocopiado, Administrador Biblioteca.}
-		\UCitem{Propósito}{Otorgar a los actores una pantalla de visualización de comprobantes SIG@ de los últimos cinco años.}
+		\UCitem{Actor}{Contador, Subdirector Administrativo, áreas de servicio.}
+		\UCitem{Propósito}{Otorgar una pantalla de visualización para selección de un año especifico en el rango de los últimos cinco años.}
 		\UCitem{Entradas}{Ninguna.}
 		\UCitem{Salidas}{Tabla que muestra las columnas de:
 			\begin{itemize}
@@ -25,14 +25,16 @@
 			\end{itemize}.}
 		\UCitem{Precondiciones}{Deben de existir pagos aprobados por el Cajero.}
 		\UCitem{Postcondiciones}{Ninguna.}
+		\UCitem{Reglas de Negocio}{\BRreg{RN14}{Almacenamiento de archivos}.}
 		\UCitem{Errores}{Ninguno.}
 		\UCitem{Tipo}{Primario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Selecciona la opción {\bf Archivos de pago} del menú principal en las pantallas  \IUref{IU5.2}{Bienvenida contador}, \IUref{IU5.3}{Bienvenida cajero}, \IUref{IU5.4}{Bienvenida área dental},
+		\UCpaso[\UCactor] Selecciona la opción {\bf Archivos de pago} del {\bf Menú principal} en las pantallas  \IUref{IU5.2}{Bienvenida contador}, \IUref{IU5.3}{Bienvenida cajero}, \IUref{IU5.4}{Bienvenida área dental},
 		\IUref{IU5.5}{Bienvenida CELEX}.
 		\UCpaso Muestra la pantalla \IUref{IU34}{Archivo de Pagos por año}.
+		\UCpaso Con base en la regla de negocio \BRreg{RN14}{Almacenamiento de archivos} muestra los registros de los ultimos cinco años.
 		\UCpaso Muestra los registros con el icono
 		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}
 	\end{UCtrayectoria}

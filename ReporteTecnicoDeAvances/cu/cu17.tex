@@ -14,46 +14,24 @@
 		\UCitem{Autor}{Roberto Mendoza Saavedra.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{8 de septiembre de 2018.}
-		\UCitem{Actor}{Usuario: Alumno, Empleado, Externo.}
-		\UCitem{Propósito}{Agregar un usuario al sistema.}
-		\UCitem{Entradas}{Datos del usuario: 
-		\begin{itemize}
-			\item Perfil del usuario
-		    \item Nombre(s)
-		    \item Primer Apellido
-		    \item Segundo Apellido
-		    \item CURP
-		    \item Número de boleta
-		    \item Número de empleado
-		    \item Correo electrónico
-		    \item Teléfono celular
-		\end{itemize}}
-		\UCitem{Salidas}{\MSGref{MSG1}{Operación exitosa}.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Que el usuario siga contando con la opción de pago en caja.}
+		\UCitem{Entradas}{Nota de pago.}
+		\UCitem{Salidas}{\MSGref{MSG7}{Realiza el pago en caja}.}
 		\UCitem{Precondiciones}{
 			\begin{itemize}
-				\item Todos los campos obligatorios del formulario deben de ser completados.
-				\item No debe existir un registro previo del usuario.
+				\item Tener una nota de pago.
 			\end{itemize}}
-		\UCitem{Postcondiciones}{Se agrega un nuevo registro a la base de datos.}
-		\UCitem{Reglas de Negocio}{\BRref{RN01}{Unicidad del usuario}, \BRref{RN02}{Perfilamiento del usuario}}
-		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG52}{Longitud no válida}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG54}{Usuario duplicado}.}
-		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU5}{Login}}
+		\UCitem{Postcondiciones}{Ninguno.}
+		\UCitem{Reglas de Negocio}{Ninguno.}
+		\UCitem{Errores}{\MSGref{MSG64}{No fue posible enviar nota}.}
+		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU19}{Pagar nota de pago en caja}}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.
-		\UCpaso[\UCactor] Presiona la opción {\bf Registrar Usuario} 
-		\UCpaso Dirige a la pantalla \IUref{IU1}{Registrar Usuario}.
-		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU1}{Registrar Usuario} el tipo de usuario que desea registrar.
-		\UCpaso Con base en la regla de negocio \BRref{RN02}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
-		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Registrar}.\Trayref{A}
-		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
-		\UCpaso Verifica que los campos ingresados sean válidos. \Trayref{C}
-		\UCpaso Verifica que la longitud del CURP, número de boleta o número de empleado tengan la longitud correcta. \Trayref{D}
-		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
-		\UCpaso Basado en la regla de negocio \BRref{RN01}{Unicidad del usuario} verifica que no exista un registro previo.
-		\UCpaso Registra un nuevo usuario.
-		\UCpaso Direcciona al usuario a la pantalla \IUref{IU5}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
+		\UCpaso[\UCactor] Da clic en el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/pagoCaja}}} en la pantalla \IUref{IU19}{Gestionar notas de pago usuarios}
+		\UCpaso Dirige a la pantalla \IUref{IU17}{Pagar nota de pago en caja}
+		\UCpaso Muestra 
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}

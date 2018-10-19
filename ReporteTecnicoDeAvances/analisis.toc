@@ -115,7 +115,7 @@
 \contentsline {subsection}{\numberline {7.12.1}Descripci\IeC {\'o}n completa}{74}{subsection.7.12.1}
 \contentsline {subsection}{\numberline {7.12.2}Atributos importantes}{74}{subsection.7.12.2}
 \contentsline {subsection}{\numberline {7.12.3}Trayectorias del Caso de Uso}{74}{subsection.7.12.3}
-\contentsline {section}{\numberline {7.13}CU14 Cargar vouhcer de pago}{76}{section.7.13}
+\contentsline {section}{\numberline {7.13}CU14 Cargar voucher de pago}{76}{section.7.13}
 \contentsline {subsection}{\numberline {7.13.1}Descripci\IeC {\'o}n completa}{76}{subsection.7.13.1}
 \contentsline {subsection}{\numberline {7.13.2}Atributos importantes}{76}{subsection.7.13.2}
 \contentsline {subsection}{\numberline {7.13.3}Trayectorias del Caso de Uso}{76}{subsection.7.13.3}
@@ -252,15 +252,15 @@
 \contentsline {subsubsection}{Objetivo}{115}{section*.72}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.73}
 \contentsline {subsubsection}{Comandos}{115}{section*.74}
-\contentsline {subsection}{\numberline {8.0.18}IU16 Visualizar comprobante de pago}{115}{subsection.8.0.18}
+\contentsline {subsection}{\numberline {8.0.18}IU16 Visualizar voucher de pago}{115}{subsection.8.0.18}
 \contentsline {subsubsection}{Objetivo}{115}{section*.75}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.76}
 \contentsline {subsubsection}{Comandos}{115}{section*.77}
-\contentsline {subsection}{\numberline {8.0.19}IU16.1 Visualizar comprobante pago}{116}{subsection.8.0.19}
+\contentsline {subsection}{\numberline {8.0.19}IU16.1 Visualizar de voucher pago}{116}{subsection.8.0.19}
 \contentsline {subsubsection}{Objetivo}{116}{section*.78}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{116}{section*.79}
 \contentsline {subsubsection}{Comandos}{116}{section*.80}
-\contentsline {subsection}{\numberline {8.0.20}IU16.2 Visualizar comprobante pago caja}{117}{subsection.8.0.20}
+\contentsline {subsection}{\numberline {8.0.20}IU16.2 Visualizar voucher de pago caja}{117}{subsection.8.0.20}
 \contentsline {subsubsection}{Objetivo}{117}{section*.81}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{117}{section*.82}
 \contentsline {subsubsection}{Salidas}{117}{section*.83}

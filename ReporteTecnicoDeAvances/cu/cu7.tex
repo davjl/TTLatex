@@ -8,7 +8,7 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 \begin{UseCase}{CU7}{Visualizar Notificaciones}{
-		Proporciona al cajero, subdirector y usuario un medio de información capaz de informarle sobre los cambios de estado en la gestión de pagos dentro del sistema.\\
+		Proporciona al cajero, subdirector administrativo, áreas de servicio y usuario un medio de información capaz de informarle sobre los cambios de estado en la gestión de pagos dentro del sistema.\\
 }
 		\UCitem{Versión}{0.1}
 		\UCitem{Autor}{César Erick Hernández López.}
@@ -30,9 +30,11 @@
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5.1}{Bienvenida}.
-		\UCpaso Muestra el icono  \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/notificaciones}}} notificando que existe un cambio de estado en un pago.
-		\UCpaso[\UCactor] Presiona icono.
+%		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5.1}{Bienvenida}.
+%		\UCpaso Muestra el icono  \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/notificaciones}}} notificando que existe un cambio de estado en un pago.
+%		\UCpaso[\UCactor] Presiona icono.
+		\UCpaso[\UCactor] Selecciona la opción {\bf Notificación} del {\bf Menú principal} en la pantalla \IUref {IU5.1}{Bienvenida usuarios}, \IUref {IU5.2}{Bienvenida contador}, \IUref {IU5.3}{Bienvenida cajero}, \IUref {IU5.4}{Bienvenida área dental}, \IUref {IU5.5}{Bienvenida CELEX}..
+		\UCpaso Redirecciona a la pantalla \IUref{IU7}{Notificaciones}.
 		\UCpaso Con base en la regla de negocio \BRref{RN8}{Acciones que requieren notificación}  despliega un listado de las acciones a notificar.
 	\end{UCtrayectoria}
 	
