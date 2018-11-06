@@ -1,0 +1,69 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+\begin{UseCase}{CU3}{Recuperar Contraseña}{
+		Otorga al usuario un mecanismo para que en caso de olvidar su contraseña pueda recuperarla por medio de un correo electrónico.\\
+		
+}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{César Erick Hernández López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{10 de abril de 2018.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{El usuario puede obtener su contraseña en caso de olvidarla o extraviarla.}
+		\UCitem{Entradas}{
+		\begin{itemize}
+			\item Correo electrónico
+		\end{itemize}}
+		\UCitem{Salidas}{\MSGref{MSG2}{Correo  enviado}.}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item Tener una cuenta activa registrada en el sistema.
+			\end{itemize}}
+		\UCitem{Postcondiciones}{Se proporciona una copia de la contraseña del usuario por medio de correo electrónico.}
+		\UCitem{Reglas de Negocio}{\BRref{RN21}{Recuperación de contraseña usuario}}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio}, \MSGref{MSG51}{Campo no válido},  \MSGref{MSG53}{Formato no válido}, \MSGref{MSG63}{El usuario o correo no existen}}
+		\UCitem{Tipo}{Primario}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU4}{Recuperar contraseña}.
+		\UCpaso[\UCactor] Proporciona su número de usuario y correo electrónico. 
+		\UCpaso[\UCactor] Presiona el botón \IUbutton{Enviar} \Trayref{A} \Trayref{B} \Trayref{C} \Trayref{D}
+		\UCpaso Con base en la regla de negocio \BRref{RN21}{Recuperación de contraseña usuario} valida que el usuario exista en el sistema. \Trayref{E}
+		\UCpaso Envía al correo proporcionado la información solicitada.
+		\UCpaso Muestra el mensaje  \MSGref{MSG2}{Correo enviado} en la pantalla \IUref{IU5}{Login}
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU4}{Recuperar contraseña}
+			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
+			\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU4}.
+		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
+		\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{D}{El usuario ingresó un correo electrónico no válido.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{E}{El usuario ingresó un número de usuario y/o correo electrónico incorrecto.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG63}{El usuario o correo no existen} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+
+%-------------------------------------- TERMINA descripción del caso de uso.

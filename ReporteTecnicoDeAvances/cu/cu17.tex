@@ -7,58 +7,30 @@
 
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
-\begin{UseCase}{CU17}{Pagar nota de pago en caja}{
-		Permite al usuario realizar el pago de un servicio en caja. 
-}
+
+\begin{UseCase}{CU17}{Cancelar cita}{
+		Permite al dentista cancelar una cita por otros motivos.
+	}
 		\UCitem{Versión}{0.1}
-		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Autor}{David De Jesús López.}
 		\UCitem{Estatus}{Edición.}
-		\UCitem{Fecha de último estatus}{8 de septiembre de 2018.}
+		\UCitem{Fecha de último estatus}{7 de septiembre de 2018.}
 		\UCitem{Actor}{Usuario.}
-		\UCitem{Propósito}{Que el usuario siga contando con la opción de pago en caja.}
-		\UCitem{Entradas}{Nota de pago.}
-		\UCitem{Salidas}{\MSGref{MSG7}{Realiza el pago en caja}.}
-		\UCitem{Precondiciones}{
-			\begin{itemize}
-				\item Tener una nota de pago.
-			\end{itemize}}
-		\UCitem{Postcondiciones}{Ninguno.}
-		\UCitem{Reglas de Negocio}{Ninguno.}
-		\UCitem{Errores}{\MSGref{MSG64}{No fue posible enviar nota}.}
-		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU19}{Pagar nota de pago en caja}}
-	\end{UseCase}		
+		\UCitem{Propósito}{Termiinar la cita sin haber efectuado.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Cita cancelada.}
+		\UCitem{Precondiciones}{Haber una cita agendada.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{Ninguno.}
+		\UCitem{Tipo}{Secundario.}
+	\end{UseCase}
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Da clic en el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/pagoCaja}}} en la pantalla \IUref{IU19}{Gestionar notas de pago usuarios}
-		\UCpaso Dirige a la pantalla \IUref{IU17}{Pagar nota de pago en caja}
-		\UCpaso Muestra 
+		\UCpaso[\UCactor] Da clic en la opción cancelar cita de la pantalla \IUref{IU23}{Gestionar citas} 
+		\UCpaso Cancela la cita.
+		\UCpaso Se notifica al usuario.
+		\UCpaso Muestra la pantalla \IUref{IU23}{Gestionar citas} sin la cita que acaba de cancelar.
 	\end{UCtrayectoria}
-		
-		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
-			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU1}{Registrar Usuario}
-			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
-			\end{UCtrayectoriaA}
-		
-		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
-			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU1}{Registrar usuario}.
-			\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
-		\end{UCtrayectoriaA}
 	
-		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
-		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
-	\end{UCtrayectoriaA}
-	
-		\begin{UCtrayectoriaA}{D}{El usuario ingresó el CURP, Número de boleta o Número de empleado	 con longitud incorrecta.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU1}{Registrar usuario}.
-		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
-	\end{UCtrayectoriaA}
-	
-		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
-		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
-		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
-	\end{UCtrayectoriaA}
-	
-
-		
 %-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,0 +1,50 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU21}{Visualizar historial clínico}{
+		Permite al dentista visualizar el registro de las consultas realizadas a un usuario.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{7 de septiembre de 2018.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Mantener un registro de todas las consultas realizadas al usuario.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Tabla con las siguiente columnas.
+			\begin{itemize}
+				\item Estatus.
+				\item Fecha de consulta.
+				\item Acciones.
+			\end{itemize}}
+		\UCitem{Precondiciones}{Haber recibido una consulta anteriormente.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{Ninguno.}
+		\UCitem{Tipo}{Secundario.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en la opción visualizar historial clínico de la pantalla \IUref{IU20}{Gestionar pacientes}
+		\UCpaso Redirecciona a la pantalla \IUref{IU21}{Visualizar historial clínico} con las opciónes de visualizar consulta y visualizar nota de pago.
+		\UCpaso[\UCactor] Selecciona una consulta.
+	\end{UCtrayectoria}
+	
+	{\bf Puntos de extensión}\\\\
+	{\bf Causa de la extensión:}El actor da clic en la opción visualizar consulta.\\
+	{\bf Región de la trayectoria:}Paso 4 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU22}.\\
+	
+		{\bf Puntos de extensión}\\\\
+		{\bf Causa de la extensión:}El actor da clic en la opción visualizar nota de pago.\\
+		{\bf Región de la trayectoria:}Paso 4 de la Trayectoria Principal.\\
+		{\bf Extiende a:}\UCref{CU24}.\\
+						
+%-------------------------------------- TERMINA descripción del caso de uso.

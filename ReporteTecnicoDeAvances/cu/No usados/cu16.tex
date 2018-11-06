@@ -1,0 +1,36 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU16}{Visualizar voucher de pago}{
+		Permite visualizar el voucher de pago enviado a caja.\\
+		}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Tener un medio para la visualización del voucher de pago que se envió a caja.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Ninguna.}
+		\UCitem{Precondiciones}{Haber enviado un voucher de pago previamente.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{Ninguno.}
+		\UCitem{Tipo}{Secundario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor]Presiona el icono
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/verPago}}}
+		 en la pantalla \IUref{IU15}{Gestionar pagos}.
+		\UCpaso Muestra en la pantalla \IUref{IU16}{Visualizar voucher de pago usuarios} el voucher de pago enviado.
+	\end{UCtrayectoria}
+			
+%-------------------------------------- TERMINA descripción del caso de uso.

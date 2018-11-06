@@ -7,42 +7,30 @@
 
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
-\begin{UseCase}{CU34}{Visualizar archivo de pagos por año}{
-		Permite a los actores visualizar un histórico de pagos aprobados por caja ordenados por año mediante la pantalla \IUref{IU34}{Archivo de pagos}. Todos los pagos mostrados ya habrán sido aprobados y archivados por el cajero.
-		}
+
+\begin{UseCase}{CU34}{Agregar impresiones}{
+		Permite al coordinador de fotocopiado agregar un número de impresiones al usuario.
+	}
 		\UCitem{Versión}{0.1}
-		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Autor}{David De Jesús López.}
 		\UCitem{Estatus}{Edición.}
 		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
-		\UCitem{Actor}{Contador, Subdirector Administrativo, áreas de servicio.}
-		\UCitem{Propósito}{Otorgar una pantalla de visualización para selección de un año especifico en el rango de los últimos cinco años.}
+		\UCitem{Actor}{Coordinador fotocopiado.}
+		\UCitem{Propósito}{Permitir la funcionalidad de agregar impresiones al usuario.}
 		\UCitem{Entradas}{Ninguna.}
-		\UCitem{Salidas}{Tabla que muestra las columnas de:
-			\begin{itemize}
-				\item Año.
-				\item Total ingresos.
-				\item Acciones.
-			\end{itemize}.}
-		\UCitem{Precondiciones}{Deben de existir pagos aprobados por el Cajero.}
-		\UCitem{Postcondiciones}{Ninguna.}
-		\UCitem{Reglas de Negocio}{\BRref{RN14}{Almacenamiento de archivos}.}
-		\UCitem{Errores}{Ninguno.}
-		\UCitem{Tipo}{Primario.}
+		\UCitem{Salidas}{Impresiones agregadas a la cuenta del usuario}
+		\UCitem{Precondiciones}{Ninguna.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{Ninguna.}
+		\UCitem{Tipo}{Secundario.}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Selecciona la opción {\bf Archivos de pago} del {\bf Menú principal} en las pantallas  \IUref{IU5.2}{Bienvenida contador}, \IUref{IU5.3}{Bienvenida cajero}, \IUref{IU5.4}{Bienvenida área dental},
-		\IUref{IU5.5}{Bienvenida CELEX}.
-		\UCpaso Muestra la pantalla \IUref{IU34}{Archivo de Pagos por año}.
-		\UCpaso Con base en la regla de negocio \BRref{RN14}{Almacenamiento de archivos} muestra los registros de los ultimos cinco años.
-		\UCpaso Muestra los registros con el icono
-		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Agregar impresiones} de la pantalla   \IUref{IU36}{Reducir impresiones}.
+		\UCpaso Despliega una ventana con las opciones para agregar impresiones.
+		\UCpaso[\UCactor] Llena los campos solicitados y oprime el \IUbutton{Aceptar}.
+		\UCpaso Agrega en la cuenta el número de impresiones indicadas.
 	\end{UCtrayectoria}
-		
-	{\bf Puntos de extensión}\\\\
-	{\bf Causa de la extensión:}El actor da clic en el icono
-	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}
-	para visualizar los pagos por mes del año seleccionado.\\
-	{\bf Región de la trayectoria:}Paso 3 de la Trayectoria Principal.\\
-	{\bf Extiende a:}\UCref{CU35}.\\
+
 %-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,0 +1,70 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU4}{Inicio de sesión}{
+		Permite al Contador, Dentista, Coordinador CELEX, Administrador Fotocopiado, Subdirector Administrativo, Administrador Biblioteca, Cajero y Usuario ingresar al sistema mediante un nombre de usuario y contraseña.\\Dependiendo el perfil de identificación se redireccionará a la pantalla de bienvenida con sus permisos correspondientes.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López .}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Contador, Dentista, Coordinador CELEX, Administrador Fotocopiado, Subdirector Administrativo, Administrador Biblioteca, Cajero y Usuario.}
+		\UCitem{Propósito}{Garantizar el acceso sólo a personal registrado.}
+		\UCitem{Entradas}{Datos del actor: 
+		\begin{itemize}
+		    \item Correo electrónico
+		    \item Contraseña
+		\end{itemize}}
+		\UCitem{Salidas}{Ninguna.}
+		\UCitem{Precondiciones}{Tener un registro previo en el sistema}
+		\UCitem{Postcondiciones}{Ninguna.}
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio}, \MSGref{MSG56} {Usuario y/o contraseña incorrectos.}}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login} con opciones solo para el actor Usuario de recuperar contraseña y registar usuario.%\label{CU17Login} .
+		\UCpaso[\UCactor] Ingresa correo electrónico, contraseña y presiona el botón de \IUbutton {Ingresar}
+		\UCpaso Verifica que el usuario haya ingresado todos los campos obligatorios. \Trayref{A}
+		\UCpaso Obtiene el perfil correspondiente a la cuenta y redireccionará a la pantalla según sea el caso \IUref {IU5.1}{Bienvenida usuarios}, \IUref {IU5.2}{Bienvenida contador}, \IUref {IU5.3}{Bienvenida cajero}, \IUref {IU5.4}{Bienvenida área dental}, \IUref {IU5.5}{Bienvenida CELEX} con sus permisos correspondientes. \Trayref{B}
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Faltan datos obligatorios}
+			\UCpaso Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso 2 del \UCref{CU4}.
+		\end{UCtrayectoriaA}
+
+		\begin{UCtrayectoriaA}{B}{Usuario y/o contraseña incorrectos}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG56}{Usuario y/o contraseña incorrectos} en la pantalla \IUref{IU5}{Login} 
+			\UCpaso Continua en el paso 2 del \UCref{CU4}
+		\end{UCtrayectoriaA}
+	
+	{\bf Puntos de extensión}\\\\
+	{\bf Causa de la extensión:}El actor selecciona la opción de recuperar contraseña.\\
+	{\bf Región de la trayectoria:}Paso 1 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU3}.\\\\
+	
+	{\bf Causa de la extensión:}El actor selecciona la opción de registrar usuario.\\
+	{\bf Región de la trayectoria:}Paso 1 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU1}.
+
+%		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}
+%			\UCpaso Muestra el Mensaje {\bf MSG2-}``El Estudiante [{\em Número de Boleta}] no cumple con los requisitos para inscribirse al Seminario [{\em Nombre del Seminario seleccionado}].''.
+%			\UCpaso Muestra los requisitos que el Seminario seleccionado solicita.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{D}{El horario es incompatible.}
+%			\UCpaso Muestra el Mensaje {\bf MSG3-}``El horario del [{\em Nombre del Seminario seleccionado}] no es compatible con el horario del curso [{\em Nombre de la materia y grupo del curso con el que choca el horario}].''.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

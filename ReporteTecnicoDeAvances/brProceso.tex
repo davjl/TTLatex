@@ -1,50 +1,11 @@
 %--------------------------------------------------
-\section{Proceso ajustado}
-En esta sección presentamos la funcionalidad de nuestro sistema aplicado al negocio.
-
-\IUfig[.8]{gui/app}{}{Flujo con sistema implementado}
-
-\begin{enumerate}
-	\item El Usuario accede al sistema web o móvil "Escomunidad-Servicios".
-	\item Consulta los servicios disponibles.
-	\item En caso de que no sea necesario presentese en el área de servicio continuar en el punto 7.
-	\item Acude al área de servicio para poder atender el servicio que requiera.
-	\item El Coordinador de área atiende su solictud y genera una nota de pago en el sistema SPEE.
-	\item El sistema ''Escomunidad-Servicios'' envía la nota a la cuenta del usuario para que pueda realizar el pago.
-	\item En el sistema ''Escomunidad-Servicios'' el usuario selecciona un método de pago.
-	\item El usuario tiene dos opciones de pago.
-		\begin{enumerate}
-			\item Pago en caja
-			\begin{enumerate}[I]
-				\item Acude a caja a realizar el pago.
-			\end{enumerate}
-			\item Envio de comprobante digítal por el sistema ''Escomunidad-Servicios''.
-			\begin{enumerate}[I]
-				\item Realiza el pago en una sucursal bancomer.
-				\item Sube en el sistema ''Escomunidad-Servicios'' el voucher de pago.
-				\item El sistema ''Escomunidad-Servicios'' envía el voucher a caja.
-				\item El cajero Recibe el voucher.
-				\item Comprueba que la información y datos sean correctos.
-			\end{enumerate}
-		\end{enumerate}
-	\item El cajero registra el pago en el sistema SIG@.
-	\item Adjunta el comprobante SIG@ en el sistema ''Escomunidad-Servicios''.
-	\item El sistema ''Escomunidad-Servicios'' envía el comprobante SIG@ al usuario y al área donde fue requerido el pago.
-	\item El usuario acude al área donde requirio el servicio (Si no es necesario que se presente saltar este punto).
-	\item El coordinador de área consulta los servicios pagados en el día.
-	\item Identifica el pago del usuario.
-	\item Realiza el servicio.
-	\item Confirma el servicio elaborado.
-	
-\end{enumerate}
-
 %Describa el proceso como será con la introducción del sistema.
 
 %--------------------------------------------------
-\section{Procesos actuales}
+\section{Actores del sistema}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - -
-\subsection{Participantes}
+\subsection{Descripción}
 
 En esta sección se describen los los actores y funciones que participan en los procesos de pagos actuales.
 
@@ -166,7 +127,47 @@ En esta sección se describen los los actores y funciones que participan en los 
 	\item Se almacena el comprobante. 
 \end{enumerate}
 
-Con base en los procesos explicados anteriormente se muestra una tabla con la comparación entre el proceso actual y el proceso ajustado.
+\section{Proceso ajustado}
+En esta sección presentamos la funcionalidad de nuestro sistema aplicado al negocio.
+
+\IUfig[.8]{gui/app}{}{Flujo con sistema implementado}
+
+\begin{enumerate}
+	\item El Usuario accede al sistema web o móvil "Escomunidad-Servicios".
+	\item Consulta los servicios disponibles.
+	\item En caso de que no sea necesario presentese en el área de servicio continuar en el punto 7.
+	\item Acude al área de servicio para poder atender el servicio que requiera.
+	\item El Coordinador de área atiende su solictud y genera una nota de pago en el sistema SPEE.
+	\item El sistema ''Escomunidad-Servicios'' envía la nota a la cuenta del usuario para que pueda realizar el pago.
+	\item En el sistema ''Escomunidad-Servicios'' el usuario selecciona un método de pago.
+	\item El usuario tiene dos opciones de pago.
+	\begin{enumerate}
+		\item Pago en caja
+		\begin{enumerate}[I]
+			\item Acude a caja a realizar el pago.
+		\end{enumerate}
+		\item Envio de comprobante digítal por el sistema ''Escomunidad-Servicios''.
+		\begin{enumerate}[I]
+			\item Realiza el pago en una sucursal bancomer.
+			\item Sube en el sistema ''Escomunidad-Servicios'' el voucher de pago.
+			\item El sistema ''Escomunidad-Servicios'' envía el voucher a caja.
+			\item El cajero Recibe el voucher.
+			\item Comprueba que la información y datos sean correctos.
+		\end{enumerate}
+	\end{enumerate}
+	\item El cajero registra el pago en el sistema SIG@.
+	\item Adjunta el comprobante SIG@ en el sistema ''Escomunidad-Servicios''.
+	\item El sistema ''Escomunidad-Servicios'' envía el comprobante SIG@ al usuario y al área donde fue requerido el pago.
+	\item El usuario acude al área donde requirio el servicio (Si no es necesario que se presente saltar este punto).
+	\item El coordinador de área consulta los servicios pagados en el día.
+	\item Identifica el pago del usuario.
+	\item Realiza el servicio.
+	\item Confirma el servicio elaborado.
+	
+\end{enumerate}
+
+\section{Ventajas del proceso propuesto}
+Con base en la propuesta anterior se ha detectado algunas ventajas con respecto al sistema de gestión de pagos actual. Las principales ventajas consisten en:
 
 \begin{table}[htbp]
 	\begin{center}
@@ -175,6 +176,8 @@ Con base en los procesos explicados anteriormente se muestra una tabla con la co
 			{\bf Actor(es)}&{\bf Proceso ajustado}&{\bf Procesos actuales}\\
 			\hline 
 			Usaurio & Puede consultar los servicios disponibles desde la aplicación en cualquier lugar. & Debe consultar los servicios disponibles directamente en caja o área de servicio. \\
+			\hline
+			Usuario & El sistema es incluyente con el sistema & No se toma en cuenta la participación de los usuarios.\\
 			\hline
 			Coordinador de área & Puede generar una nota de pago digital. & Debe imprimir y recortar sus notas.\\
 			\hline
@@ -186,6 +189,10 @@ Con base en los procesos explicados anteriormente se muestra una tabla con la co
 			\hline
 			Áreas de servicio, Caja & Pueden almacenar los comprobantes que generen de forma digital. & Los comprobantes deben ser almacenados en carpetas o cajas.\\
 			\hline
+			Todas las áreas & Almacenamiento digital de comprobantes & Se tiene que almacenar el comprobante físicamente.\\
+			\hline
+			Áreas de servicio, Caja & Mayor velocidad de comunicación entre las áreas y los usuarios & Las áreas no se encuentran comunicadas y solo interactuan con el comprobante físico.
+			
 			
 		\end{tabular}
 	\end{center}

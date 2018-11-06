@@ -1,0 +1,48 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU30}{Cargar comprobante sigaa}{
+		Permite al Cajero agregar en el sistema el comprobante SIG@, validando los pagos recibidos.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Administrador Caja.}
+		\UCitem{Propósito}{Tener el registro del comprobante SIG@ en el sistema.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{\MSGref{MSG5}{Archivo guardado correctamente}.}
+		\UCitem{Precondiciones}{Ninguna.}
+		\UCitem{Postcondiciones}{Ninguna.}
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{\MSGref{MSG60}{Error al guardar comprobante SIG@}}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
+		en la pantalla \IUref{IU39}{Gestionar pagos caja}.
+		\UCpaso Redirecciona a la pagina \IUref{IU41}{Cargar comprobante sigaa}
+		\UCpaso[\UCactor] Da clic en el icono 
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
+		\UCpaso Despliega un selector de archivos.
+		\UCpaso[\UCactor] Selecciona el archivo SIG@.
+		\UCpaso Cierra el selector de archivos
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Enviar}
+		\UCpaso Sube el archivo en el sistema. \Trayref{A} 
+		\UCpaso Muestra el mensaje \MSGref{MSG5}{Archivo guardado correctamente} y redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}.
+	\end{UCtrayectoria}
+	
+	\begin{UCtrayectoriaA}{A}{El sistema no se encuentra disponible}
+		\UCpaso Muestra el Mensaje \MSGref{MSG60}{Error al guardar comprobannte SIG@} en la pantalla \IUref{IU41}{Adjuntar pago sigaa} 
+		\UCpaso[\UCactor] Continua en 7 del \UCref{CU31}.
+	\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

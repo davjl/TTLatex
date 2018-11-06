@@ -1,0 +1,63 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+\begin{UseCase}{CU3}{Verificar Cuenta}{
+		Permite al usuario activar su cuenta mendiante una contraseña y una verificación de la misma.\\
+}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{César Erick Hernández López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{10 de abril de 2018.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Proporcionar un medio de autenticación al sistema que permita activar la cuenta de un usuario.}
+		\UCitem{Entradas}{
+				\begin{itemize}
+					\item Contraseña.
+				\end{itemize}}
+		\UCitem{Salidas}{\MSGref{MSG1}{Operación Exitosa}}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item El usuario registró su datos y perfil en el sistema.
+			\end{itemize}
+			}
+		\UCitem{Postcondiciones}{Se activa la cuenta del usuario.}
+		\UCitem{Reglas de Negocio}{Ninguna}
+		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio}, \MSGref{MSG51}{Campo no válido}, \MSGref{MSG55}{Contraseñas diferentes}}
+		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU5}{Login}}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU3}{Verificar contraseña}.
+		\UCpaso[\UCactor] Ingresa en la pantalla \IUref{IU3}{Verificar contraseña} su contraseña y su confirmación de contraseña.
+		\UCpaso[\UCactor] Presiona el botón  \IUbutton{Enviar}.
+		\UCpaso Valida los campos ingresados \Trayref{A}, \Trayref{B}, \Trayref{C}.
+		\UCpaso Dirige a la pantalla \IUref{IU5}{Login}.
+		\UCpaso Muesta el mesanje  \MSGref{MSG1}{Operación exitosa} en la pantalla \IUref{IU5}{Login}.
+		\UCpaso Envía correo electrónico al usuario informando que su cuenta ha sido activada
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario no ingresó todos los campos obligatorios.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU3}{Verificar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{B}{El usuario ingresó campos no válidos.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU3}{Verificar contraseña}.
+		\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{C}{El usuario ingreso una contraseña diferente en validar contraseña.}
+			\UCpaso Muestra el Mensaje \MSGref{MSG55}{Contraseñas diferentes} en la pantalla \IUref{IU3}{Verificar contraseña}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
+		\end{UCtrayectoriaA}
+
+	
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

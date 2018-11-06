@@ -1,0 +1,64 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+\begin{UseCase}{CU17}{Pagar nota de pago en caja}{
+		Permite al usuario realizar el pago de un servicio en caja. 
+}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{8 de septiembre de 2018.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Que el usuario siga contando con la opción de pago en caja.}
+		\UCitem{Entradas}{Nota de pago.}
+		\UCitem{Salidas}{\MSGref{MSG7}{Realiza el pago en caja}.}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item Tener una nota de pago.
+			\end{itemize}}
+		\UCitem{Postcondiciones}{Ninguno.}
+		\UCitem{Reglas de Negocio}{Ninguno.}
+		\UCitem{Errores}{\MSGref{MSG64}{No fue posible enviar nota}.}
+		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU19}{Pagar nota de pago en caja}}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/pagoCaja}}} en la pantalla \IUref{IU19}{Gestionar notas de pago usuarios}
+		\UCpaso Dirige a la pantalla \IUref{IU17}{Pagar nota de pago en caja}
+		\UCpaso Muestra 
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} de la pantalla \IUref{IU1}{Registrar Usuario}
+			\UCpaso Muestra la pantalla \IUref{IU5}{Login}
+			\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{El usuario no ingresó todos los campos obligatorios.}
+			\UCpaso  Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU1}{Registrar usuario}.
+			\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+		\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{D}{El usuario ingresó el CURP, Número de boleta o Número de empleado	 con longitud incorrecta.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG52}{Logitud no válida} en la pantalla \IUref{IU1}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
+		\begin{UCtrayectoriaA}{E}{El usuario ingresó un correo electrónico no válido.}
+		\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla \IUref{IU1}{Registrar usuario}.
+		\UCpaso[\UCactor] Continua en el paso 6 del \UCref{CU1}.
+	\end{UCtrayectoriaA}
+	
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

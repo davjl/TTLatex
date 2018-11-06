@@ -1,0 +1,49 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU35}{Visualizar pagos por mes}{
+		Permite a Contador, Subdirector Administrativo, Dentista, Coordinadora Celex, Administrador Fotocopiado, Administrador Biblioteca visualizar los pagos que ya fueron aceptados por caja en un orden por mes.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Contador, Subdirector Administrativo, Dentista, Coordinadora Celex, Administrador Fotocopiado, Administrador Biblioteca.}
+		\UCitem{Propósito}{Visualizar los pagos aceptados en caja por orden de mes.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Tabla que muestra las columnas de:
+			\begin{itemize}
+				\item Mes.
+				\item Total ingresos.
+				\item Acciones.
+			\end{itemize}.}
+		\UCitem{Precondiciones}{Deben de existir pagos aprobados por el Cajero.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{Ninguno.}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Selecciona el icono 
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}
+		en la pantalla \IUref{IU34}{Visualizar archivo de pagos por año}
+		\UCpaso Muestra la pantalla \IUref{IU35}{Archivo de Pagos por mes}.
+		\UCpaso Muestra los registros y el icono \raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}} 
+	\end{UCtrayectoria}
+	
+	{\bf Puntos de extensión}\\\\
+	{\bf Causa de la extensión:}El actor da clic en el icono
+	\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/ver}}}
+	para visualizar los pagos por fecha.\\
+	{\bf Región de la trayectoria:}Paso 3 de la Trayectoria Principal.\\
+	{\bf Extiende a:}\UCref{CU36}.\\
+			
+%-------------------------------------- TERMINA descripción del caso de uso.

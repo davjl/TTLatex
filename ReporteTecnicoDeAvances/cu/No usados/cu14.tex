@@ -1,0 +1,60 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU14}{Cargar voucher de pago}{
+		Permite al Usuario adjuntar su voucher de pago en formato pdf o imagen para su posterior revisión y aprobación mediante la pantalla \IUref{IU14}{Cargar vouhcer de pago}.
+		}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{ Roberto Mendoza Saavedra.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Tener un medio para adjuntar un vouhcer de pago en formato pdf o imagen.}
+		\UCitem{Entradas}{Archivo con formato válido.}
+		\UCitem{Salidas} {\MSGref{MSG3}{Archivo enviado correctamente}}
+		\UCitem{Precondiciones}{Ingresar un archivo con formato válido.}
+		\UCitem{Postcondiciones}{
+			\begin{itemize}
+				\item El archivo enviado deberá tener un estado PENDIENTE.
+			\end{itemize}}
+		\UCitem{Reglas de Negocio}{\BRref{RN9}{Estado de voucher}, \BRref{RN12}{Archivo del voucher de pago}.}
+		\UCitem{Errores}{\MSGref{MSG57}{Formato de archivo no válido}, \MSGref{MSG58}{Operación no completada}}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el icono
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
+		de cualquier pantalla \IUref{IU9}{Visualizar servicios dentales},\IUref{IU10}{Visualizar servicios dentales},\IUref{IU11}{Visualizar servicios de fotocopiado} y \IUref{IU12}{Visualizar servicios biblioteca}
+		\UCpaso Muestra la pantalla \IUref{IU14}{Cargar vouhcer de pago}.
+		\UCpaso[\UCactor] Presiona el icono 
+		\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{icons/subirArchivo}}}
+		\UCpaso Muestra un selector de archivos.
+		\UCpaso[\UCactor] Selecciona un archivo y da clic en el botón \IUbutton{Aceptar} del selector de archivos. 
+		\UCpaso Muestra el nombre del archivo en un campo de la pantalla \IUref{IU14}{Cargar vouhcer de pago}.
+		\UCpaso[\UCactor] Presiona el botón \IUbutton{Enviar} de la pantalla \IUref{IU14}{Cargar vouhcer de pago}.
+		\UCpaso Basado en la regla de negocio \BRref{RN12}{Archivo del voucher de pago} valida si el formato del archivo es el correcto. \Trayref{A}
+		\UCpaso Basado en la regla de negocio \BRref{RN9}{Estado de voucher} cambia el estado del archivo a PENDIENTE.\Trayref{B}
+		\UCpaso Muestra el mensaje \MSGref{MSG3}{Archivo enviado correctamente} en la pantalla \IUref{IU14}{Cargar vouhcer de pago}.
+		\UCpaso Redirige a la pantalla \IUref{IU15}{Gestionar pagos usuario}.
+	\end{UCtrayectoria}
+
+		\begin{UCtrayectoriaA}{A}{El usuario adjuntó un archivo con formato no válido.}
+		\UCpaso Muestra el mensaje \MSGref{MSG57}{Formato de archivo no válido}.
+		\UCpaso[\UCactor] Continua en el paso 2 del caso de uso \UCref{CU14}.
+	\end{UCtrayectoriaA}
+
+		\begin{UCtrayectoriaA}{B}{El sistema no puede procesar el envío.}
+		\UCpaso Muestra el mensaje \MSGref{MSG58}{Operación no completada}.
+		\UCpaso[\UCactor] Continua en el paso 7 del caso de uso \UCref{CU14}.
+	\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

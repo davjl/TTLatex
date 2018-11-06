@@ -1,0 +1,33 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU26}{Imprimir todos los comprobantes de pago}{
+		Permite al contador realizar la impresión de todos los comprobantes de pago.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{7 de septiembre de 2018.}
+		\UCitem{Actor}{Contador.}
+		\UCitem{Propósito}{Proporcionar un medio por el cual el contador pueda imprimir los comprobantes en caso de necesitarlo.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{Ninguna.}
+		\UCitem{Precondiciones}{Tener al menos un pago registrado.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{Ninguna.}
+		\UCitem{Errores}{Ninguno.}
+		\UCitem{Tipo}{Secundario.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el \IUbutton {Imprimir todos} en la pantalla \IUref{IU56}{Visualizar pagos por fechas}
+		\UCpaso Genera la impresión de todos los comprobantes contenidos en la pagina.
+	\end{UCtrayectoria}
+%-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,0 +1,43 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+\begin{UseCase}{CU43}{Rechazar comprobante de pago}{
+		Permite al Cajero rechazar un comprobante de pago, así como también mandar el motivo.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Autor}{David De Jesús López.}
+		\UCitem{Estatus}{Edición.}
+		\UCitem{Fecha de último estatus}{9 de abril de 2018.}
+		\UCitem{Actor}{Cajero.}
+		\UCitem{Propósito}{Cambiar el estado del comprobante de pendiente a rechazado.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Salidas}{\MSGref{MSG6-}{Comprobante rechazado}.}
+		\UCitem{Precondiciones}{Ninguna.}
+		\UCitem{Postcondiciones}{Ninguna.}	
+		\UCitem{Reglas de Negocio}{\BRref{RN20}{Validaciones de comprobante de pago}.}
+		\UCitem{Errores}{\MSGref{MSG59-}{No se pudo cambiar el estado del comprobante}}
+		\UCitem{Tipo}{Primario.}
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+	\UCpaso[\UCactor] Da clic en el botón \IUbutton{Rechazar} en la pantalla \IUref{IU16}{Visualizar comprobante pago}.
+	\UCpaso Activa un panel de texto.
+	\UCpaso[\UCactor] Escribe el motivo del rechazo y da clic en el botón \IUbutton{Enviar}.
+	\UCpaso Cambia el estado del archivo. \Trayref{A}
+	\UCpaso Muestra El mensaje {\bf MSG6-} ''Comprobante rechazado''.
+	\UCpaso Redirecciona a la pantalla \IUref{IU39}{Gestionar pagos caja}. 
+	\end{UCtrayectoria}
+	
+	\begin{UCtrayectoriaA}{A}{El sistema no se encuentra disponible}
+	\UCpaso Muestra el Mensaje {\bf MSG59-} ''No pudo cambiarse el estado del comprobante'' en la pantalla \IUref{IU16}{Visualizar comprobante pago} 
+	\UCpaso[\UCactor] Continua en 3 del \UCref{CU42}.
+	\end{UCtrayectoriaA}
+
+%-------------------------------------- TERMINA descripción del caso de uso.
