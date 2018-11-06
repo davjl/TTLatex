@@ -4,7 +4,7 @@
 
 \subsection{Requisitos funcionales}
 	\begin{requerimientos}[blue]{}
-		\FRitem {RF5}{Inicio de sesión}{Toda persona registrada en el sistema podrá iniciar sesión.}\\
+		\FRitem {RF4}{Inicio de sesión}{Toda persona registrada en el sistema podrá iniciar sesión.}\\
 		\FRitem {RF6}{Cerrar sesión}{Toda persona registrada en el sistema podrá cerrar sesión.}\\
 		\FRitem {RF7}{Notificaciones}{Toda persona en el sistema deberá poder recibir notificaciones que sean de importancia para el actor}\\
 		\FRitem {RF32}{Historial}{Toda persona registrada en el sistema podrá visualizar el historial de los comprobantes SIG@ con respecto al área correspondiente.}\\
@@ -40,6 +40,7 @@
 				\item Pagar nota de pago en caja.
 			\end{itemize}}\\
 		\FRitem{RF21}{Agendar cita}{El usuario podrá agendar una cita en horarios disponibles para el área de servicios dentales}\\		
+		\FRitem{RF}
 		\caption{Requisitos funcionales para el usuario.}
 		\label{tabla:RFAlumnosEmpleadosExternos}
 	\end{requerimientos}
@@ -261,7 +262,7 @@
 
 \begin{BussinesRule}{RN17}{Periodos de cita}
 	\BRitem[Descripción:] Para el registro de una cita se deberá de considerar la desiponibilidad y los siguientes horarios:  \begin{itemize}
-		\item Matutino: 9:00 a 15:00 Hrs
+		\item Matutino: 8:00 a 15:00 Hrs
 		\item Vespertino 15:00 a 21:00 Hrs
 	\end{itemize}
 	\BRitem[Clase:] Condición.
@@ -313,29 +314,29 @@
 
 \begin{BussinesRule}{RN22}{Comprobación de pago}
 	\BRitem[Descripción:] Las áreas de servicio solo podrán validar un pago con el comprobante SIG@ y ningún otro.
-	\BRitem[Clase:] .
-	\BRitem[Tipo:] .
+	\BRitem[Clase:] Integridad.
+	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN23}{Correo electrónico compartido}
 	\BRitem[Descripción:] El correo electrónico deberá ser único para cada cuenta.
-	\BRitem[Clase:]
-	\BRitem[Tipo:]
+	\BRitem[Clase:] Integridad.
+	\BRitem[Tipo:] Conometrado.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN24}{Coordinador único}
 	\BRitem[Descripción:] En cada área de servicio deberá existir únicamente un solo coordinador.
-	\BRitem[Clase:]
-	\BRitem[Tipo:]
+	\BRitem[Clase:] Integridad.
+	\BRitem[Tipo:] Cronometrado.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN25}{Número de empleado}
 	\BRitem[Descripción:] Si el número de empleado como coordinador de área es ingresado incorrectamente en el registro, deberá ser dado de baja y registrar nuevamente
-	\BRitem[Clase:]
-	\BRitem[Tipo:]
+	\BRitem[Clase:] Condicion.
+	\BRitem[Tipo:] Habilitador.
 	\BRitem[Nivel:] Control.
 \end{BussinesRule}
 

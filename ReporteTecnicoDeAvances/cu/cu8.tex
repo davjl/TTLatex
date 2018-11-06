@@ -20,9 +20,7 @@
 		\UCitem{Entradas}{Servicio seleccionado para la gestión de pagos.}
 		\UCitem{Salidas}{
 			\begin{itemize}
-				\item Nombre del usuario.
-				\item CURP.
-				\item Número de boleta o Número de empleado.
+				\item Identificador.
 				\item Lista de servicios disponibles para la gestión de pagos.
 			\end{itemize}.}
 		\UCitem{Precondiciones}{Debe de existir por lo menos un servicio disponible para la gestión de pagos.}
@@ -37,7 +35,6 @@
 			\UCpaso Obtiene la lista de todos los servicios disponibles para la gestión de pagos.
 			\UCpaso Muestra al Usuario la pantalla \IUref{IU8}{Visualizar servicios}.
 			\UCpaso[\UCactor]Selecciona un servicio de la lista para realizar su gestión de pagos.
-			\UCpaso[\UCactor]Presiona el botón \IUbutton{Mostrar} de la pantalla \IUref{IU8}{Visualizar servicios.}
 			%\UCpaso Valida que el Usuario haya ingresado el campo marcado como obligatorio en la pantalla \IUref{IU08}{Visualizar Servicios}.\Trayref{A}			
 	\end{UCtrayectoria}
 	
@@ -47,20 +44,9 @@
 %	\end{UCtrayectoriaA}
 
 	{\bf Puntos de extensión}\\\\
-	{\bf Causa de la extensión:}El actor selecciona el servicio de Biblioteca.\\
+	{\bf Causa de la extensión:}El actor selecciona la opción adjuntar comprobante de pago.
 	{\bf Región de la trayectoria:}Paso 4 de la Trayectoria Principal.\\
-	{\bf Extiende a:}\UCref{CU12}.\\\\
+	{\bf Extiende a:}\UCref{CU7}.\\\\
 	%---
-	{\bf Causa de la extensión:}El actor selecciona el servicio de CELEX.\\
-	{\bf Región de la trayectoria:}Paso 4 de la Trayectoria Principal.\\
-	{\bf Extiende a:}\UCref{CU10}.\\\\
-	%---
-	{\bf Causa de la extensión:}El actor selecciona el servicio de Dentales.\\
-	{\bf Región de la trayectoria:}Paso 4 de la Trayectoria Principal.\\
-	{\bf Extiende a:}\UCref{CU9}.\\\\
-	%---
-	{\bf Causa de la extensión:}El actor selecciona el servicio de Fotocopiado.\\
-	{\bf Región de la trayectoria:}Paso 4 de la Trayectoria Principal.\\
-	{\bf Extiende a:}\UCref{CU11}.\\\\
 	
 %-------------------------------------- TERMINA descripción del caso de uso.

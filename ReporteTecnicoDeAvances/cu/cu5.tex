@@ -8,7 +8,7 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-\begin{UseCase}{CU5}{Login}{
+\begin{UseCase}{CU4}{Inicio de sesión}{
 		Permite al Contador, Dentista, Coordinador CELEX, Administrador Fotocopiado, Subdirector Administrativo, Administrador Biblioteca, Cajero y Usuario ingresar al sistema mediante un nombre de usuario y contraseña.\\Dependiendo el perfil de identificación se redireccionará a la pantalla de bienvenida con sus permisos correspondientes.
 	}
 		\UCitem{Versión}{0.1}
@@ -39,18 +39,18 @@
 		
 		\begin{UCtrayectoriaA}{A}{Faltan datos obligatorios}
 			\UCpaso Muestra el Mensaje \MSGref{MSG50}{Campo obligatorio} en la pantalla \IUref{IU5}{Login} 
-			\UCpaso Continua en el paso 2 del \UCref{CU5}.
+			\UCpaso Continua en el paso 2 del \UCref{CU4}.
 		\end{UCtrayectoriaA}
 
 		\begin{UCtrayectoriaA}{B}{Usuario y/o contraseña incorrectos}
 			\UCpaso  Muestra el Mensaje \MSGref{MSG56}{Usuario y/o contraseña incorrectos} en la pantalla \IUref{IU5}{Login} 
-			\UCpaso Continua en el paso 2 del \UCref{CU5}
+			\UCpaso Continua en el paso 2 del \UCref{CU4}
 		\end{UCtrayectoriaA}
 	
 	{\bf Puntos de extensión}\\\\
 	{\bf Causa de la extensión:}El actor selecciona la opción de recuperar contraseña.\\
 	{\bf Región de la trayectoria:}Paso 1 de la Trayectoria Principal.\\
-	{\bf Extiende a:}\UCref{CU4}.\\\\
+	{\bf Extiende a:}\UCref{CU3}.\\\\
 	
 	{\bf Causa de la extensión:}El actor selecciona la opción de registrar usuario.\\
 	{\bf Región de la trayectoria:}Paso 1 de la Trayectoria Principal.\\

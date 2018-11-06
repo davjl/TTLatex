@@ -7,7 +7,7 @@
 
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
-\begin{UseCase}{CU4}{Recuperar Contraseña}{
+\begin{UseCase}{CU3}{Recuperar Contraseña}{
 		Otorga al usuario un mecanismo para que en caso de olvidar su contraseña pueda recuperarla por medio de un correo electrónico.\\
 		
 }
@@ -53,17 +53,17 @@
 	
 		\begin{UCtrayectoriaA}{C}{El usuario ingresó campos no válidos.}
 		\UCpaso  Muestra el Mensaje \MSGref{MSG51}{Campo no válido} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
-		\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU4}.
+		\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
 		\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{D}{El usuario ingresó un correo electrónico no válido.}
 			\UCpaso  Muestra el Mensaje \MSGref{MSG53}{Formato no válido} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
-			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU4}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
 		\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{E}{El usuario ingresó un número de usuario y/o correo electrónico incorrecto.}
 			\UCpaso  Muestra el Mensaje \MSGref{MSG63}{El usuario o correo no existen} en la pantalla  \IUref{IU4}{Recuperar contraseña}.
-			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU4}.
+			\UCpaso[\UCactor] Continua en el paso 2 del \UCref{CU3}.
 		\end{UCtrayectoriaA}
 
 %-------------------------------------- TERMINA descripción del caso de uso.
