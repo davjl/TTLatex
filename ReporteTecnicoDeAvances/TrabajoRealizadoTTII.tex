@@ -1,17 +1,96 @@
-En el presente capítulo se habla del trabajo realizado en la última etapa del Trabajo Terminal. Tomando en cuenta el análisis faltante en las áreas de servicio y un desarrollo final del sistema, mostrando una funcionalidad completa.
+En el presente capítulo se habla del trabajo realizado en la última etapa del Trabajo Terminal. Tomando en cuenta el análisis faltante en las áreas de servicio y un desarrollo final del sistema, mostrando una funcionalidad completa.\\
 
-Se incluyen mejoras en la base de datos y diagramas finales de casos de uso.
+Se incluye un modelo de datos normalizado a la tercera forma normal, un diagrama final de casos de uso, un apartado con el análisis de requerimientos tomando en cuenta las observaciones hechas en la primera presentación del Trabajo Terminal y la explicación a detalle de las iteraciones restantes de este Trabajo Terminal.\\
+
+Adicional a esto, se muestran los resultados derivados de una encuesta realizada con el fin de conocer el nivel de aceptación del sistema y los aspectos que más relevancia tienen para la comunidad de la ESCOM. 
 
 \section{Análisis realizado}
 
-Para esta segunda etapa lo primero que se realizo fue atender las correcciones obtenidas en TT I, con lo cual nuestro primer punto de partida fue la reestructuración de la base de datos y un análisis más detallado en las reglas de negocio, requisitos funcionales y no funcionales. 
+Para esta segunda etapa del Trabajo Terminal se comenzó con atender las observaciones dichas en TT I, tomando como referencia la corrección del modelo de datos para replantear el desarrollo del sistema. A su vez, se formó un mejor análisis de requerimientos para contemplar mejor el alcance del proyecto, aquí se incluyeron todos los requerimientos funcionales y no funcionales del sistema en conjunto con las reglas de negocio relacionadas.\\
 
-Mientras se realizaban estas correcciones también se trabajo en las reuniones con las áreas de servicio faltantes (área de impresiones y biblioteca) de las cuales nos brindaron información bastante similar a la otorgada por CELEX y dentales.
+Como consecuencia de lo anterior, nos vimos obligados a modificar nuestros diagramas de casos de uso, haciendo de ellos algo congruente con el alcance del proyecto.\\
 
-A continuación se describen los incrementos realizados para esta segunda y última parte del Trabajo Terminal.
+De forma paralela a estas correcciones, se trabajó en las reuniones con las áreas de servicio faltantes (área de impresiones y biblioteca) las cuales nos brindaron información bastante similar a la otorgada por el CELEX y servicios dentales. Podemos decir que el flujo del sistema para el área de biblioteca difiere del de CELEX por la generación de notas de pago que hacen alusión a los servicios que el alumno, docente o externo pueden pagar. En lo que respecta al servicio de impresiones, notamos que el único cambio a efectuar en el flujo de pago sería el del control de impresiones, el cual nos permitiría saber por cuántas impresiones se hizo el pago y cuántas impresiones se han realizado desde la fecha en que se pagó por ellas. De esto se hablará a detalle más adelante.\\
 
-\subsection{Corrección base de datos}
+Así, se fueron tomando acciones para la conclusión de este proyecto, algunas efetuadas de forma paulatina o bien, en paralelo con otras actividades.\\
 
-\IUfig[1]{gui/bd}{}{Modelo de base de datos final}
+A continuación se describen los incrementos realizados para la conclusión de este Trabajo Terminal, todos tomando en consideración las observaciones expuestas en la primera parte.\\
+
+\subsection{Corrección del modelo de datos}
+
+Una de las observaciones hechas en la primera parte del Trabajo Terminal fue el modelo de datos, pues este no presentaba reglas de normalización aceptables. Fue la primer corrección que se tomó en cuenta pues consideramos que es de suma importancia mantener nuestro acceso a la información consistente, persistente y seguro.\\
+
+Se analizó el modelo anterior y con ello se pensó en una nueva abstracción de todos nuestros objetos. De ese modo fue posible llegar hasta la tercera forma normal lo que nos permitió tener una mejor organización de nuestras entidades y con ello del acceso a la información.\\
+
+Este nuevo planteamiento nos llevó a un total de 26 entidades repartidas en 6 esquemas. 
+
+\IUfig[1]{gui/bd}{}{Modelo de datos normalizado (3ra forma normal).}
+
+\subsection{Diseño e implementación WEB de módulo de impresiones y biblioteca}
+En esta iteración se tuvo una mesa de trabajo tomando parte del trabajo de análisis elaborado en el trabajo terminal uno, el diagrama de procesos presentado no contemplaba hasta ese momento estos módulos así que se elaboró este artefacto de software con ayuda de los encargados de estas áreas. El proceso por parte de biblioteca denotó la falta de la capacidad del sistema de modificar el catálogo de servicios proporcionado por el subdirector académico debido a que según la encargada del área de biblioteca estos precios y conceptos pueden variar con el tiempo, se descubrió que esto puede ser aplicable a otras áreas, por lo tanto, se decidió que el subdirector debería tener la capacidad de modificar los precios del catálogo así como de agregar nuevos campos en caso de que se agregara un nuevo concepto al catálogo manejado por la unidad académica. Sin embargo, se acordó que esta tarea sería agregada como parte de las prioridades de la siguiente iteración debido a que el objetivo de la iteración actual era entender mejor el proceso de dichas áreas, diseñarlo por medio de BPMN e implementarlo.\\
+
+Después de una reunión con el encargado de servicios bibliotecarios, se  determinó que para fines de pagos el área de biblioteca al igual que la de Celex sólo necesitaría conocer los pagos dirigidos a su departamento aprobados por caja y al igual que todos los demás departamentos por fines de auditoría se nos pidió tener un histórico de pagos de cinco años por lo que se contempló también un historial de pagos para esta área. Hasta este punto, el modelo de datos corregido no representó mayor problema para el desarrollo.\\
+
+Por otro lado, el proceso de pagos para el departamento de impresiones fue completamente distinto, para completar el proceso de impresiones se requiere el manejo de un ticket de pago que emite la caja después de hacer el correspondiente pago en efectivo, nuestros usuarios quienes fueron estudiados por medio de encuestas que más adelante se muestran, nos expresaron que en caso de perder este comprobante no tenían un medio de recuperación lo que los obligaba a repetir el proceso nevamente. Esto se traduce en pérdida de tiempo y dinero para el usuario, pero también para la caja pues cada proceso de este tipo implica la impresión de dos comprobantes de pago que en conjunto con todos los pagos procesados por día se traduce en un buen gasto de recurso material.\\
+
+Así, el encargado del área de fotocopiado tendría sólo la capacidad de agregar el número de impresiones por las que está pagando el usuario (alumno, docente o externo) y a su vez, la posibilidad de reducir las impresiones de acuerdo a la cantidad por las que el usuario está haciendo válido su pago. Esta actualización se ve reflejada al momento de que el encargado concluye el servicio con el usuario.\\
+
+Con lo anterior, pudimos exponer algunas ventajas del sistema como:
+
+\begin{itemize}
+	\item Almacenar el comprobante emitido por el encargado del área de impresiones lo cual evita que el alumno pierda el comprobante.
+	\item Rapidez de pago para los alumnos puesto que sólo tendrían que subir el comprobante de pago por medio de una fotografía.
+	\item Rapidez de búsqueda de comprobantes por parte del área administrativa.
+	\item El encargado de caja ahora tendrá la capacidad de buscar al alumno y restar en ese momento el número de impresiones realizadas.
+\end{itemize}
+
+El desarrollo de lo mencionado anteriormente implicó agregar una nueva entidad a la base de datos que nos permitiera relacionar una cuenta con el fin de saber a quién le pertenece el comprobante y el número de impresiones con el que cuenta en ese momento cuidando que el proceso propuesto no sea tedioso para el usuario debido a que el área de impresiones puede gestionar en un día hasta ochenta pagos según las cifras del encargado del área.\\
+
+\subsection{Diseño e implementación WEB de módulo de contador y subdirector}
+Durante esta mesa de trabajo se descubrió que el proceso actual de pagos genera un atraso en tiempo considerable debido a que en temporadas con alta incidencia de pagos, revisar cada pago retrasa el proceso administrativo y, es en este momento cuando se pueden dar inconsistencias y brechas de seguridad que podrían tener un impacto negativo. Por ejemplo, un alumno puede emitir dos comprobantes de pago y modificarlos duplicando así el pago, en el momento en el que el contador hace la verificación el alumno pudo haber hecho válido su servicio sin que se percataran en ese momento de que el comprobante fue duplicado.\\
+
+Derivado de lo anterior, nos dimos a la tarea de conocer las medidas de seguridad empleadas en el proceso actual para evitar este problema, sin embargo, el área de contabilidad comenta que actualmente no tienen un mecanismo consolidado para validarlo. Lo único que se realiza hoy en día es pedir al usuario anote sus datos personales en el reverso de su comprobante de pago, tales como, nombre completo, número de boleta si es que aplica y un número telefónico. Por lo tanto, si se emiten pagos por cantidades que requieran atención no tienen otra forma de validarlo más que marcando por teléfono al usuario en espera de que se le pueda contactar y de alguna manera probar que se duplicó dicho pago.\\
+
+Aunado a esto, también les es difícil encontrar los pagos emitidos por año, mes y día así como el nombre del emisor de pago a pesar de que se conserva una bitácora de cada uno de los pagos recibidos en la caja de la ESCOM.\\
+
+También, como se mencionó en el apartado anterior, todos estos servicios que abarcamos cambian constantemente de precio de acuerdo a lo estipulado por el IPN, lo que nos obligó a considerar una forma de poder modificar esta información. Aquí, el único capaz de hacer modificaciones será el Subdirector Adminitrativo, quien en este punto se decidió desempeñara un papel como usuario con todos los privilegios.\\
+
+Así, las funciones otorgadas al Subdirector Adminisrativo fueron las siguientes:
+
+\begin{itemize}
+	\item Gestión de áreas (edición, visualización, baja, reactivación y asignación de responsable de área).
+	\item Gestión de responsables de área (registro, edición, visualización y baja).
+	\item Gestión de servicios (registro, edición, visualización, baja y reactivación).
+	\item Reportes (cortes de caja).
+	\item Historial de pagos (pagos por año, mes y día).
+\end{itemize}
+
+Las funciones otorgadas para el Contador fueron las siguientes:
+
+\begin{itemize}
+	\item Reportes (cortes de caja).
+	\item Historial de pagos (pagos por año, mes y día).
+\end{itemize}
+
+Hasta este momento el desarrollo no presentaba mayor problema, a excepción de la generación de reportes solicitada por el Subdirector Administrativo. Ningún integrante del equipo se había enfrentado a algo así anteiormente así es que nos dimos a la tarea de investigar alguna tecnología que nos apoyara en la realización de esto y encontramos Jasper Reports, una herramienta fácil de utilizar e integrar con nuestro proyecto de desarrollo lo que no implicó una curva de aprendizaje bastante extensa.\\
+
+Una vez concluido lo anterior, tomamos la decisión de incluir un sistema de notificaciones para alertar a los involucrados en el sistema sobre alguna acción realizada, específicamente pagos aprobados, rechazados, cortes de caja y nuevos pagos. Esto surgió como una gerencia planteada por el Subdirector Administrativo la cual nos pareció buena y decidimos incluirla.\\
+
+Por tanto, para poder lograr todo lo comentado anteriormente, tuvimos que realizar modificaciones a la base de datos, se agregaron las pantallas de modificación de catálogos y las pantallas de verificación de cantidades del contador el cual contempla tablas que usan la tecnología Datatables de JQuery las cuales permiten agilizar la búsqueda de comprobantes  permitiendo así encontrar el emisor de pago en el momento que se requiera.\\
+
+En este punto, el desarrollo de la aplicación web estaba más completo y cumplía con el flujo crítico para el cual se desarrolló el sistema.
+
+\subsection{Diseño e implementación de módulo móvil}
+
+En esta mesa de trabajo el objetivo fue diseñar la versión móvil de la aplicación la cual tenía como fin brindar una herramienta de consulta para la comunidad estudiantil, se llegó a la conclusión de que tendría que ser únicamente dirigida a la comunidad estudiantil debido a que si se le otorgaban permisos administrativos como en el caso de la aplicación web saldría de los alcances de este trabajo y además, el riesgo hubiera aumentado considerablemente, el Subdirector Administrativo nos expresó que bastaba con hacer una aplicación que permitiera consultar a los alumnos los pagos emitidos hacia caja.\\
+
+Para lograr este objetivo se agregó una capa más a la arquitectura del sistema que contempla el uso de servicios web de tipo REST, de esta manera se le dio la capacidad al sistema de emitir respuestas de tipo JSON para hacer un cliente móvil ligero.\\
+
+Por su parte, el cliente móvil fue escrito en el lenguaje de programación Java para Android y se decidió que la manera más viable para el equipo de consumir los servicios emitidos por el servidor de aplicaciones web era por medio de la tecnología Retrofi2 la cual tiene como ventaja la simplicidad de desarrollo, los servicios contemplados por parte del servidor tienen que ver directamente con la consulta de las entidades de pagos filtradas por usuario, en el caso del alumno puede emitir pagos con el uso de un perfil previamente registrado y el proceso de caja propuesto funcionaria de la misma manera que en la parte web. La aplicación tiene como patrón de diseño arquitectónico MVP (Modelo Vista Presentador) el cual es una derivación del patrón arquitectónico MVC.\\
+
+Los servicios REST que se consumieron en el desarrollo de esta aplicación son los siguientes:\\
+
+\cfinput{rest}
+
 
 \newpage
