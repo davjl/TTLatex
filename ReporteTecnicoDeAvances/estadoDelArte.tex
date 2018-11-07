@@ -1,0 +1,123 @@
+\section{Estado del arte}
+Como se ha mencionado anteriormente nuestro Trabajo Terminal se basa en el desarrollo de un sistema web y móvil que mejore el actual proceso de pagos en la ESCOM, haciendo de éste una herramienta útil para todas las áreas involucradas, la comunidad estudiantil de la ESCOM y externos.\\
+
+Así, durante nuestra investigaci\'on de mercado, nos encontramos con sistemas que tienen un propósito similar al nuestro, pero implementados en situaciones distintas, adem\'as de tener funcionalidades variadas. Si bien, actualmente existen muchas aplicaciones o sistemas enfocados en la gestión de pagos, la gran mayoría funcionan como desarrollos independientes que dejan de lado la integración a futuro de más módulos o incluso sistemas. Es por ello, que nosotros buscamos desarrollar un sistema que permita la escalabilidad a favor de la gestión de procesos tomando como punto de partida justamente la gestión de pagos.
+
+Los sistemas con mayor similitud a nuestro desarrollo los podemos encontrar en la tabla \ref{tabla:Productos}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{30mm}|p{75mm}|p{25mm}|}
+			\hline
+			{\bf Software} & {\bf Caracter\'isticas} & {\bf Costo} \\
+			\hline 
+			"SISTEMA DE MONEDERO VIRTUAL PARA PAGOS ESCOLARES" & El Sistema de Monedero Virtual para Pagos Escolares es un sistema de prepago, que permite a los alumnos realizar pagos dentro y fuera de la Unidad Profesional Interdisciplinaria en Ingenier\'ia y Tecnolog\'ias Avanzadas (UPIITA) \cite{monederoVirtual} & Sin costo \\ \hline
+			
+			TTR-12-1-029 Prototipo para el manejo de “Cero Papel”. & Es un sistema que permite el manejo, intercambio y control de la informaci\'on dentro de una organizaci\'on para optimizar los procedimientos y tareas, disminuyendo el uso de papel mediante la implementaci\'on de un sistema que permita administrar los usuarios y los documentos \cite{ceroPapel} & Sin costo\\ \hline
+			
+			“Ventanilla Virtual UdeG” & Ventanilla Virtual tiene tecnolog\'ias desarrolladas por universitarios y busca brindar una plataforma para que, en una primera etapa, los estudiantes puedan hacer tr\'amites, dar seguimiento, recuperarlos y hacer pagos respectivos \cite{ventanillaVirtual} & Sin costo \\ \hline
+			
+			%tienen dos citas [x][y] juntas
+			“Campus Pay” & Desarrollo que ofrece a estudiantes la posibilidad de realizar todos los pagos relacionados con sus estudios desde dispositivos m\'oviles con cualquier tarjeta de cr\'edito o d\'ebito \cite{campusPay} & Sin costo \\ \hline
+			
+			“School control” & Aplicaci\'on m\'ovil que realiza reportes, asignaci\'on de pagos, consulta de estad\'isticas en tiempo real, monitoreo/edici\'on de la informaci\'on escolar, entrega de calificaciones, control de asistencia y comportamiento de los alumnos entre otras soluciones dise\~nadas espec\'ificamente para colegios que les deja tiempo valioso para dedicarlo a lo que verdaderamente saben hacer, que es enseñar \cite{schoolControl}& desde \$149 por alumno al a\~no, costo absorbido totalmente por el colegio. \\ \hline
+			
+			“Aplicaci\'on escolar” & Es una aplicaci\'on m\'ovil para dispositivos Android e IOS en la cual las escuelas pueden enviar informaci\'on como mensajes de pagos, tareas, circulares, así como seguimientos acad\'emicos y calificaciones graficadas directo al celular de los padres o alumnos con notificación tipo WhatsApp. Los pap\'as descargan la aplicaci\'on con el nombre de su colegio desde Play Store o App Store ya que es personalizada a cada escuela \cite{aplicacionEscolar}& Pago inicial de \$31,000, posterior a la prueba piloto se cobran \$6,000 mensuales por cada 400 alumnos. El costo es absorbido por el colegio. \\ \hline		
+		\end{tabular}
+		\caption{Sistemas o aplicaciones relacionadas}
+		\label{tabla:Productos}
+	\end{center}
+\end{table}
+
+\newpage
+De estos sistemas encontramos las siguientes ventajas y desventajas considerando el problema bajo el cual nosotros estaremos trabajando:
+\begin{itemize}
+	\item {\bf SISTEMA DE MONEDERO VIRTUAL PARA PAGOS ESCOLARES}
+	\begin{itemize}
+		\item Ventajas:
+		\begin{itemize}
+			\item Permite la realización de pagos de forma electrónica.
+		\end{itemize}
+		\item Desventajas:
+		\begin{itemize}
+			\item Carece de un diseño responsivo.
+			\item Para realizar el pago es necesario imprimir un comprobante.
+			\item Se necesita efectuar un abono previo.
+			\item Sólo se planteó como un prototipo.
+		\end{itemize}
+	\end{itemize}
+	\item {\bf TTR-12-1-029 Prototipo para el manejo de Cero Papel}
+	\begin{itemize}
+		\item Ventajas:
+		\begin{itemize}
+			\item Disminución del uso de papel.
+			\item Control y seguridad de documentos.
+		\end{itemize}
+		\item Desventajas:
+		\begin{itemize}
+			\item Solo es un sistema que busca la optimización de recurso material (papel).
+		\end{itemize}
+	\end{itemize}
+	\item {\bf Ventanilla Virtual UdeG}
+	\begin{itemize}
+		\item Ventajas:
+		\begin{itemize}
+			\item Presenta distintos medios de acceso como kioscos interactivos, sitio web y aplicación móvil.
+			\item Pueden realizar, seguir, recuperar y generar los pagos en algunos trámites.
+			\item Permite al alumno la consulta de información académica.
+			\item Pago digital.
+		\end{itemize}
+		\item Desventajas:
+		\begin{itemize}
+			\item El precio de cada kiosco interactivo es de 165 mil pesos.
+			\item Solo los estudiantes tienen acceso.
+		\end{itemize}	
+	\end{itemize}
+	\item {\bf Campus Pay}
+	\begin{itemize}
+		\item Ventajas:
+		\begin{itemize}
+			\item Permite a toda la comunidad universitaria realizar pagos de forma electrónica.
+			\item Permite el pago a todas las áreas que lo requieran.
+			\item Permite al alumno la consulta de información académica.
+			\item No tiene costo para los usuarios de la aplicación.
+			\item Permite cualquier tarjeta de débito o crédito.
+		\end{itemize}
+		\item Desventajas:
+		\begin{itemize}
+			\item Genera un costo en la institución educativa en la que se implementa.
+		\end{itemize}
+	\end{itemize}	
+	\item {\bf School control}
+	\begin{itemize}
+		\item Ventajas:
+		\begin{itemize}
+			\item Permite el pago en línea.
+			\item Elimina las comisiones de tarjeta de crédito.
+			\item Realiza métricas de información sobre el colegio.
+			\item Permite una administración de accesos al sistema.
+			\item Tiene un módulo de apoyo para maestros.
+		\end{itemize}
+		\item Desventajas:
+		\begin{itemize}
+			\item Tiene un costo básico de \$149.00 por alumno.
+		\end{itemize}
+	\end{itemize}	
+	
+	\item {\bf Aplicación escolar}
+	\begin{itemize}
+		\item Ventajas:
+		\begin{itemize}
+			\item Permite mensajes de pagos.
+			\item Permite seguimientos académicos.
+			\item Genera notificaciones.
+			\item Aplicación personalizada por institución.
+			\item Tiene un módulo de apoyo para maestros.
+		\end{itemize}
+		\item Desventajas:
+		\begin{itemize}
+			\item Pago inicial de \$31,000, posterior a la prueba piloto se cobran \$6,000 mensuales por cada 400 alumnos.
+		\end{itemize}			
+	\end{itemize}
+\end{itemize}
+
+Relacionando todos estos sistemas y aplicaciones a nuestro trabajo, nos percatamos que la {\bf Ventanilla Virutal UdeG} y la aplicación móvil {\bf Campus pay} son los modelos de referencia que tenemos para el desarrollo y mejora de nuestro sistema. Entendemos que son bastante funcionales, pero también creemos que se encuentran carentes de escalabilidad e inclusión hacia otros sistemas para la gestión de procesos.\\

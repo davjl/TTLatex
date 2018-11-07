@@ -1,6 +1,16 @@
 En este capitulo se habla de todas las observaciones realizadas por parte de los sinodales y los cambios efectuados para la solución de las mismas.
 
-\section{Observaciones por parte de los sinodales}
+\section{Avances logrados en TTI}
+Derivado del análisis pudimos obtener un total de 55 interfaces gráficas de usuario aprobadas por cada una de las áreas y un total de 45 casos de uso con las funciones de nuestro sistema.\\
+
+Se obtuvo un primer modelo de base de datos para poder manejar nuestro acceso a la información durante el desarrollo de la primera parte del sistema.\\
+
+En paralelo a lo anterior, pudimos elaborar la infraestructura de nuestro sistema utilizando las herramientas tecnológicas que se mencionaron.\\
+
+Logramos programar para nuestro sistema 19 casos de uso y un total de 25 interfaces gráficas. Esto representa aproximadamente un 30\% del total de nuestro sistema.\\
+
+Con lo anterior, pudimos observar una interacción mucho más fluida y segura con los comprobantes de pago generados en caja hacia las áreas de servicios, ya que al tener un medio de comunicación directo, el comprobante de pago es visualizado por el coordinador del área inmediatamente después de ser efectuado el pago.\\
+\section{Retroalimentación}
 
 Luego de la primera presentación de Trabajo Terminal los sinodales hicieron mención de las siguientes observaciones:
 
@@ -10,16 +20,15 @@ Luego de la primera presentación de Trabajo Terminal los sinodales hicieron men
 	\item Seguridad para autenticidad de pagos.
 	\item Descripción de pantallas.
 	\item Descripción de actores.
-	\item Seguridad.
 	\item Procesos BPMN.
 	\item Idioma del sistema único.
 \end{itemize}
 
-Para lo cual se realizo lo siguiente:
+Para lo cual se realizó lo siguiente:
 
 Un apartado de análisis de requerimientos con un listado de las reglas de negocio, requisitos funcionales y requisitos no funcionales identificados.
 
-La base de datos fue normalizada hasta su tercera forma tomando en cuenta que: \begin{itemize}
+La base de datos fue normalizada hasta su tercera forma normal tomando en cuenta que: \begin{itemize}
 	\item {\bf 1 Forma:} \begin{itemize}
 		\item Todos los atributos, valores almacenados en las columnas, deben ser indivisibles.
 		\item No deben existir grupos de valores repetidos.
@@ -28,5 +37,10 @@ La base de datos fue normalizada hasta su tercera forma tomando en cuenta que: \
 	\item {\bf 3 Forma:}  No deben existir dependencias transitivas entre las columnas de una tabla, lo cual significa que las columnas que no forman parte de la clave primaria deben depender sólo de la clave, nunca de otra columna no clave. \cite{Normalizacion}
 \end{itemize}
 
-Para poder evitar la duplicidad de pagos se propuso usar como parámetros de seguridad la hora, fecha y número de cajero. Además de que si en algún momento el pago no se encuentra reflejado en el estado de cuenta de bancomer el usuario puede ser identificado rápidamente.
+Para poder evitar la duplicidad de pagos se contemplaron tres posibilidades. La primera de ellas fue usar como parámetros de seguridad la hora, fecha y folio de operación del voucher de pago lo que nos garantiza evitar pagos duplicados puesto que no podra haber un mismo folio de operación en el mismo día y en la misma hora. Nuestro segundo y tercer filtro de seguridad dependen de la labor humana efectuada por el cajero y la contadora al revisar los voucher de pago y el estado de cuenta del respectivo banco.\\
 
+Respecto a la descripción de pantallas y actores, se incluyó una sección en este documento donde se describen a detalle cada una de las interfaces y a su vez cada uno de los roles que representa cada uno de nuestros actores.\\
+
+Los procesos BPMN se corrigieron, dando énfasis a las mejoras obtenidas con el proceso propuesto por el sistema en comparación con las características que ofrece el proceso actual. Estas mejoras las mencionaremos en una sección posterior.\\
+
+Por último, el idioma del sistema fue cambiado por completo al español, atendiendo así, todas las observaciones realizadas en la primera parte de este Trabajo Terminal.\\

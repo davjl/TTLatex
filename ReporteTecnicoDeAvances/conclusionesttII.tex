@@ -1,0 +1,24 @@
+\section{Conclusiones}
+
+Como consecuencia del trabajo realizado en este proyecto se ha logrado implementar un sistema web y móvil para la gestión de pagos de la ESCOM que, a pesar de algunas limitaciones de tipo burocrático es capaz de apoyar a la comunidad de la ESCOM (alumnos, docentes y externos) a gestionar los pagos para la adquisición de los servicios que se ofertan en esta Unidad Académica, destacando los servicios dentales, biblioteca, fotocopiado y CELEX.\\
+
+Algunas de las limitantes de tipo burocrático que se encontraron durante la realización del sistema fueron: el acceso a datos personales por parte de área central con el fin de agilizar el proceso de búsqueda a los usuarios finales, el acceso al ambiente de desarrollo del sistema SIG@ con la finalidad de obtener el comprobante SIG@ mediante un servicio web. Por último, el uso de una API bancaria para la realización de pagos electrónicos, debido a que para hacer uso de esa API era necesario efectuar un contrato como persoona moral ante la sucursal bancaria, un requisito difícil de cumplir al ser un proyecto académico.\\
+
+La idea anterior se propuso como consecuencia de los resultados obtenidos en las encuestas, ya que observamos que un gran porcentaje de la comunidad entrevistada invierte bastante tiempo en efectuar un pago directamente en la sucursal bancaria o en la caja de la ESCOM.\\
+
+Derivado de las limitantes anteriores se decidió definir las rutas críticas del sistema, definiendo el proceso de gestión del pago una vez que éste fue realizado. Así, el sistema desarrollado es capaz de mantener una comunicación entre el usuario final, las áreas involucradas y el departamento de recursos financieros de la ESCOM.\\
+
+El proceso de pagos actual se logró mejorar, esto lo reflejamos en lo siguiente: 
+
+\begin{itemize}
+	\item Se emplea un mecanismo para evitar la duplicidad de pagos.
+	\item El tiempo invertido para concluir un pago se reduce a un máximo de cinco minutos en comparación con los 45 minutos en promedio que invierte la comunidad actualmente.
+	\item Se almacenan digitalmente los comprobantes de pago, tanto voucher bancario como comprobantes SIG@.
+	\item Se ahorran en promedio 100 impresiones diarias.
+	\item El almacenamiento de los comprobantes SIG@ se realiza en todas las áreas involucradas sin excepción.
+\end{itemize}
+
+Se buscó no solo desarrollar un sistema que cumpliera el objetivo sino también crear un sistema escalable para posibles modificaciones en un futuro, pensando en la agregación de otras áreas, y con ello, otros actores. Cabe mencionar, que la modificación o agregación de nuevos módulos implica un nuevo análisis del negocio para conocer los nuevos procesos y saber si es posible o no manejar el mismo ciclo de gestión de pagos.\\
+
+
+
