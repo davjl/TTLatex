@@ -4,7 +4,7 @@ Se incluye un modelo de datos normalizado a la tercera forma normal, un diagrama
 
 Adicional a esto, se muestran los resultados derivados de una encuesta realizada con el fin de conocer el nivel de aceptación del sistema y los aspectos que más relevancia tienen para la comunidad de la ESCOM. 
 
-\section{Análisis realizado}
+\section{Trabajo realizado}
 
 Para esta segunda etapa del Trabajo Terminal se comenzó con atender las observaciones dichas en TT I, tomando como referencia la corrección del modelo de datos para replantear el desarrollo del sistema. A su vez, se formó un mejor análisis de requerimientos para contemplar mejor el alcance del proyecto, aquí se incluyeron todos los requerimientos funcionales y no funcionales del sistema en conjunto con las reglas de negocio relacionadas.\\
 
@@ -22,9 +22,15 @@ Una de las observaciones hechas en la primera parte del Trabajo Terminal fue el 
 
 Se analizó el modelo anterior y con ello se pensó en una nueva abstracción de todos nuestros objetos. De ese modo fue posible llegar hasta la tercera forma normal lo que nos permitió tener una mejor organización de nuestras entidades y con ello del acceso a la información.\\
 
-Este nuevo planteamiento nos llevó a un total de 26 entidades repartidas en 6 esquemas. 
-
 \IUfig[1]{gui/bd}{}{Modelo de datos normalizado (3ra forma normal).}
+
+Este nuevo planteamiento nos llevó a un total de 26 entidades repartidas en 6 esquemas.\\
+
+\subsection{Análisis}
+
+Siguiendo la tarea para la corrección de errores, nos dedicamos a mejorar el análisis planteado en la primera parte del Trabajo Terminal incluyendo a detalle la descripción de neustros atributos, actores, reglas de negocio y la separación de requerimientos funcionales y no funcionales del sitema. A continuación se muestra el trabajo realizado en cada uno de esos rubros.\\
+
+\cfinput{sub}
 
 \subsection{Diseño e implementación WEB de módulo de impresiones y biblioteca}
 En esta iteración se tuvo una mesa de trabajo tomando parte del trabajo de análisis elaborado en el trabajo terminal uno, el diagrama de procesos presentado no contemplaba hasta ese momento estos módulos así que se elaboró este artefacto de software con ayuda de los encargados de estas áreas. El proceso por parte de biblioteca denotó la falta de la capacidad del sistema de modificar el catálogo de servicios proporcionado por el subdirector académico debido a que según la encargada del área de biblioteca estos precios y conceptos pueden variar con el tiempo, se descubrió que esto puede ser aplicable a otras áreas, por lo tanto, se decidió que el subdirector debería tener la capacidad de modificar los precios del catálogo así como de agregar nuevos campos en caso de que se agregara un nuevo concepto al catálogo manejado por la unidad académica. Sin embargo, se acordó que esta tarea sería agregada como parte de las prioridades de la siguiente iteración debido a que el objetivo de la iteración actual era entender mejor el proceso de dichas áreas, diseñarlo por medio de BPMN e implementarlo.\\
@@ -91,6 +97,10 @@ Por su parte, el cliente móvil fue escrito en el lenguaje de programación Java
 Los servicios REST que se consumieron en el desarrollo de esta aplicación son los siguientes:\\
 
 \cfinput{rest}
+
+Con la creación de esos servicios REST es que fue posible consumir la información de nuestra aplicación web para poder mostrarla al usuario final. Cabe mencionar que el uso de las tecnologías mencionadas anteriormente hace de nuestra aplicación una herramienta bastante ligera.
+
+
 
 
 \newpage
