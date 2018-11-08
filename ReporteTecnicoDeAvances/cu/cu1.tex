@@ -35,13 +35,13 @@
 				\item No debe existir un registro previo del usuario.
 			\end{itemize}}
 		\UCitem{Postcondiciones}{Se agrega un nuevo registro a la base de datos.}
-		\UCitem{Reglas de Negocio}{\BRref{RN1}{Unicidad del usuario}, \BRref{RN2}{Perfilamiento del usuario}, \BRref{RN6}{Información requerida para agregar un usuario}, \BRref{RN20}{Longitud de número de boleta alumno y número de empleado}}
+		\UCitem{Reglas de Negocio}{\BRref{RN1}{Unicidad del usuario}, \BRref{RN2}{Perfilamiento del usuario}, \BRref{RN6}{Información requerida para agregar un usuario}, \BRref{RN19}{Longitud de número de boleta alumno y número de empleado}}
 		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio},\MSGref{MSG51}{Campo no válido}, \MSGref{MSG52}{Longitud no válida}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG54}{Usuario duplicado}.}
 		\UCitem{Tipo}{Primario, extiende del caso de uso \UCExtensionPoint{CU4}{Iniciar sesión}}
 	\end{UseCase}		
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Login}.
+		\UCpaso[\UCactor] Ingresa a la pantalla \IUref{IU5}{Iniciar sesión}.
 		\UCpaso[\UCactor] Presiona la opción {\bf Registrar usuario} 
 		\UCpaso Dirige a la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU1}{Registrar Usuario} el tipo de usuario que desea registrar.
@@ -54,7 +54,7 @@
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
 		\UCpaso Basado en la regla de negocio \BRref{RN1}{Unicidad del usuario} verifica que no exista un registro previo.  \Trayref{F}
 		\UCpaso Registra un nuevo usuario.
-		\UCpaso Direcciona al usuario a la pantalla \IUref{IU5}{Login} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
+		\UCpaso Direcciona al usuario a la pantalla \IUref{IU5}{Iniciar sesión} y muestra el mensaje \MSGref{MSG1}{Operación exitosa}.
 	\end{UCtrayectoria}
 		
 		\begin{UCtrayectoriaA}{A}{El usuario solicita cancelar la operación.}

@@ -34,7 +34,7 @@
 				\item Debe existir un registro previo del usuario.
 			\end{itemize}}
 		\UCitem{Postcondiciones}{Se realiza una actualización a los datos del usuario.}
-		\UCitem{Reglas de Negocio}{\BRref{RN1}{Unicidad del usuario}, \BRref{RN6}{Información requerida para agregar un usuario}, \BRref{RN20}{Longitud de número de boleta alumno y número de empleado}.}
+		\UCitem{Reglas de Negocio}{\BRref{RN1}{Unicidad del usuario}, \BRref{RN6}{Información requerida para agregar un usuario}, \BRref{RN19}{Longitud de número de boleta alumno y número de empleado}.}
 		\UCitem{Errores}{\MSGref{MSG50}{Campo obligatorio}, \MSGref{MSG51}{Campo no válido}, \MSGref{MSG52}{Longitud no válida}, \MSGref{MSG53}{Formato no válido}, \MSGref{MSG54}{Usuario duplicado}.}
 		\UCitem{Tipo}{Secundario.}
 	\end{UseCase}		
@@ -46,7 +46,7 @@
 		\UCpaso[\UCactor] Edita los campos del formulario de la pantalla \IUref{IU2}{Modificar información personal} que desea actualizar y presiona el botón \IUbutton{Modificar}.\Trayref{A}
 		\UCpaso Con base en la regla de negocio \BRref{RN6}{Información requerida para agregar un usuario} verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
 		\UCpaso Verifica que los campos ingresados sean válidos. \Trayref{C}
-		\UCpaso Con base en la regla de negocio \BRref{RN20}{Longitud de número de boleta alumno y número de empleado} verifica que la longitud de número de boleta o número de empleado sea el correcto. \Trayref{D}
+		\UCpaso Con base en la regla de negocio \BRref{RN19}{Longitud de número de boleta alumno y número de empleado} verifica que la longitud de número de boleta o número de empleado sea el correcto. \Trayref{D}
 		\UCpaso Verifica que la longitud del CURP tenga la longitud correcta. \Trayref{D}
 		\UCpaso Verifica que el formato del correo electrónico sea el correcto. \Trayref{E}
 		\UCpaso Basado en la regla de negocio \BRref{RN1}{Unicidad del usuario} verifica que no exista un registro duplicado.
