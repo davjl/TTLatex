@@ -45,7 +45,7 @@ En esta sección se estudia por medio del método de estimación con puntos de c
 	\begin{center}
 		\begin{tabular}{|p{40mm}|p{50mm}|p{40mm}|}
 			\hline
-			\multicolumn{3}{|c|}{Escalas de estimación de factores técnicos} \\
+			\multicolumn{3}{|c|}{Escalas de estimación de factores técnicos}\\
 			\hline
 			{\bf Tipo de caso de uso} & {\bf Descripción} & {\bf Factor}\\
 			\hline
@@ -61,23 +61,195 @@ En esta sección se estudia por medio del método de estimación con puntos de c
 	\end{center}
 \end{table}
 
+{\bf UUCP} = {\bf UAW} + {\bf UUCW} \\
+
+Donde: \begin{itemize}
+	\item {\bf UUCP:} Puntos de Casos de Uso sin ajustar. 
+	\item {\bf UAW:} Factor de Peso de los Actores sin ajustar.
+	\item {\bf UUCW:} Factor de Peso de los Casos de Uso sin ajustar.
+\end{itemize} 
+
 
 \begin{table}[htbp]
 	\begin{center}
-		\begin{tabular}{|p{40mm}|p{50mm}|p{40mm}|}
+		\begin{tabular}{|p{50mm}|p{50mm}|}
 			\hline
-			\multicolumn{3}{|c|}{Escalas de estimación de factores técnicos}\\
+			{\bf Actores} & {\bf Factor}\\
 			\hline
-			{\bf Tipo de caso de uso} & {\bf Descripción} & {\bf Factor}\\
+			Alumno & 3.\\
 			\hline
-			Irrelevante & 3 transacciones o menos. & 5 \\
+			Profesor & 3.\\
 			\hline
-			Medio & 4 a 7 transacciones. & 10 \\
+			Externo & 3. \\
 			\hline
-			Esencial & Más de 7 transacciones. & 15 \\
+			Cajero & 3 \\
+			\hline
+			Subdirector administrativo & 3 \\
+			\hline
+			Contador & 3 \\
+			\hline
+			Coordinador dental & 3 \\
+			\hline
+			Coordinador CELEX & 3 \\
+			\hline
+			Coordinador fotocopiado & 3 \\
+			\hline
+			Coordinador biblioteca & 3 \\
 			\hline
 		\end{tabular}
-		\caption{Factores técnicos.}
-		\label{tabla:pesoFactoresTecnicos}
+		\caption{Peso actores.}
+		\label{tabla:pesoActoress}
+	\end{center}
+\end{table}
+
+\newpage
+El peso otorgado a todos los casos de uso fue de cinco ya que el desarrollo de cada uno de ellos implicaba tres transacciones o menos a excepción del caso de uso cargar pagos ya que cuenta con más de cuatro transacciones obteniendo así:
+
+\begin{itemize}
+	\item {\bf UUCW} = 215.
+	\item {\bf UUCP} = {\bf UAW} + {\bf UUCW} = 30 + 215 = 245.
+	\item {\bf UCP} = {\bf UUCP} x {\bf TCF} x {\bf EF}.
+\end{itemize}
+
+Donde : \begin{itemize}
+	\item {\bf UCP:} Puntos de Casos de Uso ajustados.
+	\item {\bf UUCP:} Puntos de Casos de Uso sin ajustar.
+	\item {\bf TCF:} Factor de complejidad técnica.
+	\item {\bf EF:} Factor de ambiente.
+\end{itemize}
+
+{\bf TCF} = 0.6 + 0.01 * $\sum$($Peso_{i}$ * $ValorAsignado_{i}$)\\
+
+{\bf TCF} = 0.6 + 0.01 * (3*2 + 4*1 + 4*1 + 3*1 + 4*1 + 2*0.5 +  5*0.5 + 3*2 + 3*1 + 3*1 + 4*1 + 3*1 + 1*1) = 0.6 + 0.01 (44.5) = 1.045\\
+\newpage
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{20mm}|p{30mm}|p{20mm}|p{30mm}|}
+			\hline
+			{\bf Factor} & {\bf Descripción} & {\bf Peso} & {\bf Comentario}\\
+			\hline
+			T1 & Sistema distribuido & 3 & La aplicación utilizará varios O.Web\\
+			\hline
+			T2 & Objetivos de Comportamiento o tiempo de respuesta & 4 & \\
+			\hline
+			T3 & Eficacia del Usuario Final & 4 & Debe asegurarse que la aplicación proporcione una alta eficacia para los usuarios \\
+			\hline
+			T4 & Procedimiento Interno Complejo & 3 & No muchos cálculos complejos \\
+			\hline
+			T5 & El código debe ser reutilizable & 4 & \\
+			\hline
+			T6 & Facilidad de instalación & 2 & \\
+			\hline
+			T7 & Facilidad de Uso & 5 & Es muy necesario crear interfaz que sean fáciles de aprender, memorizar, que sean agradables y comprensibles. \\
+			\hline
+			T8 & Portabilidad & 3 & Es necesario que sea compatible con los distintos navegadores Web existentes. \\
+			\hline
+			T9 & Facilidad de cambio & 3 & \\
+			\hline
+			T10 & Concurrecia & 3 & \\
+			\hline
+			T11 & Incluye objetivos especiales de seguridad & 4 & Seguridad alta. \\
+			\hline
+			T12 & Provee Acceso directo a terceras partes & 3 & Los Usuarios Web tienen acceso \\ 
+			\hline
+			T13 & Se requiere facilidades especiales de entrenamiento a usuarios & 1 & \\
+			\hline
+		\end{tabular}
+		\caption{Calculo de factores técnicos.}
+		\label{tabla:factores}
+	\end{center}
+\end{table}
+
+{\bf EF} = 1.4 – 0.03 * $\sum$($Peso_{i}$ * $Valor Asignado_{i}$)\\
+
+{\bf EF} = 1.4 – 0.03 * $\sum$(1.5 * 3 + 0.5*3 + 1*4 + 0.5*3 + 1*5 + 2 -1 -4) = 1.4 – 0.03 (12.5) = 1.025
+\newpage
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{20mm}|p{30mm}|p{20mm}|p{20mm}|p{30mm}|}
+			\hline
+			{\bf Factor} & {\bf Descripción} & {\bf Peso} & {\bf Valor asignado} & {\bf Comentario}\\
+			\hline
+			E1 &Familiaridad con el modelo de proyecto utilizado. & 1.5 & 3 & El equipo está medianamente familizado con el modelo \\
+			\hline
+			E2 & Experiencia en la aplicación. & 0.5 & 3 & El equipo no ha trabajado mucho con esta aplicación. \\
+			\hline
+			E3 & Experiencia en orientación a objetos. & 1 & 4 & La mayoría del equipo programa Orientado a Objetos.\\
+			\hline
+			E4 & Capacidad del analista líder. & 0.5 & 3 & No se tiene especialista \\
+			\hline
+			E5 & Motivación & 1 & 5 & El equipo esta muy motivado \\
+			\hline
+			E6 & Estabilidad de los requerimientos & 2 & 1 & Los requerimientos son muy volatiles. \\
+			\hline
+			E7 & Personal part-time & -1 & 1 & \\
+			\hline
+			E8 & Dificultad del lenguaje de programación & -1 & 4 & Se usa el lenguaje de programacíon Java \\
+			\hline
+		\end{tabular}
+		\caption{Factores de entorno}
+		\label{tabla:entorno}
+	\end{center}
+\end{table}
+
+{\bf Cálculo de los Puntos de Caso de Uso ajustados}\\
+{\bf UCP} = 245 * 1.045 * 1.025 = 262.4256\\
+{\bf E} = {\bf UCP} * {\bf CF} \\
+
+Donde:\begin{itemize}
+	\item {\bf E} es el Esfuerzo.
+	\item {\bf CF} es Factor de Conversión.
+	\item {\bf UCP} es Casos de Uso Ajustados.
+\end{itemize}
+
+El Factor de Conversión será 20 horas-hombre 
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{50mm}|p{50mm}|}
+			\hline
+			{\bf Actividad} & {\bf Porcentaje} \\
+			\hline
+			Análisis & 10 \\
+			\hline
+			Diseño & 20 \\
+			\hline
+			Programación & 40 \\
+			\hline
+			Prueba & 15 \\
+			\hline
+			Sobrecarga (Otras actividades) & 15 \\
+			\hline
+		\end{tabular}
+		\caption{Porcentaje de actividades}
+		\label{tabla:entornoef}
+	\end{center}
+\end{table}
+\newpage
+Nota: Estos porcentajes pueden variase considerando la experiencia que se tenga en el desarrollo y se debe justificar la variación. 
+
+{\bf E} = 262.4256 * 20 = 5248.51 Horas-Hombre
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{50mm}|p{50mm}|}
+			\hline
+			{\bf Actividad} & {\bf Porcentaje} \\
+			\hline
+			Análisis & 524.851 \\
+			\hline
+			Diseño & 1049.702 \\
+			\hline
+			Programación & 2099.404 \\
+			\hline
+			Prueba & 787.2765 \\
+			\hline
+			Sobrecarga (Otras actividades) & 787.2765 \\
+			\hline
+			{\bf TOTAL} & {\bf 3608.01}\\
+			\hline
+		\end{tabular}
+		\caption{Porcentaje de actividades}
+		\label{tabla:entorns}
 	\end{center}
 \end{table}

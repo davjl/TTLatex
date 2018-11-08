@@ -1,0 +1,85 @@
+ \documentclass[oneside,10pt]{book}
+
+\usepackage{cdtBook}
+\usepackage{usecases}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+%agregar icono
+%\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{"Nombre"}}}
+
+%Referenciar chapter 2
+
+
+\title{{\bf INSTITUTO POLITÉCNICO NACIONAL}\\ "ESCUELA SUPERIOR DE CÓMPUTO"}
+\subtitle{Trabajo Terminal 2017 - B029\\ESCOMunidad-Servicios Aplicación móvil de seguimiento a pagos y servicios para la comunidad estudiantil de la ESCOM}
+\author{Presentan\\De Jesús López David\\Hernández López César Erick\\Mendoza Saavedra Roberto}
+
+\organization{\\{\bf Directores:}\\Vélez Saldaña Ulises\\Figueroa del Prado Felipe de Jesús}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+
+%========================================================= Introduccion
+\cfinput{Chapter1}
+
+%========================================================= Antecedentes
+\cfinput{Chapter2}
+
+\newpage
+%========================================================
+\cfinput{Observaciones}
+%\cfinput{sub}
+
+%\chapter{Resultados y conclusion TT I}
+%\cfinput{Resultado}
+
+%\chapter{Avances presentados en TT II}
+
+
+\chapter{Resultados obtenidos de TT II}
+\cfinput{TrabajoRealizadoTTII}
+\newpage
+\cfinput{encuesta}
+\newpage
+\cfinput{karnel}
+\newpage
+\cfinput{Modelos}
+
+\chapter{Conclusiones}
+\cfinput{conclusionesttII}
+
+\chapter{Trabajo a futuro}
+\cfinput{TrabajoFuturo}
+
+\chapter{Anexo I: Casos de Uso}
+\cfinput{AnexoCU}
+Los casos de uso anteriores representan la ruta crítica del sistema sin embargo el compendio de todos los casos de uso se podrán encontrar en  la siguiente liga https://github.com/davjl/TTLatex
+
+\chapter{Anexo II: Pantallas}
+\cfinput{Pantallas/Pantallas}
+
+\chapter{Anexo III: Mensajes del sistema}
+\cfinput{mensajes}
+
+\chapter{Anexo IV: Glosario}
+\cfinput{brGlosario}
+
+\cfinput{bibliografia}
+
+\end{document}
