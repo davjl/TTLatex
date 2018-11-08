@@ -1,0 +1,51 @@
+En esta sección se muestran una serie de diagramas enfocados a describir el comportamiento de la ruta crítica del sistema, esto se describe en la seccion de diagramas BPM con mayor detalle, en la primer parte de estos diagramas se muestra como el usuario agrega un pago, en la parte siguiente como el encargado de caja autoriza o rechaza un pago para que finalmente el usuario pueda ver el cambio de estado del pago como autorizado o rechazado así como el área a la que se dirigió el pago en caso de ser aceptado lo mostrará a manera de lista en la interfaz gráfica que corresponde a visualizar pagos por área.
+
+\IUfig[1]{gui/CargarPago}{}{Modelo de secuencia. Subir pago}
+\begin{itemize}
+	\item El usuario accede a la interfaz gráfica de pagos.
+	\item Selecciona el archivo de pago.
+	\item Inserta folio.
+	\item La interfaz gráfica llama la clase pagos action con el pago y folio como parámetros.
+	\item Pago action llama a pago business con pago y folio como parámetro.
+	\item Pagos business hace una validación del pago
+	\item Si la validación es correcta se hace llamado al método insertarPago con el pago y folio como parámetros.
+	\item El Data Access Object guarda el pago manejando la conexión por medio de postgres.
+	\item Responde a pago business validando el guardado.
+	\item Pagos business responde a pagos action validando el pago.
+	\item Pagos action selecciona y muestra la vista de gestiónPagos()
+	\item La interfaz gráfica muestra un mensaje del pago enviado.
+	
+	\item En caso de que el pago no cumpla la validación en pagos business este responde a pagos action con un mensaje de error como parámetro.
+	\item Pagos action muestra la interfaz gráfica de pagos con el mensaje de error
+	\item Muestra el error al usuario.
+\end{itemize}
+\newpage
+
+\IUfig[1]{gui/VisualizarPago}{}{Modelo de secuencia. Visualizar pago}
+\begin{itemize}
+	\item El cajero ingresa a la interfaz gráfica de gestionarPagosRecibidos.
+	\item Selecciona el pago a revisar.
+	\item La interfaz grafica llama a pagos action con el id del pago seleccionado como parámetro.
+	\item Pagos action llama a pagos business para obtener el pago.
+	\item Pago business llama a Data Access Object el cual obtiene el pago manejando la conexión a la base de datos por medio de postgres.
+	\item Responde al pago business con el pago como parámetro.
+	\item Pago business responde a pagos action con el pago como parámetro.
+	\item Pagos action muestra la interfaz gráfica comprobantePago con el pago como parámetro.
+\end{itemize}
+\newpage
+\IUfig[1]{gui/AprobarPago}{}{Modelo de secuencia. Aprobar pago}
+\begin{itemize}
+	\item El cajero ingresa a la vista de comprobantePago del pago seleccionado.
+	\item Selecciona aprobar pago
+	\item La interfaz gráfica llama a pagos action con el id del pago como parámetro.
+	\item Pago action llama a pagos business con el id del pago seleccionado como parámetro.
+	\item Pago business cambia el estado del pago a aprobado.
+	\item Pago business llama al Data Access Object con el método ActuaizaCampo con el pago.
+	\item Responde al pagos business con una respuesta correcta.
+	\item Pagos business responde al pagos action con una respuesta correcta.
+	\item Pagos action muestra la interfaz gestionPagosRecibidos
+\end{itemize}
+\newpage
+En este diagrama se muestra el comportamiento en forma de UML de la ruta críta a nivel de código, se muestra el proceso explicado en la arquitectura el cual detalla de manera más precisa el funcionamiento del siguiente diagrama clases, cabe resaltar el uso de clases genericas para aumentar las buenas prácticas de programación durante el proceso de desarrollo
+
+\IUfig[1]{gui/Clases}{}{Diagrama de clases}
