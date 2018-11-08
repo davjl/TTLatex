@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 \subsection{Procesos}
+=======
+\section{Diseño}
+>>>>>>> d00a4bcd912b1e839e8cd6e93a15961fd8405e62
 En esta sección se muestran una serie de diagramas enfocados a describir el comportamiento de la ruta crítica del sistema, esto se describe en la seccion de diagramas BPM con mayor detalle, en la primer parte de estos diagramas se muestra como el usuario agrega un pago, en la parte siguiente como el encargado de caja autoriza o rechaza un pago para que finalmente el usuario pueda ver el cambio de estado del pago como autorizado o rechazado así como el área a la que se dirigió el pago en caso de ser aceptado lo mostrará a manera de lista en la interfaz gráfica que corresponde a visualizar pagos por área.
+
+\subsection{Diseño dinámico}
 
 \IUfig[1]{gui/CargarPago}{}{Modelo de secuencia. Subir pago}
 \begin{itemize}
@@ -50,3 +56,19 @@ En esta sección se muestran una serie de diagramas enfocados a describir el com
 En este diagrama se muestra el comportamiento en forma de UML de la ruta críta a nivel de código, se muestra el proceso explicado en la arquitectura el cual detalla de manera más precisa el funcionamiento del siguiente diagrama clases, cabe resaltar el uso de clases genericas para aumentar las buenas prácticas de programación durante el proceso de desarrollo
 
 \IUfig[1]{gui/Clases}{}{Diagrama de clases}
+
+\subsection{Diseño estático (Arquitectura)}
+Todas las decisiones tecnológicas se llevaron a cabo en este proyecto contemplaron principalmente dos rubros: el primero contempló la curva de aprendizaje del equipo de desarrollo puesto que se buscó no aumentar el riesgo, disminuir los tiempos de desarrollo y buscar que el entregable a pesar de sus limitantes tuviera la suficiente madurez, el segundo contempló las sugerencias de arquitectura de la especificación Java Platform Enterprise Edition v7 la cual en su apartado de Profile muestra sugerencias de implementación de arquitectura. Dicho lo anterior el siguiente diagrama muestra la arquitectura general del proyecto, la cual está basada la arquitectura cliente servidor y que a nivel de aplicación utiliza el patrón arquitectónico modelo vista controlador. \\
+
+Al hacer uso de Struts2 se debe contemplar la configuración del framework el cual tiene una serie de filtros en el descriptor de la aplicación, además se debe configurar en bean de struts para activarlo dentro de la aplicación, también el de los módulos de hibernate y el de envío de emails. Cada módulo del sistema contempla para la vista sus respectivos jsp que en conjunto con la tecnología Struts2 nos permite interactuar con el controlador llamado Action, por su parte, el back end de la aplicación contempla por lo menos cinco capas: la del controlador(Action), la del modelo, la del negocio y la de la persistencia.\\
+
+Por su parte el controlador recibe todas las peticiones de la vista, el controlador contempla según el ciclo de vida de Struts2 métodos basados en los verbos de REST: index, editNew, delete, update y que representan GET, POST, DELETE y UPDATE respectivamente, cuando se hace una petición esta es redirigida a estos métodos y los cuales invocan capas más internas dependiendo de la lógica de negocio requerida, en nuestro caso la petición es redirigida a la capa del negocio, la cual se encarga de realizar las validaciones necesarias y en este punto es cuando se hace uso de una capa más, el manejo de excepciones, si una petición tiene algún error esta capa es la encargada de regresar una respuesta al usuario por medio de alguno de los mensajes de sistema a la vista el error cometido durante la petición.\\
+
+Por su parte la capa de negocio se encarga de hacer llamados a la capa de persistencia la cual es manejada con un implementador de Java Persistence API tomada de la sugerencia de la especificación antes mencionada. Algunas de sus tareas consisten en manejar por medio de un controlador(el de postgres) la conexión a la base de datos, garantizar la transaccionalidad de las peticiones y la seguridad de la incidencia de datos. Finalmente, esta capa hace uso del modelo de datos para transformar por medio de un mapeo los datos del usuario en objetos para hacer peticiones a la base de datos. Dependiendo de la petición y respuesta de la base de datos el sistema regresa una respuesta al usuario en la pantalla correspondiente en el perfil correspondiente regresando respuestas a cada capa invocada hasta el controlador quien muestra la información solicitada renderizando en la interfaz de usuario los datos solicitados.\\
+
+Para fines de este proyecto el sistema requirió la adición de una capa que también se encuentra en la especificación antes mencionada, esto para poder cumplir el objetivo de realizar un cliente móvil, esta capa es conocida dentro del sistema como el restController el cual a cada petición pasa por todo el ciclo mencionado con anterioridad pero su respuesta es una representación JSON de los datos solicitados.\\
+
+Por su parte el cliente tiene como parte de su estructura la capa del controlador, la capa de negocio, la capa vistas, la capa de manejo de errores. En el momento que el cliente se inicia tiene validaciones de la capa de negocio que permiten entre otras cosas saber si se tiene conexión a internet. Si se tienen los requerimientos mínimos, el cliente hace peticiones al servidor a los servicios expuestos mostrados en el capitulo…, por medio del controlador el cual contempla los métodos del ciclo de vida de Android e invoca a la capa de negocio que contiene la implementación de consumo de servicios haciendo uso de la tecnología Retrofi2 que a su vez hace uso de una interfaz con todas las peticiones que correspondan al servicio que se desea consultar, una vez hecha la petición al servidor la respuesta es procesada por medio de GSON el cual es una herramienta que transforma por medio de un modelo las respuestas JSON en objetos, en este punto es donde se puede hacer uso de la capa de manejo de errores la cual se invoca si una petición no pudo ser concretada, si la respuesta no tiene errores y se puede transformar en objeto, el controlador renderiza los datos en una interfaz gráfica. \\
+
+\IUfig[1]{gui/arquitectura}{}{Arquitectura general del sistema.}
+
