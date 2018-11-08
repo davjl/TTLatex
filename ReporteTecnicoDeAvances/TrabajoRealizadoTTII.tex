@@ -31,8 +31,11 @@ Este nuevo planteamiento nos llevó a un total de 26 entidades repartidas en 6 e
 Siguiendo la tarea para la corrección de errores, nos dedicamos a mejorar el análisis planteado en la primera parte del Trabajo Terminal incluyendo a detalle la descripción de neustros atributos, actores, reglas de negocio y la separación de requerimientos funcionales y no funcionales del sitema. A continuación se muestra el trabajo realizado en cada uno de esos rubros.\\
 
 \cfinput{sub}
+\newpage
+\cfinput{Modelos}
 
-\subsection{Diseño e implementación WEB de módulo de impresiones y biblioteca}
+\newpage
+\section{Diseño e implementación WEB de módulo de impresiones y biblioteca}
 En esta iteración se tuvo una mesa de trabajo tomando parte del trabajo de análisis elaborado en el trabajo terminal uno, el diagrama de procesos presentado no contemplaba hasta ese momento estos módulos así que se elaboró este artefacto de software con ayuda de los encargados de estas áreas. El proceso por parte de biblioteca denotó la falta de la capacidad del sistema de modificar el catálogo de servicios proporcionado por el subdirector académico debido a que según la encargada del área de biblioteca estos precios y conceptos pueden variar con el tiempo, se descubrió que esto puede ser aplicable a otras áreas, por lo tanto, se decidió que el subdirector debería tener la capacidad de modificar los precios del catálogo así como de agregar nuevos campos en caso de que se agregara un nuevo concepto al catálogo manejado por la unidad académica. Sin embargo, se acordó que esta tarea sería agregada como parte de las prioridades de la siguiente iteración debido a que el objetivo de la iteración actual era entender mejor el proceso de dichas áreas, diseñarlo por medio de BPMN e implementarlo.\\
 
 Después de una reunión con el encargado de servicios bibliotecarios, se  determinó que para fines de pagos el área de biblioteca al igual que la de Celex sólo necesitaría conocer los pagos dirigidos a su departamento aprobados por caja y al igual que todos los demás departamentos por fines de auditoría se nos pidió tener un histórico de pagos de cinco años por lo que se contempló también un historial de pagos para esta área. Hasta este punto, el modelo de datos corregido no representó mayor problema para el desarrollo.\\
@@ -52,7 +55,7 @@ Con lo anterior, pudimos exponer algunas ventajas del sistema como:
 
 El desarrollo de lo mencionado anteriormente implicó agregar una nueva entidad a la base de datos que nos permitiera relacionar una cuenta con el fin de saber a quién le pertenece el comprobante y el número de impresiones con el que cuenta en ese momento cuidando que el proceso propuesto no sea tedioso para el usuario debido a que el área de impresiones puede gestionar en un día hasta ochenta pagos según las cifras del encargado del área.\\
 
-\subsection{Diseño e implementación WEB de módulo de contador y subdirector}
+\section{Diseño e implementación WEB de módulo de contador y subdirector}
 Durante esta mesa de trabajo se descubrió que el proceso actual de pagos genera un atraso en tiempo considerable debido a que en temporadas con alta incidencia de pagos, revisar cada pago retrasa el proceso administrativo y, es en este momento cuando se pueden dar inconsistencias y brechas de seguridad que podrían tener un impacto negativo. Por ejemplo, un alumno puede emitir dos comprobantes de pago y modificarlos duplicando así el pago, en el momento en el que el contador hace la verificación el alumno pudo haber hecho válido su servicio sin que se percataran en ese momento de que el comprobante fue duplicado.\\
 
 Derivado de lo anterior, nos dimos a la tarea de conocer las medidas de seguridad empleadas en el proceso actual para evitar este problema, sin embargo, el área de contabilidad comenta que actualmente no tienen un mecanismo consolidado para validarlo. Lo único que se realiza hoy en día es pedir al usuario anote sus datos personales en el reverso de su comprobante de pago, tales como, nombre completo, número de boleta si es que aplica y un número telefónico. Por lo tanto, si se emiten pagos por cantidades que requieran atención no tienen otra forma de validarlo más que marcando por teléfono al usuario en espera de que se le pueda contactar y de alguna manera probar que se duplicó dicho pago.\\
@@ -86,7 +89,7 @@ Por tanto, para poder lograr todo lo comentado anteriormente, tuvimos que realiz
 
 En este punto, el desarrollo de la aplicación web estaba más completo y cumplía con el flujo crítico para el cual se desarrolló el sistema.
 
-\subsection{Diseño e implementación de módulo móvil}
+\section{Diseño e implementación de módulo móvil}
 
 En esta mesa de trabajo el objetivo fue diseñar la versión móvil de la aplicación la cual tenía como fin brindar una herramienta de consulta para la comunidad estudiantil, se llegó a la conclusión de que tendría que ser únicamente dirigida a la comunidad estudiantil debido a que si se le otorgaban permisos administrativos como en el caso de la aplicación web saldría de los alcances de este trabajo y además, el riesgo hubiera aumentado considerablemente, el Subdirector Administrativo nos expresó que bastaba con hacer una aplicación que permitiera consultar a los alumnos los pagos emitidos hacia caja.\\
 
