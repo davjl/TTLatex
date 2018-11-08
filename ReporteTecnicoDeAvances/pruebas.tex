@@ -1,10 +1,37 @@
 \section{Pruebas de módulo}
 
+\subsection{Usuario}
 \begin{table}[htbp]
 	\begin{center}
 		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
 			\hline 
 			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			\hline
+			Registrar usuario & sí & & \\
+			\hline
+			Inicio de sesión & sí & & \\
+			\hline
+			Cerrar sesión & sí & & \\
+			\hline
+			Visualizar servicios & sí & & \\
+			\hline
+			Cargar voucher de pago & sí & & \\
+			\hline
+			Gestionar pagos usuario & sí & & \\
+			\hline
+			Visualizar voucher pago & sí & & \\
+			\hline
+			Visualizar historial de pagos & sí & & \\
+			\hline
+			Gestionar notas de pago & sí & & \\
+			\hline
+			Visualizar nota de pago & sí & & \\
+			\hline
+			Agendar cita & sí & & \\
+			\hline
+			Gesionar citas agendadas & sí & & \\
+			\hline
+			Visualizar impresiones usuario & & & \\
 			\hline
 		\end{tabular}
 		\caption{Usuario}
@@ -12,11 +39,28 @@
 	\end{center}
 \end{table}
 
+\subsection{Área dental}
 \begin{table}[htbp]
 	\begin{center}
 		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
 			\hline 
 			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			\hline
+			Gestionar citas agendadas & sí & & \\
+			\hline
+			Marcar inasistencia & sí & & \\
+			\hline
+			Realizar consulta & sí & & \\
+			\hline
+			Enviar nota de pago & sí & & \\
+			\hline
+			Gestionar pacientes & sí & & \\
+			\hline
+			Visualizar historial clínico & sí & & \\
+			\hline
+			Visualizar consulta & sí & & \\
+			\hline
+			Visualizar comprobante SIG@ & sí & & \\
 			\hline
 		\end{tabular}
 		\caption{Área dental}
@@ -24,59 +68,23 @@
 	\end{center}
 \end{table}
 
+\newpage
+\subsection{Contaduría}
 \begin{table}[htbp]
 	\begin{center}
 		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
 			\hline 
 			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
 			\hline
-		\end{tabular}
-		\caption{Área fotocopias}
-		\label{tabla:PruebaFotocopiado}
-	\end{center}
-\end{table}
-
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
-			\hline 
-			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			Visualizar pagos por fechas & sí & & \\
 			\hline
-		\end{tabular}
-		\caption{Área CELEX}
-		\label{tabla:Prueba CELEX}
-	\end{center}
-\end{table}
-
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
-			\hline 
-			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			Visualizar pagos por mes & sí & & \\
 			\hline
-		\end{tabular}
-		\caption{Área biblioteca}
-		\label{tabla:PruebaBiblioteca}
-	\end{center}
-\end{table}
-
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
-			\hline 
-			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			Visualizar archivo de pagos por año & sí & & \\
 			\hline
-		\end{tabular}
-		\caption{Caja}
-		\label{tabla:PruebaCaja}
-	\end{center}
-\end{table}
-
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
-			\hline 
-			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			Gestionar pagos contaduría & sí & & \\
+			\hline
+			Autorizar corte de caja & sí & & \\
 			\hline
 		\end{tabular}
 		\caption{Contabilidad}
@@ -84,11 +92,104 @@
 	\end{center}
 \end{table}
 
+\subsection{Caja}
 \begin{table}[htbp]
 	\begin{center}
 		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
 			\hline 
 			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			\hline
+			Gestionar pagos caja & sí & & \\
+			\hline
+			Generar corte de caja & sí & & \\
+			\hline
+			Adjuntar comprobante SIG@  & sí & & \\
+			\hline
+			Aceptar voucher de pago & sí & & \\
+			\hline
+			Rechazar voucher de pago & sí & & \\
+			\hline
+			Pago en caja & sí & & \\
+			\hline
+		\end{tabular}
+		\caption{Caja}
+		\label{tabla:PruebaCaja}
+	\end{center}
+\end{table}
+
+\newpage
+\subsection{CELEX}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
+			\hline 
+			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			\hline
+			Gestionar pagos por área & sí & & \\
+			\hline
+		\end{tabular}
+		\caption{Área CELEX}
+		\label{tabla:Prueba CELEX}
+	\end{center}
+\end{table}
+
+\subsection{Fotocopiado}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
+			\hline 
+			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			\hline
+			Descontar impresiones & sí & & \\
+			\hline
+			Visualizar impresiones coordinador fotocopiado & sí & & \\
+			\hline
+			Visualizar historial de impresiones & sí & & \\
+			\hline
+		\end{tabular}
+		\caption{Área fotocopias}
+		\label{tabla:PruebaFotocopiado}
+	\end{center}
+\end{table}
+
+\subsection{Subdirección}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|p{50mm}|p{18mm}|p{18mm}|p{18mm}|}
+			\hline 
+			{\bf Caso de uso} & {\bf Trayectoria principal} & {\bf Trayectoria alterna} & {\bf Mensajes}\\
+			\hline
+			Registrar responsable de área & sí & & \\
+			\hline
+			Dar de baja a responsable de área & sí & & \\
+			\hline
+			Visualizar responsable de área & sí & & \\
+			\hline
+			Modificar responsable de área & sí & & \\
+			\hline
+			Gestionar responsables de área & sí & & \\
+			\hline
+			Registrar servicio & sí & & \\
+			\hline
+			Dar de baja servicio & sí & & \\
+			\hline
+			Visualizar servicio & sí & & \\
+			\hline
+			Modificar servicio & sí & & \\
+			\hline
+			Gestionar servicios & sí & & \\
+			\hline
+			Reactivar servicio & sí & & \\
+			\hline
+			Gestionar áreas & sí & & \\
+			\hline
+			Reasignar responsable de área & & & \\
+			\hline
+			Dar de baja área & sí & & \\
+			\hline
+			Reactivar área & sí & & \\
+			\hline
+			Visaulizar reporte de pagos &  & & \\
 			\hline
 		\end{tabular}
 		\caption{Subdirección administrativa}
