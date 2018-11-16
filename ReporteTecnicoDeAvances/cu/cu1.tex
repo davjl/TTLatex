@@ -27,6 +27,7 @@
 		    \item Número de empleado
 		    \item Correo electrónico
 		    \item Teléfono celular
+		    \item Password
 		\end{itemize}}
 		\UCitem{Salidas}{\MSGref{MSG1}{Operación exitosa}.}
 		\UCitem{Precondiciones}{
@@ -46,7 +47,7 @@
 		\UCpaso Dirige a la pantalla \IUref{IU1}{Registrar usuario}.
 		\UCpaso[\UCactor]Selecciona en la pantalla \IUref{IU1}{Registrar Usuario} el tipo de usuario que desea registrar.
 		\UCpaso Con base en la regla de negocio \BRref{RN2}{Perfilamiento del usuario} habilita el campo de {\bf Número de boleta} o {\bf Número de empleado}.
-		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Registrar}.\Trayref{A}
+		\UCpaso[\UCactor]Ingresa los datos requeridos en el formulario y presiona el botón \IUbutton{Aceptar}.\Trayref{A}
 		\UCpaso  Con base en la regla de negocio \BRref{RN6}{Información requerida para agregar un usuario} verifica que el usuario haya ingresado todos los campos obligatorios.\Trayref{B}
 		\UCpaso Verifica que los campos ingresados sean válidos. \Trayref{C}
 		\UCpaso Con base en la regla de negocio \BRref{RN20}{Longitud de número de boleta alumno y número de empleado} verifica que el número de boleta o número de empleado tengan la longitud correcta. \Trayref{D}
