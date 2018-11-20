@@ -100,7 +100,7 @@ A continuación se muestra en un diagrama de casos de uso el comportamiento y  m
 \subsection{Casos de uso Contador}
 El contador tiene únicamente la obligación de verificar la cantidad reportada por el cajero con el banco, se ha visto que actualmente no existe un mecanismo para verificar estas cantidades con una API bancaria, sin embargo, se ha observado pero el alcance de este proyecto no lo contempla debido a limitaciones burocráticas. Figura \ref{fig:cuContador}
 \begin{figure}[h]
-	\includegraphics[width=\textwidth, height=10cm]{images/gui/CasosUso/Contador}
+	\includegraphics[width=\textwidth, height=8cm]{images/gui/CasosUso/Contador}
 	\caption{Diagrama de casos de uso Contador}
 	\label{fig:cuContador}
 \end{figure}
@@ -108,7 +108,7 @@ El contador tiene únicamente la obligación de verificar la cantidad reportada 
 \subsection{Casos de uso Caja}
 Como se detalló en el diagrama de proceso de caja, el cajero necesita autorizar o rechazar pagos, si el cajero autoriza un pago este debe modificar el estado del mismo y notificar al usuario para que posteriormente el usuario tome medidas, el encargado de caja también debe tener la capacidad visualizar el historial de pagos por motivos de auditoría, debe ser capaz de realizar un corte de caja y finalmente si se autoriza un pago se debe ingresar el comprobante SIG@. Figura \ref{fig:cuCaja}
 \begin{figure}[h]
-	\includegraphics[width=\textwidth, height=16cm]{images/gui/CasosUso/Caja}
+	\includegraphics[width=\textwidth, height=10cm]{images/gui/CasosUso/Caja}
 	\caption{Diagrama de casos de uso Caja}
 	\label{fig:cuCaja}
 \end{figure}
@@ -123,7 +123,8 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 
 \newpage
 \section{Diagrama de clases}
-
+Un diagrama de clases ayuda a describir la vista de diseño estática de un sistema. En este diagrama podemos visualizar el tipo de relación que presenta cada clase y el como interactua con las demás.
+Las principales clases 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth, height=16cm]{images/gui/DiagramaClases}
 	\caption{Diagrama de clases}
@@ -134,13 +135,15 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \section{Diagramas de secuencia}
 
 \subsection{Registrar usuario}
+Este proceso tiene como objetivo registrar un usuario nuevo, en la siguiente imagen se observa que el usuario ingresa al sistema en la pantalla Registrar Usuario, en esta pantalla ingresa la información solicitada, cuando se hace la petición los datos pasan por el controlador llamado Action en Struts 2, se hace una validación de estos datos cuando pasan a la capa del negocio, si cumple con estas validaciones, el sistema envía la información a la capa de persistencia para guardarla, si esto ocurre normalmente envía una respuesta pasando por las capas anteriormente mencionadas hasta llegar al controlador quien envía el mensaje que indica que el usuario se ha registrado correctamente. Figura \ref{fig:SeqRegistrarUsuario}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/AgregarUsuario}
 	\caption{Diagrama de secuencia, Registrar usuario}
 	\label{fig:SeqRegistrarUsuario}
 \end{figure}
 
-\subsection{Registrar visualizar servicios}
+\subsection{Visualizar servicios}
+El objetivo de este diagrama es detallar el mecanismo otorgado al usuario para poder visualizar el catálogo de servicios usados actualmente en la unidad académica, el usuario ingresa a la pantalla Visualizar Servicios, por su parte el sistema invoca la capa del controlador verifica la sesión del usuario. Si el usuario tiene sesión la petición se manda a la capa de negocio quien por medio del uso de una referencia a la capa de persistencia busca todos los campos que representan el catálogo de servicios, una vez realizado esto responde a la capa de negocio y finalmente pasa los datos recibidos por la capa del controlador para renderizar la lista de servicios en una vista. Figura \ref{fig:SeqVisualizarServicios}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarServicios}
 	\caption{Diagrama de secuencia, Visualizar servicios}
@@ -148,6 +151,7 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \end{figure}
 
 \subsection{Realizar pago}
+El objetivo de este diagrama es mostrar de forma más detallada el proceso de realización de pagos, el cual comienza cuando un usuario desea adquirir un servicio disponible en en el catálogo de pagos, después de seleccionar el servicio el sistema redirige a la pantalla Adjuntar comprobante para poder insertar el comprobante y el folio del comprobante que desea enviar para su posterior aprobación o rechazo por parte del cajero, cuando el usuario hace la petición los datos llegan a la capa del controlador quien direcciona los datos a la capa del negocio, esta capa válida que el folio no sea exista en la base de datos y que el día de emisión no sea el mismo, si esto se cumple, finalmente envía los datos a la capa de persistencia la cual deja el pago en el sistema para su posterior evaluación por parte del cajero. Figura \ref{fig:SeqRealizarPago}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/RealizarPago}
 	\caption{Diagrama de secuencia, Realizar pago}
@@ -155,6 +159,8 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \end{figure}
 
 \subsection{Aprobar pago}
+El objetivo de este proceso es otorgarle al cajero la capacidad autorizar pagos o rechazar pagos, como primer paso el cajero con sesión activa se dirige a la pantalla para visualizar el comprobante de pago, si desea autorizar el pago envía la petición y la recibe el controlador con la referencia del pago que ha solicitado aprobar el usuario, si el pago existe pasa a la capa de negocio quien invoca a la capa de persistencia para poder actualizar el pago con la referencia del pago, si todo sucede normalmente, la capa de persistencia responde a la capa de negocio y la de negocio a Action quien finalmente redirige a la página de autorización de pagos. Figura \ref{fig:SeqAprobarPago}
+
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/AprobarPago}
 	\caption{Diagrama de secuencia, AprobarPago}
@@ -162,6 +168,7 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \end{figure}
 
 \subsection{Visualizar pago}
+El objetivo de este diagrama es detallar el mecanismo otorgado al usuario para poder visualizar pagos, en la primer parte el action recibe el id del pago que se desea visualizar, en la capa de negocio valida que el pago exista y si existe busca por medio del id el archivo de pago para responder a las capas invocadas anteriormente cuando regresa al controlador este renderiza los bytes que representan los archivos para mostrarlos en la pantalla Visualizar Comprobante de Pago. Figura \ref{fig:SeqVisualizarPago}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarPago}
 	\caption{Diagrama de secuencia, Visualizar pago}
@@ -169,6 +176,7 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \end{figure}
 
 \subsection{Visualizar pagos aprobados}
+El objetivo de este diagrama es detallar el mecanismo otorgado al usuario para poder visualizar pagos que han sido aprobados por caja, en la primer parte el action recibe el id del pago que se desea visualizar, en la capa de negocio valida que el pago exista y si existe busca por medio del id el archivo de pago para responder a las capas invocadas anteriormente cuando regresa al controlador este renderiza los bytes que representan los archivos para mostrarlos en la pantalla Visualizar Comprobante de Pago, el campo estado del pago representa si un pago ha sido aprobado o rechazado. Figura \ref{fig:SeqVisualizarPagosAprobados}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarPagosAprobados}
 	\caption{Diagrama de secuencia, Visualizar pagos aprobados}
@@ -176,6 +184,7 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \end{figure}
 
 \subsection{Visualizar SIG@}
+El objetivo de este diagrama es detallar el mecanismo otorgado al cajero para poder visualizar los comprobantes de pago emitidos por el subsistema SIG@, en la primer parte el action recibe el id del pago que se desea visualizar el cual está asociado por un comprobante SIG@ puesto que todo pago emitido hacia la unidad académica debe generar un comprobante SIG@, en la capa de negocio valida que el pago exista y que tenga adjunto un comprobante SIG@, si existe busca por medio del id el archivo de pago para responder a las capas invocadas anteriormente cuando regresa al controlador este renderiza los bytes que representan los archivos para mostrarlos en la pantalla Visualizar Comprobante de SIG@. Figura \ref{fig:SeqVisualizarSIGA}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarSIGA}
 	\caption{Diagrama de secuencia, Visualizar comprobante SIG@}
@@ -187,4 +196,14 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/SecuenciaGeneral}
 	\caption{Diagrama de secuencia, Secuencia General}
 	\label{fig:SeqGeneral}
+\end{figure}
+
+\section{Maquinas de estados}
+
+\subsection{Maquina de estados pagos}
+La máquina de la siguiente figura muestra los posibles estados de un pago, por una parte cuando se emite un pago este pasa al estado pendiente para que la caja pueda visualizarlo y modificar su estado, si la caja autoriza el pago entonces debe adjuntar una archivo SIG@, cuando esto sucede el estado del pago se modifica a aprobado, el pago de la caja cumple con que está autorizado, tienen asociado su pago SIG@ y además ha sido procesado en un corte de caja su estado será adjuntado, por otro lado, si el pago es rechazado por  caja entonces modifica su estado y lo mantendrá como pendiente hasta que el cajero lo autorice y por lo tanto lo procese. Figura \ref{fig:MaquinaEstados}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Estados}
+	\caption{Maquina de estados pagos}
+	\label{fig:MaquinaEstados}
 \end{figure}
