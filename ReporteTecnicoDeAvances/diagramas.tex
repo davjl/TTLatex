@@ -1,8 +1,8 @@
-\section{Procesos}
+\section{Diagramas BPMN}
 En este apartado podemos observar todos los diagramas de procesos vistos en el documento.
 
 \subsection{Proceso de pago Biblioteca, CELEX, Dentales}
-El actual proceso de pago para servicios en biblioteca, CELEX y dentales se muestra en la figura \ref{fig:BCF}.
+El actual proceso de pago para servicios en biblioteca, CELEX y dentales se muestra en la figura \ref{fig:BCF}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/BPMN/CBF/diagram1}
 	\caption{Proceso de pago Biblioteca, CELEX, Fotocopiado}
@@ -10,7 +10,7 @@ El actual proceso de pago para servicios en biblioteca, CELEX y dentales se mues
 \end{figure}
 
 \subsection{Proceso de pago Dental}
-El actual proceso de pago para servicio dental se muestra en la figura \ref{fig:PagoDentales}.
+El actual proceso de pago para servicio dental se muestra en la figura \ref{fig:PagoDentales}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/BPMN/Dentales/diagram1}
 	\caption{Proceso de pago Dentales}
@@ -21,7 +21,7 @@ El actual proceso de pago para servicio dental se muestra en la figura \ref{fig:
 En este apartado podemos observar los sub-procesos encontrados en los procesos vistos anteriormente.
 
 \subsection{Acude al área de servicio}
-El actual diagrama que describe el sub-proceso de ''Acude al área de servicio'' se muestra en la figura \ref{fig:AcudeServicio}.
+El actual diagrama que describe el sub-proceso de ''Acude al área de servicio'' se muestra en la figura \ref{fig:AcudeServicio}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/BPMN/CBF/diagram2}
 	\caption{Sub-proceso, Acude al área de servicio}
@@ -29,7 +29,7 @@ El actual diagrama que describe el sub-proceso de ''Acude al área de servicio''
 \end{figure}
 
 \subsection{Realiza pago}
-El actual diagrama que describe el sub-proceso de ''Realiza pago'' se muestra en la figura \ref{fig:RealizaPago}.
+El actual diagrama que describe el sub-proceso de ''Realiza pago'' se muestra en la figura \ref{fig:RealizaPago}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/BPMN/CBF/diagram3}
 	\caption{Sub-proceso, Realiza pago}
@@ -37,7 +37,7 @@ El actual diagrama que describe el sub-proceso de ''Realiza pago'' se muestra en
 \end{figure}
 
 \subsection{Registra pago}
-El acutal diagrama que describe el sub-proceso de ''Registra pago'' se muestra en la figura \ref{fig:RegistraPago}.
+El acutal diagrama que describe el sub-proceso de ''Registra pago'' se muestra en la figura \ref{fig:RegistraPago}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/BPMN/CBF/diagram4}
 	\caption{Sub-proceso, Registra pago}
@@ -45,9 +45,146 @@ El acutal diagrama que describe el sub-proceso de ''Registra pago'' se muestra e
 \end{figure}
 
 \subsection{Efectua servicio}
-El acutal diagrama que describe el sub-proceso de ''Efectua servicio'' se muestra en la figura \ref{fig:EfectuaServicio}.
+El acutal diagrama que describe el sub-proceso de ''Efectua servicio'' se muestra en la figura \ref{fig:EfectuaServicio}
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/BPMN/Dentales/diagram6}
 	\caption{Sub-proceso, Efectua servicio}
 	\label{fig:EfectuaServicio}
+\end{figure}
+
+\newpage
+
+\section{Diagramas de casos de uso}
+En este apartado podemos observar los diagramas de casos de uso desarrollados para cada actor.
+
+\subsection{Casos de uso Usuario}
+A continuación se muestra en un diagrama de casos de uso el comportamiento y funcionalidad que es capaz de utilizar el usuario(alumno, profesor externo), se puede observar que tiene la capacidad de ingresar archivos de pago al sistema para que posteriormente las áreas involucradas lo gestionen, así como realizar citas, y visualizar su historial de pagos. Figura \ref{fig:cuUsuario}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=16cm]{images/gui/CasosUso/Usuario}
+	\caption{Diagrama de casos de uso Usuario}
+	\label{fig:cuUsuario}
+\end{figure}
+
+\subsection{Casos de uso Dentista}
+A continuación se muestra en un diagrama de casos de uso el comportamiento y funcionalidad que es capaz de utilizar el dentista como se explica más detalladamente en el diagrama de procesos el dentista es capaz de recibir citas enviadas por el usuario y gestionar consultas sencillas, también tiene la capacidad de visualizar su historial de pagos y emitir notas de pago. Figura \ref{fig:cuDentista}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=16cm]{images/gui/CasosUso/Dentista}
+	\caption{Diagrama de casos de uso Dentaista}
+	\label{fig:cuDentista}
+\end{figure}
+
+\subsection{Casos de uso Fotocopias}
+A continuación se muestra en un diagrama de casos de uso el comportamiento y funcionalidad que es capaz de utilizar el encargado del área de fotocopiado, se explica más detalladamente en el diagrama de procesos que el encargado de fotocopiado  es capaz de recibir conceptos de pago por impresión y reducir la cantidad de impresiones hasta que estas se han terminado, tiene la capacidad  de visualizar su historial de pagos y está ligado con el comportamiento del usuario puesto que una vez terminadas sus impresiones el usuario podrá visualizar el total para volver a empezar el proceso. Figura \ref{fig:cuFotocopias}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=10cm]{images/gui/CasosUso/Fotocopias}
+	\caption{Diagrama de casos de uso Fotocopiado}
+	\label{fig:cuFotocopias}
+\end{figure}
+
+\subsection{Casos de uso Biblioteca}
+Con base en el análisis realizado el encargado de servicios bibliotecarios ha expresado únicamente la necesidad de tener un historial de pagos así también tener la capacidad de visualizar los comprobantes de caja que han sido autorizados por algún concepto ligado a su área para posteriormente hacer válido su servicio. Figura \ref{fig:cuBiblioteca}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=8cm]{images/gui/CasosUso/Biblioteca}
+	\caption{Diagrama de casos de uso Biblioteca}
+	\label{fig:cuBiblioteca}
+\end{figure}
+
+\subsection{Casos de uso Subdirección}
+A continuación se muestra en un diagrama de casos de uso el comportamiento y  muestra las capacidades del subdirector para registrar responsables de área, modificar catálogos y visualizar reporte de pagos después del corte de caja. Figura \ref{fig:cuSubdirector}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=16cm]{images/gui/CasosUso/subdireccion}
+	\caption{Diagrama de casos de uso Subdirector administrativo}
+	\label{fig:cuSubdirector}
+\end{figure}
+
+\subsection{Casos de uso Contador}
+El contador tiene únicamente la obligación de verificar la cantidad reportada por el cajero con el banco, se ha visto que actualmente no existe un mecanismo para verificar estas cantidades con una API bancaria, sin embargo, se ha observado pero el alcance de este proyecto no lo contempla debido a limitaciones burocráticas. Figura \ref{fig:cuContador}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=10cm]{images/gui/CasosUso/Contador}
+	\caption{Diagrama de casos de uso Contador}
+	\label{fig:cuContador}
+\end{figure}
+
+\subsection{Casos de uso Caja}
+Como se detalló en el diagrama de proceso de caja, el cajero necesita autorizar o rechazar pagos, si el cajero autoriza un pago este debe modificar el estado del mismo y notificar al usuario para que posteriormente el usuario tome medidas, el encargado de caja también debe tener la capacidad visualizar el historial de pagos por motivos de auditoría, debe ser capaz de realizar un corte de caja y finalmente si se autoriza un pago se debe ingresar el comprobante SIG@. Figura \ref{fig:cuCaja}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=16cm]{images/gui/CasosUso/Caja}
+	\caption{Diagrama de casos de uso Caja}
+	\label{fig:cuCaja}
+\end{figure}
+
+\subsection{Casos de uso para todo Actor}
+Algunos de los casos de uso utilizados en este sistema tienen uso genérico puesto que la mayoría o todos los actores los utilizan, el siguiente diagrama muestra algunos de estos casos junto con los actores involucrados, se observa también que caja no tiene la capacidad de visualizar los pagos autorizados y con corte por fecha debido a que el encargado de esta tarea es el contador general.
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=16cm]{images/gui/CasosUso/General}
+	\caption{Diagrama de casos de uso General}
+	\label{fig:cuGeneral}
+\end{figure}
+
+\newpage
+\section{Diagrama de clases}
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, height=16cm]{images/gui/DiagramaClases}
+	\caption{Diagrama de clases}
+	\label{fig:DiagramaClases}
+\end{figure}
+
+\newpage
+\section{Diagramas de secuencia}
+
+\subsection{Registrar usuario}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/AgregarUsuario}
+	\caption{Diagrama de secuencia, Registrar usuario}
+	\label{fig:SeqRegistrarUsuario}
+\end{figure}
+
+\subsection{Registrar visualizar servicios}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarServicios}
+	\caption{Diagrama de secuencia, Visualizar servicios}
+	\label{fig:SeqVisualizarServicios}
+\end{figure}
+
+\subsection{Realizar pago}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/RealizarPago}
+	\caption{Diagrama de secuencia, Realizar pago}
+	\label{fig:SeqRealizarPago}
+\end{figure}
+
+\subsection{Aprobar pago}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/AprobarPago}
+	\caption{Diagrama de secuencia, AprobarPago}
+	\label{fig:SeqAprobarPago}
+\end{figure}
+
+\subsection{Visualizar pago}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarPago}
+	\caption{Diagrama de secuencia, Visualizar pago}
+	\label{fig:SeqVisualizarPago}
+\end{figure}
+
+\subsection{Visualizar pagos aprobados}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarPagosAprobados}
+	\caption{Diagrama de secuencia, Visualizar pagos aprobados}
+	\label{fig:SeqVisualizarPagosAprobados}
+\end{figure}
+
+\subsection{Visualizar SIG@}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/VisualizarSIGA}
+	\caption{Diagrama de secuencia, Visualizar comprobante SIG@}
+	\label{fig:SeqVisualizarSIGA}
+\end{figure}
+
+\subsection{Secuencia general}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/Secuencia/SecuenciaGeneral}
+	\caption{Diagrama de secuencia, Secuencia General}
+	\label{fig:SeqGeneral}
 \end{figure}
