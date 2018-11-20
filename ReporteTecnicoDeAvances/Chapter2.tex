@@ -49,18 +49,29 @@ Si bien comentamos que esas boletas de pago se deben de almacenar por un periodo
 Todos los ingresos obtenidos durante el día deberán de comprobarse, puesto que se genera un corte de caja de manera diaria que permite saber el total generado, que a su vez, es notificado al Subdirector Administrativo quien será el último en dar el visto bueno para los ingresos obtenidos del día corriente.
 
 \subsection{Pagos en ESCOM}
-El proceso de pago en ESCOM se lleva prácticamente de la misma manera en todos los servicios o productos que se ofertan, partiendo de la realización del pago en caja, sucursal bancaria o transferencia electrónica y concluyendo en la entrega al interesado por el producto o servicio de un comprobante SIG@ la cual se da posteriormente al área involucrada como garantía de que se efectúo correctamente la cuota. \newpage %Pueden existir algunas variantes en este proceso, pero no afectan para nada el flujo principal comentado anteriormente.\\
+El proceso de pago en ESCOM se lleva prácticamente de la misma manera en todos los servicios o productos que se ofertan, partiendo de la realización del pago en caja, sucursal bancaria o transferencia electrónica y concluyendo en la entrega al interesado por el producto o servicio de un comprobante SIG@ la cual se da posteriormente al área involucrada como garantía de que se efectúo correctamente la cuota. El flujo se puede observar en la figura \ref{fig:BCF} %Pueden existir algunas variantes en este proceso, pero no afectan para nada el flujo principal comentado anteriormente.\\
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{images/gui/BPMN/CBF/diagram1}
+\caption{Proceso de pago Biblioteca, CELEX, Fotocopiado}
+\label{fig:BCF}
+\end{figure}
 
-\IUfig[1]{gui/pago}{}{Proceso de pago Biblioteca, CELEX, Fotocopiado}
+\newpage
+Si bien este flujo es comun en la mayoria de las áreas de servicio también pueden existir algunas variantes en este proceso como es el caso de área dental el cual ponemos ver en la figura \ref{fig:PagoDentales}
 
-Si bien este flujo es comun en la mayoria de las áreas de servicio también pueden existir algunas variantes en este proceso como es el caso de área dental el cual ponemos ver en la siguiente figura:
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{images/gui/BPMN/Dentales/diagram1}
+	\caption{Proceso de pago Dentales}
+	\label{fig:PagoDentales}
+\end{figure}
 
-\IUfig[1]{gui/dental}{}{Proceso de pago área dental}
+Para poder observar a detalle el flujo de los sub-procesos se recomienda ver el Anexo V : Diagramas.
 
 Enfocados en el alcance del proyecto daremos el detalle del proceso de pago para cada una de las áreas que estamos considerando, además de mostrar su catálogo de servicios disponibles y sus costos para este año en curso. Esto se ha escrito derivado de múltiples entrevistas con los responsables de las distintas áreas.\\
 
 Con base en el catalogo de productos y cuotas de aprovechamiento de Cobro Regular emitido por la SHCP a través del sistema DEPAMIN \cite{DEPAMIN}, la Escuela Superior de Cómputo y el presente trabajo terminal hacemos uso de los siguientes servicios descritos a continuación:
 
+\newpage
 \subsubsection{Servicio Dental}
 
 
@@ -237,7 +248,7 @@ Si bien el proceso de desarrollo suele ser similar para diferentes sistemas oper
 
 \begin{table}[htbp]
 	\begin{center}
-		\begin{tabular}{p{25mm}|p{25mm}|p{25mm}|p{30mm}}
+		\begin{tabular}{|p{25mm}|p{25mm}|p{25mm}|p{30mm}|}
 			\hline
 			{\bf Apple iOS} &  {\bf Android} & {\bf Blackberry OS} & {\bf Windows Phone} \\
 			\hline
