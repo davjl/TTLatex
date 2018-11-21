@@ -124,7 +124,8 @@ Algunos de los casos de uso utilizados en este sistema tienen uso genérico pues
 \newpage
 \section{Diagrama de clases}
 Un diagrama de clases ayuda a describir la vista de diseño estática de un sistema. En este diagrama podemos visualizar el tipo de relación que presenta cada clase y el como interactua con las demás.
-Las principales clases 
+A grandes rasgos podemos observar la composición una cuenta dentro del sistema, la generalización de áreas de servicio y los requisitos necesarios para generar un pago, así como también los posibles componentes que pueden interactuar con el pago. Figura \ref{fig:DiagramaClases}
+
 \begin{figure}[h]
 	\includegraphics[width=\textwidth, height=16cm]{images/gui/DiagramaClases}
 	\caption{Diagrama de clases}
@@ -192,6 +193,7 @@ El objetivo de este diagrama es detallar el mecanismo otorgado al cajero para po
 \end{figure}
 
 \subsection{Secuencia general}
+Como podemos ver de los diagramas de secuencia anteriores el proceso que lleva cada cada consiste en la comunicación de interfaz gráfica-action-business-Data Access Object permitiendo así un diagrama de secuencia general para cada proceso.
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{images/gui/Secuencia/SecuenciaGeneral}
 	\caption{Diagrama de secuencia, Secuencia General}
